@@ -6,7 +6,7 @@
     <!-- Viewport Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-      Engage - Multi-Purose Bootstrap HTML5 Template
+      Museu Da Moeda
     </title>
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/bootstrap.min.css">
@@ -33,10 +33,10 @@
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/colors/green.css" media="screen" />       
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+   <!--  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
     </script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
-    </script>
+    </script> -->
 
   </head>
   <body>
