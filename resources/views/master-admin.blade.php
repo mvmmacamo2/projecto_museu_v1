@@ -250,7 +250,7 @@
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil de Usuário</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Configurações</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -297,7 +297,7 @@
                                     <a href="/exposicoes/create"><i class="fa fa-plus"></i> Adicionar Exposição</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html"><i class="fa fa-eye"></i> Ver Exposições</a>
+                                    <a href="/exposicoes/index-admin/show"><i class="fa fa-eye"></i> Ver Exposições</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

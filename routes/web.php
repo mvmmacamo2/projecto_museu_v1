@@ -19,13 +19,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('exposicoes', 'ExposicaoController');
+Route::resource('/exposicoes', 'ExposicaoController');
 
-Route::resource('galerias', 'GaleriaController');
+// Route::resource('/galerias', 'GaleriaController');
 
-Route::get('historias/museu','Historia_museuController@index');
-Route::get('historias/amarela','Historia_casa_amarelaController@index');
+Route::get('/historias/museu','Historia_museuController@index');
+Route::get('/historias/amarela','Historia_casa_amarelaController@index');
 
-Route::get('contactos','ContactoController@index');
+// Route::get('/contactos','ContactoController@index');
 
-Route::resource('exposicoes', 'ExposicaoController');
+Route::resource('/exposicoes', 'ExposicaoController');
+
+Route::get('/exposicoes/index-admin/show', 'ExposicaoController@index_admin');

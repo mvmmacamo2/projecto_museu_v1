@@ -19,6 +19,12 @@ class ExposicaoController extends Controller
         return view('/exposicoes.index', compact('exposicaos'));
     }
 
+    public function index_admin()
+    {
+        $exposicaos = Exposicao::all();
+        return view('/exposicoes.index-admin', compact('exposicaos'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -57,13 +63,13 @@ class ExposicaoController extends Controller
         {
             File::move($imagem, public_path().'/expo-upload/expo-id-'.$exposicao->id.'.'.$extension);
 
-            $exposicao -> imagem = 'expo-id_'.$exposicao->id.'.'.$extension;
+            $exposicao -> imagem = 'expo-id-'.$exposicao->id.'.'.$extension;
 
             $exposicao -> save();
         }
 
         
-        return redirect('/exposicoes');
+        return redirect('/exposicoes/create');
     }
 
     /**
@@ -74,7 +80,7 @@ class ExposicaoController extends Controller
      */
     public function show($id)
     {
-        //
+        return $id;
     }
 
     /**

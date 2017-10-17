@@ -1,8 +1,8 @@
 @extends('master-admin')
 
 @section('content-admin')
-    <div class="container">
-        <div class="row">
+    <div class="">
+        <div class="">
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
@@ -67,7 +67,6 @@
 				        </form>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 @endsection
