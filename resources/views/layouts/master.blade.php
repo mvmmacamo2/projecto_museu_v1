@@ -10,6 +10,7 @@
     </title>
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap-4.0.0-beta/css/bootstrap.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/main.css">
     <!-- Slicknav Css -->
@@ -29,6 +30,8 @@
     <link rel="stylesheet" type="text/css" href="/engage/assets/extras/normalize.css">
     <link rel="stylesheet" type="text/css" href="/engage/assets/extras/settings.css">
 
+
+
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/colors/green.css" media="screen" />       
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +46,7 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
               <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,14 +57,14 @@
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
 
               <li class="nav-item active">
-                <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
               </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="about-us.html">Museu</a>
-                  <a class="dropdown-item" href="about-us2.html">Casa Amarela</a>
+                  <a class="dropdown-item" href="/historias/museu">Museu</a>
+                  <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
                 </div>
               </li>
 
@@ -132,8 +135,8 @@
             <li>
               <a href="#">História</a>
               <ul>
-                <li><a href="about-us.html">Museu Da Nacional Da Moeda</a></li>                     
-                <li><a href="about-us2.html">Casa Amarela</a></li>
+                <li><a class="dropdown-item" href="/historias/museu">Museu</a></li>
+                <li><a class="dropdown-item" href="/historias/amarela">Casa Amarela</a></li>
               </ul>                      
             </li>
             <li>
@@ -366,6 +369,6 @@
     <script src="/engage/assets/js/main.js"></script> 
 
 
-
+    <script src="bootstrap-4.0.0-beta/js/jquery.min.js"></script>
   </body>
 </html>

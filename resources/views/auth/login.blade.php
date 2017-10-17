@@ -22,7 +22,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
-                            <label for="username" class="col-md-6 control-label">Username</label>
+                            <label for="username" class="col-md-6 control-label">Nome de Usuário</label>
 
                             <div class="col-md-12">
                                 <input id="username" type="username" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+                            <label for="password" class="col-md-4 control-label">Senha</label>
 
                             <div class="col-md-12">
                                 <input id="password" type="password" class="form-control" name="password" required>
@@ -53,7 +53,7 @@
                             <div class="col-md-12 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Memorizar Senha
                                     </label>
                                 </div>
                             </div>
@@ -62,11 +62,11 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-common btn-md mt-20">
-                                    Login
+                                    Entrar
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
+                                    Esqueceu o Password?
                                 </a>
                             </div>
                         </div>

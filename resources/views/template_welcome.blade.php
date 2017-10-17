@@ -54,14 +54,14 @@
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
 
               <li class="nav-item active">
-                <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
               </li>
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="about-us.html">Museu</a>
-                  <a class="dropdown-item" href="about-us2.html">Casa Amarela</a>
+                  <a class="dropdown-item" href="/historias/museu">Museu</a>
+                  <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
                 </div>
               </li>
 
@@ -189,6 +189,11 @@
         </div>
       </nav>
       
+
+
+
+
+
 
       <!-- Main Carousel Section -->
       <div id="carousel-area">
@@ -1496,6 +1501,7 @@
     <script src="/engage/assets/js/main.js"></script> 
 
 
-
+ <script src="/bootstrap-4.0.0-beta/js/jquery-3.2.1.js"></script>
+    
   </body>
 </html>
