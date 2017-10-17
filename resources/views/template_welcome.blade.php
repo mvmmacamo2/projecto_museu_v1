@@ -11,7 +11,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/bootstrap.min.css">
     <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="/engage/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/engage/assets/css/main1.css">
     <!-- Slicknav Css -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/slicknav.css">
     <!-- Color Switcher -->
@@ -33,10 +33,10 @@
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/colors/green.css" media="screen" />       
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+    <!-- <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
     </script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
-    </script>
+    </script> -->
 
   </head>
   <body>
@@ -46,11 +46,11 @@
       <!-- Navbar Starts -->
       <nav class="navbar navbar-expand-md">
 
-        
+
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
               <!-- <img src="/engage/assets/img/logo.png" alt=""> -->
               Logo - Museu Da Moeda
             </a>
@@ -352,7 +352,7 @@
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-12 wow animated fadeInLeft" data-wow-delay=".3s">
             <div class="images">
-              <img src="assets/img/about/plain-why-choose-us-2.png" alt="">
+              <img src="/engage/assets/img/about/plain-why-choose-us-2.png" alt="">
             </div>
           </div>
           <div class="col-md-8 col-sm-6 col-xs-12 wow animated fadeInRight" data-wow-delay=".3s">
@@ -1384,12 +1384,12 @@
               GALLERY
             </h3>
             <div class="plain-flicker-gallery">
-              <a href="#" title="Pan Masala"><img src="assets/img/flicker/img1.jpg" alt=""></a>
-              <a href="#" title="Sports Template for Joomla"><img src="assets/img/flicker/img2.jpg" alt=""></a>
-              <a href="" title="Apple Keyboard"><img src="assets/img/flicker/img3.jpg" alt=""></a>
-              <a href="" title="Hard Working"><img src="assets/img/flicker/img4.jpg" alt=""></a>
-              <a href="" title="Smile"><img src="assets/img/flicker/img5.jpg" alt=""></a>
-              <a href="" title="Puzzle"><img src="assets/img/flicker/img6.jpg" alt=""></a>
+              <a href="#" title="Pan Masala"><img src="/engage/assets/img/flicker/img1.jpg" alt=""></a>
+              <a href="#" title="Sports Template for Joomla"><img src="/engage/assets/img/flicker/img2.jpg" alt=""></a>
+              <a href="" title="Apple Keyboard"><img src="/engage/assets/img/flicker/img3.jpg" alt=""></a>
+              <a href="" title="Hard Working"><img src="/engage/assets/img/flicker/img4.jpg" alt=""></a>
+              <a href="" title="Smile"><img src="/engage/assets/img/flicker/img5.jpg" alt=""></a>
+              <a href="" title="Puzzle"><img src="/engage/assets/img/flicker/img6.jpg" alt=""></a>
             </div>
           </div><!-- Footer Widget Ends -->
 
