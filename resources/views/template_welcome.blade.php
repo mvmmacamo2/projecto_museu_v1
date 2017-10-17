@@ -38,6 +38,7 @@
     <title>Fame - One Page Multipurpose Bootstrap Theme</title>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    <!--  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
     </script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
@@ -59,6 +60,12 @@
     <link rel="stylesheet" href="/fame-template/css/owl.theme.css" >
     <link rel="stylesheet" href="/fame-template/css/owl.transitions.css" >
 >>>>>>> parent of ef53765... Adicionando um novo template - Engage
+=======
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+    </script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+    </script>
+>>>>>>> parent of 208a86f... Ultimo change
 
     <!-- Custom CSS -->
     <link href="/fame-template/css/style.css" rel="stylesheet">
@@ -339,11 +346,29 @@
     </section>
     <!-- End Home Page Slider -->
 
+<<<<<<< HEAD
     
     
     <!-- Start Feature Section -->
         <section id="feature" class="feature-section">
             <div class="container">
+=======
+    <!-- About Us Section Start -->
+    <section class="split section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 wow animated fadeInLeft" data-wow-delay=".3s">
+            <div class="images">
+              <img src="assets/img/about/plain-why-choose-us-2.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 wow animated fadeInRight" data-wow-delay=".3s">
+            <div class="content-inner">
+              <h2 class="title">BUILT-WITH BOOTSTRAP4, A NEW EXPRIENCE</h2>
+              <p class="lead">We Crafted an awesome design library that is robust and intuitive to use. No matter you're building a business presentation websit or a complex web application our design blocks can easily be adapted for your needs.</p>
+              <div class="details-list">
+>>>>>>> parent of 208a86f... Ultimo change
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="feature">
@@ -1316,6 +1341,7 @@
     
     
 
+<<<<<<< HEAD
     <section id="contact" class="contact">
         <div class="container">
             <div class="row">
@@ -1325,6 +1351,20 @@
                         <p class="white-text">Duis aute irure dolor in reprehenderit in voluptate</p>
                     </div>
                 </div>
+=======
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+            <h3 class="small-title">
+              GALLERY
+            </h3>
+            <div class="plain-flicker-gallery">
+              <a href="#" title="Pan Masala"><img src="assets/img/flicker/img1.jpg" alt=""></a>
+              <a href="#" title="Sports Template for Joomla"><img src="assets/img/flicker/img2.jpg" alt=""></a>
+              <a href="" title="Apple Keyboard"><img src="assets/img/flicker/img3.jpg" alt=""></a>
+              <a href="" title="Hard Working"><img src="assets/img/flicker/img4.jpg" alt=""></a>
+              <a href="" title="Smile"><img src="assets/img/flicker/img5.jpg" alt=""></a>
+              <a href="" title="Puzzle"><img src="assets/img/flicker/img6.jpg" alt=""></a>
+>>>>>>> parent of 208a86f... Ultimo change
             </div>
             <div class="row">
                 <div class="col-lg-12">
