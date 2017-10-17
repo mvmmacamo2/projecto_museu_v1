@@ -248,7 +248,7 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil de Usuário</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
@@ -259,7 +259,7 @@
 
                         		<a href="{{ route('logout') }}" onclick="event.preventDefault();
 	                                document.getElementById('logout-form').submit();">
-	                          		<i class="fa fa-sign-out fa-fw"> Logout</i>
+	                          		<i class="fa fa-sign-out fa-fw"> Sair</i>
                       			</a>
 
 		                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -336,13 +336,20 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="blank.html">Blank Page</a>
+                                    <a href="blank.html"><i class="fa fa-eye"></i> Ver Perfil</a>
                                 </li>
                                 <li>
-                                    <a href="login.html">Login Page</a>
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+	                                document.getElementById('logout-form').submit();">
+	                          			<i class="fa fa-sign-out"> Sair</i>
+                      				</a>
+
+		                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+		                          {{ csrf_field() }}
+		                        </form>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
