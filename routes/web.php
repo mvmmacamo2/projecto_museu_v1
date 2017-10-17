@@ -27,3 +27,5 @@ Route::get('historias/museu','Historia_museuController@index');
 Route::get('historias/amarela','Historia_casa_amarelaController@index');
 
 Route::get('contactos','ContactoController@index');
+
+Route::resource('exposicoes', 'ExposicaoController');

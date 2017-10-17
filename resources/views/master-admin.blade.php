@@ -294,7 +294,7 @@
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposição<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html"><i class="fa fa-plus"></i> Adicionar Exposição</a>
+                                    <a href="/exposicoes/create"><i class="fa fa-plus"></i> Adicionar Exposição</a>
                                 </li>
                                 <li>
                                     <a href="morris.html"><i class="fa fa-eye"></i> Ver Exposições</a>
@@ -363,7 +363,6 @@
 
         <div id="page-wrapper">
             
-
         	@yield('content-admin')
 
         </div>

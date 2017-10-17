@@ -1502,6 +1502,6 @@
 
 
  <script src="/bootstrap-4.0.0-beta/js/jquery-3.2.1.js"></script>
-    
+
   </body>
 </html>
