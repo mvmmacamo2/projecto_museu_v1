@@ -1,4 +1,5 @@
 
+<!-- DOCTYPE -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,10 +13,6 @@
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/bootstrap.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/main.css">
-    <!-- Slicknav Css -->
-    <link rel="stylesheet" type="text/css" href="/engage/assets/css/slicknav.css">
-    <!-- Color Switcher -->
-    <link rel="stylesheet" type="text/css" href="/engage/assets/css/color-switcher.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/responsive.css">
     <!--Fonts-->
@@ -41,225 +38,143 @@
   </head>
   <body>
 
-    <!-- Header area wrapper starts -->
-    <header id="header-wrap">      
-      <!-- Navbar Starts -->
-      <nav class="navbar navbar-expand-md">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+  <!-- Header area wrapper starts -->
+    <header id="header-wrap">
+
+      <!-- Roof area starts -->
+      
+      <!-- Roof area Ends -->
+
+      <!-- Header area starts -->
+      <section id="header">
+
+        <!-- Navbar Starts -->
+        <nav class="navbar navbar-light" data-spy="affix" data-offset-top="50">
+          <div class="container">
+            <button class='navbar-toggler hidden-md-up pull-xs-right' data-target='#main-menu' data-toggle='collapse' type='button'>
+              ☰
+            </button>
+            <!-- Brand -->
             <a class="navbar-brand" href="index.html">
               <img src="/engage/assets/img/logo.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>           
+            <div class="collapse navbar-toggleable-sm pull-xs-left pull-md-right" id="main-menu">
+              <!-- Navbar Starts -->
+              <ul class="nav nav-inline">
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Home</a>                  
+                </li>                                     
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Pages
+                  </a>
+                  <div class="dropdown-menu">                      
+                    <a class="dropdown-item" href="about-us.html">About Us</a>
+                    <a class="dropdown-item" href="about-us2.html">About Us 2</a>
+                    <a class="dropdown-item" href="team-page.html">Team Members</a>
+                    <a class="dropdown-item" href="services.html">Services</a>
+                    <a class="dropdown-item" href="service2.html">Services 2</a>
+                    <a class="dropdown-item" href="contact1.html">Contact Us</a>
+                    <a class="dropdown-item" href="contact1.html">Contact Us 2</a>
+                    <a class="dropdown-item" href="pricing.html">Pricing</a>
+                    <a class="dropdown-item" href="404.html">404</a>
+                  </div>
+                </li>             
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Shortcodes 
+                  </a>
+                  <div class="dropdown-menu">                      
+                    <a class="dropdown-item" href="accordions.html">Accordions</a>
+                    <a class="dropdown-item" href="tabs.html">Tabs</a>
+                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                    <a class="dropdown-item" href="skills.html">Progress Bars</a>
+                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                    <a class="dropdown-item" href="clients.html">Clients</a>
+                    <a class="dropdown-item" href="icon.html">Icon Boxes</a>
+                    <a class="dropdown-item" href="team.html">Team</a>
+                    <a class="dropdown-item" href="carousel.html">Carousel</a>
+                    <a class="dropdown-item" href="maps.html">Google Maps</a>
+                    <a class="dropdown-item" href="pricing.html">Pricing tables</a>
+                    <a class="dropdown-item" href="notification.html">Notification</a>
+                  </div> 
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                  </a>                    
+                  <div class="dropdown-menu">                      
+                    <a class="dropdown-item" href="portfolio-col-2.html">Portfolio 2 Columns</a>
+                    <a class="dropdown-item" href="portfolio-col-3.html">Portfolio 3 Columns</a>
+                    <a class="dropdown-item" href="portfolio-col-4.html">Portfolio 4 Columns</a>
+                    <a class="dropdown-item" href="portfolio-item.html">Portfolio Single</a>
+                  </div>  
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Blog
+                  </a>                    
+                  <div class="dropdown-menu">                      
+                    <a class="dropdown-item" href="sidebar-right.html">Sidebar Right</a>
+                    <a class="dropdown-item" href="sidebar-left.html">Sidebar Left</a>
+                    <a class="dropdown-item" href="sidebar-full.html">Full Width</a>
+                    <a class="dropdown-item" href="blog-single.html">Single Post</a>
+                    <a class="dropdown-item" href="blog-grids.html">Blog Grids</a>
+                  </div>                   
+                </li> 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Contact Us
+                  </a>
+                  <div class="dropdown-menu">                      
+                    <a class="dropdown-item" href="contact1.html">Contact us 1</a>
+                    <a class="dropdown-item" href="contact2.html">Contact us 2</a>
+                  </div> 
+                </li>          
+                <!-- Search in right of nav -->
+                <li class="nav-item" class="search">
+                  <form class="top_search clearfix">
+                    <div class="top_search_con">
+                      <input class="s" placeholder="Search Here ..." type="text">
+                      <span class="top_search_icon"><i class="icon-magnifier"></i></span>
+                      <input class="top_search_submit" type="submit">
+                    </div>
+                  </form>
+                </li>
+                <!-- Search Ends -->                  
+              </ul>  
+            </div>              
+              <!-- Form for navbar search area -->
+              <form class="full-search">
+                <div class="container">
+                  <input type="text" placeholder="Type to Search">
+                  <a href="#" class="close-search">
+                    <span class="fa fa-times fa-2x">
+                    </span>
+                  </a>
+                </div>
+              </form>
+              <!-- Search form ends -->
           </div>
-          <div class="collapse navbar-collapse" id="main-menu">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-              <li class="nav-item active">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="about-us.html">About Us</a>
-                  <a class="dropdown-item" href="about-us2.html">About Us 2</a>
-                  <a class="dropdown-item" href="team-page.html">Team Members</a>
-                  <a class="dropdown-item" href="services.html">Services</a>
-                  <a class="dropdown-item" href="service2.html">Services 2</a>
-                  <a class="dropdown-item" href="contact1.html">Contact Us</a>
-                  <a class="dropdown-item" href="contact1.html">Contact Us 2</a>
-                  <a class="dropdown-item" href="pricing.html">Pricing</a>
-                  <a class="dropdown-item" href="404.html">404</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shortcodes</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="accordions.html">Accordions</a>
-                  <a class="dropdown-item" href="tabs.html">Tabs</a>
-                  <a class="dropdown-item" href="buttons.html">Buttons</a>
-                  <a class="dropdown-item" href="skills.html">Progress Bars</a>
-                  <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                  <a class="dropdown-item" href="clients.html">Clients</a>
-                  <a class="dropdown-item" href="icon.html">Icon Boxes</a>
-                  <a class="dropdown-item" href="team.html">Team</a>
-                  <a class="dropdown-item" href="carousel.html">Carousel</a>
-                  <a class="dropdown-item" href="maps.html">Google Maps</a>
-                  <a class="dropdown-item" href="pricing.html">Pricing tables</a>
-                  <a class="dropdown-item" href="notification.html">Notification</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="portfolio-col-2.html">Portfolio 2 Columns</a>
-                  <a class="dropdown-item" href="portfolio-col-3.html">Portfolio 3 Columns</a>
-                  <a class="dropdown-item" href="portfolio-col-4.html">Portfolio 4 Columns</a>
-                  <a class="dropdown-item" href="portfolio-item.html">Portfolio Single</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="sidebar-right.html">Sidebar Right</a>
-                  <a class="dropdown-item" href="sidebar-left.html">Sidebar Left</a>
-                  <a class="dropdown-item" href="sidebar-full.html">Full Width</a>
-                  <a class="dropdown-item" href="blog-single.html">Single Post</a>
-                  <a class="dropdown-item" href="blog-grids.html">Blog Grids</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="contact1.html">Contact us 1</a>
-                  <a class="dropdown-item" href="contact2.html">Contact us 2</a>
-                </div>
-              </li>
-            </ul>
-            <form class="form-inline">
-              <div class="top_search_con">
-                <input class=" mr-sm-2" type="text" placeholder="Search Here ...">
-                <span class="top_search_icon"><i class="icon-magnifier"></i></span>
-              </div>            
-            </form>
-          </div>
+        </nav>
+        <!-- Navbar Ends -->
 
-          <!-- Mobile Menu Start -->
-          <ul class="wpb-mobile-menu">
-            <li>
-              <a class="active" href="index.html">Home</a>    
-            </li>
-            <li>
-              <a href="#">Pages</a>
-              <ul>
-                <li><a href="about-us.html">About Us</a></li>                     
-                <li><a href="about-us2.html">About Us 2</a></li>
-                <li><a href="team-page.html">Team Members</a></li>                      
-                <li><a href="services.html">Services</a></li> 
-                <li><a href="service2.html">Services 2</a></li> 
-                <li><a href="contact1.html">Contact Us</a></li> 
-                <li><a href="contact1.html">Contact Us 2</a></li> 
-                <li><a href="pricing.html">Pricing</a></li> 
-                <li><a href="404.html">404</a></li>
-              </ul>                        
-            </li>
-            <li>
-              <a href="#">Shortcodes</a>
-              <ul>
-                <li><a href="accordions.html">Accordions</a></li>
-                <li><a href="tabs.html">Tabs</a></li>
-                <li><a href="buttons.html">Buttons</a></li>
-                <li><a href="skills.html">Progress Bars</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="clients.html">Clients</a></li>
-                <li><a href="icon.html">Icon Boxes</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="carousel.html">Carousel</a></li>
-                <li><a href="maps.html">Google Maps</a></li>
-                <li><a href="pricing.html">Pricing tables</a></li>
-                <li><a href="notification.html">Notification</a></li>
-              </ul>                        
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-              <ul>
-                <li><a href="portfolio-col-2.html">Portfolio 2 Columns</a></li>
-                <li><a href="portfolio-col-3.html">Portfolio 3 Columns</a></li>
-                <li><a href="portfolio-col-4.html">Portfolio 4 Columns</a></li>
-                <li><a href="portfolio-item.html">Portfolio Single</a></li>
-              </ul>                        
-            </li>  
-            <li>
-              <a href="#">Blog</a>
-              <ul>
-                <li><a href="sidebar-right.html">Sidebar Right</a></li>                     
-                <li><a href="sidebar-left.html">Sidebar Left</a></li>
-                <li><a href="sidebar-full.html">Full Width</a></li>   
-                <li><a href="blog-single.html">Single Post</a></li>
-                <li><a href="blog-grids.html">Blog Grids</a></li>
-              </ul>                        
-            </li>              
-            <li>
-              <a href="#">Contact Us</a>
-              <ul>
-                <li><a href="contact1.html">Contact us 1</a></li>
-                <li><a href="contact2.html">Contact us 2</a></li>
-              </ul>                        
-            </li>  
-          </ul>
-          <!-- Mobile Menu End -->
-        </div>
-      </nav>
-      
-
-      <!-- Main Carousel Section -->
-      <div id="carousel-area">
-        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-slider" data-slide-to="1"></li>
-            <li data-target="#carousel-slider" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img src="/engage/assets/img/slider/bg-1.jpg" alt="">
-              <div class="carousel-caption">
-                <h2>
-                  Built-with Bootstrap 4
-                </h2>
-                <h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui</h3>
-                <a class="btn btn-lg btn-common" href="#">
-                  <i class="fa fa-download">
-                  </i>
-                  Purchase
-                </a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/engage/assets/img/slider/bg-2.jpg" alt="">
-              <div class="carousel-caption">
-                <h2>
-                  Multi-purpose Template
-                </h2>
-                <h3>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                </h3>
-                <a class="btn btn-common btn-lg " href="#">
-                  <i class="fa fa-coffee">
-                  </i>
-                  Learn More
-                </a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/engage/assets/img/slider/bg-3.jpg" alt="">
-              <div class="carousel-caption">
-                <h2>
-                  Refreshing Cool Design
-                </h2>
-                <h3>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                </h3>
-                <a class="btn btn-common btn-lg " href="#">
-                  <i class="fa fa-download">
-                  </i>
-                  Download
-                </a>
-              </div>
+      </section> 
+    <!-- Start Content -->
+<div id="free-promo" style="
+    text-align: center;
+    margin-top: 60px;
+">
+      <div class="container">
+          <div class="row text-center">
+              <div class="error-page">
+                <h2><a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/">You are Using Free Version!<br> Purchase Full Version to Get All Pages and Features</a></h2>
+                <a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/" class="btn btn-common btn-lg">Purchase Now</a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
-            <span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
-            <span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>     
+      </div>         
+    </div>
+    <!-- End Content --> 
     </header>
     <!-- Header-wrap Section End -->
    
@@ -267,11 +182,11 @@
     <section id="service-block-main" class="section">
       <!-- Container Starts -->
       <div class="container">
-        <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
-        WHY CHOOSE US?
-        </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-        <div class="row">  
+        <div class="row">        
+          <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
+           WHY CHOOSE US?
+          </h1>
+          <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
           <div class="col-sm-6 col-md-3">
             <!-- Service-Block-1 Item Starts -->
             <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".5s">
@@ -347,12 +262,12 @@
       <!-- Container Starts -->
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12 wow animated fadeInLeft" data-wow-delay=".3s">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="images">
               <img src="/engage/assets/img/about/plain-why-choose-us-2.png" alt="">
             </div>
           </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 wow animated fadeInRight" data-wow-delay=".3s">
+          <div class="col-md-8 col-sm-6 col-xs-12">
             <div class="content-inner">
               <h2 class="title">BUILT-WITH BOOTSTRAP4, A NEW EXPRIENCE</h2>
               <p class="lead">We Crafted an awesome design library that is robust and intuitive to use. No matter you're building a business presentation websit or a complex web application our design blocks can easily be adapted for your needs.</p>
@@ -379,11 +294,12 @@
     <!-- Other Services Section -->
     <section id="other-services" class="section">
       <div class="container">
-        <h1 class="section-title wow fadeInUpQuick">
-          OUR SERVICES
-        </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-        <div class="row">          
+      <!-- Container Starts -->
+        <div class="row">
+          <h1 class="section-title wow fadeInUpQuick">
+            OUR SERVICES
+          </h1>
+          <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
           <!-- Other Service Item Wrapper Starts -->
           <div class="col-sm-6 col-md-6">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -409,21 +325,21 @@
                 </div>
               </div>            
               <div class="tab-pane" id="profile" role="tabpanel">
-                <div class="service-content">
+                <div class="service-content wow fadeInUpQuick">
                   <h3>Very useful custom widget </h3>
                   <p class="lead">At vero eos et accusamus et <a href="#">iusto</a> odio digniss- <br> imos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
                   <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                 </div>
               </div>
               <div class="tab-pane" id="messages" role="tabpanel">
-                <div class="service-content">
+                <div class="service-content fadeInUpQuick">
                   <h3>Graphic Design</h3>
                   <p class="lead">At vero eos et accusamus et <a href="#">iusto</a> odio digniss- <br> imos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
                   <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                 </div>
               </div>
               <div class="tab-pane" id="settings" role="tabpanel">
-                <div class="service-content">
+                <div class="service-content fadeInUpQuick">
                   <h3>Parallax Background</h3>
                   <p class="lead">At vero eos et accusamus et <a href="#">iusto</a> odio digniss- <br> imos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
                   <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
@@ -492,187 +408,29 @@
     </section>
     <!-- Other Services Section End -->      
    
-    <!-- Portfolio Section -->
-    <section id="portfolios" class="section">
-      <!-- Container Starts -->
+<div id="free-promo" style="
+    text-align: center;
+    margin-top: 60px;
+">
       <div class="container">
-        <h1 class="section-title wow fadeInUpQuick" data-wow-delay=".3s">
-          OUR PROFESSIONAL WORK
-        </h1>
-        <p class="section-subcontent wow fadeInUpQuick" data-wow-delay=".4s">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-        <div class="row">          
-          <div class="col-md-12">
-            <!-- Portfolio Controller/Buttons -->
-            <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
-              <a class="filter active btn btn-common" data-filter="all">
-                All 
-              </a>
-              <a class="filter btn btn-common" data-filter=".branding">
-                Branding 
-              </a>
-              <a class="filter btn btn-common" data-filter=".marketing">
-                Marketing
-              </a>
-              <a class="filter btn btn-common" data-filter=".planning">
-                Planning 
-              </a>
-              <a class="filter btn btn-common" data-filter=".research">
-                Research 
-              </a>
-            </div>
-            <!-- Portfolio Controller/Buttons Ends-->
-          </div>
-
-          <!-- Portfolio Recent Projects -->
-          <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="/engage/assets/img/portfolio/img1.jpg" alt="" />                  
-                </div> 
-                <div class="portfoli-content">
-                  <div class="sup-desc-wrap">
-                    <div class="sup-desc-inner">
-                      <div class="sup-link">
-                        <a class="left-link" href="#"><i class="icon-link"></i></a>
-                        <a class="right-link" href="#"><i class="icon-heart"></i></a>
-                      </div>
-                      <div class="sup-meta-wrap">
-                        <a class="sup-title" href="#"><h4>TITLE HERE</h4></a>
-                        <p class="sup-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding planning">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="/engage/assets/img/portfolio/img2.jpg" alt="" />                  
-                </div> 
-                <div class="portfoli-content">
-                  <div class="sup-desc-wrap">
-                    <div class="sup-desc-inner">
-                      <div class="sup-link">
-                        <a class="left-link" href="#"><i class="icon-link"></i></a>
-                        <a class="right-link" href="#"><i class="icon-heart"></i></a>
-                      </div>
-                      <div class="sup-meta-wrap">
-                        <a class="sup-title" href="#"><h4>TITLE HERE</h4></a>
-                        <p class="sup-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding research">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="/engage/assets/img/portfolio/img3.jpg" alt="" />                  
-                </div> 
-                <div class="portfoli-content">
-                  <div class="sup-desc-wrap">
-                    <div class="sup-desc-inner">
-                      <div class="sup-link">
-                        <a class="left-link" href="#"><i class="icon-link"></i></a>
-                        <a class="right-link" href="#"><i class="icon-heart"></i></a>
-                      </div>
-                      <div class="sup-meta-wrap">
-                        <a class="sup-title" href="#"><h4>TITLE HERE</h4></a>
-                        <p class="sup-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing research">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="/engage/assets/img/portfolio/img4.jpg" alt="" />                  
-                </div> 
-                <div class="portfoli-content">
-                  <div class="sup-desc-wrap">
-                    <div class="sup-desc-inner">
-                      <div class="sup-link">
-                        <a class="left-link" href="#"><i class="icon-link"></i></a>
-                        <a class="right-link" href="#"><i class="icon-heart"></i></a>
-                      </div>
-                      <div class="sup-meta-wrap">
-                        <a class="sup-title" href="#"><h4>TITLE HERE</h4></a>
-                        <p class="sup-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="/engage/assets/img/portfolio/img5.jpg" alt="" />                  
-                </div> 
-                <div class="portfoli-content">
-                  <div class="sup-desc-wrap">
-                    <div class="sup-desc-inner">
-                      <div class="sup-link">
-                        <a class="left-link" href="#"><i class="icon-link"></i></a>
-                        <a class="right-link" href="#"><i class="icon-heart"></i></a>
-                      </div>
-                      <div class="sup-meta-wrap">
-                        <a class="sup-title" href="#"><h4>TITLE HERE</h4></a>
-                        <p class="sup-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning research">
-              <div class="portfolio-item">
-                <div class="portfolio-img">
-                  <img src="/engage/assets/img/portfolio/img6.jpg" alt="" />                  
-                </div> 
-                <div class="portfoli-content">
-                  <div class="sup-desc-wrap">
-                    <div class="sup-desc-inner">
-                      <div class="sup-link">
-                        <a class="left-link" href="#"><i class="icon-link"></i></a>
-                        <a class="right-link" href="#"><i class="icon-heart"></i></a>
-                      </div>
-                      <div class="sup-meta-wrap">
-                        <a class="sup-title" href="#"><h4>TITLE HERE</h4></a>
-                        <p class="sup-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-              </div>
+          <div class="row text-center">
+              <div class="error-page">
+                <h2><a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/">You are Using Free Version!<br> Purchase Full Version to Get All Pages and Features</a></h2>
+                <a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/" class="btn btn-common btn-lg">Purchase Now</a>
             </div>
           </div>
-         <div class="col-md-12">
-            <!-- End Portfolio Recent Projects -->
-            <div class="text-center loadmore-button wow fadeInUpQuick" data-wow-delay=".6s">
-              <a href="#" class="btn btn-common"><i class="fa fa-arrows"></i> Show More</a>
-            </div>
-         </div>
-        </div>
-      </div>
-      <!-- Container Ends -->
-    </section>
-    <!-- Portfolio Section Ends -->        
+      </div>         
+    </div>    
 
     <!-- Featured Section Starts -->
     <section id="featured" class="section">
       <!-- Container Starts -->
       <div class="container">
-        <h1 class="section-title wow fadeInUpQuick">
-          CORE FEATURES
-        </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-        <div class="row">          
+        <div class="row">
+          <h1 class="section-title wow fadeInUpQuick">
+            CORE FEATURES
+          </h1>
+          <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
           <!-- Start Service Icon 1 -->
           <div class="col-md-4 col-sm-6" data-animation="fadeIn" data-animation-delay="01">
             <div class="featured-box">
@@ -692,7 +450,7 @@
           </div>
           <!-- End featured Icon 1 -->
           <!-- Start featured Icon 1 -->
-          <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay=".2s" data-animation="fadeIn" data-animation-delay="01">
+          <div class="col-md-4 col-sm-6" data-animation="fadeIn" data-animation-delay="01">
             <div class="featured-box">
               <div class="featured-icon">
                 <i class="icon-rocket">
@@ -710,7 +468,7 @@
           </div>
           <!-- End featured Icon 1 -->
           <!-- Start featured Icon 1 -->
-          <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay=".3s" data-animation="fadeIn" data-animation-delay="01">
+          <div class="col-md-4 col-sm-6" data-animation="fadeIn" data-animation-delay="01">
             <div class="featured-box">
               <div class="featured-icon">
                 <i class="icon-pencil">
@@ -728,7 +486,7 @@
           </div>
           <!-- End featured Icon 1 -->
           <!-- Start featured Icon 1 -->
-          <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay=".4s" data-animation="fadeIn" data-animation-delay="01">
+          <div class="col-md-4 col-sm-6" data-animation="fadeIn" data-animation-delay="01">
             <div class="featured-box">
               <div class="featured-icon">
                 <i class="icon-diamond icon-large icon-effect">
@@ -746,7 +504,7 @@
           </div>
           <!-- End featured Icon 1 -->
           <!-- Start featured Icon 1 -->
-          <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay=".5s" data-animation="fadeIn" data-animation-delay="01">
+          <div class="col-md-4 col-sm-6" data-animation="fadeIn" data-animation-delay="01">
             <div class="featured-box">
               <div class="featured-icon">
                 <i class="icon-settings">
@@ -764,7 +522,7 @@
           </div>
           <!-- End featured Icon 1 -->
           <!-- Start featured Icon 1 -->
-          <div class="col-md-4 col-sm-6 wow fadeInUpQuick" data-wow-delay=".6s" data-animation="fadeIn" data-animation-delay="01">
+          <div class="col-md-4 col-sm-6" data-animation="fadeIn" data-animation-delay="01">
             <div class="featured-box">
               <div class="featured-icon">
                 <i class="icon-star">
@@ -787,143 +545,30 @@
     </section>
     <!-- Featured Section Ends -->
       
-    <!-- Pricing Table Section -->
-    <section id="pricing" class="section">
+<div id="free-promo" style="
+    text-align: center;
+    margin-top: 60px;
+">
       <div class="container">
-        <h1 class="section-title wow fadeInUpQuick" data-wow-delay=".2s">
-          OUR PRICING
-        </h1>
-        <p class="section-subcontent wow fadeInUpQuick" data-wow-delay=".3s">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-        <div class="row">         
-          <div class="col-md-4 wow fadeInUpQuick" data-wow-delay=".5s">
-            <div class="pricing-table pricing-table-x">
-              <div class="table-header">
-                <h3>
-                  Single Website
-                </h3>
-              </div>
-              <div class="plan">
-                <h3 class="price">
-                  $49
-                </h3>
-              </div>
-              <div class="plan-info">
-                <p>
-                 <i class="fa fa-check"></i>
-                 1 domains
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  1 developer
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  Minified source code
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  Free updates forever
-                </p>
-                <div class="button-area">
-                  <a href="#" class="btn btn-common">
-                    Get Started
-                  </a>
-                </div>
-              </div>
+          <div class="row text-center">
+              <div class="error-page">
+                <h2><a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/">You are Using Free Version!<br> Purchase Full Version to Get All Pages and Features</a></h2>
+                <a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/" class="btn btn-common btn-lg">Purchase Now</a>
             </div>
           </div>
-          
-          <div class="col-md-4 wow fadeInUpQuick" data-wow-delay="1s">
-            <div class="pricing-table pricing-table-x">
-              <div class="table-header highlight">
-                <h3>
-                  Developer
-                </h3>
-              </div>
-              <div class="plan">
-                <h3 class="price">
-                  $79
-                </h3>
-              </div>
-              <div class="plan-info">
-                <p>
-                 <i class="fa fa-check"></i>
-                 Unlimited domains
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  1 developer
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  Unlimited source code
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  Free updates forever
-                </p>
-                <div class="button-area">
-                  <a href="#" class="btn btn-common">
-                    Buy Now
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4 wow fadeInUpQuick" data-wow-delay="1.5s">
-            <div class="pricing-table pricing-table-x">
-              <div class="table-header">
-                <h3>
-                  Business
-                </h3>
-              </div>
-              <div class="plan">
-                <h3 class="price">
-                  $159
-                </h3>
-              </div>
-              <div class="plan-info">
-                <p>
-                  <i class="fa fa-check"></i>
-                  Unlimited domains
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  Unlimited developer
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  Unlimited source code
-                </p>
-                <p>
-                  <i class="fa fa-check"></i>
-                  Free updates forever
-                </p>
-                <div class="button-area">
-                  <a href="#" class="btn btn-common">
-                    Buy Now
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <!-- Pricing Table  End -->    
+      </div>         
+    </div>
 
     <!-- Team Section -->
     <section id="team" class="section">
       <!-- Container Starts -->
-      <div class="container">  
+      <div class="container">        
+        <!-- Row Starts -->
+        <div class="row">
           <h1 class="section-title wow fadeInDown" data-wow-delay=".5s">
             MEET OUR TEAM
           </h1>
-          <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>      
-        <!-- Row Starts -->
-        <div class="row">         
+          <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
           <div class="col-sm-6 col-md-3">
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUpQuick" data-wow-delay="1s">
@@ -1046,75 +691,26 @@
     </section>
     <!-- Team Section End -->
     
-    <!-- Cool Facts Section -->
-    <section id="cool-facts" class="section">
-      <!-- Container Starts -->
-      <div class="container">   
-        <h1 class="section-title wow fadeInUpQuick">
-          AWESOME NUMBER FACTS
-        </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>     
-        <!-- Row Starts -->
-        <div class="row">         
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <!-- Fact Block Starts -->
-            <div class="fact-block clearfix wow fadeInUp" data-wow-delay=".3s">
-              <div class="facts-item">
-                <i class="icon-trophy"></i>
-                <div class="fact-count">
-                  <h3><span class="counter">12</span></h3>
-                  <h4>Awards won</h4>
-                </div>
-              </div>
-            </div><!-- Fact Block Ends -->
+<div id="free-promo" style="
+    text-align: center;
+    margin-top: 60px;
+">
+      <div class="container">
+          <div class="row text-center">
+              <div class="error-page">
+                <h2><a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/">You are Using Free Version!<br> Purchase Full Version to Get All Pages and Features</a></h2>
+                <a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/" class="btn btn-common btn-lg">Purchase Now</a>
+            </div>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <!-- Fact Block Starts -->
-            <div class="fact-block clearfix wow fadeInUp" data-wow-delay=".8s">
-              <div class="facts-item">
-                <i class="icon-heart"></i>
-                <div class="fact-count">
-                  <h3><span class="counter">125</span></h3>
-                  <h4>Happy clients</h4>
-                </div>
-              </div>
-            </div><!-- Fact Block Ends -->
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <!-- Fact Block Starts -->
-            <div class="fact-block clearfix wow fadeInUp" data-wow-delay="1.1s">
-              <div class="facts-item">
-                <i class="icon-ghost"></i>
-                <div class="fact-count">
-                  <h3><span class="counter">40</span></h3>
-                  <h4>Fun Facts</h4>
-                </div>
-              </div>
-            </div><!-- Fact Block Ends -->
-          </div>
-           <div class="col-sm-6 col-md-3 col-lg-3">
-            <!-- Fact Block Starts -->
-            <div class="fact-block clearfix wow fadeInUp" data-wow-delay="1.1s">
-              <div class="facts-item">
-                <i class="icon-picture"></i>
-                <div class="fact-count">
-                  <h3><span class="counter">75</span></h3>
-                  <h4>Exhibitions</h4>
-                </div>
-              </div>
-            </div><!-- Fact Block Ends -->
-          </div>
-        </div><!-- Row Ends -->
-      </div><!-- Container Ends -->
-    </section>
-    <!-- Cool Facts Section End -->
+      </div>         
+    </div>
     
     <!-- Testimonial Section -->
     <section id="testimonial" class="section">
       <!-- Container Starts -->
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 wow fadeInUpQuick" data-wow-delay=".3s">
+          <div class="col-sm-12">
             <div id="testimonial-item" class="owl-carousel">
               <div class="item">
                 <div class="testimonial-inner">
@@ -1203,86 +799,19 @@
     </section>
     <!-- Testimonial Section End -->                
 
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-      <!-- Container Starts -->
-      <div class="container">  
-        <h1 class="section-title wow fadeInUpQuick">
-          THE BLOG
-        </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>     
-        <!-- Row Starts -->
-        <div class="row">          
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
-              <div class="blog-item-img">
-                <a href="#">
-                  <img src="/engage/assets/img/blog/home-items/img1.jpg" alt="">
-                </a>   
-              </div>
-              <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">Amazing Blog Post One</a></h3>
-                <p>
-                  Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
-                </p>
-                <div class="blog-one-footer">
-                  <a href="#">Read More</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                </div>
-              </div>
-            </div><!-- Blog Item Wrapper Ends-->
+<div id="free-promo" style="
+    text-align: center;
+    margin-top: 60px;
+">
+      <div class="container">
+          <div class="row text-center">
+              <div class="error-page">
+                <h2><a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/">You are Using Free Version!<br> Purchase Full Version to Get All Pages and Features</a></h2>
+                <a rel="nofollow" href="https://rebrand.ly/gg-engage-purchase/" class="btn btn-common btn-lg">Purchase Now</a>
+            </div>
           </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <!-- Blog Item Wrapper Start-->
-            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.6s">
-              <div class="blog-item-img">
-                <a href="#">
-                  <img src="/engage/assets/img/blog/home-items/img2.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">Amazing Blog Post One</a></h3>
-                <p>
-                   Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
-                </p>
-                
-                <div class="blog-one-footer">
-                  <a href="#">Read More</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                </div>
-              </div>
-            </div><!-- Blog Item Wrapper Ends-->
-          </div>          
-          
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <!-- Blog Item Wrapper Starts-->
-            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
-              <div class="blog-item-img">
-                <a href="#">
-                  <img src="/engage/assets/img/blog/home-items/img3.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">Amazing Blog Post One</a></h3>
-                <p>
-                   Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
-                </p>
-                <div class="blog-one-footer">
-                  <a href="#">Read More</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                </div>
-              </div>
-            </div><!-- Blog Item Wrapper Ends-->
-          </div>
-        </div><!-- Row Ends -->
-      </div><!-- Container Ends -->
-    </section>
-    <!-- blog Section End -->
+      </div>         
+    </div>
 
     <!-- Clients Section -->
     <section id="clients" class="section">
@@ -1417,11 +946,11 @@
           <div class="row">
             <div class="col-md-6 col-sm-6">
               <p class="copyright-text">
-                ©  2017 Engage. All right reserved. Designed with by <a href="#">GrayGrids</a>
+                ©  2016 Engage. All right reserved. Designed with by <a href="#">GrayGrids</a>
               </p>
             </div>
             <div class="col-md-6  col-sm-6">
-              <ul class="nav nav-inline  justify-content-end ">
+              <ul class="nav nav-inline pull-xs-right">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Home</a>
                 </li>
@@ -1448,36 +977,34 @@
     <a href="#" class="back-to-top">
       <i class="fa fa-angle-up">
       </i>
-    </a> 
+    </a>
+
+    <div class="bottom"> <a href="#" class="settings"></a> </div>
 
     <!-- JavaScript & jQuery Plugins -->
+    <!-- jQuery Load -->
     <script src="/engage/assets/js/jquery-min.js"></script>
-    <!-- Tether Js -->
-    <script src="/engage/assets/js/popper.min.js"></script>
-    <!-- Bootstrap JS -->    
+    <!-- Bootstrap JS -->
     <script src="/engage/assets/js/bootstrap.min.js"></script>
-    <!-- Color Switcher Js -->
-    <script src="/engage/assets/js/color-switcher.js"></script>
     <!--Text Rotator-->
     <script src="/engage/assets/js/jquery.mixitup.js"></script>
     <!--WOW Scroll Spy-->
     <script src="/engage/assets/js/wow.js"></script>
     <!-- OWL Carousel -->
-    <script src="/engage/assets/js/owl.carousel.js"></script> 
+    <script src="/engage/assets/js/owl.carousel.js"></script>
+ 
     <!-- WayPoint -->
     <script src="/engage/assets/js/waypoints.min.js"></script>
     <!-- CounterUp -->
     <script src="/engage/assets/js/jquery.counterup.min.js"></script>
-    <!-- Slicknav -->
-    <script src="/engage/assets/js/jquery.counterup.min.js"></script>
     <!-- ScrollTop -->
-    <script src="/engage/assets/js/jquery.slicknav.js"></script>
+    <script src="/engage/assets/js/scroll-top.js"></script>
     <!-- Appear -->
     <script src="/engage/assets/js/jquery.appear.js"></script>
-    <!-- Vide js -->
     <script src="/engage/assets/js/jquery.vide.js"></script>
      <!-- All JS plugin Triggers -->
-    <script src="/engage/assets/js/main.js"></script> 
-
+    <script src="/engage/assets/js/main.js"></script>
+    <script src="/engage/assets/js/color-switcher.js"></script>
+    
   </body>
 </html>
