@@ -1,41 +1,4 @@
 
-//Dropdown Menus
-$(".dropdown").hover(
-  function () {
-    $(this).addClass('open');
-  }, 
-  function () {
-    $(this).removeClass('open');
-  }
-  );
-
-
-
-//Search
-
-  var openSearch = $('.open-search'),
-    SearchForm = $('.full-search'),
-    closeSearch = $('.close-search');
-
-    openSearch.on('click', function(event){
-      event.preventDefault();
-      if (!SearchForm.hasClass('active')) {
-        SearchForm.fadeIn(300, function(){
-          SearchForm.addClass('active');
-        });
-      }
-    });
-
-    closeSearch.on('click', function(event){
-      event.preventDefault();
-
-      SearchForm.fadeOut(300, function(){
-        SearchForm.removeClass('active');
-        $(this).find('input').val('');
-      });
-    });
-
-
 //WOW Scroll Spy
 var wow = new WOW({
     //disabled for mobile
@@ -43,6 +6,19 @@ var wow = new WOW({
 });
 wow.init();
 
+/* Slicknav Mobile Menu
+========================================================*/
+$(document).ready(function(){
+  $('.wpb-mobile-menu').slicknav({
+    prependTo: '.navbar-header',
+    parentTag: 'liner',
+    allowParentLinks: true,
+    duplicate: true,
+    label: '',
+    closedSymbol: '<i class="fa fa-angle-right"></i>',
+    openedSymbol: '<i class="fa fa-angle-down"></i>',
+  });
+});
 
 //Owl Carousel
 $('#clients-scroller').owlCarousel({
@@ -168,7 +144,7 @@ $("#carousel-image-slider").owlCarousel({
 
 //MixitUp
 $(function(){
-  $('#portfolio-list').mixItUp();
+  $('#portfolio').mixItUp();
 });
 
 // Testimonial

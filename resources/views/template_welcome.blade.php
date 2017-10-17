@@ -1474,8 +1474,5 @@
      <!-- All JS plugin Triggers -->
     <script src="/engage/assets/js/main.js"></script> 
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
-
   </body>
 </html>
