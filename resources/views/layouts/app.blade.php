@@ -11,7 +11,25 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/MDB Free/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="/MDB Free/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="/MDB Free/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/MDB Free/font/roboto/Roboto-Bold.eot">
+    <link rel="stylesheet" type="text/css" href="/MDB Free/font/roboto/Roboto-Bold.ttf">
+    <link rel="stylesheet" type="text/css" href="/MDB Free/font/roboto/Roboto-Bold.wolf">
+    <link rel="stylesheet" type="text/css" href="/MDB Free/font/roboto/Roboto-Light.eot">
+    <link rel="stylesheet" type="text/css" href="/MDB Free/font/roboto/Roboto-Light.ttf">
+    <link rel="stylesheet" type="text/css" href="/MDB Free/font/roboto/Roboto-Light.wolf">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -74,7 +92,15 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Scripts -->    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="/MDB Free/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/MDB Free/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/MDB Free/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/MDB Free/js/mdb.min.js"></script>
+
 </body>
 </html>
