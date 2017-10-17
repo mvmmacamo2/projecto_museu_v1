@@ -6,7 +6,7 @@
     <!-- Viewport Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-      Engage - Multi-Purose Bootstrap HTML5 Template
+      Museu Da Moeda
     </title>
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/bootstrap.min.css">
@@ -44,7 +44,7 @@
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <a class="navbar-brand" href="index.html">
-              <img src="/engage/assets/img/logo.png" alt="">
+              <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -52,67 +52,64 @@
           </div>
           <div class="collapse navbar-collapse" id="main-menu">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
+
               <li class="nav-item active">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
               </li>
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="about-us.html">About Us</a>
-                  <a class="dropdown-item" href="about-us2.html">About Us 2</a>
-                  <a class="dropdown-item" href="team-page.html">Team Members</a>
-                  <a class="dropdown-item" href="services.html">Services</a>
-                  <a class="dropdown-item" href="service2.html">Services 2</a>
-                  <a class="dropdown-item" href="contact1.html">Contact Us</a>
-                  <a class="dropdown-item" href="contact1.html">Contact Us 2</a>
-                  <a class="dropdown-item" href="pricing.html">Pricing</a>
-                  <a class="dropdown-item" href="404.html">404</a>
+                  <a class="dropdown-item" href="about-us.html">Museu</a>
+                  <a class="dropdown-item" href="about-us2.html">Casa Amarela</a>
                 </div>
               </li>
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shortcodes</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="accordions.html">Accordions</a>
-                  <a class="dropdown-item" href="tabs.html">Tabs</a>
-                  <a class="dropdown-item" href="buttons.html">Buttons</a>
-                  <a class="dropdown-item" href="skills.html">Progress Bars</a>
-                  <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                  <a class="dropdown-item" href="clients.html">Clients</a>
-                  <a class="dropdown-item" href="icon.html">Icon Boxes</a>
-                  <a class="dropdown-item" href="team.html">Team</a>
-                  <a class="dropdown-item" href="carousel.html">Carousel</a>
-                  <a class="dropdown-item" href="maps.html">Google Maps</a>
-                  <a class="dropdown-item" href="pricing.html">Pricing tables</a>
-                  <a class="dropdown-item" href="notification.html">Notification</a>
-                </div>
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposição</a>
               </li>
+
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="portfolio-col-2.html">Portfolio 2 Columns</a>
-                  <a class="dropdown-item" href="portfolio-col-3.html">Portfolio 3 Columns</a>
-                  <a class="dropdown-item" href="portfolio-col-4.html">Portfolio 4 Columns</a>
-                  <a class="dropdown-item" href="portfolio-item.html">Portfolio Single</a>
-                </div>
+                <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
               </li>
+              
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="sidebar-right.html">Sidebar Right</a>
-                  <a class="dropdown-item" href="sidebar-left.html">Sidebar Left</a>
-                  <a class="dropdown-item" href="sidebar-full.html">Full Width</a>
-                  <a class="dropdown-item" href="blog-single.html">Single Post</a>
-                  <a class="dropdown-item" href="blog-grids.html">Blog Grids</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contacto</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="contact1.html">Contact us 1</a>
                   <a class="dropdown-item" href="contact2.html">Contact us 2</a>
                 </div>
               </li>
+
+              
+              @if (Route::has('login'))
+                @auth
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+                    <div class="dropdown-menu">
+                      <a href="{{ route('logout') }}"
+                          onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                          Logout
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                      </form>
+                    </div>
+                  </li>
+                  @else
+                    <li class="nav-item active">
+                      <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
+                    </li>
+
+                    <li class="nav-item active">
+                      <a class="dropdown-item" href="{{ route('register') }}"><b>Registar</b></a>
+                    </li>
+                @endauth
+              @endif
             </ul>
+            
             <form class="form-inline">
               <div class="top_search_con">
                 <input class=" mr-sm-2" type="text" placeholder="Search Here ...">
@@ -202,21 +199,23 @@
               <img src="/engage/assets/img/slider/bg-1.jpg" alt="">
               <div class="carousel-caption">
                 <h2>
-                  Built-with Bootstrap 4
+                  Museu Nacional Da Moeda
                 </h2>
-                <h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui</h3>
-                <a class="btn btn-lg btn-common" href="#">
+                <h3>
+                  ...
+                </h3>
+                <!-- <a class="btn btn-lg btn-common" href="#">
                   <i class="fa fa-download">
                   </i>
                   Purchase
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="carousel-item">
               <img src="/engage/assets/img/slider/bg-2.jpg" alt="">
               <div class="carousel-caption">
                 <h2>
-                  Multi-purpose Template
+                  Conhecendo A Nossa História
                 </h2>
                 <h3>
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -228,6 +227,7 @@
                 </a>
               </div>
             </div>
+
             <div class="carousel-item">
               <img src="/engage/assets/img/slider/bg-3.jpg" alt="">
               <div class="carousel-caption">
@@ -244,7 +244,24 @@
                 </a>
               </div>
             </div>
+
+            <div class="carousel-item">
+              <img src="/engage/assets/img/slider/bg-3.jpg" alt="">
+              <div class="carousel-caption">
+                <h2>
+                  Refreshing Cool Design
+                </h2>
+                <h3>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                </h3>
+                <a class="btn btn-common btn-lg " href="#">
+                  <i class="fa fa-download">
+                  </i>
+                  Download
+                </a>
+              </div>
           </div>
+
           <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
             <span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -1473,6 +1490,8 @@
     <script src="/engage/assets/js/jquery.vide.js"></script>
      <!-- All JS plugin Triggers -->
     <script src="/engage/assets/js/main.js"></script> 
+
+
 
   </body>
 </html>
