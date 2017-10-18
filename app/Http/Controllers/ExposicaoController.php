@@ -91,7 +91,8 @@ class ExposicaoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $exposicao = Exposicao::findOrFail($id);
+        return view('exposicoes.edit', compact('exposicao'));
     }
 
     /**
@@ -103,7 +104,7 @@ class ExposicaoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return $id;
     }
 
     /**

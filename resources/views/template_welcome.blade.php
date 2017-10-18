@@ -189,12 +189,6 @@
         </div>
       </nav>
       
-
-
-
-
-
-
       <!-- Main Carousel Section -->
       <div id="carousel-area">
         <div id="carousel-slider" class="carousel slide" data-ride="carousel">
