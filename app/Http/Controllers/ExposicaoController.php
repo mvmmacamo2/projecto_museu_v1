@@ -104,7 +104,40 @@ class ExposicaoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return $id;
+
+        if($request->imagem){
+            $imagem = $request -> imagem;
+            $extension =  $imagem -> getClientOriginalExtension();
+            if($extension!='png' && $extension!='jpg'){
+                return back() -> with('erro', 'Erro: Este ficheiro não é imagem..!');
+            }
+        }
+
+        $exposicao = new Exposicao;
+
+        $exposicao = Exposicao::find($id);
+
+        $this->validate(request(), [
+          'nome' => 'required',
+          'descricao' => 'required',
+          'imagem' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+          'estado' => 'required'
+        ]);
+        $exposicao->nome = $request->get('nome');
+        $exposicao->descricao = $request->get('descricao');
+        $exposicao->estado = $request->get('estado');
+
+        if($request->imagem)
+        {
+            File::move($imagem, public_path().'/expo-upload/expo-id-'.$exposicao->id.'.'.$extension);
+
+            $exposicao -> imagem = 'expo-id-'.$exposicao->id.'.'.$extension;
+        }
+
+        
+        $exposicao->save();
+
+        return redirect('/exposicoes/index-admin/show')->with('success','Exposicao has been updated');
     }
 
     /**
