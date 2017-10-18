@@ -30,4 +30,6 @@ Route::get('/historias/amarela','Historia_casa_amarelaController@index');
 
 Route::resource('/exposicoes', 'ExposicaoController');
 
+Route::resource('/eventos', 'EventoController');
+
 Route::get('/exposicoes/index-admin/show', 'ExposicaoController@index_admin');

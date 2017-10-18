@@ -69,7 +69,7 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposição</a>
+                <a class="nav-link dropdown-toggle" href="/exposicoes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposição</a>
               </li>
 
               <li class="nav-item dropdown">
