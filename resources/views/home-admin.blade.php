@@ -17,7 +17,7 @@
                         <i class="fa fa-picture-o fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge">26</div>
+                        <div class="huge">{{ count($exposicoes) }}</div>
                         <div>Exposições</div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                         <i class="fa fa-users fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge">124</div>
+                        <div class="huge">{{ count($usuarios) }}</div>
                         <div>Usuários Inscritos</div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <i class="fa fa-support fa-5x"></i>
                     </div>
                     <div class="col-xs-9 text-right">
-                        <div class="huge">13</div>
+                        <div class="huge">{{ count($eventos) }}</div>
                         <div>Eventos</div>
                     </div>
                 </div>

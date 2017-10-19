@@ -284,7 +284,7 @@
           <!-- Footer Widget Starts -->
           <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".8s">
             <h3 class="small-title">
-              SUBSCRIBE US
+              gagaggagagaag
             </h3>
             <div class="contact-us">
               <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>

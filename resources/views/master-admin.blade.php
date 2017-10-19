@@ -288,7 +288,7 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Painel</a>
+                            <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Painel Admistrativo </a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
@@ -325,7 +325,7 @@
                             <a href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html"><i class="fa fa-plus"></i> Criar Evento</a>
+                                    <a href="/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
                                 </li>
                                 <li>
                                     <a href="buttons.html"><i class="fa fa-eye"></i> Ver Eventos</a>

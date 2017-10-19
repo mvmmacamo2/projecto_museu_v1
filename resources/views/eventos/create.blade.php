@@ -19,7 +19,7 @@
             <form class="form-horizontal" method="POST" action="/eventos" enctype="multipart/form-data">  
 	            {{ csrf_field() }}
 
-	            <input type="hidden" name="estado" value="proccess">
+	            <input type="hidden" name="estado" value="delete">
 
 	            <div class="form-group{{ $errors->has('descricao') ? ' has-error' : '' }}">
 	                <label for="descricao" class="col-md-4 control-label">Descrição</label>
@@ -27,7 +27,7 @@
 	                <div class="col-md-6">
 	                    <textarea id="descricao" class="form-control" name="descricao" value="{{ old('descricao') }}" required autofocus></textarea>
 
-	                    @if ($errors->has('desc'))
+	                    @if ($errors->has('descricao'))
 	                        <span class="help-block">
 	                            <strong>{{ $errors->first('descricao') }}</strong>
 	                        </span>
@@ -35,11 +35,11 @@
 	                </div>
 	            </div>
 
-	            <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
-	                <label for="nome" class="col-md-4 control-label">Público</label>
+	            <div class="form-group{{ $errors->has('publico') ? ' has-error' : '' }}">
+	                <label for="publico" class="col-md-4 control-label">Público</label>
 
 	                <div class="col-md-6">
-	                    <select id="publico" class="form-control">
+	                    <select id="publico" name="publico" class="form-control">
 	                    	<option>Adultos</option>
 	                    	<option>Adolescentes</option>
 	                    	<option>Crianças</option>
@@ -48,7 +48,7 @@
 
 	                    @if ($errors->has('publico'))
 	                        <span class="help-block">
-	                            <strong>{{ $errors->first('nome') }}</strong>
+	                            <strong>{{ $errors->first('publico') }}</strong>
 	                        </span>
 	                    @endif
 	                </div>
@@ -83,15 +83,15 @@
 	                </div>
 	            </div>
 
-	            <div class="form-group{{ $errors->has('data_fim') ? ' has-error' : '' }}">
-	                <label for="data_fim" class="col-md-4 control-label">Horas</label>
+	            <div class="form-group{{ $errors->has('horas') ? ' has-error' : '' }}">
+	                <label for="hora" class="col-md-4 control-label">Hora</label>
 
 	                <div class="col-md-6">
-	                    <input id="data_fim" type="time" class="form-control" name="data_fim" value="{{ old('data_fim') }}" required autofocus>
+	                    <input id="hora" type="time" class="form-control" name="hora" value="{{ old('hora') }}" required autofocus>
 
-	                    @if ($errors->has('data_fim'))
+	                    @if ($errors->has('hora'))
 	                        <span class="help-block">
-	                            <strong>{{ $errors->first('data_fim') }}</strong>
+	                            <strong>{{ $errors->first('hora') }}</strong>
 	                        </span>
 	                    @endif
 	                </div>
@@ -101,7 +101,7 @@
 	            <div class="form-group">
 	                <div class="col-md-6 col-md-offset-4">
 	                    <button type="submit" class="btn btn-primary">
-	                        Register
+	                        Adicionar
 	                    </button>
 	                </div>
 	            </div>

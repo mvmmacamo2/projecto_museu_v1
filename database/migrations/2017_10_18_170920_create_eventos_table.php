@@ -17,12 +17,12 @@ class CreateEventosTable extends Migration
             $table->increments('id');
             $table->text('descricao');
             $table->String('publico');
-            $table->String('foto');
+            $table->String('imagem');
             $table->String('estado');
-            $table->date('data_inicio');
-            $table->date('data_fim');
+            $table->date('data');
             $table->time('hora');
-            $table->Integer('id_usuario');
+            $table->Integer('id_usuario')->unsigned();
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('NO ACTION')->onUpdate('NO ACTION');
             $table->timestamps();
         });
     }

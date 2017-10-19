@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Exposicao;
+use App\Evento;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home-admin');
+        $exposicoes = Exposicao::all();
+        $eventos = Evento::all();
+        $usuarios = User::all();
+        return view('home-admin', compact('exposicoes', 'eventos', 'usuarios'));
     }
 }
