@@ -288,13 +288,13 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Painel</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposição<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/exposicoes/create"><i class="fa fa-plus"></i> Adicionar Exposição</a>
+                                    <a href="/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
                                 </li>
                                 <li>
                                     <a href="/exposicoes/index-admin/show"><i class="fa fa-eye"></i> Ver Exposições</a>
@@ -309,10 +309,10 @@
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Galeria</a>
                         </li> -->
                         <li>
-                            <a href="#"><i class="fa fa-picture-o fa-fw"></i> Galeria<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html"><i class="fa fa-plus"></i> Adicionar Galeria</a>
+                                    <a href="panels-wells.html"><i class="fa fa-plus"></i> Criar Galeria</a>
                                 </li>
                                 <li>
                                     <a href="buttons.html"><i class="fa fa-eye"></i> Ver Galeria</a>
@@ -320,6 +320,20 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html"><i class="fa fa-plus"></i> Criar Evento</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html"><i class="fa fa-eye"></i> Ver Eventos</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
                         <li>
                             <a href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">

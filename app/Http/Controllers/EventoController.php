@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Evento;
 
 class EventoController extends Controller
 {
@@ -13,6 +14,7 @@ class EventoController extends Controller
      */
     public function index()
     {
+        $eventos = Evento::all();
         return view('/eventos.index');
     }
 
@@ -23,7 +25,7 @@ class EventoController extends Controller
      */
     public function create()
     {
-        //
+        return view('/eventos.create');
     }
 
     /**

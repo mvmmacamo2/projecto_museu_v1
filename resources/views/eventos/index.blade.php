@@ -9,7 +9,7 @@
         <div class="container">
           <div class="row">
             
-            <h1>Eventos</h1>
+            <h3>Eventos</h3>
 
           </div>
         </div>

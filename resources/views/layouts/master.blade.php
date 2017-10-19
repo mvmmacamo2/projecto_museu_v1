@@ -77,10 +77,12 @@
               </li>
               
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contacto</a>
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="contact1.html">Contact us 1</a>
-                  <a class="dropdown-item" href="contact2.html">Contact us 2</a>
+                  <a class="dropdown-item" href="contact1.html">Serviço 1</a>
+                  <a class="dropdown-item" href="contact1.html">Serviço 2</a>
+                  <a class="dropdown-item" href="contact1.html">Serviço 3</a>
+                  <a class="dropdown-item" href="contact1.html">Serviço 4</a>
                 </div>
               </li>
 
