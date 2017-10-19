@@ -328,7 +328,7 @@
                                     <a href="/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html"><i class="fa fa-eye"></i> Ver Eventos</a>
+                                    <a href="/eventos/index_admin/show"><i class="fa fa-eye"></i> Ver Eventos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
