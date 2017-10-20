@@ -18,7 +18,7 @@ class Evento_adminController extends Controller
     public function index()
     {
         $eventos = Evento::all();
-        return view('/admin.eventos.index');
+        return view('admins.eventos.index', compact('eventos'));
     }
 
     /**
