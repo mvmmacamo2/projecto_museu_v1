@@ -142,7 +142,7 @@
               </ul>                      
             </li>
             <li>
-              <a href="/exposicoes">Exposição</a>                       
+              <a href="url(exposicoes)">Exposição</a>                       
             </li>
             <li>
               <a href="/eventos">Eventos</a>                      

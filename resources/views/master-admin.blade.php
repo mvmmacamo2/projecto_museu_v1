@@ -312,10 +312,10 @@
                             <a href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="panels-wells.html"><i class="fa fa-plus"></i> Criar Galeria</a>
+                                    <a href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html"><i class="fa fa-eye"></i> Ver Galeria</a>
+                                    <a href="/admins/galerias"><i class="fa fa-eye"></i> Ver Galeria</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -325,10 +325,23 @@
                             <a href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
+                                    <a href="/admins/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
+                                    <a href="/admins/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
+                                </li>
+                                <li>
+                                    <a href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

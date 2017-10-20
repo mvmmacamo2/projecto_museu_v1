@@ -28,7 +28,7 @@ class Evento_adminController extends Controller
      */
     public function create()
     {
-        return view('/admin.eventos.create');
+        return view('/admins.eventos.create');
     }
 
     /**
@@ -70,7 +70,7 @@ class Evento_adminController extends Controller
         }
 
         
-        return redirect('/admin.eventos');
+        return redirect('/admins.eventos');
     }
 
     /**
