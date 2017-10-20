@@ -15,15 +15,16 @@ class Exposicao_adminController extends Controller
      */
     public function index()
     {
+
         $exposicaos = Exposicao::all();
-        return view('/admin/exposicoes.index', compact('exposicaos'));
+        return view('admins.exposicoes.index', compact('exposicaos'));
     }
 
-    public function index_admin()
-    {
-        $exposicaos = Exposicao::all();
-        return view('/admin/exposicoes.index-admin', compact('exposicaos'));
-    }
+    // public function index_admin()
+    // {
+    //     $exposicaos = Exposicao::all();
+    //     return view('/admin/exposicoes.index-admin', compact('exposicaos'));
+    // }
 
     /**
      * Show the form for creating a new resource.
