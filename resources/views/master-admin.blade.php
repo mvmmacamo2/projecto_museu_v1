@@ -297,7 +297,7 @@
                                     <a href="/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
                                 </li>
                                 <li>
-                                    <a href="/exposicoes/index-admin/show"><i class="fa fa-eye"></i> Ver Exposições</a>
+                                    <a href="/admin/exposicoes"><i class="fa fa-eye"></i> Ver Exposições</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -328,7 +328,7 @@
                                     <a href="/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
                                 </li>
                                 <li>
-                                    <a href="/eventos/index_admin/show"><i class="fa fa-eye"></i> Ver Eventos</a>
+                                    <a href="/admin/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -375,6 +375,7 @@
             <!-- /.navbar-static-side -->
         </nav>
 
+        <!-- page-wrapper -->
         <div id="page-wrapper">
             
         	@yield('content-admin')

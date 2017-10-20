@@ -217,9 +217,9 @@
         <!-- Row Starts -->
         <div class="row section">
           <!-- Footer Widget Starts -->
-          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn">
+          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
             <h3 class="small-title">
-              ABOUT US
+              Sobre Nós
             </h3>
             <p>
               Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac, rutrum sed risus, 
@@ -233,58 +233,28 @@
             </div>           
           </div><!-- Footer Widget Ends -->
           
-          <!-- Footer Widget Starts -->
-          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".2s">
-            <h3 class="small-title">
-              TWITTER
-            </h3>
-            <ul class="recent-tweets">
-              <li class="tweet">
-                My <a href="#">@Quora</a>                
-                <span class="tweet-text">
-                  answer to What's the best FAQ plugin for WordPress?
-                </span>
-                <a href="#">qr.ae/RFTbIGa</a> 
-                <span class="tweet-date">
-                  August 21, 2015 10:29pm
-                </span>
-              </li>
-              
-              
-              <li class="tweet">
-                WPB Advanced FAQ | Probably The Best WordPress FAQ Plugin <a href="#">wpbean.com/wpb-advanced-faq-pr…</a>               
-                <span class="tweet-text">
-                  via
-                </span>
-                <a href="#">@wpbean</a> 
-                <span class="tweet-date">
-                  August 19, 2015 8:49 am
-                </span>
-              </li>
-              
-              
-            </ul>
-          </div><!-- Footer Widget Ends -->
+          
 
           <!-- Footer Widget Starts -->
-          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
             <h3 class="small-title">
-              GALLERY
+              Nossa Localização
             </h3>
             <div class="plain-flicker-gallery">
-              <a href="#" title="Pan Masala"><img src="/engage/assets/img/flicker/img1.jpg" alt=""></a>
-              <a href="#" title="Sports Template for Joomla"><img src="/engage/assets/img/flicker/img2.jpg" alt=""></a>
-              <a href="" title="Apple Keyboard"><img src="/engage/assets/img/flicker/img3.jpg" alt=""></a>
+            <!--   <a href="#" title="Pan Masala"><img src="/engage/assets/img/flicker/img1.jpg" alt=""></a>
+              <a href="#" title="Sports Template for Joomla"><img src="/engage/assets/img/flicker/img2.jpg" alt=""></a> -->
+              Mapa
+              <!-- <a href="" title="Apple Keyboard"><img src="/engage/assets/img/flicker/img3.jpg" alt=""></a>
               <a href="" title="Hard Working"><img src="/engage/assets/img/flicker/img4.jpg" alt=""></a>
               <a href="" title="Smile"><img src="/engage/assets/img/flicker/img5.jpg" alt=""></a>
-              <a href="" title="Puzzle"><img src="/engage/assets/img/flicker/img6.jpg" alt=""></a>
+              <a href="" title="Puzzle"><img src="/engage/assets/img/flicker/img6.jpg" alt=""></a> -->
             </div>
           </div><!-- Footer Widget Ends -->
 
           <!-- Footer Widget Starts -->
-          <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
             <h3 class="small-title">
-              gagaggagagaag
+              Mensagem
             </h3>
             <div class="contact-us">
               <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>
@@ -308,22 +278,22 @@
           <div class="row">
             <div class="col-md-6 col-sm-6">
               <p class="copyright-text">
-                ©  2017 Engage. All right reserved. Designed with by <a href="#">GrayGrids</a>
+                ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
               </p>
             </div>
             <div class="col-md-6  col-sm-6">
               <ul class="nav nav-inline  justify-content-end ">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link active" href="/">Início -</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sitemap</a>
+                  <a class="nav-link" href="#"> Sitemap -</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Privacy Policy</a>
+                  <a class="nav-link" href="#"> Políticas De Privacidade -</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Terms of services</a>
+                  <a class="nav-link" href="#"> Termos de Serviço</a>
                 </li>
               </ul>        
             </div>
