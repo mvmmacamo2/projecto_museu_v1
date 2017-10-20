@@ -35,7 +35,7 @@
                             <td>{{$evento->publico}}</td>
                             <td>{{$evento->estado}}</td>
                             <td>
-                            	<img style="max-width: 40px;" src="/evento-upload/{{$evento->imagem}}">
+                            	<img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">
                             </td>
                             <td>{{$evento->data}}</td>
                             <td>{{$evento->hora}}</td>
@@ -43,7 +43,7 @@
                             	<a href="/admin/eventos/{{ $evento->id }}/edit">
                             		<button class="btn btn-success">Editar</button>
                             	</a>
-                            	-- <button class="btn btn-danger">Apagar</button>
+                            	<button class="btn btn-danger">Apagar</button>
                             </td>
                         </tr>
                     @endforeach

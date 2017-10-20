@@ -10,7 +10,6 @@
     <section id="blog" class="section">
       <!-- Container Starts -->
       <div class="container">
-AAAA
         <!-- Row Starts -->
         <div class="row">      
           @forelse($exposicoes as $exposicao)
