@@ -196,7 +196,7 @@
         <div class="row">
           <div class="page-header-area">
             <div class="page-header-content">
-              <h2>
+              <h2 class="section-title wow fadeInDown" data-wow-delay=".5s">
                 @yield('title')
               </h2>
             </div>
@@ -318,7 +318,7 @@
     <!-- Bootstrap JS -->    
     <script src="/engage/assets/js/bootstrap.min.js"></script>
     <!-- Color Switcher Js -->
-    <script src="/engage/assets/js/color-switcher.js"></script>
+    <!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
     <!--Text Rotator-->
     <script src="/engage/assets/js/jquery.mixitup.js"></script>
     <!--WOW Scroll Spy-->
