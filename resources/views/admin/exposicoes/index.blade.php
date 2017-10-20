@@ -19,36 +19,28 @@
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th>Descricao</th>                        
+                                        <th>Nome</th>
+                                        <th>Descrição</th>
                                         <th>Imagem</th>
                                         <th>Estado</th>
-                                        <th>Publico</th>
-                                        <th>Data </th>
-                                        <th>Hora</th>
-                                        <th>Id_Usuario</th>
                                         <th>Acção</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($exposicaos as $exposicao)
                                     <tr class="odd gradeX">
-                                        <td>{{$evento->descricao}}</td>
-                                        <td>{{$evento->imagem}}</td>
+                                        <td>{{$exposicao->nome}}</td>
+                                        <td>{{$exposicao->descricao}}</td>
                                         <td>
-                                        	<img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">
+                                          <img style="max-width: 40px;" src="/expo-upload/{{$exposicao->imagem}}">
                                         </td>
-                                        <td>{{$evento->estado}}</td>
+                                        <td>{{$exposicao->estado}}</td>
                                         <td>
-                                        	<a href="/evento/{{ $evento->id }}/edit">
-                                        		<button class="btn btn-success">Editar</button>
-                                        	</a>
-                                        	</a>
-                                        	-- <button class="btn btn-danger">Apagar</button>
+                                          <a href="/exposicoes/{{ $exposicao->id }}/edit">
+                                            <button class="btn btn-success">Editar</button>
+                                          </a>
+                                          -- <button class="btn btn-danger">Apagar</button>
                                         </td>
-                                        <td>{{$evento->publico}}</td>
-                                        <td>{{$evento->data}}</td>
-                                        <td>{{$evento->hora}}</td>
-                                        <td>{{$evento->id_usuario}}</td>
                                     </tr>
                                 @endforeach
                                 </tbody>

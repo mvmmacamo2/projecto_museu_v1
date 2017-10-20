@@ -26,10 +26,8 @@ Route::resource('/exposicoes', 'ExposicaoController');
 Route::get('/historias/museu','Historia_museuController@index');
 Route::get('/historias/amarela','Historia_casa_amarelaController@index');
 
-// Route::get('/contactos','ContactoController@index');
-
 Route::resource('/exposicoes', 'ExposicaoController');
-
 Route::resource('/eventos', 'EventoController');
 
-Route::get('/exposicoes/index-admin/show', 'ExposicaoController@index_admin');
+Route::resource('/admin/exposicoes', 'Exposicao_adminController');
+Route::resource('/admin/eventos', 'Evento_adminController');
