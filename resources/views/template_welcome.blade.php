@@ -727,12 +727,16 @@
           <!-- Footer Widget Starts -->
           <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
             <h3 class="small-title">
-              Sobre Nós
+              CONTACTO
             </h3>
             <p>
-              Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac, rutrum sed risus, 
+              Museu da Moeda Rua Consiglieri Pedroso Maputo
+              Contacto 84 533 6565
+              De 3ª a 6ª feiras: das 11:00h às 17:00h; 
+              Sábado: das 9:00h às 15:00h; 
+              Domingo e Feriados: das 14:00h às 17:00h; 
+              2ª feira: Encerrada.
             </p> 
-            <p>Aliquam magna nibh, mattis a urna nec. Semper venenatis magna.</p>
             <div class="social-footer">
               <a href="#"><i class="fa fa-facebook icon-round"></i></a>
               <a href="#"><i class="fa fa-twitter icon-round"></i></a>
@@ -746,23 +750,17 @@
           <!-- Footer Widget Starts -->
           <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
             <h3 class="small-title">
-              Nossa Localização
+              Localização
             </h3>
             <div class="plain-flicker-gallery">
-            <!--   <a href="#" title="Pan Masala"><img src="/engage/assets/img/flicker/img1.jpg" alt=""></a>
-              <a href="#" title="Sports Template for Joomla"><img src="/engage/assets/img/flicker/img2.jpg" alt=""></a> -->
-              Mapa
-              <!-- <a href="" title="Apple Keyboard"><img src="/engage/assets/img/flicker/img3.jpg" alt=""></a>
-              <a href="" title="Hard Working"><img src="/engage/assets/img/flicker/img4.jpg" alt=""></a>
-              <a href="" title="Smile"><img src="/engage/assets/img/flicker/img5.jpg" alt=""></a>
-              <a href="" title="Puzzle"><img src="/engage/assets/img/flicker/img6.jpg" alt=""></a> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div><!-- Footer Widget Ends -->
 
           <!-- Footer Widget Starts -->
           <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
             <h3 class="small-title">
-              Mensagem
+             SOBRE
             </h3>
             <div class="contact-us">
               <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>
