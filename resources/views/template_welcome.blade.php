@@ -762,19 +762,14 @@
             <h3 class="small-title">
              SOBRE
             </h3>
-            <div class="contact-us">
-              <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>
-              <form>
-              <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
-              </div>
-              <button type="submit" class="btn btn-common">Submit</button>
-            </form>
+            <div class="horizontal-menu">
+              <a href="/historias/museu" class="active">Museu da Moeda</a> 
+               <br><br>
+              <a href="#">História da Casa Amarela</a>
+               <br><br>
+              <a href="#">Quem Somos</a>
             </div>
-          </div><!-- Footer Widget Ends -->
+         </div><!-- Footer Widget Ends -->
         </div><!-- Row Ends -->
       </div><!-- Container Ends -->
       
