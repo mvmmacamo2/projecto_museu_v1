@@ -765,7 +765,7 @@
             <div class="horizontal-menu">
               <a href="/historias/museu" class="active">Museu da Moeda</a> 
                <br><br>
-              <a href="#">História da Casa Amarela</a>
+              <a href="/historias/amarela">História da Casa Amarela</a>
                <br><br>
               <a href="#">Quem Somos</a>
             </div>
