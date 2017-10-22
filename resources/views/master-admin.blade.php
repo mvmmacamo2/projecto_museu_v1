@@ -345,7 +345,7 @@
                                 </li>
 
                                 <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
+                                    <a style="color: #1c961f" href="/admins/pedidos/visitasgsingulares"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
                                 </li>
 
                                 <li>
