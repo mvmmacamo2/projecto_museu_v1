@@ -30,3 +30,8 @@ Route::get('/exposicoes', 'ExposicaoController@index');
 Route::get('/eventos', 'EventoController@index');
 
 
+// rotas Relacionadas a  serviços
+Route::get('/servicos/escola', 'ServicosController@escola');
+Route::get('/servicos/patio', 'ServicosController@patio');
+Route::get('/servicos/individual', 'ServicosController@individual');
+
