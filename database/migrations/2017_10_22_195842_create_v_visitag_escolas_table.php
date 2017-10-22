@@ -17,7 +17,7 @@ class CreateVVisitagEscolasTable extends Migration
         DB::statement("
       CREATE VIEW v_visitag_escolas AS
       (
-      SELECT  u.nome, u.email, u.nome_responsavel , v.hora, v.descricao, v.created_at FROM visitag_escolas v, escolas u WHERE u.id=v.escola_id
+      SELECT  u.nome, u.email, u.nome_responsavel , v.data ,v.hora, v.descricao, v.created_at FROM visitag_escolas v, escolas u WHERE u.id=v.escola_id
       )
     ");
 //        Schema::create('v_visitag_escolas', function (Blueprint $table) {
