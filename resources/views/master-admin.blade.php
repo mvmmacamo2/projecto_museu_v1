@@ -40,7 +40,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color: #1c961f">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -48,13 +48,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/home">Painel De Admin</a>
+                <a style="color: #1c961f" class="navbar-brand" href="/home">Painel De Admin</a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
@@ -105,7 +105,7 @@
                 </li>
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-tasks">
@@ -184,7 +184,7 @@
                 </li>
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
@@ -244,7 +244,7 @@
                 </li>
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
@@ -291,13 +291,13 @@
                             <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Painel Admistrativo </a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
+                            <a style="color: #1c961f" href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
+                                    <a style="color: #1c961f" href="/admins/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/exposicoes"><i class="fa fa-eye"></i> Ver Exposições</a>
+                                    <a style="color: #1c961f" href="/admins/exposicoes"><i class="fa fa-eye"></i> Ver Exposições</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -309,67 +309,67 @@
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Galeria</a>
                         </li> -->
                         <li>
-                            <a href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
+                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a>
+                                    <a style="color: #1c961f" href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a>
                                 </li>
                                 <li>
-                                    <a href="/admins/galerias"><i class="fa fa-eye"></i> Ver Galeria</a>
+                                    <a style="color: #1c961f" href="/admins/galerias"><i class="fa fa-eye"></i> Ver Galeria</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
+                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/admins/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
+                                    <a style="color: #1c961f" href="/admins/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
                                 </li>
                                 <li>
-                                    <a href="/admins/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
+                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
+                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
+                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
                                 </li>
                                 <li>
-                                    <a href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
+                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
+                            <a style="color: #1c961f" href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                             	<li>
-                                    <a href="#"><i class="fa fa-plus"></i> Adicionar Usuário</a>
+                                    <a style="color: #1c961f" href="#"><i class="fa fa-plus"></i> Adicionar Usuário</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-eye"></i> Ver Lista</a>
+                                    <a style="color: #1c961f" href="#"><i class="fa fa-eye"></i> Ver Lista</a>
                                 </li>
                                 <li>
-                                    <a href="#">Permições</a>
+                                    <a style="color: #1c961f" href="#">Permições</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
+                            <a style="color: #1c961f" href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="blank.html"><i class="fa fa-eye"></i> Ver Perfil</a>
+                                    <a style="color: #1c961f" href="blank.html"><i class="fa fa-eye"></i> Ver Perfil</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    <a style="color: #1c961f" href="{{ route('logout') }}" onclick="event.preventDefault();
 	                                document.getElementById('logout-form').submit();">
 	                          			<i class="fa fa-sign-out"> Sair</i>
                       				</a>
