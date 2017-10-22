@@ -341,7 +341,7 @@
                             <ul class="nav nav-second-level">
 
                                 <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Visitas Guiadas Escolares</a>
+                                    <a style="color: #1c961f" href="/admins/pedidos/visitaguiadaescolar"><i class="fa fa-eye"></i> Visitas Guiadas Escolares</a>
                                 </li>
 
                                 <li>
