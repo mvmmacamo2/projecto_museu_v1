@@ -1,10 +1,7 @@
 @extends('layouts.master')
 
-
-
-
 @section('title')
-Requisitando Visita Guiada Escolar
+    Requisitando Visita Guiada Escolar
 @stop
 @section('content')
 
