@@ -38,3 +38,4 @@ Route::get('/servicos/individual', 'ServicosController@individual');
 // Rotas Admins
 Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visitaguiadaescolar');
 Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular');
+Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda');
