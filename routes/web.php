@@ -39,3 +39,5 @@ Route::get('/servicos/individual', 'ServicosController@individual');
 Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visitaguiadaescolar');
 Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular');
 Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda');
+
+Route::post('/servicos/individual', 'ServicosController@save');
