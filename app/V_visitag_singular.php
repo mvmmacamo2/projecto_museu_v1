@@ -9,7 +9,7 @@ class V_visitag_singular extends Model
 {
 
     protected $fillable = [
-        'data', 'hora', 'descricao' ,'usuario_id'
+        'data', 'hora', 'descricao', 'updated_at', 'created_at'
     ];
 
     public function visitas()

@@ -17,6 +17,7 @@
             </div>
 
             <input type="hidden" name="usuario_id" value=" {{ Auth()->user()->id }}">
+
             <div class="form-group col-md-6">
                 <label for="hora">Hora Da Visita</label>
                 <input type="text" class="form-control" id="hora" placeholder="exemplo: 10h" name="hora">
@@ -30,11 +31,15 @@
 
             </textarea>
 
+            <input type="hidden" name="updated_at" value=" {{ date('d-M-yyyy') }}">
+            <input type="hidden" name="created_at" value=" {{ date('d-M-yyyy') }}">
         </div>
 
 
-        <button type="submit" class="btn btn-success">Submeter</button>
+        {{--<button type="submit" class="btn btn-success">Submeter</button>--}}
+        <input type="submit" value="Submeter" class="btn btn-success">
     </form>
+
 
 
 @stop
