@@ -752,9 +752,9 @@
             <h3 class="small-title">
               Localização
             </h3>
-            <!-- <div class="plain-flicker-gallery">
+            <div class="plain-flicker-gallery">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div> -->
+            </div> 
           </div><!-- Footer Widget Ends -->
 
           <!-- Footer Widget Starts -->
@@ -762,19 +762,14 @@
             <h3 class="small-title">
              SOBRE
             </h3>
-            <div class="contact-us">
-              <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>
-              <form>
-              <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
-              </div>
-              <button type="submit" class="btn btn-common">Submit</button>
-            </form>
+            <div class="horizontal-menu">
+              <a href="/historias/museu" class="active">Museu da Moeda</a> 
+               <br><br>
+              <a href="/historias/amarela">História da Casa Amarela</a>
+               <br><br>
+              <a href="#">Quem Somos</a>
             </div>
-          </div><!-- Footer Widget Ends -->
+         </div><!-- Footer Widget Ends -->
         </div><!-- Row Ends -->
       </div><!-- Container Ends -->
       
