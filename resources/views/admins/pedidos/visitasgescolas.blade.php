@@ -30,8 +30,9 @@
                             <th>Responsavel</th>
                             <th>Data</th>
                             <th>Hora</th>
-                            <th>Descrição</th>
                             <th>Data De Submissão</th>
+                            <th>Descrição</th>
+
                         </tr>
 
                         </thead>
@@ -50,7 +51,9 @@
                                 <td>{{$p->data}}</td>
 
                                 <td>{{$p->hora}}</td>
+                                <td>{{$p->created_at}}</td>
                                 <td>{{$p->descricao}}</td>
+
 
                                 {{--<td>--}}
                                     {{--<a href="/admin/eventos/{{ $evento->id }}/edit">--}}
