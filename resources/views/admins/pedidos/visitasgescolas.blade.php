@@ -20,18 +20,21 @@
 
                 <!-- /.panel-heading -->
                 <div class="panel-body">
-                    <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                    <table width="100%" class="table table-striped table-bordered table-hover table-light" id="dataTables-example">
                         <thead>
+                        
                         <tr>
                             <th>Nome Da Escola</th>
-                            <th>Público Alvo</th>
-                            <th>Estado</th>
-                            <th>Imagem</th>
-                            <th>Data de Realização</th>
-                            <th>Hora de Realização</th>
-                            <th>Acção</th>
+                            <th>Email</th>
+                            <th>Responsavel</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Descrição</th>
+                            <th>Data De Submissão</th>
                         </tr>
+
                         </thead>
+
                         <tbody>
                         @foreach($eventos as $evento)
                             <tr class="odd gradeX">
