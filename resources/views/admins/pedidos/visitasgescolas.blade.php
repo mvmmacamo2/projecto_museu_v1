@@ -20,9 +20,10 @@
 
                 <!-- /.panel-heading -->
                 <div class="panel-body">
-                    <table width="100%" class="table table-striped table-bordered table-hover table-light" id="dataTables-example">
+                    <table width="100%" class="table table-striped table-bordered table-hover table-light"
+                           id="dataTables-example">
                         <thead>
-                        
+
                         <tr>
                             <th>Nome Da Escola</th>
                             <th>Email</th>
@@ -36,6 +37,7 @@
                         </thead>
 
                         <tbody>
+
                         @foreach($eventos as $evento)
                             <tr class="odd gradeX">
                                 <td>{{$evento->descricao}}</td>
@@ -54,7 +56,9 @@
                                 </td>
                             </tr>
                         @endforeach
+
                         </tbody>
+
                     </table>
                     <!-- /.table-responsive -->
 
