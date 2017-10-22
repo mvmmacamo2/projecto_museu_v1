@@ -38,7 +38,7 @@
 
                         <tbody>
 
-                        @foreach($pedidos as $p)
+                        @foreach($pedidosp as $p)
                             <tr class="odd gradeX">
                                 <td>{{$p->name}}</td>
                                 <td>{{$p->email}}</td>

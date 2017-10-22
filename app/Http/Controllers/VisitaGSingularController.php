@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\V_visitag_singular;
+use App\V_Patio;
 
 class VisitaGSingularController extends Controller
 {
@@ -22,7 +23,8 @@ class VisitaGSingularController extends Controller
 
     public function prenda()
     {
-        return view('admins.pedidos.patio');
+        $pedidosp = V_Patio::all();
+        return view('admins.pedidos.patio', compact('pedidosp'));
     }
 
 }
