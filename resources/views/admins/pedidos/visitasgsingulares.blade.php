@@ -39,6 +39,7 @@
                         <tbody>
 
                         @foreach($pedidos as $p)
+                            {{--{{ auth()->user() }}--}}
                             <tr class="odd gradeX">
                                 <td>{{$p->name}}</td>
                                 <td>{{$p->email}}</td>
