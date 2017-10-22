@@ -43,10 +43,10 @@
                             <tr class="odd gradeX">
                                 <td>{{$p->nome}}</td>
                                 <td>{{$p->email}}</td>
-                                <td>{{$p->nome_resposanvel}}</td>
-                                <td>
-                                    <img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">
-                                </td>
+                                <td>{{$p->nome_responsavel}}</td>
+                                {{--<td>--}}
+                                    {{--<img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">--}}
+                                {{--</td>--}}
 
                                 <td>{{$p->data}}</td>
 
