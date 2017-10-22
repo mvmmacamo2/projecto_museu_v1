@@ -25,9 +25,8 @@
                         <thead>
 
                         <tr>
-                            <th>Nome Da Escola</th>
+                            <th>Nome utilizador</th>
                             <th>Email</th>
-                            <th>Responsavel</th>
                             <th>Data</th>
                             <th>Hora</th>
                             <th>Data De Submissão</th>
@@ -41,15 +40,14 @@
 
                         @foreach($pedidos as $p)
                             <tr class="odd gradeX">
-                                <td>{{$p->nome}}</td>
+                                <td>{{$p->name}}</td>
                                 <td>{{$p->email}}</td>
-                                <td>{{$p->nome_responsavel}}</td>
+
                                 {{--<td>--}}
                                 {{--<img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">--}}
                                 {{--</td>--}}
 
                                 <td>{{$p->data}}</td>
-
                                 <td>{{$p->hora}}</td>
                                 <td>{{$p->created_at}}</td>
                                 <td>{{$p->descricao}}</td>
