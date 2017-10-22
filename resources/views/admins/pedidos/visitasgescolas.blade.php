@@ -38,22 +38,26 @@
 
                         <tbody>
 
-                        @foreach($eventos as $evento)
+                        @foreach($pedidos as $p)
                             <tr class="odd gradeX">
-                                <td>{{$evento->descricao}}</td>
-                                <td>{{$evento->publico}}</td>
-                                <td>{{$evento->estado}}</td>
+                                <td>{{$p->nome}}</td>
+                                <td>{{$p->email}}</td>
+                                <td>{{$p->nome_resposanvel}}</td>
                                 <td>
                                     <img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">
                                 </td>
-                                <td>{{$evento->data}}</td>
-                                <td>{{$evento->hora}}</td>
-                                <td>
-                                    <a href="/admin/eventos/{{ $evento->id }}/edit">
-                                        <button class="btn btn-success">Editar</button>
-                                    </a>
-                                    <button class="btn btn-danger">Apagar</button>
-                                </td>
+
+                                <td>{{$p->data}}</td>
+
+                                <td>{{$p->hora}}</td>
+                                <td>{{$p->descricao}}</td>
+
+                                {{--<td>--}}
+                                    {{--<a href="/admin/eventos/{{ $evento->id }}/edit">--}}
+                                        {{--<button class="btn btn-success">Editar</button>--}}
+                                    {{--</a>--}}
+                                    {{--<button class="btn btn-danger">Apagar</button>--}}
+                                {{--</td>--}}
                             </tr>
                         @endforeach
 

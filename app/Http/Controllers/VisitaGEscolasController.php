@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\V_visitag_escola;
 
 class VisitaGEscolasController extends Controller
 {
@@ -10,17 +11,17 @@ class VisitaGEscolasController extends Controller
 
     {
 
-        $pedidos= DB::table('view_visitasgescolas')->get();
+        // $pedidos= DB::table('v_visitag_escolas')->get();
 //
 //       // dd($pedidos);
 //        return view('visitasg.escola', compact('pedidos'));
 
 
-        $pedidos= Vvisita::all();
+        $pedidos = V_visitag_escola::all();
 
         //dd($pedidos);
-      //  return view('visitasg.escola', compact('pedidos'));
+        //  return view('visitasg.escola', compact('pedidos'));
 
-        return view('admins.pedidos.visitasgescolas');
+        return view('admins.pedidos.visitasgescolas', compact('pedidos'));
     }
 }
