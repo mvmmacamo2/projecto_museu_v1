@@ -334,18 +334,34 @@
                             <!-- /.nav-second-level -->
                         </li>
 
+
+                        {{--SECCAO DE PEDIDOS EM --}}
                         <li>
                             <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
+
+                                <li>
+                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Visitas Guiadas Escolares</a>
+                                </li>
+
+                                <li>
+                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
+                                </li>
+
                                 <li>
                                     <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
                                 </li>
+
                                 <li>
                                     <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+
+
+
+
 
                         <li>
                             <a style="color: #1c961f" href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
