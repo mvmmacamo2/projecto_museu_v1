@@ -349,6 +349,10 @@
                                 </li>
 
                                 <li>
+                                    <a style="color: #1c961f" href=""><i class="fa fa-eye"></i>Renda do Pátio</a>
+                                </li>
+
+                                <li>
                                     <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
                                 </li>
 
@@ -358,6 +362,8 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+
+
 
 
 
