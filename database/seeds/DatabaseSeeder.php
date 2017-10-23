@@ -44,6 +44,17 @@ class DatabaseSeeder extends Seeder
                 'endereco' => 'Mahotas Perto da 14 esquadra',
                 'nome_responsavel' => 'Ezilda',
                 'contacto' => '845030902',
+                'email' => 'laulane@gmail.com',
+                'senha' => '123456',
+            ],
+            '0' => [
+                'nome' => 'Escola Secundaria de Malhazine',
+                'nivel' => 'Medio',
+                'endereco' => 'Mahotas Perto da 14 esquadra',
+                'nome_responsavel' => 'Orlando Matusse',
+                'contacto' => '845030902',
+                'email' => 'malhazine@gmail.com',
+                'senha' => '123456',
             ],
 
         ]);
