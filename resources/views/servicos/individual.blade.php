@@ -1,46 +1,56 @@
 @extends('layouts.master')
 
-
-
-
 @section('title')
-    Requisitando Visita Guiada Individual
+    Requisição De Visita Guiada Individual
 @stop
+
 @section('content')
 
-    <form method="post" action="/servicos/individual">
-        {!! csrf_field() !!}
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="data">Data Realizacao do Evento</label>
-                <input type="date" class="form-control" id="data" placeholder="" name="data">
+<!-- Blog Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <!-- Row Starts -->
+        <div class="row">      
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <form>
+                  <div class="row">
+
+                    <div class="col-md-3 mb-3">
+                      <label for="descricao">Data Realizacao do Evento</label>
+                      <input type="date" class="form-control" id="descricao" required>
+                      <div class="invalid-feedback">
+                        Introduza uma Data Válida..!
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="hora">Hora Da Visita</label>
+                        <input type="time" class="form-control" id="hora" required>
+                        <div class="invalid-feedback">
+                            Introduza uma Hora Válida..!
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="descricao">Descrição da Visita</label>
+                        <textarea style="min-height: 100px" class="form-control" id="descricao" required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-common btn-md mt-20">
+                        Enviar
+                    </button>
+                </form>
+
             </div>
+        </div><!-- Row Ends -->
+      </div><!-- Container Ends -->
+    </section>
+    <!-- blog Section End -->
 
-            <input type="hidden" name="usuario_id" value=" {{ Auth()->user()->id }}">
-
-            <div class="form-group col-md-6">
-                <label for="hora">Hora Da Visita</label>
-                <input type="text" class="form-control" id="hora" placeholder="exemplo: 10h" name="hora">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="inputAddress">Descricao da Visita</label>
-
-            <textarea class="form-control" cols="10" rows="5" placeholder="Coloque o motivo da Visita" name="descricao">
-
-            </textarea>
-
-            <input type="hidden" name="updated_at" value=" {{ date('d-M-yyyy') }}">
-            <input type="hidden" name="created_at" value=" {{ date('d-M-yyyy') }}">
-        </div>
-
-
-        {{--<button type="submit" class="btn btn-success">Submeter</button>--}}
-        <input type="submit" value="Submeter" class="btn btn-success">
-    </form>
+@endsection
 
 
 
-@stop
-<br>
+
