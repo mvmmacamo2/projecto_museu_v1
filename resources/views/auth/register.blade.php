@@ -20,6 +20,9 @@
                         <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
+<!-- nivelacesso -->    
+
+                        <input type="hidden" name="nivelacesso" value="normal">
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Name</label>

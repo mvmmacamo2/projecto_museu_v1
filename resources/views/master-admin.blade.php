@@ -246,7 +246,8 @@
                 <li class="dropdown">
 
                     <a style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        {{ Auth()->user()->name }}
+                        {{ Auth::user()->name }}
+
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
 
                     </a>
