@@ -8,6 +8,21 @@
 @stop
 @section('content')
 
+<<<<<<< HEAD
+<!-- Blog Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <!-- Row Starts -->
+        <div class="row">      
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                
+            </div>
+        </div><!-- Row Ends -->
+      </div><!-- Container Ends -->
+    </section>
+    <!-- blog Section End -->
+=======
     <form method="post" action="">
 
         <div class="form-row">
@@ -20,6 +35,7 @@
                 <input type="text" class="form-control" id="hora" placeholder="exemplo: 10h" name="hora">
             </div>
         </div>
+>>>>>>> 87705c2123e7789b7b74053cfab2011262e2ad7d
 
         <div class="form-group">
             <label for="inputAddress">Descricao da Visita</label>
