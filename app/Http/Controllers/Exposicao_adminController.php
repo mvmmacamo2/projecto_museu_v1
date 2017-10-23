@@ -33,7 +33,7 @@ class Exposicao_adminController extends Controller
      */
     public function create()
     {
-        return view('/admin/exposicoes.create');
+        return view('/admins/exposicoes.create');
     }
 
     /**
