@@ -16,7 +16,7 @@
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-            <form class="form-horizontal" method="POST" action="/exposicoes" enctype="multipart/form-data">  
+            <form class="form-horizontal" method="POST" action="/admins/exposicoes" enctype="multipart/form-data">  
 	            {{ csrf_field() }}
 
 	            <input type="hidden" name="estado" value="proccess">

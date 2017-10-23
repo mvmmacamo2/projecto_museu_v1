@@ -108,8 +108,12 @@
                       <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
                     </li>
 
-                    <li class="nav-item active">
-                      <a class="dropdown-item" href="{{ route('register') }}"><b>Registar</b></a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="{{ route('register') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Individual</a>
+                        <a class="dropdown-item" href="#">Escola</a>
+                      </div>
                     </li>
                 @endauth
               @endif
