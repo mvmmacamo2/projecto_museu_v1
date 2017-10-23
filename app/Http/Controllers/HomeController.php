@@ -29,6 +29,8 @@ class HomeController extends Controller
         $exposicoes = Exposicao::all();
         $eventos = Evento::all();
         $usuarios = User::all();
-        return view('home-admin', compact('exposicoes', 'eventos', 'usuarios'));
+       $u= Auth()->user();
+        return $u;
+        //return view('home-admin', compact('exposicoes', 'eventos', 'usuarios'));
     }
 }
