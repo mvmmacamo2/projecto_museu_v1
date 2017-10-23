@@ -15,6 +15,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
                 <form method="post" action="/servicos/individual">
+                    {!! csrf_field() !!}
 
                   <div class="row">
 
