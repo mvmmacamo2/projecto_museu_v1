@@ -35,3 +35,9 @@ Route::get('/servicos/escola', 'ServicosController@escola');
 Route::get('/servicos/patio', 'ServicosController@patio');
 Route::get('/servicos/individual', 'ServicosController@individual');
 
+// Rotas Admins
+Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visitaguiadaescolar');
+Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular');
+Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda');
+
+Route::post('/servicos/individual', 'ServicosController@save');
