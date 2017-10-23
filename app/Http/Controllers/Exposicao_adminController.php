@@ -33,7 +33,7 @@ class Exposicao_adminController extends Controller
      */
     public function create()
     {
-        return view('/admin/exposicoes.create');
+        return view('admins.exposicoes.create');
     }
 
     /**
@@ -70,7 +70,7 @@ class Exposicao_adminController extends Controller
         }
 
         
-        return redirect('/admin/exposicoes/create');
+        return redirect('admins.exposicoes.create');
     }
 
     /**
@@ -93,7 +93,7 @@ class Exposicao_adminController extends Controller
     public function edit($id)
     {
         $exposicao = Exposicao::findOrFail($id);
-        return view('/admin.exposicoes.edit', compact('exposicao'));
+        return view('admins.exposicoes.edit', compact('exposicao'));
     }
 
     /**
@@ -138,7 +138,7 @@ class Exposicao_adminController extends Controller
         
         $exposicao->save();
 
-        return redirect('/admin/exposicoes/index')->with('success','Exposicao has been updated');
+        return redirect('admins.exposicoes.index')->with('success','Exposicao has been updated');
     }
 
     /**

@@ -17,7 +17,6 @@ class ServicosController extends Controller
         return view('servicos.patio');
     }
 
-
     public function individual()
     {
         return view('servicos.individual');

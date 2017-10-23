@@ -23,6 +23,12 @@
 <!-- nivelacesso -->    
 
                         <input type="hidden" name="nivelacesso" value="normal">
+                        <input type="hidden" name="telefone" value="">
+                        <input type="hidden" name="estado" value="delete">
+                        <input type="hidden" name="endereco" value="">
+                        <input type="hidden" name="sexo" value="">
+                        <input type="hidden" name="sexo" value="">
+                        <input type="hidden" name="foto" value="">
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Name</label>
