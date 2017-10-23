@@ -40,4 +40,4 @@ Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visi
 Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular');
 Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda');
 
-Route::post('/servicos/individual', 'ServicosController@save');
+Route::post('/servicos/individual', 'VisitaGSingularController@salvar');

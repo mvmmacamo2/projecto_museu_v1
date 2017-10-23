@@ -14,7 +14,7 @@
         <div class="row">      
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                <form>
+                <form method="post" action="/servicos/individual">
 
                   <div class="row">
 
