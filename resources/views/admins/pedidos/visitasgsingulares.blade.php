@@ -4,7 +4,7 @@
 
     <div class="row">
         <div class="col-lg-10">
-            <h1 class="page-header">Visita Guiada Escolar</h1>
+            <h1 class="page-header">Visita Guiada Singular</h1>
         </div>
 
     </div>
@@ -51,7 +51,35 @@
                                 <td>{{$p->data}}</td>
                                 <td>{{$p->hora}}</td>
                                 <td>{{$p->created_at}}</td>
-                                <td>{{$p->descricao}}</td>
+                                <td>
+                                    <a href="#">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                                          Ver Descrição <i class="fa fa-eye"></i>
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Descrição Do Pedido</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                    {{$p->descricao}}.. 
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </a>
+                                </td>
 
 
                                 {{--<td>--}}

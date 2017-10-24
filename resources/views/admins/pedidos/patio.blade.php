@@ -4,7 +4,7 @@
 
     <div class="row">
         <div class="col-lg-10">
-            <h1 class="page-header">Visita Guiada Escolar</h1>
+            <h1 class="page-header">Pedidos De Aluguer De Pátio</h1>
         </div>
 
     </div>

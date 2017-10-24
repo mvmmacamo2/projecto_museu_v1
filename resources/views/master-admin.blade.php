@@ -354,7 +354,7 @@
                                 </li>
 
                                 <li>
-                                    <a style="color: #1c961f" href="/admins/pedidos/prenda"><i class="fa fa-eye"></i>Renda do Pátio</a>
+                                    <a style="color: #1c961f" href="/admins/pedidos/prenda"><i class="fa fa-eye"></i> Renda do Pátio</a>
                                 </li>
 
                                 <li>
