@@ -37,7 +37,7 @@
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 </head>
-<body>
+<body style="background-color: #fcf9fc">
 
 <!-- Header area wrapper starts -->
 <header id="header-wrap">

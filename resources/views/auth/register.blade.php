@@ -4,6 +4,13 @@
     Registo
 @stop
 
+<style type="text/css">
+    .effect1{ -webkit-box-shadow: 5px 4px 16px -5px rgba(54,54,54,1);
+-moz-box-shadow: 5px 4px 16px -5px rgba(54,54,54,1);
+box-shadow: 5px 4px 16px -5px rgba(54,54,54,1);
+}
+</style>
+
 @section('content')
     <div class="container py-5">
     <div class="row">
@@ -13,7 +20,7 @@
                     <span class="anchor" id="formLogin"></span>
 
                     <!-- form card login -->
-                    <div class="card rounded-0">
+                    <div class="card rounded-0 effect1">
                         <div class="card-header">
                             <h3 class="mb-0">Registo</h3>
                         </div>
