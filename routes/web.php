@@ -31,13 +31,13 @@ Route::get('/eventos', 'EventoController@index');
 
 
 // rotas Relacionadas a  serviços
-Route::get('/servicos/escola', 'ServicosController@escola');
-Route::get('/servicos/patio', 'ServicosController@patio');
-Route::get('/servicos/individual', 'ServicosController@individual');
+Route::get('/servicos/escola', 'ServicosController@escola')->middleware('autenticacao');;
+Route::get('/servicos/patio', 'ServicosController@patio')->middleware('autenticacao');;
+Route::get('/servicos/individual', 'ServicosController@individual')->middleware('autenticacao');;
 
 // Rotas Admins
-Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visitaguiadaescolar');
-Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular');
-Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda');
+Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visitaguiadaescolar')->middleware('autenticacao');;
+Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular')->middleware('autenticacao');;
+Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda')->middleware('autenticacao');;
 
-Route::post('/servicos/individual', 'VisitaGSingularController@salvar');
+Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middleware('autenticacao');;
