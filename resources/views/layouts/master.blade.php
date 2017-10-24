@@ -87,33 +87,33 @@
 
 
           @if (Route::has('login'))
-            @auth
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
-                <div class="dropdown-menu">
-                  <a href="{{ route('home') }}">
-                    Home
-                  </a>
+                @auth
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+                    <div class="dropdown-menu">
+                      <a href="{{ route('home') }}">
+                          Home
+                      </a>
 
-                  <a href="{{ route('logout') }}"
-                     onclick="event.preventDefault();
+                      <a href="{{ route('logout') }}"
+                          onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
-                    Logout
-                  </a>
+                          Logout
+                      </a>
 
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                  </form>
-                </div>
-              </li>
-              @else
-                <li class="nav-item active">
-                  <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
-                </li>
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                      </form>
+                    </div>
+                  </li>
+                  @else
+                    <li class="nav-item active">
+                      <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
+                    </li>
 
-                <li class="nav-item active">
-                  <a class="dropdown-item" href="{{ route('register') }}"><b>Registar</b></a>
-                </li>
+                    <li class="nav-item active">
+                      <a class="dropdown-item active" href="{{ route('register') }}"><b>Registar</b></a>
+                    </li>
                 @endauth
               @endif
         </ul>

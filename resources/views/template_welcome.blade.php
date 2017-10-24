@@ -35,7 +35,6 @@
 
   </head>
   <body>
-
     <!-- Header area wrapper starts -->
     <header id="header-wrap">      
       <!-- Navbar Starts -->
@@ -85,6 +84,7 @@
               
               @if (Route::has('login'))
                 @auth
+
                   <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
                     <div class="dropdown-menu">
@@ -107,14 +107,10 @@
                     <li class="nav-item active">
                       <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
                     </li>
-
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="{{ route('register') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Individual</a>
-                        <a class="dropdown-item" href="#">Escola</a>
-                      </div>
+                    <li class="nav-item active">
+                      <a class="dropdown-item active" href="{{ route('register') }}"><b>Registar</b></a>
                     </li>
+
                 @endauth
               @endif
             </ul>
