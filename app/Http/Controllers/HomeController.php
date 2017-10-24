@@ -35,10 +35,15 @@ class HomeController extends Controller
 
         if ($nivel == 'Administrador') {
             return view('home-admin', compact('exposicoes', 'eventos', 'usuarios'));
+        }elseif ($nivel=='Normal') {
+               return view('template_welcome'); 
+        }else{
+            return view('template_welcome');
+
         }
 
-        if ($nivel=='Normal'){
-            return view('template_welcome');
-        }
+        // if ($nivel=='Normal'){
+        //     return view('template_welcome');
+        // }
     }
 }
