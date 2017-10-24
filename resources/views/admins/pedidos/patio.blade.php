@@ -50,7 +50,7 @@
                                 <td>{{$p->data}}</td>
                                 <td>{{$p->hora}}</td>
                                 <td>{{$p->created_at}}</td>
-                                <td>{{$p->descricao}}</td>
+                                <td>{{$p->descricao}} </td>
 
 
                                 {{--<td>--}}

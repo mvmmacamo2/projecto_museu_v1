@@ -97,7 +97,7 @@
                                                 <form>
                                                   <div class="form-group">
                                                     <label for="recipient-name" class="col-form-label">E-mail:</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <input type="enabled" class="form-control" id="recipient-name" value="{{ $p->email }}">
                                                   </div>
                                                   <div class="form-group">
                                                     <label for="message-text" class="col-form-label">Messagem:</label>
@@ -113,7 +113,6 @@
                                           </div>
                                         </div>
                                     </a>
-                                    <button class="btn btn-danger"><i class="fa fa-trash"></i> Apagar</button>
                                 </td>
                             </tr>
                         @endforeach
