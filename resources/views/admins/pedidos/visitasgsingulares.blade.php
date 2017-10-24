@@ -31,7 +31,7 @@
                             <th>Hora</th>
                             <th>Data De Submissão</th>
                             <th>Descrição</th>
-
+                            <th>Acção</th>
                         </tr>
 
                         </thead>
@@ -55,7 +55,7 @@
                                     <a href="#">
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                                          Ver Descrição <i class="fa fa-eye"></i>
+                                          Ver <i class="fa fa-eye"></i>
                                         </button>
 
                                         <!-- Modal -->
@@ -81,13 +81,12 @@
                                     </a>
                                 </td>
 
-
-                                {{--<td>--}}
-                                {{--<a href="/admin/eventos/{{ $evento->id }}/edit">--}}
-                                {{--<button class="btn btn-success">Editar</button>--}}
-                                {{--</a>--}}
-                                {{--<button class="btn btn-danger">Apagar</button>--}}
-                                {{--</td>--}}
+                                <td>
+                                    <a href="#">
+                                    <button class="btn btn-success"> Responder</button>
+                                    </a>
+                                    <button class="btn btn-danger"><i class="fa fa-trash"></i> Apagar</button>
+                                </td>
                             </tr>
                         @endforeach
 
