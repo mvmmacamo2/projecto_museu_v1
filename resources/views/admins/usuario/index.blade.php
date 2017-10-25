@@ -52,11 +52,11 @@
                                         </button>
 
 
-                                    <a href="/admin/usuario/{{ $user->id }}/edit">
+                                    <a href="/admins/usuarios/{{ $user->id }}/edit">
                                         <button class="btn btn-success">Editar</button>
                                     </a>
-                                    <button class="btn btn-danger">Apagar</button>
-                            
+                                    {{--<button class="btn btn-danger">Apagar</button>--}}
+
 
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
