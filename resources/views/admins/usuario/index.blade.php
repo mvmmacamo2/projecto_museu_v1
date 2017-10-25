@@ -37,19 +37,12 @@
 
                         <tbody>
 
-                        @foreach($pedidos as $p)
+                        @foreach($usuarios as $user)
                             <tr class="odd gradeX">
-                                <td>{{$p->nome}}</td>
-                                <td>{{$p->email}}</td>
-                                <td>{{$p->nome_responsavel}}</td>
-                                {{--<td>--}}
-                                {{--<img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">--}}
-                                {{--</td>--}}
-
-                                <td>{{$p->data}}</td>
-
-                                <td>{{$p->hora}}</td>
-                                <td>{{$p->created_at}}</td>
+                                <td>{{$user->name}}</td>
+                                <td>{{$user->username}}</td>
+                                <td>{{$user->email}}</td>
+                                <td>{{$user->nivelacesso}}</td>
                                 <td>
                                     <a href="#">
                                         <!-- Button trigger modal -->
@@ -57,6 +50,8 @@
                                                 data-target="#exampleModalLong">
                                             Ver Descrição <i class="fa fa-eye"></i>
                                         </button>
+
+
 
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
@@ -72,7 +67,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        {{$p->descricao}}..
+                                                        {{$user->foto}}..
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
