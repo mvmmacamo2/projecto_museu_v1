@@ -380,7 +380,7 @@
                                     <a style="color: #1c961f" href="#"><i class="fa fa-plus"></i> Adicionar Usuário</a>
                                 </li>
                                 <li>
-                                    <a style="color: #1c961f" href="#"><i class="fa fa-eye"></i> Ver Lista</a>
+                                    <a style="color: #1c961f" href="/admins/usuarios"><i class="fa fa-eye"></i> Ver Lista</a>
                                 </li>
                                 <li>
                                     <a style="color: #1c961f" href="#">Permições</a>

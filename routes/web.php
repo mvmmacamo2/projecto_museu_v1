@@ -23,8 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/admins/exposicoes', 'Exposicao_adminController');
 Route::resource('/admins/eventos', 'Evento_adminController');
 
-Route::get('/historias/museu','Historia_museuController@index');
-Route::get('/historias/amarela','Historia_casa_amarelaController@index');
+Route::get('/historias/museu', 'Historia_museuController@index');
+Route::get('/historias/amarela', 'Historia_casa_amarelaController@index');
 
 Route::get('/exposicoes', 'ExposicaoController@index');
 Route::get('/eventos', 'EventoController@index');
@@ -41,3 +41,7 @@ Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@vi
 Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda')->middleware('autenticacao');;
 
 Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middleware('autenticacao');;
+
+
+//
+Route::resource('/admins/usuarios', 'UserController');
