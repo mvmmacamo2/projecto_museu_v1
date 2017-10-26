@@ -34,7 +34,7 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
   </head>
-  <body>
+  <body style="background-color: #fcf9fc";>
     <!-- Header area wrapper starts -->
     <header id="header-wrap">      
       <!-- Navbar Starts -->
@@ -107,8 +107,13 @@
                     <li class="nav-item active">
                       <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
                     </li>
-                    <li class="nav-item active">
-                      <a class="dropdown-item active" href="{{ route('register') }}"><b>Registar</b></a>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
+                        <a class="dropdown-item" href="#">Organização</a>
+                      </div>
                     </li>
 
                 @endauth
