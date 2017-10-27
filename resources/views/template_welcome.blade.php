@@ -33,6 +33,10 @@
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/colors/green.css" media="screen" />       
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
+    <style type="text/css">
+      .white{ color: #aef2bc; }
+    </style>
+
   </head>
   <body style="background-color: #fcf9fc";>
     <!-- Header area wrapper starts -->
@@ -42,8 +46,8 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-              <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
+            <a class="navbar-brand" href="/">
+              <img src="/engage/assets/img/uem-logo-40x40.png" alt=""> 
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -205,9 +209,9 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img src="/engage/assets/img/slider/bg-1.jpg" alt="">
+              <img src="/engage/assets/img/slider/bg-4.jpg" alt="">
               <div class="carousel-caption">
-                <h2>
+                <h2 class="white">
                   Museu Nacional Da Moeda
                 </h2>
                 <h3>
@@ -221,9 +225,9 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/engage/assets/img/slider/bg-2.jpg" alt="">
+              <img src="/engage/assets/img/slider/bg-6.jpg" alt="">
               <div class="carousel-caption">
-                <h2>
+                <h2 class="white">
                   Conhecendo A Nossa História
                 </h2>
                 <h3>
@@ -238,9 +242,9 @@
             </div>
 
             <div class="carousel-item">
-              <img src="/engage/assets/img/slider/bg-3.jpg" alt="">
+              <img src="/engage/assets/img/slider/bg-5.jpg" alt="">
               <div class="carousel-caption">
-                <h2>
+                <h2 class="white">
                   Participe de nossas Visitas Guiadas
                 </h2>
                 <h3>
@@ -250,9 +254,9 @@
             </div>
 
             <div class="carousel-item">
-              <img src="/engage/assets/img/slider/bg-3.jpg" alt="">
+              <img src="/engage/assets/img/slider/bg-7.jpg" alt="">
               <div class="carousel-caption">
-                <h2>
+                <h2 class="white">
                   Conheça Nossos Serviços
                 </h2>
                 <h3>
