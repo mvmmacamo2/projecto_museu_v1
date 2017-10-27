@@ -24,18 +24,26 @@
 
 
                         <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
-                            <label for="nome" class="col-md-4 control-label">Nome</label>
+                            <label for="nome" class="col-md-4 control-label">Nome Da Exposição</label>
 
-                            <div class="col-md-6">
-                                <input id="nome" type="text" class="form-control" name="nome" value="{{ old('nome') }}"
-                                       required autofocus>
+                            {{--<div class="col-md-6">--}}
+                            {{--<input id="nome" type="text" class="form-control" name="nome" value="{{ old('nome') }}"--}}
+                            {{--required autofocus>--}}
 
-                                @if ($errors->has('nome'))
-                                    <span class="help-block">
-                                <strong>{{ $errors->first('nome') }}</strong>
-                            </span>
-                                @endif
+                            {{--@if ($errors->has('nome'))--}}
+                            {{--<span class="help-block">--}}
+                            {{--<strong>{{ $errors->first('nome') }}</strong>--}}
+                            {{--</span>--}}
+                            {{--@endif--}}
+
+                            {{--</div>--}}
+                            <div>
+                                <select class="form-control">
+                                    <option>dcd</option>
+
+                                </select>
                             </div>
+
                         </div>
 
 
