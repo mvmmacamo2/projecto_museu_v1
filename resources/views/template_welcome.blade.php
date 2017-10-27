@@ -9,6 +9,10 @@
       Museu Da Moeda
     </title>
     <!-- Bootstrap -->
+    <!-- bootstrapcdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/bootstrap.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="/engage/assets/css/main.css">
@@ -68,8 +72,8 @@
                 </div>
               </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/exposicoes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposição</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/exposicoes">Exposição <span class="sr-only"></span></a>
               </li>
 
               <li class="nav-item dropdown">
@@ -233,11 +237,6 @@
                 <h3>
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 </h3>
-                <a class="btn btn-common btn-lg " href="#service-block-main">
-                  <i class="fa fa-coffee">
-                  </i>
-                  Mais
-                </a>
               </div>
             </div>
 
@@ -285,7 +284,7 @@
         <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
         VISITE O MUSEU
         </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
+        <p class="section-subcontent">Rua Consiglieri Pedroso Maputo</p>
         <div class="row">  
           <div class="col-sm-6 col-md-3">
             <!-- Service-Block-1 Item Starts -->
@@ -295,11 +294,11 @@
                 </i>
               </div>
               <h2>
-                40+ Pages
+                Visitas Giadas Individuas
               </h2>
-              <p>
+              <!-- <p>
                 Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-              </p>
+              </p> -->
             </div>
             <!-- Service-Block-1 Item Ends -->
           </div>
@@ -312,11 +311,11 @@
                 </i>
               </div>
               <h2>
-                Bootstrap4 and HTML5
+                Visitas Guiadas Colectivas
               </h2>
-              <p>
+              <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
-              </p>
+              </p> -->
             </div>
             <!-- Service-Block-1 Item Ends -->
           </div>
@@ -329,11 +328,11 @@
                 </i>
               </div>
               <h2>
-                Refreshing Design
+                Visitas Para Escolas
               </h2>
-              <p>
+              <!-- <p>
                 Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-              </p>
+              </p> -->
             </div>
             <!-- Service-Block-1 Item Ends -->
           </div>
@@ -346,11 +345,11 @@
                 </i>
               </div>
               <h2>
-                Crafted Carefully
+                Visitas Privadas
               </h2>
-              <p>
+              <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
-              </p>
+              </p> -->
             </div>
           </div><!-- Service-Block-1 Item Ends -->
         </div>
@@ -384,28 +383,28 @@
             <div class="tab-content">
               <div class="tab-pane active" id="home" role="tabpanel">
                 <div class="service-content wow fadeInUpQuick">
-                  <h3>Responsive Design</h3>
+                  <h3>Actividade Com As Escolas</h3>
                   <p class="lead">At vero eos et accusamus et <a href="#">iusto</a> odio digniss- <br> imos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
                   <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                 </div>
               </div>            
               <div class="tab-pane" id="profile" role="tabpanel">
                 <div class="service-content">
-                  <h3>Very useful custom widget </h3>
+                  <h3>Visitas Guiadas Individuais</h3>
                   <p class="lead">At vero eos et accusamus et <a href="#">iusto</a> odio digniss- <br> imos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
                   <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                 </div>
               </div>
               <div class="tab-pane" id="messages" role="tabpanel">
                 <div class="service-content">
-                  <h3>Graphic Design</h3>
+                  <h3>Aluguer De Pátio</h3>
                   <p class="lead">At vero eos et accusamus et <a href="#">iusto</a> odio digniss- <br> imos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
                   <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                 </div>
               </div>
               <div class="tab-pane" id="settings" role="tabpanel">
                 <div class="service-content">
-                  <h3>Parallax Background</h3>
+                  <h3>Outros</h3>
                   <p class="lead">At vero eos et accusamus et <a href="#">iusto</a> odio digniss- <br> imos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti</p>
                   <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                 </div>
@@ -712,8 +711,15 @@
      <!-- All JS plugin Triggers -->
     <script src="/engage/assets/js/main.js"></script> 
 
+    <!-- bootstrapcdn alfa -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
- <script src="/bootstrap-4.0.0-beta/js/jquery-3.2.1.js"></script>
+    <!-- bootstrapcdn beta -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
   </body>
 </html>
