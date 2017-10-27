@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class PerfilController extends Controller
 {
@@ -14,7 +15,10 @@ class PerfilController extends Controller
      */
     public function index()
     {
-        $usuario = User::all();
+        //$usuario = User::all();
+         $id = Auth::user()->id;
+
+        $usuario=User::find($id);
 
         return view('admins.usuario.perfil', compact('usuario'));
     }
