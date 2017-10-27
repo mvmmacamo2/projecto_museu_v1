@@ -392,7 +392,7 @@
                             <a style="color: #1c961f" href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a style="color: #1c961f" href="blank.html"><i class="fa fa-eye"></i> Ver Perfil</a>
+                                    <a style="color: #1c961f" href="/admins/usuarios/perfil"><i class="fa fa-eye"></i> Ver Perfil</a>
                                 </li>
                                 <li>
                                     <a style="color: #1c961f" href="{{ route('logout') }}" onclick="event.preventDefault();

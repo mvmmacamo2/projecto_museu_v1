@@ -84,4 +84,10 @@ class UserController extends Controller
     {
         //
     }
+
+
+    public function perfil()
+    {
+        return view('admins.usuario.perfil');
+    }
 }
