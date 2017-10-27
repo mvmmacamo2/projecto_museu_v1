@@ -70,7 +70,7 @@ class Exposicao_adminController extends Controller
         }
 
         
-        return redirect('admins.exposicoes.create');
+        return redirect('admins/exposicoes');
     }
 
     /**
