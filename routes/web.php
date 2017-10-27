@@ -45,3 +45,4 @@ Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middlew
 
 //
 Route::resource('/admins/usuarios', 'UserController');
+Route::resource('/admins/usuario', 'PerfilController');
