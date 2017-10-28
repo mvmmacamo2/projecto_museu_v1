@@ -24,7 +24,7 @@
 
 
                         <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
-                            <label for="nome" class="col-md-4 control-label">Nome Da Exposição</label>
+
 
                             {{--<div class="col-md-6">--}}
                             {{--<input id="nome" type="text" class="form-control" name="nome" value="{{ old('nome') }}"--}}
@@ -37,7 +37,8 @@
                             {{--@endif--}}
 
                             {{--</div>--}}
-                            <div>
+                            <div class="col-md-6">
+                                <label for="nome" class="col-md-4 control-label">Nome Da Exposição</label>
                                 <select class="form-control">
                                     <option>dcd</option>
 
