@@ -16,23 +16,26 @@
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="/admins/galeria"
-                          enctype="multipart/form-data">
+                    <form class="form-horizontal" method="POST" action="/admins/galerias"  enctype="multipart/form-data">
+
                         {{ csrf_field() }}
 
-                        <input type="hidden" name="estado" value="proccess">
+                        <input type="hidden" name="estado" value="Activa">
 
-
+                            <input type="hidden" name="usuario_id" value="{{Auth()->user()->id}}">
                         <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
                             <label for="nome" class="col-md-4 control-label">Exposição</label>
 
                             <div class="col-md-6">
 
-                                 <select class="form-control">
 
-                                     <option></option>
+                                <select class="form-control" name="exposicao_id">
+                                    @foreach($exposicao as $exp)
+                                        <option value="{{$exp->id}}">{{$exp->nome}}</option>
+                                    @endforeach
 
-                                 </select>
+                                </select>
+
                             </div>
 
                         </div>
