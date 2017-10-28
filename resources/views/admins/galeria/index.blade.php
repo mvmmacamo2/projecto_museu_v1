@@ -42,7 +42,7 @@
                             <td>{{$g->estado}}</td>
                         </tr>
                         @endforeach
-                     
+
                         </tbody>
                     </table>
                     <!-- /.table-responsive -->
