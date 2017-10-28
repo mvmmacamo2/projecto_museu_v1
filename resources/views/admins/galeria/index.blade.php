@@ -37,11 +37,11 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($galeria as $g)
+
+                        @foreach($vgaleria as $g)
                         <tr>
-                            <td>{{$g->nome}}</td>
-                            <td>{{$g->descricao}}</td>
-                            <td>{{$g->estado}}</td>
+                            <td>{{$g->nomeexposicao}}</td>
+
                         </tr>
                         @endforeach
 

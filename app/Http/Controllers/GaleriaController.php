@@ -22,7 +22,8 @@ class GaleriaController extends Controller
         $exposicao = Exposicao::all();
         $galeria =ExposicaoGaleria::all();
         $vgaleria = Vgaleria::all();
-        return view('admins.galeria.index', compact('exposicao'), compact('galeria'), compact('vgaleria'));
+         dd($vgaleria);
+        //return view('admins.galeria.index', compact('exposicao'), compact('galeria'), compact('vgaleria'));
     }
 
     /**
