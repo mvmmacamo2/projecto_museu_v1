@@ -19,10 +19,7 @@ class CreateVgaleriasTable extends Migration
       SELECT  e.nome, eg.nome , eg.descricao ,eg.estado, u.nome, eg.created_at FROM exposicaos e, exposicao_galerias eg, users u WHERE u.id=eg.usuario_id
       )
         and e.id=eg.exposicao_id ");
-//        Schema::create('vgalerias', function (Blueprint $table) {
-//            $table->increments('id');
-//            $table->timestamps();
-//        });
+
     }
 
     /**
@@ -33,6 +30,6 @@ class CreateVgaleriasTable extends Migration
     public function down()
     {
         DB::statement('DROP VIEW IF EXISTS v__patios');
-//        Schema::dropIfExists('vgalerias');
+
     }
 }
