@@ -16,9 +16,9 @@ class CreateVgaleriasTable extends Migration
         DB::statement("
       CREATE VIEW vgalerias AS
       (
-      SELECT  u.name, u.email , v.data ,v.hora, v.descricao, v.estado,v.created_at FROM apatios v, users u WHERE u.id=v.usuario_id
+      SELECT  e.nome, eg.nome , eg.descricao ,eg.estado, u.nome, eg.created_at FROM exposicaos e, exposicao_galerias eg, users u WHERE u.id=eg.usuario_id
       )
-        ");
+        and e.id=eg.exposicao_id ");
 //        Schema::create('vgalerias', function (Blueprint $table) {
 //            $table->increments('id');
 //            $table->timestamps();
