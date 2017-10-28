@@ -27,10 +27,12 @@
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                         <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Descrição</th>
+                            <th>Nome Da Exposicao</th>
+                            <th>Nome Da Galeria</th>
+                            <th>Descricao</th>
+                            <th>Adicionada Por</th>
                             <th>Estado</th>
-                            <th>Imagem</th>
+                            <th>Data de Adicao</th>
                             <th>Acção</th>
                         </tr>
                         </thead>
