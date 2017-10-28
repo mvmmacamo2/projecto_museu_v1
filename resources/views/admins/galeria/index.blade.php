@@ -16,9 +16,11 @@
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
-                   <label>Exposição</label>
+                    <label>Exposição</label>
                     <select class="form-control">
-                        <option></option>
+                        @foreach($exposicao as $exp)
+                            <option>{{ $exp->nome }}</option>
+                        @endforeach
                     </select>
                     <br>
 
@@ -34,20 +36,20 @@
                         </thead>
                         <tbody>
                         {{--@foreach($exposicaos as $exposicao)--}}
-                            {{--<tr class="odd gradeX">--}}
-                                {{--<td>{{$exposicao->nome}}</td>--}}
-                                {{--<td>{{$exposicao->descricao}}</td>--}}
-                                {{--<td>--}}
-                                    {{--<img style="max-width: 40px;" src="/expo-upload/{{$exposicao->imagem}}">--}}
-                                {{--</td>--}}
-                                {{--<td>{{$exposicao->estado}}</td>--}}
-                                {{--<td>--}}
-                                    {{--<a href="/exposicoes/{{ $exposicao->id }}/edit">--}}
-                                        {{--<button class="btn btn-success">Editar</button>--}}
-                                    {{--</a>--}}
-                                    {{---- <button class="btn btn-danger">Apagar</button>--}}
-                                {{--</td>--}}
-                            {{--</tr>--}}
+                        {{--<tr class="odd gradeX">--}}
+                        {{--<td>{{$exposicao->nome}}</td>--}}
+                        {{--<td>{{$exposicao->descricao}}</td>--}}
+                        {{--<td>--}}
+                        {{--<img style="max-width: 40px;" src="/expo-upload/{{$exposicao->imagem}}">--}}
+                        {{--</td>--}}
+                        {{--<td>{{$exposicao->estado}}</td>--}}
+                        {{--<td>--}}
+                        {{--<a href="/exposicoes/{{ $exposicao->id }}/edit">--}}
+                        {{--<button class="btn btn-success">Editar</button>--}}
+                        {{--</a>--}}
+                        {{---- <button class="btn btn-danger">Apagar</button>--}}
+                        {{--</td>--}}
+                        {{--</tr>--}}
                         {{--@endforeach--}}
                         </tbody>
                     </table>

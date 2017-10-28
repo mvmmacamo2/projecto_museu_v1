@@ -18,7 +18,8 @@ class GaleriaController extends Controller
      */
     public function index()
     {
-        return view('admins.galeria.index');
+        $exposicao = Exposicao::all();
+        return view('admins.galeria.index', compact('exposicao'));
     }
 
     /**
