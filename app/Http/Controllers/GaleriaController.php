@@ -30,7 +30,8 @@ class GaleriaController extends Controller
     public function create()
     {
         $exposicao = Exposicao::all();
-        return view('admins.galeria.create', compact('exposicao'));
+        $galeria =ExposicaoGaleria::all();
+        return view('admins.galeria.create', compact('exposicao', 'galeria'));
     }
 
     /**

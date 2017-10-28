@@ -19,7 +19,7 @@
                     <label>Exposição</label>
                     <select class="form-control">
                         @foreach($exposicao as $exp)
-                            <option>{{ $exp->nome }}</option>
+                            <option value="{{$exp->id}}">{{ $exp->nome }}</option>
                         @endforeach
                     </select>
                     <br>
@@ -35,6 +35,11 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($galeria as $g)
+                        <tr>
+
+                        </tr>
+                        @endforeach
                         {{--@foreach($exposicaos as $exposicao)--}}
                         {{--<tr class="odd gradeX">--}}
                         {{--<td>{{$exposicao->nome}}</td>--}}
