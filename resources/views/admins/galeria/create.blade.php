@@ -22,7 +22,8 @@
 
                         <input type="hidden" name="estado" value="Activa">
 
-                            <input type="hidden" name="usuario_id" value="{{Auth()->user()->id}}">
+                        <input type="hidden" name="usuario_id" value="{{Auth()->user()->id}}">
+
                         <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
                             <label for="nome" class="col-md-4 control-label">Exposição</label>
 

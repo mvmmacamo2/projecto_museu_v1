@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\ExposicaoGaleria;
+use App\GaleriaExposicao;
 use Illuminate\Http\Request;
 use App\Exposicao;
+use File;
 
 
 class GaleriaController extends Controller
@@ -38,32 +40,44 @@ class GaleriaController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
-//        if ($request->imagem) {
-//            $imagem = $request->imagem;
-//            $extension = $imagem->getClientOriginalExtension();
-//            if ($extension != 'png' && $extension != 'jpg') {
-//                return back()->with('erro', 'Erro: Este ficheiro não é imagem..!');
-//            }
-//        } else {
+
+//        dd($request->all());
 //
-//        }
+
+        if($request->imagem){
+            $imagem = $request -> imagem;
+            $extension =  $imagem -> getClientOriginalExtension();
+            if($extension!='png' && $extension!='jpg'){
+                return back() -> with('erro', 'Erro: Este ficheiro não é imagem..!');
+            }
+        }
+
+//        $galeria = new ExposicaoGaleria;
 //
-//        $galeria = ExposicaoGaleria::create($request->all());
-//
-//        if ($request->imagem) {
-//            $imagem = $request->imagem;
-//            $extension = $imagem->getClientOriginalExtension();
-//            File::move($imagem, public_path() . '/expo-upload/expo-id-' . $galeria->id . '.' . $extension);
-//
-//            $galeria->imagem = 'expo-id-' . $galeria->id . '.' . $extension;
-//
-//            $galeria->save();
-//        }
-//
-//
-//
-//        return redirect('admins/galerias');
+//        $galeria -> nome      = $request -> nome;
+//        $galeria -> descricao     = $request -> descricao;
+//        $galeria -> imagem     = "";
+//        $galeria -> estado    = $request -> estado;
+//        $galeria->usuario_id= $request->usuario_id;
+//        $galeria->exposicao_id = $request->exposicao_id;
+//        $galeria -> save();
+        $galeria= ExposicaoGaleria::create($request->all());
+
+        if($request->imagem)
+        {
+            File::move($imagem, public_path().'/galeria/expo-id-'.$galeria->id.'.'.$extension);
+
+            $galeria -> imagem = 'expo-id-'.$galeria->id.'.'.$extension;
+
+            $galeria -> save();
+            if ( $galeria -> save()){
+                return redirect('/admins/galerias');
+            }
+        }
+
+
+
+
     }
 
     /**
