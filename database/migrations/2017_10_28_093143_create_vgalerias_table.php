@@ -16,7 +16,7 @@ class CreateVgaleriasTable extends Migration
         DB::statement("
       CREATE VIEW vgalerias AS
       (
-      SELECT  e.nome, eg.nome , eg.descricao ,eg.estado, u.nome, eg.created_at FROM exposicaos e, exposicao_galerias eg, users u WHERE u.id=eg.usuario_id   AND e.id=eg.exposicao_id
+      SELECT  e.nome as nomeexposicao, eg.nome , eg.descricao ,eg.estado, u.name, eg.created_at FROM exposicaos e, exposicao_galerias eg, users u WHERE u.id=eg.usuario_id   AND e.id=eg.exposicao_id
       )
        ");
 
