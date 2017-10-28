@@ -7,6 +7,7 @@ use App\GaleriaExposicao;
 use Illuminate\Http\Request;
 use App\Exposicao;
 use File;
+use App\Vgaleria;
 
 
 class GaleriaController extends Controller
@@ -20,7 +21,8 @@ class GaleriaController extends Controller
     {
         $exposicao = Exposicao::all();
         $galeria =ExposicaoGaleria::all();
-        return view('admins.galeria.index', compact('exposicao'), compact('galeria'));
+        $vgaleria = Vgaleria::all();
+        return view('admins.galeria.index', compact('exposicao'), compact('galeria'), compact('vgaleria'));
     }
 
     /**
