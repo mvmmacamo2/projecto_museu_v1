@@ -29,15 +29,17 @@
                         <tr>
                             <th>Nome</th>
                             <th>Descrição</th>
-                            <th>Imagem</th>
                             <th>Estado</th>
+                            <th>Imagem</th>
                             <th>Acção</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($galeria as $g)
                         <tr>
-
+                            <td>{{$g->nome}}</td>
+                            <td>{{$g->descricao}}</td>
+                            <td>{{$g->estado}}</td>
                         </tr>
                         @endforeach
                         {{--@foreach($exposicaos as $exposicao)--}}

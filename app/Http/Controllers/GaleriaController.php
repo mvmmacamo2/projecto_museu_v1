@@ -19,7 +19,8 @@ class GaleriaController extends Controller
     public function index()
     {
         $exposicao = Exposicao::all();
-        return view('admins.galeria.index', compact('exposicao'));
+        $galeria =ExposicaoGaleria::all();
+        return view('admins.galeria.index', compact('exposicao'), compact('galeria'));
     }
 
     /**
@@ -30,8 +31,8 @@ class GaleriaController extends Controller
     public function create()
     {
         $exposicao = Exposicao::all();
-        $galeria =ExposicaoGaleria::all();
-        return view('admins.galeria.create', compact('exposicao', 'galeria'));
+
+        return view('admins.galeria.create', compact('exposicao'));
     }
 
     /**
