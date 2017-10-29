@@ -481,19 +481,20 @@
         </h1>
         <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>     
         <!-- Row Starts -->
-        <div class="row">          
+        <div class="row">   
+        @foreach($eventos as $evento)       
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <!-- Blog Item Starts -->
             <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
               <div class="blog-item-img">
                 <a href="#">
-                  <img src="/engage/assets/img/blog/home-items/img1.jpg" alt="">
+                  <img src="/evento_upload/{{$evento->imagem}}" alt="">
                 </a>   
               </div>
               <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">Amazing Blog Post One</a></h3>
+                <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
+                  {{$evento->descricao}}
                 </p>
                 <div class="blog-one-footer">
                   <a href="#">Read More</a>
@@ -503,51 +504,7 @@
               </div>
             </div><!-- Blog Item Wrapper Ends-->
           </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <!-- Blog Item Wrapper Start-->
-            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.6s">
-              <div class="blog-item-img">
-                <a href="#">
-                  <img src="/engage/assets/img/blog/home-items/img2.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">Amazing Blog Post One</a></h3>
-                <p>
-                   Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
-                </p>
-                
-                <div class="blog-one-footer">
-                  <a href="#">Read More</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                </div>
-              </div>
-            </div><!-- Blog Item Wrapper Ends-->
-          </div>          
-          
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <!-- Blog Item Wrapper Starts-->
-            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
-              <div class="blog-item-img">
-                <a href="#">
-                  <img src="/engage/assets/img/blog/home-items/img3.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">Amazing Blog Post One</a></h3>
-                <p>
-                   Lorem ipsum dolor sit amet, adipisicing elit. Eos rerum dolorum, est voluptatem modi accusantium perspiciatis ...
-                </p>
-                <div class="blog-one-footer">
-                  <a href="#">Read More</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                </div>
-              </div>
-            </div><!-- Blog Item Wrapper Ends-->
-          </div>
+        @endforeach 
         </div><!-- Row Ends -->
       </div><!-- Container Ends -->
     </section>

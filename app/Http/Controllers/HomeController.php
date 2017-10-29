@@ -29,11 +29,11 @@ class HomeController extends Controller
         $nivel = $u->nivelacesso;
 
         if ($nivel == 'Administrador') {
-            return view('home-admin', compact('exposicoes', 'eventos', 'usuarios'));
+            return view('home-admin', compact('exposicoes', 'eventos','usuarios'));
         }elseif ($nivel=='Normal') {
-               return view('template_welcome'); 
+               return view('welcome', compact('exposicoes', 'eventos','usuarios')); 
         }else{
-            return view('template_welcome');
+            return view('welcome', compact('exposicoes', 'eventos','usuarios'));
 
         }
 

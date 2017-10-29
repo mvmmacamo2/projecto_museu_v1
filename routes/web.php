@@ -1,5 +1,5 @@
 <?php
-
+use App\Evento;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('template_welcome');
+	$eventos = Evento::all();
+    return view('welcome', compact('eventos'));
 });
 
 Auth::routes();
