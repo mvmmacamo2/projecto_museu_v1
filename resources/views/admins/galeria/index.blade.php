@@ -44,10 +44,10 @@
                             <td>{{$g->nomeexposicao}}</td>
                             <td>{{$g->nome}}</td>
                             <td>{{$g->descricao}}</td>
+                            <td>{{$g->name}}</td>
                             <td>{{$g->estado}}</td>
-                            <td>{{$g->estado}}</td>
-
-
+                            <td>{{$g->created_at}}</td>
+                            
 
                         </tr>
                         @endforeach
