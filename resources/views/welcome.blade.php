@@ -412,63 +412,6 @@
             </div>
           </div>
           <!-- Other Service Item Wrapper Ends -->
-
-          <!-- Porgress Strts -->
-          <div class="col-sm-6 com-md-6">            
-            <div class="skill-shortcode">
-              <div class="skill">
-                <p>
-                  Web Design 91%
-                </p>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar"  data-percentage="91">
-                    <span class="sr-only">
-                    91% Complete
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="skill">
-                <p>
-                  HTML/CSS 86%
-                </p>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar"  data-percentage="86">
-                    <span class="sr-only">
-                    86% Complete
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="skill">
-                <p>
-                  Graphic Design 78%
-                </p>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar"  data-percentage="78">
-                    <span class="sr-only">
-                    60% Complete
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="skill">
-                <p>
-                  WordPress 65%
-                </p>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar"  data-percentage="65">
-                    <span class="sr-only">
-                    60% Complete
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Other Service Image Ends-->
-        </div>
-      </div><!-- Container Ends -->
     </section>
     <!-- Other Services Section End -->               
 
@@ -477,33 +420,39 @@
       <!-- Container Starts -->
       <div class="container">  
         <h1 class="section-title wow fadeInUpQuick">
-          EVENTOS DO MUSEU
-        </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>     
+          EVENTOS DO MUSEU 
+        </h1> 
         <!-- Row Starts -->
         <div class="row">   
-        @foreach($eventos as $evento)       
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
-              <div class="blog-item-img">
-                <a href="#">
-                  <img src="/evento_upload/{{$evento->imagem}}" alt="">
-                </a>   
-              </div>
-              <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
-                <p>
-                  {{$evento->descricao}}
-                </p>
-                <div class="blog-one-footer">
-                  <a href="#">Read More</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
+        @foreach($eventos as $evento) 
+          @if($evento->estado=='proccess')  
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <!-- Blog Item Starts -->
+              <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
+                <div class="blog-item-img">
+                  <a href="#">
+                    <img src="/evento_upload/{{$evento->imagem}}" alt="">
+                  </a>   
                 </div>
-              </div>
-            </div><!-- Blog Item Wrapper Ends-->
-          </div>
+                <div class="blog-item-text">
+                  <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
+                  <p>
+                    {{$evento->descricao}}
+                  </p>
+                  <div class="blog-one-footer">
+                    <a href="#">Read More</a>
+                    <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                    <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
+                  </div>
+                </div>
+              </div><!-- Blog Item Wrapper Ends-->
+            </div>
+          @else
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              Não há eventos agendados actualmente..!
+            </div>
+          @endif
+
         @endforeach 
         </div><!-- Row Ends -->
       </div><!-- Container Ends -->
