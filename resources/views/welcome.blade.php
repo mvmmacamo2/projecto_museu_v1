@@ -362,7 +362,6 @@
         <h1 class="section-title wow fadeInUpQuick">
           Os Serviços Do Museu
         </h1>
-        <p class="section-subcontent">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
         <div class="row">
           <div id="accordion" role="tablist">
 
