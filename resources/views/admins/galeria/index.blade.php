@@ -40,7 +40,14 @@
 
                         @foreach($ga as $g)
                         <tr>
+
                             <td>{{$g->nomeexposicao}}</td>
+                            <td>{{$g->nome}}</td>
+                            <td>{{$g->descricao}}</td>
+                            <td>{{$g->estado}}</td>
+                            <td>{{$g->estado}}</td>
+
+
 
                         </tr>
                         @endforeach
