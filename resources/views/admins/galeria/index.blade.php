@@ -47,7 +47,9 @@
                             <td>{{$g->name}}</td>
                             <td>{{$g->estado}}</td>
                             <td>{{$g->created_at}}</td>
-                            
+                            <td>
+                                <a href="" class="btn btn-primary">Detalhes</a>
+                            </td>
 
                         </tr>
                         @endforeach
