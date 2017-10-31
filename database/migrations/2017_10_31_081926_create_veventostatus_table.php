@@ -17,7 +17,7 @@ class CreateVeventostatusTable extends Migration
       DB::statement("
           CREATE VIEW veventostatus AS
           (
-          SELECT  u.name, u.email , v.data ,v.hora, v.descricao, v.estado,v.created_at FROM apatios v, users u WHERE u.id=v.usuario_id
+          SELECT  ev.descricao, u.email , v.data ,v.hora, v.descricao, v.estado,v.created_at FROM eventos ev, users u WHERE u.id=v.usuario_id
           )
           ");
 
