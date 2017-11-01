@@ -18,6 +18,12 @@ class UserController extends Controller
         return view('admins.usuario.index', compact('usuarios'));
     }
 
+// function temporaria
+    public function reg(){
+
+        return view('auth.register_org');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
