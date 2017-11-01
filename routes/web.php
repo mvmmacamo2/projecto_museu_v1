@@ -25,12 +25,14 @@ Route::get('/register_org', 'UserController@reg');
 // Route::resource('/galerias', 'GaleriaController');
 Route::resource('/admins/exposicoes', 'Exposicao_adminController');
 Route::resource('/admins/eventos', 'Evento_adminController');
+Route::resource('/admins/galerias', 'Galeria_adminController');
 
 Route::get('/historias/museu', 'Historia_museuController@index');
 Route::get('/historias/amarela', 'Historia_casa_amarelaController@index');
 
 Route::get('/exposicoes', 'ExposicaoController@index');
 Route::get('/eventos', 'EventoController@index');
+Route::get('/galerias/{id}', 'GaleriaController@index');
 
 
 // rotas Relacionadas a  serviços
