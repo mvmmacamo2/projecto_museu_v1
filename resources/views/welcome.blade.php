@@ -120,7 +120,7 @@
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
-                        <a class="dropdown-item" href="#">Organização</a>
+                        <a class="dropdown-item" href="/register_org">Organização</a>
                       </div>
                     </li>
 
