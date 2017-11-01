@@ -41,4 +41,9 @@ class HomeController extends Controller
         //     return view('template_welcome');
         // }
     }
+
+    public function org(){
+
+        return view('auth.register_org');
+    }
 }
