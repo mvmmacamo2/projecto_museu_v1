@@ -18,7 +18,10 @@ Registar Organização
 							<h3 class="mb-0">Registo</h3>
 						</div>
 						<div class="card-body">
-							<form>
+
+							<form method="POST" action="{{ route('register') }}">
+								 {{ csrf_field() }}
+								 
 								<div class="row">
 
 									<div class="col-md-6 mb-3">
@@ -47,20 +50,39 @@ Registar Organização
 
 								<div class="row">
 
+									<div class="col-md-6 mb-3">
+										<label for="password">Password</label>
+										<input id="password" type="password" class="form-control is-valid" name="password" required>
+
+										@if ($errors->has('password'))
+										<span class="help-block">
+											<strong>{{ $errors->first('password') }}</strong>
+										</span>
+										@endif
+									</div>
+
+									<div class="col-md-6 mb-3">
+										<label for="password-confirm">Confirm Password</label>
+										<input id="password-confirm" type="password" class="form-control is-valid" name="password_confirmation" required>
+									</div>
+
+								</div>
+
+								<div class="row">
+
 									<div class="col-md-6 mb-3 ">
 										<label for="responsavel">Nome Do Resposável:</label>
 										<input type="text" class="form-control is-valid" id="responsavel" value="{{ old('responsavel') }}" required>
 									</div>
-<!-- 
-									<div class="col-md-3 mb-3">
-										<label for="validationServer05">Zip</label>
-										<input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
-									</div> -->
-
-									
 								</div>
 
-								<button class="btn btn-primary" type="submit">Registar</button>
+								<div class="row">
+									<div class="col-md-6">
+										<button type="submit" class="btn btn-common btn-md mt-20">
+											Registar
+										</button>
+									</div>
+								</div>
 							</form>
 						</div>
 						<!--/card-block-->
