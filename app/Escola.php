@@ -14,7 +14,15 @@ class Escola extends Authenticatable
 	];	
 
 
+	protected $hidden = [
+		'senha', 'remember_token',
+	];
 
+
+	public function setSenhaAttribute($value)
+	{
+		$this->attributes['senha'] = bcrypt($value);
+	}
 
 
 
