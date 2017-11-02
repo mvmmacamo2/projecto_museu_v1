@@ -14,12 +14,12 @@ class CreateVeventostatusTable extends Migration
     public function up()
     {
 
-      DB::statement("
-          CREATE VIEW veventostatus AS
-          (
-          SELECT  ev.descricao, u.email , v.data ,v.hora, v.descricao, v.estado,v.created_at FROM eventos ev, users u WHERE u.id=v.usuario_id
-          )
-          ");
+      // DB::statement("
+      //     CREATE VIEW veventostatus AS
+      //     (
+      //     SELECT  ev.descricao, u.email , v.data ,v.hora, v.descricao, v.estado,v.created_at FROM eventos ev, users u WHERE u.id=v.usuario_id
+      //     )
+      //     ");
 
 
     //   Schema::create('veventostatus', function (Blueprint $table) {
@@ -35,7 +35,7 @@ class CreateVeventostatusTable extends Migration
      */
     public function down()
     {
-      DB::statement('DROP VIEW IF EXISTS veventostatus');
+      // DB::statement('DROP VIEW IF EXISTS veventostatus');
       // Schema::dropIfExists('veventostatus');
   }
 }

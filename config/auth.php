@@ -41,6 +41,11 @@ return [
             'provider' => 'users',
         ],
 
+        'escolas' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
