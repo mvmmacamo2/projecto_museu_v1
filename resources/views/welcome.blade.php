@@ -304,7 +304,13 @@
                   </p>
                   <div class="blog-one-footer">
                     <a href="#">Read More</a>
-                    <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                    {{--<a href="#"><i class="icon-heart"></i> 59 Likes</a>--}}
+                    <form>
+                      {{--<input type="submit" value="59 Likes">--}}
+                      <button type="submit" class=""><i class="icon-heart"></i>59 Likes</button>
+                    </form>
+
+
                     <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
                   </div>
                 </div>
