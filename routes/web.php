@@ -14,10 +14,10 @@ use App\Exposicao;
 
 Route::get('/', function () {
 	$eventos = Evento::all();
-
-	return view('welcome', compact('eventos'));
-
 	$exposicoes = Exposicao::all();
+	//return view('welcome', compact('eventos'));
+
+	
 	return view('welcome', compact('eventos'), compact('exposicoes'));
 
 });
