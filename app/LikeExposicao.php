@@ -15,6 +15,6 @@ class LikeExposicao extends Model
 
     public function comentarioexposicao()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(ComtarioExposicao::class);
     }
 }
