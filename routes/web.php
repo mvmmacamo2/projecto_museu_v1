@@ -58,7 +58,10 @@ Route::resource('/admins/galerias', 'Galeria_adminController');
 
 // Rotas De escolas
 Route::group(['middleware'=>'escola'], function (){
-    
+    //Route::auth();
+	Route::get('/escola', 'EscolaController@index');
+	Route::get('/escola/login', 'EscolaController@login');
+	Route::get('/escola/login', 'EscolaController@postlogin');
 });
 
 
