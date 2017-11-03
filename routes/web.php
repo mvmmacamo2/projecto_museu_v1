@@ -13,7 +13,7 @@ use App\Evento;
 
 Route::get('/', function () {
 	$eventos = Evento::all();
-    return view('welcome', compact('eventos'));
+	return view('welcome', compact('eventos'));
 });
 
 Auth::routes();
@@ -52,3 +52,6 @@ Route::resource('/admins/usuarios', 'UserController');
 Route::resource('/admins/usuario', 'PerfilController');
 
 Route::resource('/admins/galerias', 'GaleriaController');
+
+
+// Rotas De escolas
