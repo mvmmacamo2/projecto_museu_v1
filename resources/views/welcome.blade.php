@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <meta charset="utf-8">
     <!-- Viewport Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -616,6 +617,8 @@
     </div>
     <!-- Copyright  End-->
 =======
+=======
+>>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
   <meta charset="utf-8">
   <!-- Viewport Meta Tag -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1173,6 +1176,9 @@
     </div>
   </div>
   <!-- Copyright  End-->
+<<<<<<< HEAD
+>>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
+=======
 >>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
 
 </footer>
@@ -1181,9 +1187,15 @@
 <!-- Go To Top Link -->
 <a href="#" class="back-to-top">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <i class="fa fa-angle-up">
     </i>
 </a>
+=======
+  <i class="fa fa-angle-up">
+  </i>
+</a> 
+>>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
 =======
   <i class="fa fa-angle-up">
   </i>
@@ -1195,7 +1207,11 @@
 <!-- Tether Js -->
 <script src="/engage/assets/js/popper.min.js"></script>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Bootstrap JS -->
+=======
+<!-- Bootstrap JS -->    
+>>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
 =======
 <!-- Bootstrap JS -->    
 >>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
@@ -1208,7 +1224,11 @@
 <script src="/engage/assets/js/wow.js"></script>
 <!-- OWL Carousel -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <script src="/engage/assets/js/owl.carousel.js"></script>
+=======
+<script src="/engage/assets/js/owl.carousel.js"></script> 
+>>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
 =======
 <script src="/engage/assets/js/owl.carousel.js"></script> 
 >>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
@@ -1226,7 +1246,11 @@
 <script src="/engage/assets/js/jquery.vide.js"></script>
 <!-- All JS plugin Triggers -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 <script src="/engage/assets/js/main.js"></script>
+=======
+<script src="/engage/assets/js/main.js"></script> 
+>>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
 =======
 <script src="/engage/assets/js/main.js"></script> 
 >>>>>>> b17c0f9998139ddfcd0259e7fcead44827142fa1
