@@ -51,7 +51,7 @@ class Usuario_GaleriaController extends Controller
     {
         $galerias = ExposicaoGaleria::whereExposicao_id($id) -> get();
 
-        return view('galerias.index', compact('galerias'));
+        return view('usuario_galerias.index', compact('galerias'));
     }
 
     /**

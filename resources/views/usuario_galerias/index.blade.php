@@ -18,7 +18,7 @@
             <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
               <div class="blog-item-img">
                 <a href="#">
-                  <img src="/galeria/{{ $galeria->imagem}}" alt="">
+                  <img src="/galeria-upload/{{ $galeria->imagem}}" alt="">
                 </a>
               </div>
               <div class="blog-item-text">

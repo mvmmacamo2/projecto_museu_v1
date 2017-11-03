@@ -27,7 +27,7 @@
                    {{ $exposicao->descricao}}
                 </p>
                 <div class="blog-one-footer">
-                  <a href="/galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                  <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                   <a href="#"><i class="icon-heart"></i> 59 Likes</a>
                   <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
                 </div>

@@ -11,7 +11,7 @@ use App\Vgaleria;
 use DB;
 
 
-class GaleriaController extends Controller
+class Galeria_adminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class GaleriaController extends Controller
 
         $ga= DB::table('vgalerias')->get();
 
-        return view('admins.galeria.index', compact('exposicao'), compact('ga'));
+        return view('admins.galerias.index', compact('exposicao'), compact('ga'));
 
     }
 
@@ -38,9 +38,9 @@ class GaleriaController extends Controller
      */
     public function create()
     {
-        $exposicao = Exposicao::all();
+        $exposicoes = Exposicao::all();
 
-        return view('admins.galerias.create', compact('exposicao'));
+        return view('admins.galerias.create', compact('exposicoes'));
     }
 
     /**
@@ -52,8 +52,7 @@ class GaleriaController extends Controller
     public function store(Request $request)
     {
 
-//        dd($request->all());
-//
+       // dd($request->all());
 
         if ($request->imagem) {
             $imagem = $request->imagem;
@@ -64,9 +63,9 @@ class GaleriaController extends Controller
                 $galeria = ExposicaoGaleria::create($request->all());
 
                 if ($request->imagem) {
-                    File::move($imagem, public_path() . '/galeria/expo-id-' . $galeria->id . '.' . $extension);
+                    File::move($imagem, public_path() . '/galeria-upload/galeria-id-' . $galeria->id . '.' . $extension);
 
-                    $galeria->imagem = 'expo-id-' . $galeria->id . '.' . $extension;
+                    $galeria->imagem = 'galeria-id-' . $galeria->id . '.' . $extension;
 
                     $galeria->save();
                     if ($galeria->save()) {
