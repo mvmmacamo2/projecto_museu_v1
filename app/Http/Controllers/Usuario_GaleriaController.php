@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ExposicaoGaleria;
+use App\Exposicao;
 
 class GaleriaController extends Controller
 {
@@ -23,7 +25,8 @@ class GaleriaController extends Controller
      */
     public function create()
     {
-        return "jajjajaj";
+        $exposicoes = Exposicao::all();
+        return view('admins.galerias.create', compact('exposicoes'));
     }
 
     /**
@@ -45,7 +48,9 @@ class GaleriaController extends Controller
      */
     public function show($id)
     {
-        //
+        $galerias = ExposicaoGaleria::whereExposicao_id($id) -> get();
+
+        return view('galerias.index', compact('galerias'));
     }
 
     /**

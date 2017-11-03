@@ -31,8 +31,8 @@
 
 
                                 <select class="form-control" name="exposicao_id">
-                                    @foreach($exposicoes as $exposicao)
-                                        <option value="{{$exposicao->id}}">{{$exposicao->nome}}</option>
+                                    @foreach($exposicao as $exp)
+                                        <option value="{{$exp->id}}">{{$exp->nome}}</option>
                                     @endforeach
 
                                 </select>
