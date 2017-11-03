@@ -276,6 +276,50 @@
       </div>     
     </header>
     <!-- Header-wrap Section End -->
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div class="container">  
+        <h1 class="section-title wow fadeInUpQuick">
+          EXPOSIÇÕES RECENTES
+        </h1> 
+        <!-- Row Starts -->
+        <div class="row">   
+        @foreach($eventos as $evento) 
+          @if($evento->estado=='proccess')  
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <!-- Blog Item Starts -->
+              <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
+                <div class="blog-item-img">
+                  <a href="#">
+                    <img src="/evento_upload/{{$evento->imagem}}" alt="">
+                  </a>   
+                </div>
+                <div class="blog-item-text">
+                  <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
+                  <p>
+                    {{$evento->descricao}}
+                  </p>
+                  <div class="blog-one-footer">
+                    <a href="#">Read More</a>
+                    <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                    <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
+                  </div>
+                </div>
+              </div><!-- Blog Item Wrapper Ends-->
+            </div>
+          @else
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              Não há eventos agendados actualmente..!
+            </div>
+          @endif
+
+        @endforeach 
+        </div><!-- Row Ends -->
+      </div><!-- Container Ends -->
+    </section>
+    <!-- blog Section End -->
    
     <!-- Service Block-1 Section -->
     <section id="service-block-main" class="section">
