@@ -1,5 +1,6 @@
 <?php
 use App\Evento;
+use App\Exposicao;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +14,12 @@ use App\Evento;
 
 Route::get('/', function () {
 	$eventos = Evento::all();
+<<<<<<< HEAD
 	return view('welcome', compact('eventos'));
+=======
+	$exposicoes = Exposicao::all();
+    return view('welcome', compact('eventos','exposicoes'));
+>>>>>>> 586afc33400df47b879264adb289f4142dba974c
 });
 
 Auth::routes();
@@ -22,9 +28,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/register_org', 'UserController@reg');
 
-Route::resource('/admins/exposicoes', 'Exposicao_adminController');
-Route::resource('/admins/eventos', 'Evento_adminController');
-Route::resource('/admins/galerias', 'Galeria_adminController');
+Route::resource('/admins/exposicoes', 'Exposicao_adminController')->middleware('autenticacao');
+Route::resource('/admins/eventos', 'Evento_adminController')->middleware('autenticacao');
+Route::resource('/admins/galerias', 'Galeria_adminController')->middleware('autenticacao');
 
 Route::get('/historias/museu', 'Historia_museuController@index');
 Route::get('/historias/amarela', 'Historia_casa_amarelaController@index');
@@ -35,21 +41,22 @@ Route::resource('/usuario_galerias', 'Usuario_GaleriaController');
 
 
 // rotas Relacionadas a  serviços
-Route::get('/servicos/escola', 'ServicosController@escola')->middleware('autenticacao');;
-Route::get('/servicos/patio', 'ServicosController@patio')->middleware('autenticacao');;
-Route::get('/servicos/individual', 'ServicosController@individual')->middleware('autenticacao');;
+Route::get('/servicos/escola', 'ServicosController@escola')->middleware('autenticacao');
+Route::get('/servicos/patio', 'ServicosController@patio')->middleware('autenticacao');
+Route::get('/servicos/individual', 'ServicosController@individual')->middleware('autenticacao');
 
 // Rotas Admins
 Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visitaguiadaescolar')->middleware('autenticacao');;
 Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular')->middleware('autenticacao');;
-Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda')->middleware('autenticacao');;
+Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda')->middleware('autenticacao');
 
-Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middleware('autenticacao');;
+Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middleware('autenticacao');
 
 
 //
 Route::resource('/admins/usuarios', 'UserController');
 Route::resource('/admins/usuario', 'PerfilController');
+<<<<<<< HEAD
 
 
 Route::resource('/admins/galerias', 'GaleriaController');
@@ -66,3 +73,5 @@ Route::group(['middleware'=>'escola'], function (){
 
 
 
+=======
+>>>>>>> 586afc33400df47b879264adb289f4142dba974c
