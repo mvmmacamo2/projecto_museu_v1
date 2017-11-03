@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\ExposicaoGaleria;
 use App\Exposicao;
 
-class GaleriaController extends Controller
+class Usuario_GaleriaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,8 @@ class GaleriaController extends Controller
      */
     public function index()
     {
-        //
+        $galerias = ExposicaoGaleria::all();
+        return view('usuario_galerias.index', compact('galerias'));
     }
 
     /**
@@ -26,7 +27,7 @@ class GaleriaController extends Controller
     public function create()
     {
         $exposicoes = Exposicao::all();
-        return view('admins.galerias.create', compact('exposicoes'));
+        return view('usuario_galerias.create', compact('exposicoes'));
     }
 
     /**
@@ -50,7 +51,7 @@ class GaleriaController extends Controller
     {
         $galerias = ExposicaoGaleria::whereExposicao_id($id) -> get();
 
-        return view('galerias.index', compact('galerias'));
+        return view('usuario_galerias.index', compact('galerias'));
     }
 
     /**

@@ -31,7 +31,7 @@ Route::get('/historias/amarela', 'Historia_casa_amarelaController@index');
 
 Route::get('/exposicoes', 'ExposicaoController@index');
 Route::get('/eventos', 'EventoController@index');
-Route::resource('/user_galerias', 'Usuario_GaleriaController');
+Route::resource('/usuario_galerias', 'Usuario_GaleriaController');
 
 
 // rotas Relacionadas a  serviços
@@ -51,6 +51,7 @@ Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middlew
 Route::resource('/admins/usuarios', 'UserController');
 Route::resource('/admins/usuario', 'PerfilController');
 
+<<<<<<< HEAD
 Route::resource('/admins/galerias', 'GaleriaController');
 
 
@@ -58,3 +59,6 @@ Route::resource('/admins/galerias', 'GaleriaController');
 Route::group(['middleware'=>'escola'], function (){
     
 });
+=======
+Route::resource('/admins/galerias', 'Galeria_adminController');
+>>>>>>> 7a8983ad2c6092595221ea415cf057d7691d4429

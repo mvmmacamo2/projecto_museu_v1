@@ -36,7 +36,7 @@
                                         </td>
                                         <td>{{$exposicao->estado}}</td>
                                         <td>
-                                          <a href="/exposicoes/{{ $exposicao->id }}/edit">
+                                          <a href="/admins/exposicoes/{{ $exposicao->id }}/edit">
                                             <button class="btn btn-success">Editar</button>
                                           </a>
                                           -- <button class="btn btn-danger">Apagar</button>

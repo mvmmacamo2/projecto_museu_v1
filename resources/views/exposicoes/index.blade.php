@@ -17,7 +17,7 @@
             <!-- Blog Item Wrapper Starts-->
             <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
               <div class="blog-item-img">
-                <a href="#">
+                <a href="/usuario_galerias/{{ $exposicao->id }}">
                   <img src="/expo-upload/{{ $exposicao->imagem}}" alt="">
                 </a>
               </div>
@@ -27,7 +27,7 @@
                    {{ $exposicao->descricao}}
                 </p>
                 <div class="blog-one-footer">
-                  <a href="/galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                  <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                   <a href="#"><i class="icon-heart"></i> 59 Likes</a>
                   <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
                 </div>
