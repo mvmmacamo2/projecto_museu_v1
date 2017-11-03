@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLikeeventosTable extends Migration
+class CreateLikeExposicaosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateLikeeventosTable extends Migration
      */
     public function up()
     {
-        Schema::create('likeeventos', function (Blueprint $table) {
+        Schema::create('like_exposicaos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('like');
-            $table->integer('evento_id')->unsigned();
+            $table->integer('exposicao_id')->unsigned();
             $table->integer('usuario_id')->unsigned();
-            $table->foreign('evento_id')->references('id')->on('eventos')->onDelete('NO Action');
+            $table->foreign('exposicao_id')->references('id')->on('exposicaos')->onDelete('NO Action');
             $table->foreign('usuario_id')->references('id')->on('users')->onDelete('NO ACTION');
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ class CreateLikeeventosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('likeeventos');
+        Schema::dropIfExists('like_exposicaos');
     }
 }
