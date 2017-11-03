@@ -287,14 +287,12 @@
 </header>
 <!-- Header-wrap Section End -->
 
-<<<<<<< HEAD
 <!-- Blog Section -->
 <section id="blog" class="section">
     <!-- Container Starts -->
     <div class="container">
         <h1 class="section-title wow fadeInUpQuick">
-=======
-<<<<<<< HEAD
+
     <!-- Blog Section -->
     <section id="blog" class="section">
       <!-- Container Starts -->
@@ -320,8 +318,9 @@
                 </p>
                 <div class="blog-one-footer">
                   <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
+                  <a href="#"><i class="icon-heart"></i> {!! $likes !!} Likes</a>
+                  {{--<a href="#"><i class="icon-heart"></i> 59 Likes</a>--}}
+                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
                 </div>
               </div>
             </div><!-- Blog Item Wrapper Ends-->
@@ -371,7 +370,6 @@
         <!-- Container Starts -->
         <div class="container">  
           <h1 class="section-title wow fadeInUpQuick">
->>>>>>> 13c479324d0eba5a0b640f65d0aadc96c8dfc876
             EXPOSIÇÕES RECENTES
         </h1>
         <!-- Row Starts -->
@@ -444,13 +442,12 @@
                       Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
                     </p> -->
                 </div>
-<<<<<<< HEAD
                 <!-- Service-Block-1 Item Ends -->
-=======
+
                 <h2>
                   Visitas Giadas Individuas
                 </h2>
->>>>>>> 114355f9ad35a893a1da2f60c50669297e854618
+
               <!-- <p>
                 Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
               </p> -->
@@ -471,7 +468,7 @@
               <!-- <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
               </p> -->
->>>>>>> 13c479324d0eba5a0b640f65d0aadc96c8dfc876
+
             </div>
 
             <div class="col-sm-6 col-md-3">
