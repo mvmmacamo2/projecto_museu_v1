@@ -1,6 +1,7 @@
 <?php
 use App\Evento;
 use App\Exposicao;
+//use DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,10 +16,13 @@ use App\Exposicao;
 Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
+	$likesexposicao =count(DB::table('like_exposicaos')->get());
+
 	//return view('welcome', compact('eventos'));
 
+   // dd($likesexposicao);
 	
-	return view('welcome', compact('eventos'), compact('exposicoes'));
+	return view('welcome',['likes'=>$likesexposicao], compact('eventos'), compact('exposicoes'));
 
 });
 
