@@ -1,5 +1,6 @@
 <?php
 use App\Evento;
+use App\Exposicao;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +14,8 @@ use App\Evento;
 
 Route::get('/', function () {
 	$eventos = Evento::all();
-    return view('welcome', compact('eventos'));
+	$exposicoes = Exposicao::all();
+    return view('welcome', compact('eventos','exposicoes'));
 });
 
 Auth::routes();

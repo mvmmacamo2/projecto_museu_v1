@@ -286,20 +286,20 @@
         </h1> 
         <!-- Row Starts -->
         <div class="row">   
-        @foreach($eventos as $evento) 
-          @if($evento->estado=='proccess')  
+        @foreach($exposicoes as $exposicao)
+          @if($exposicao->estado=='proccess')  
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <!-- Blog Item Starts -->
               <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
                 <div class="blog-item-img">
-                  <a href="#">
-                    <img src="/evento_upload/{{$evento->imagem}}" alt="">
+                  <a href="/galeria-upload/{{  }}">
+                    <img src="/expo-upload/{{$exposicao->imagem}}" alt="">
                   </a>   
                 </div>
                 <div class="blog-item-text">
-                  <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
+                  <h3 class="small-title"><a href="#">{{ $exposicao->nome}}</a></h3>
                   <p>
-                    {{$evento->descricao}}
+                    {{$exposicao->descricao}}
                   </p>
                   <div class="blog-one-footer">
                     <a href="#">Read More</a>
