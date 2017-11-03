@@ -287,11 +287,91 @@
 </header>
 <!-- Header-wrap Section End -->
 
+<<<<<<< HEAD
 <!-- Blog Section -->
 <section id="blog" class="section">
     <!-- Container Starts -->
     <div class="container">
         <h1 class="section-title wow fadeInUpQuick">
+=======
+<<<<<<< HEAD
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div class="container">  
+        <h1 class="section-title wow fadeInUpQuick">
+          EXPOSIÇÕES RECENTES
+        </h1> 
+        <!-- Row Starts -->
+        <div class="row">   
+        @forelse($exposicoes as $exposicao)
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <!-- Blog Item Wrapper Starts-->
+            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
+              <div class="blog-item-img">
+                <a href="/usuario_galerias/{{ $exposicao->id }}">
+                  <img src="/expo-upload/{{ $exposicao->imagem}}">
+                </a> 
+              </div>
+              <div class="blog-item-text">
+                <h3 class="small-title"><a href="#">{{ $exposicao->nome}}</a></h3>
+                <p>
+                   {{ $exposicao->descricao}}
+                </p>
+                <div class="blog-one-footer">
+                  <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
+                </div>
+              </div>
+            </div><!-- Blog Item Wrapper Ends-->
+          </div>
+          @empty
+          @endforelse
+        </div><!-- Row Ends -->
+      </div><!-- Container Ends -->
+    </section>
+    <!-- blog Section End -->
+   
+    <!-- Service Block-1 Section -->
+    <section id="service-block-main" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
+        VISITE O MUSEU
+        </h1>
+        <p class="section-subcontent">Rua Consiglieri Pedroso Maputo</p>
+        <div class="row">  
+          <div class="col-sm-6 col-md-3">
+            <!-- Service-Block-1 Item Starts -->
+            <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".5s">
+              <div class="icon-wrapper">
+                <i class="icon-layers pulse-shrink">
+                </i>
+              </div>
+              <h2>
+                Visitas Giadas Individuas
+              </h2>
+=======
+            <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+              <span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
+              <span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>     
+      </header>
+      <!-- Header-wrap Section End -->
+
+      <!-- Blog Section -->
+      <section id="blog" class="section">
+        <!-- Container Starts -->
+        <div class="container">  
+          <h1 class="section-title wow fadeInUpQuick">
+>>>>>>> 13c479324d0eba5a0b640f65d0aadc96c8dfc876
             EXPOSIÇÕES RECENTES
         </h1>
         <!-- Row Starts -->
@@ -364,7 +444,34 @@
                       Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
                     </p> -->
                 </div>
+<<<<<<< HEAD
                 <!-- Service-Block-1 Item Ends -->
+=======
+                <h2>
+                  Visitas Giadas Individuas
+                </h2>
+>>>>>>> 114355f9ad35a893a1da2f60c50669297e854618
+              <!-- <p>
+                Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
+              </p> -->
+            </div>
+            <!-- Service-Block-1 Item Ends -->
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <!-- Service-Block-1 Item Starts -->
+            <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".8s">
+              <div class="icon-wrapper">
+                <i class="icon-settings pulse-shrink">
+                </i>
+              </div>
+              <h2>
+                Visitas Guiadas Colectivas
+              </h2>
+              <!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
+              </p> -->
+>>>>>>> 13c479324d0eba5a0b640f65d0aadc96c8dfc876
             </div>
 
             <div class="col-sm-6 col-md-3">
