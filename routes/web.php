@@ -14,12 +14,12 @@ use App\Exposicao;
 
 Route::get('/', function () {
 	$eventos = Evento::all();
-<<<<<<< HEAD
+
 	return view('welcome', compact('eventos'));
-=======
+
 	$exposicoes = Exposicao::all();
-    return view('welcome', compact('eventos','exposicoes'));
->>>>>>> 586afc33400df47b879264adb289f4142dba974c
+	return view('welcome', compact('eventos'), compact('exposicoes'));
+
 });
 
 Auth::routes();
@@ -56,7 +56,7 @@ Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middlew
 //
 Route::resource('/admins/usuarios', 'UserController');
 Route::resource('/admins/usuario', 'PerfilController');
-<<<<<<< HEAD
+
 
 
 Route::resource('/admins/galerias', 'GaleriaController');
@@ -72,6 +72,3 @@ Route::group(['middleware'=>'escola'], function (){
 });
 
 
-
-=======
->>>>>>> 586afc33400df47b879264adb289f4142dba974c
