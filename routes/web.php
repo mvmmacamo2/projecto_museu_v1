@@ -22,7 +22,7 @@ Route::get('/', function () {
 
    // dd($likesexposicao);
 	
-	return view('welcome', compact('eventos'), compact('exposicoes'));
+	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 
 });
 
