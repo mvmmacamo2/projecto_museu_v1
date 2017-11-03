@@ -19,10 +19,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-// rota temporaria
+
 Route::get('/register_org', 'UserController@reg');
 
-// Route::resource('/galerias', 'GaleriaController');
 Route::resource('/admins/exposicoes', 'Exposicao_adminController');
 Route::resource('/admins/eventos', 'Evento_adminController');
 Route::resource('/admins/galerias', 'Galeria_adminController');
@@ -32,7 +31,7 @@ Route::get('/historias/amarela', 'Historia_casa_amarelaController@index');
 
 Route::get('/exposicoes', 'ExposicaoController@index');
 Route::get('/eventos', 'EventoController@index');
-Route::get('/galerias/{id}', 'GaleriaController@index');
+Route::resource('/galerias', 'GaleriaController');
 
 
 // rotas Relacionadas a  serviços
