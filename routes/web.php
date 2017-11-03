@@ -55,3 +55,6 @@ Route::resource('/admins/galerias', 'GaleriaController');
 
 
 // Rotas De escolas
+Route::group(['middleware'=>'escola'], function (){
+    
+});
