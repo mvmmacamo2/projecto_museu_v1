@@ -15,6 +15,11 @@ class CreateComtarioExposicaosTable extends Migration
     {
         Schema::create('comtario_exposicaos', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('comentario');
+            $table->integer('exposicao_id')->unsigned();
+            $table->integer('usuario_id')->unsigned();
+            $table->foreign('exposicao_id')->references('id')->on('exposicaos')->onDelete('NO Action');
+            $table->foreign('usuario_id')->references('id')->on('users')->onDelete('NO ACTION');
             $table->timestamps();
         });
     }

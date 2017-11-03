@@ -15,6 +15,11 @@ class CreateLikeeventosTable extends Migration
     {
         Schema::create('likeeventos', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('like');
+            $table->integer('evento_id')->unsigned();
+            $table->integer('usuario_id')->unsigned();
+            $table->foreign('evento_id')->references('id')->on('eventos')->onDelete('NO Action');
+            $table->foreign('usuario_id')->references('id')->on('users')->onDelete('NO ACTION');
             $table->timestamps();
         });
     }
