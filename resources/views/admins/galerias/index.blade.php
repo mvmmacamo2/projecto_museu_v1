@@ -19,7 +19,7 @@
                 <label>Exposição</label>
                 <select class="form-control">
                     @foreach($exposicao as $exp)
-                    <option value="{{$exp->id}}">{{ $exp->nome }}</option>
+                        <option value="{{$exp->id}}">{{ $exp->nome }}</option>
                     @endforeach
                 </select>
                 <br>
