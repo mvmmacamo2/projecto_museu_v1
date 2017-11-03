@@ -264,7 +264,15 @@
               </div>
             </div>
 
-<<<<<<< HEAD
+
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <!-- Header-wrap Section End -->
+
+
     <!-- Blog Section -->
     <section id="blog" class="section">
       <!-- Container Starts -->
@@ -274,7 +282,7 @@
         </h1> 
         <!-- Row Starts -->
         <div class="row">   
-        @forelse($exposicoes as $exposicao)
+          @forelse($exposicoes as $exposicao)
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <!-- Blog Item Wrapper Starts-->
             <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
@@ -286,429 +294,319 @@
               <div class="blog-item-text">
                 <h3 class="small-title"><a href="#">{{ $exposicao->nome}}</a></h3>
                 <p>
-                   {{ $exposicao->descricao}}
-                </p>
-                <div class="blog-one-footer">
-                  <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                </div>
+                 {{ $exposicao->descricao}}
+               </p>
+               <div class="blog-one-footer">
+                <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
               </div>
-            </div><!-- Blog Item Wrapper Ends-->
-          </div>
-          @empty
-          @endforelse
-        </div><!-- Row Ends -->
-      </div><!-- Container Ends -->
-    </section>
-    <!-- blog Section End -->
-   
-    <!-- Service Block-1 Section -->
-    <section id="service-block-main" class="section">
-      <!-- Container Starts -->
-      <div class="container">
-        <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
-        VISITE O MUSEU
-        </h1>
-        <p class="section-subcontent">Rua Consiglieri Pedroso Maputo</p>
-        <div class="row">  
-          <div class="col-sm-6 col-md-3">
-            <!-- Service-Block-1 Item Starts -->
-            <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".5s">
-              <div class="icon-wrapper">
-                <i class="icon-layers pulse-shrink">
-                </i>
-              </div>
-              <h2>
-                Visitas Giadas Individuas
-              </h2>
-=======
-            <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
-              <span class="carousel-control carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
-              <span class="carousel-control carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>     
-      </header>
-      <!-- Header-wrap Section End -->
-
-      <!-- Blog Section -->
-      <section id="blog" class="section">
-        <!-- Container Starts -->
-        <div class="container">  
-          <h1 class="section-title wow fadeInUpQuick">
-            EXPOSIÇÕES RECENTES
-          </h1> 
-          <!-- Row Starts -->
-          <div class="row">   
-            @foreach($exposicoes as $exposicao)
-            @if($exposicao->estado=='proccess')  
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <!-- Blog Item Starts -->
-              <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
-                <div class="blog-item-img">
-                  {{-- /galeria-upload/{{  }} --}}
-                  <a href="">
-                    <img src="/expo-upload/{{$exposicao->imagem}}" alt="">
-                  </a>   
-                </div>
-                <div class="blog-item-text">
-                  <h3 class="small-title"><a href="#">{{ $exposicao->nome}}</a></h3>
-                  <p>
-                    {{$exposicao->descricao}}
-                  </p>
-                  <div class="blog-one-footer">
-                    <a href="#">Read More</a>
-                    {{--<a href="#"><i class="icon-heart"></i> 59 Likes</a>--}}
-                    <form>
-                      {{--<input type="submit" value="59 Likes">--}}
-                      <button type="submit" class=""><i class="icon-heart"></i>59 Likes</button>
-                    </form>
-
-
-                    <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                  </div>
-                </div>
-              </div><!-- Blog Item Wrapper Ends-->
             </div>
-            @else
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              Não há eventos agendados actualmente..!
-            </div>
-            @endif
-
-            @endforeach 
-          </div><!-- Row Ends -->
-        </div><!-- Container Ends -->
-      </section>
-      <!-- blog Section End -->
-      
-      <!-- Service Block-1 Section -->
-      <section id="service-block-main" class="section">
-        <!-- Container Starts -->
-        <div class="container">
-          <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s">
-            VISITE O MUSEU
-          </h1>
-          <p class="section-subcontent">Rua Consiglieri Pedroso Maputo</p>
-          <div class="row">  
-            <div class="col-sm-6 col-md-3">
-              <!-- Service-Block-1 Item Starts -->
-              <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".5s">
-                <div class="icon-wrapper">
-                  <i class="icon-layers pulse-shrink">
-                  </i>
-                </div>
-                <h2>
-                  Visitas Giadas Individuas
-                </h2>
->>>>>>> 114355f9ad35a893a1da2f60c50669297e854618
-              <!-- <p>
-                Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-              </p> -->
-            </div>
-            <!-- Service-Block-1 Item Ends -->
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <!-- Service-Block-1 Item Starts -->
-            <div class="service-item wow fadeInUpQuick animated" data-wow-delay=".8s">
-              <div class="icon-wrapper">
-                <i class="icon-settings pulse-shrink">
-                </i>
-              </div>
-              <h2>
-                Visitas Guiadas Colectivas
-              </h2>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
-              </p> -->
-            </div>
-            <!-- Service-Block-1 Item Ends -->
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <!-- Service-Block-1 Item Starts -->
-            <div class="service-item wow fadeInUpQuick animated" data-wow-delay="1.1s">
-              <div class="icon-wrapper">
-                <i class="icon-energy pulse-shrink">
-                </i>
-              </div>
-              <h2>
-                Visitas Para Escolas
-              </h2>
-              <!-- <p>
-                Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-              </p> -->
-            </div>
-            <!-- Service-Block-1 Item Ends -->
-          </div>
-
-          <div class="col-sm-6 col-md-3">
-            <!-- Service-Block-1 Item Starts -->
-            <div class="service-item  wow fadeInUpQuick animated" data-wow-delay="1.4s">
-              <div class="icon-wrapper">
-                <i class="icon-cup pulse-shrink">
-                </i>
-              </div>
-              <h2>
-                Visitas Privadas
-              </h2>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
-              </p> -->
-            </div>
-          </div><!-- Service-Block-1 Item Ends -->
+          </div><!-- Blog Item Wrapper Ends-->
         </div>
-      </div><!-- Container Ends -->
-    </section><!-- Service Main Section Ends -->
-
-    <!-- Other Services Section -->
-    <section id="other-services" class="section">
-      <div class="container">
-        <h1 class="section-title wow fadeInUpQuick">
-          Os Serviços Do Museu
-        </h1>
-        <div class="row">
-          <div id="accordion" role="tablist">
-
-
-            <div class="card section-subcontent">
-              <div class="card-header" role="tab" id="headingOne">
-                <h5 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Actividade Com As Escolas
-                  </a>
-                </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="card section-subcontent">
-              <div class="card-header" role="tab" id="headingTwo">
-                <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Visitas Guiadas
-                  </a>
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-
-
-            <div class="card section-subcontent">
-              <div class="card-header" role="tab" id="headingThree">
-                <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Pátio Para Eventos
-                  </a>
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Other Service Item Wrapper Ends -->
-    </section>
-    <!-- Other Services Section End -->               
-
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-      <!-- Container Starts -->
-      <div class="container">  
-        <h1 class="section-title wow fadeInUpQuick">
-          EVENTOS DO MUSEU 
-        </h1> 
-        <!-- Row Starts -->
-        <div class="row">   
-          @foreach($eventos as $evento) 
-          @if($evento->estado=='proccess')  
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
-              <div class="blog-item-img">
-                <a href="#">
-                  <img src="/evento_upload/{{$evento->imagem}}" alt="">
-                </a>   
-              </div>
-              <div class="blog-item-text">
-                <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
-                <p>
-                  {{$evento->descricao}}
-                </p>
-                <div class="blog-one-footer">
-                  <a href="#">Read More</a>
-                  <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                  <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
-                </div>
-              </div>
-            </div><!-- Blog Item Wrapper Ends-->
-          </div>
-          @else
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            Não há eventos agendados actualmente..!
-          </div>
-          @endif
-
-          @endforeach 
-        </div><!-- Row Ends -->
-      </div><!-- Container Ends -->
-    </section>
-    <!-- blog Section End -->
-
-    
-    <!-- Footer Section -->
-    <footer>
-      <!-- Container Starts -->
-      <div class="container">
-        <!-- Row Starts -->
-        <div class="row section">
-          <!-- Footer Widget Starts -->
-          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
-            <h3 class="small-title">
-              CONTACTO
-            </h3>
-            <p>
-              Museu da Moeda Rua Consiglieri Pedroso Maputo
-              Contacto 84 533 6565
-              De 3ª a 6ª feiras: das 11:00h às 17:00h; 
-              Sábado: das 9:00h às 15:00h; 
-              Domingo e Feriados: das 14:00h às 17:00h; 
-              2ª feira: Encerrada.
-            </p> 
-            <div class="social-footer">
-              <a href="#"><i class="fa fa-facebook icon-round"></i></a>
-              <a href="#"><i class="fa fa-twitter icon-round"></i></a>
-              <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
-              <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
-            </div>           
-          </div><!-- Footer Widget Ends -->
-          
-          
-
-          <!-- Footer Widget Starts -->
-          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
-            <h3 class="small-title">
-              Localização
-            </h3>
-            <div class="plain-flicker-gallery">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div> 
-          </div><!-- Footer Widget Ends -->
-
-          <!-- Footer Widget Starts -->
-          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
-            <h3 class="small-title">
-             SOBRE
-           </h3>
-           <div class="horizontal-menu">
-            <a href="/historias/museu" class="active">Museu da Moeda</a> 
-            <br><br>
-            <a href="/historias/amarela">História da Casa Amarela</a>
-            <br><br>
-            <a href="#">Quem Somos</a>
-          </div>
-        </div><!-- Footer Widget Ends -->
+        @empty
+        @endforelse
       </div><!-- Row Ends -->
     </div><!-- Container Ends -->
-    
-    <!-- Copyright -->
-    <div id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <p class="copyright-text">
-              ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
-            </p>
+  </section>
+  <!-- blog Section End -->
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <!-- Container Starts -->
+    <div class="container">  
+      <h1 class="section-title wow fadeInUpQuick">
+        EXPOSIÇÕES RECENTES
+      </h1> 
+      <!-- Row Starts -->
+      <div class="row">   
+        @foreach($exposicoes as $exposicao)
+        @if($exposicao->estado=='proccess')  
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <!-- Blog Item Starts -->
+          <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
+            <div class="blog-item-img">
+              {{-- /galeria-upload/{{  }} --}}
+              <a href="">
+                <img src="/expo-upload/{{$exposicao->imagem}}" alt="">
+              </a>   
+            </div>
+            <div class="blog-item-text">
+              <h3 class="small-title"><a href="#">{{ $exposicao->nome}}</a></h3>
+              <p>
+                {{$exposicao->descricao}}
+              </p>
+              <div class="blog-one-footer">
+                <a href="#">Read More</a>
+                {{--<a href="#"><i class="icon-heart"></i> 59 Likes</a>--}}
+
+
+                <a href=""></a>
+                <form>
+                  {{--<input type="submit" value="59 Likes">--}}
+                  <button type="submit" class=""><i class="icon-heart"></i>59 Likes</button>
+                </form>
+
+
+                <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
+              </div>
+            </div>
+          </div><!-- Blog Item Wrapper Ends-->
+        </div>
+        @else
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          Não há eventos agendados actualmente..!
+        </div>
+        @endif
+
+        @endforeach 
+      </div><!-- Row Ends -->
+    </div><!-- Container Ends -->
+  </section>
+  <!-- blog Section End -->
+
+  <!-- Other Services Section -->
+  <section id="other-services" class="section">
+    <div class="container">
+      <h1 class="section-title wow fadeInUpQuick">
+        Os Serviços Do Museu
+      </h1>
+      <div class="row">
+        <div id="accordion" role="tablist">
+
+
+          <div class="card section-subcontent">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Actividade Com As Escolas
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
           </div>
-          <div class="col-md-6  col-sm-6">
-            <ul class="nav nav-inline  justify-content-end ">
-              <li class="nav-item">
-                <a class="nav-link active" href="/">Início -</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Sitemap -</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Políticas De Privacidade -</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Termos de Serviço</a>
-              </li>
-            </ul>        
+
+
+
+          <div class="card section-subcontent">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Visitas Guiadas
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card section-subcontent">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Pátio Para Eventos
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Copyright  End-->
-    
-  </footer>
-  <!-- Footer Section End-->
-  
-  <!-- Go To Top Link -->
-  <a href="#" class="back-to-top">
-    <i class="fa fa-angle-up">
-    </i>
-  </a> 
+    <!-- Other Service Item Wrapper Ends -->
+  </section>
+  <!-- Other Services Section End -->               
 
-  <!-- JavaScript & jQuery Plugins -->
-  <script src="/engage/assets/js/jquery-min.js"></script>
-  <!-- Tether Js -->
-  <script src="/engage/assets/js/popper.min.js"></script>
-  <!-- Bootstrap JS -->    
-  <script src="/engage/assets/js/bootstrap.min.js"></script>
-  <!-- Color Switcher Js -->
-  <!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
-  <!--Text Rotator-->
-  <script src="/engage/assets/js/jquery.mixitup.js"></script>
-  <!--WOW Scroll Spy-->
-  <script src="/engage/assets/js/wow.js"></script>
-  <!-- OWL Carousel -->
-  <script src="/engage/assets/js/owl.carousel.js"></script> 
-  <!-- WayPoint -->
-  <script src="/engage/assets/js/waypoints.min.js"></script>
-  <!-- CounterUp -->
-  <script src="/engage/assets/js/jquery.counterup.min.js"></script>
-  <!-- Slicknav -->
-  <script src="/engage/assets/js/jquery.counterup.min.js"></script>
-  <!-- ScrollTop -->
-  <script src="/engage/assets/js/jquery.slicknav.js"></script>
-  <!-- Appear -->
-  <script src="/engage/assets/js/jquery.appear.js"></script>
-  <!-- Vide js -->
-  <script src="/engage/assets/js/jquery.vide.js"></script>
-  <!-- All JS plugin Triggers -->
-  <script src="/engage/assets/js/main.js"></script> 
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <!-- Container Starts -->
+    <div class="container">  
+      <h1 class="section-title wow fadeInUpQuick">
+        EVENTOS DO MUSEU 
+      </h1> 
+      <!-- Row Starts -->
+      <div class="row">   
+        @foreach($eventos as $evento) 
+        @if($evento->estado=='proccess')  
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <!-- Blog Item Starts -->
+          <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
+            <div class="blog-item-img">
+              <a href="#">
+                <img src="/evento_upload/{{$evento->imagem}}" alt="">
+              </a>   
+            </div>
+            <div class="blog-item-text">
+              <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
+              <p>
+                {{$evento->descricao}}
+              </p>
+              <div class="blog-one-footer">
+                <a href="#">Read More</a>
+                <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>                  
+              </div>
+            </div>
+          </div><!-- Blog Item Wrapper Ends-->
+        </div>
+        @else
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          Não há eventos agendados actualmente..!
+        </div>
+        @endif
 
-  <!-- bootstrapcdn alfa -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        @endforeach 
+      </div><!-- Row Ends -->
+    </div><!-- Container Ends -->
+  </section>
+  <!-- blog Section End -->
 
-  <!-- bootstrapcdn beta -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Container Starts -->
+    <div class="container">
+      <!-- Row Starts -->
+      <div class="row section">
+        <!-- Footer Widget Starts -->
+        <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
+          <h3 class="small-title">
+            CONTACTO
+          </h3>
+          <p>
+            Museu da Moeda Rua Consiglieri Pedroso Maputo
+            Contacto 84 533 6565
+            De 3ª a 6ª feiras: das 11:00h às 17:00h; 
+            Sábado: das 9:00h às 15:00h; 
+            Domingo e Feriados: das 14:00h às 17:00h; 
+            2ª feira: Encerrada.
+          </p> 
+          <div class="social-footer">
+            <a href="#"><i class="fa fa-facebook icon-round"></i></a>
+            <a href="#"><i class="fa fa-twitter icon-round"></i></a>
+            <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
+            <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
+          </div>           
+        </div><!-- Footer Widget Ends -->
+
+
+
+        <!-- Footer Widget Starts -->
+        <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+          <h3 class="small-title">
+            Localização
+          </h3>
+          <div class="plain-flicker-gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div> 
+        </div><!-- Footer Widget Ends -->
+
+        <!-- Footer Widget Starts -->
+        <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+          <h3 class="small-title">
+           SOBRE
+         </h3>
+         <div class="horizontal-menu">
+          <a href="/historias/museu" class="active">Museu da Moeda</a> 
+          <br><br>
+          <a href="/historias/amarela">História da Casa Amarela</a>
+          <br><br>
+          <a href="#">Quem Somos</a>
+        </div>
+      </div><!-- Footer Widget Ends -->
+    </div><!-- Row Ends -->
+  </div><!-- Container Ends -->
+
+  <!-- Copyright -->
+  <div id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <p class="copyright-text">
+            ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
+          </p>
+        </div>
+        <div class="col-md-6  col-sm-6">
+          <ul class="nav nav-inline  justify-content-end ">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Início -</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Sitemap -</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Políticas De Privacidade -</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Termos de Serviço</a>
+            </li>
+          </ul>        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright  End-->
+
+</footer>
+<!-- Footer Section End-->
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top">
+  <i class="fa fa-angle-up">
+  </i>
+</a> 
+
+<!-- JavaScript & jQuery Plugins -->
+<script src="/engage/assets/js/jquery-min.js"></script>
+<!-- Tether Js -->
+<script src="/engage/assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->    
+<script src="/engage/assets/js/bootstrap.min.js"></script>
+<!-- Color Switcher Js -->
+<!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
+<!--Text Rotator-->
+<script src="/engage/assets/js/jquery.mixitup.js"></script>
+<!--WOW Scroll Spy-->
+<script src="/engage/assets/js/wow.js"></script>
+<!-- OWL Carousel -->
+<script src="/engage/assets/js/owl.carousel.js"></script> 
+<!-- WayPoint -->
+<script src="/engage/assets/js/waypoints.min.js"></script>
+<!-- CounterUp -->
+<script src="/engage/assets/js/jquery.counterup.min.js"></script>
+<!-- Slicknav -->
+<script src="/engage/assets/js/jquery.counterup.min.js"></script>
+<!-- ScrollTop -->
+<script src="/engage/assets/js/jquery.slicknav.js"></script>
+<!-- Appear -->
+<script src="/engage/assets/js/jquery.appear.js"></script>
+<!-- Vide js -->
+<script src="/engage/assets/js/jquery.vide.js"></script>
+<!-- All JS plugin Triggers -->
+<script src="/engage/assets/js/main.js"></script> 
+
+<!-- bootstrapcdn alfa -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- bootstrapcdn beta -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </body>
 </html>
