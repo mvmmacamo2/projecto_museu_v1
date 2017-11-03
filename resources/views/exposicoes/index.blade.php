@@ -17,7 +17,7 @@
             <!-- Blog Item Wrapper Starts-->
             <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
               <div class="blog-item-img">
-                <a href="/usuario_galerias/{{ $exposicao->id }}">
+                <a href="/usuario_galerias/{{ $exposicao->id }}>
                   <img src="/expo-upload/{{ $exposicao->imagem}}" alt="">
                 </a>
               </div>
