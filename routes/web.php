@@ -16,6 +16,10 @@ use App\Exposicao;
 Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
+
+	
+	// $email = DB::table('users')->where('name', 'John')->value('email')
+	// $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
 	$likesexposicao =count(DB::table('like_exposicaos')->get());
 
 	//return view('welcome', compact('eventos'));
