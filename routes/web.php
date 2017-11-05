@@ -16,6 +16,9 @@ use App\Exposicao;
 Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
+	
+	// varialvel que determina se ha eventos ou não
+	$find = false;
 
 	
 	// $email = DB::table('users')->where('name', 'John')->value('email')
@@ -26,7 +29,7 @@ Route::get('/', function () {
 
    // dd($likesexposicao);
 	
-	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	return view('welcome', compact('eventos','find'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 
 });
 
