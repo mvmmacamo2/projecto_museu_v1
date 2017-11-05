@@ -20,13 +20,21 @@ Route::get('/', function () {
 	
 	// $email = DB::table('users')->where('name', 'John')->value('email')
 	// $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
-	$likesexposicao =count(DB::table('like_exposicaos')->get());
-
-	//return view('welcome', compact('eventos'));
-
+		//return view('welcome', compact('eventos'));
    // dd($likesexposicao);
+
 	
-	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	
+	foreach ($exposicoes as $e) {
+		$id= $e->id;
+		echo $id;
+	}
+	//$likesexposicao =count(DB::table('like_exposicaos')->get());
+	//$likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
+
+
+
+	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 
 });
 
