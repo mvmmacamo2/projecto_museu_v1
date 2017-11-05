@@ -301,15 +301,21 @@
                         @empty(auth()->user()->id)
                         <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                         <a href="/"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> 
-                        <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
+                        <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
                         
                         @else
                         <form method="post" action="/" id="like_form">
-                          
                           {!! csrf_field() !!}
                           <input type="hidden" name="like" value="1">
-                          <input type="hidden" name="exposicao_id" value="{!! $exposicao->id !!}">
-                          <input type="hidden" name="usuario_id"  value="{!! auth()->user()->id !!}">
+                          @empty(auth()->user()->id)
+                          <input type="hidden" value="" name="usuario_id">
+                          @else 
+                          
+                          <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
+                          @endif
+                          @foreach($exposicoes as $e)                        
+                          <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
+                          @endforeach
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                           <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                           <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
@@ -321,6 +327,9 @@
                     </div>
                   </div><!-- Blog Item Wrapper Ends-->
                 </div>
+                {{-- @empty --}}
+                {{-- @endforelse --}}
+                {{-- @endforeach --}}
                 @endforeach
               </div><!-- Row Ends -->
             </div><!-- Container Ends -->
@@ -560,3 +569,4 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </body>
     </html>
+
