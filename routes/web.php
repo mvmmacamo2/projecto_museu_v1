@@ -19,7 +19,8 @@ Route::get('/', function () {
 
 
 	$likesexposicao =DB::table('like_exposicaos')->get();
-	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	$comentexposicao =DB::table('comtario_exposicaos')->get();
+	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
 
 	
 
