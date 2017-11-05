@@ -353,25 +353,23 @@
                         @empty(auth()->user()->id)
                         <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                         <a href="/"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> 
-                        <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
+                        <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
                         
                         @else
+
                         <form method="post" action="/" id="like_form">
                           {!! csrf_field() !!}
 
                           <input type="hidden" name="like" value="1">
 
-                          @empty(auth()->user()->id)
                           <input type="hidden" value="" name="usuario_id">
-                          @else 
+
                           
                           <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
-                          @endif
 
 
-                          @foreach($exposicoes as $e)                        
-                          <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
-                          @endforeach
+                          <input type="hidden" value="{{ $exposicao->id}}" name="exposicao_id">
+                          
 
 
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
