@@ -326,19 +326,13 @@
 
                           $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $exposicao->id)->get());
 
-
-                            // echo  $likesexposicao ;
-                            // {{--   @if($like->exposicao_id=$exposicao->id)
-
-                            //   <a href="#"><i class="icon-heart"></i> {!! !!} Likes</a>
-
-                            //   @endif --}}
-
                         }
 
                         ?>
 
                         @endforeach
+
+
 
 
                         @foreach($comentexp as $nrcoment)
@@ -361,11 +355,24 @@
                           {!! csrf_field() !!}
 
                           <input type="hidden" name="like" value="1">
+
+                          @empty(auth()->user()->id)
+                          <input type="hidden" value="" name="usuario_id">
+                          @else 
+                          
                           <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
-                          <input type="hidden" value="{!! $exposicao->id  !!}" name="exposicao_id">
+                          @endif
+
+
+                          @foreach($exposicoes as $e)                        
+                          <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
+                          @endforeach
+
+
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                           <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                           <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
+
                         </form>
 
                         {{-- <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> --}}
