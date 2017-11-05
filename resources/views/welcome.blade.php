@@ -341,14 +341,14 @@
                           @endforeach
 
 
-                          @foreach($nrlike as $like)
+                          @foreach($comentexp as $nrcoment)
 
 
                           <?php 
                           // use DB;
-                          if ($like->exposicao_id=$exposicao->id) {
+                          if ($nrcoment->exposicao_id=$exposicao->id) {
 
-                            $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $exposicao->id)->get());
+                            $comentexposicao =count(DB::table('comtario_exposicaos')->where('exposicao_id', $exposicao->id)->get());
 
 
                             // echo  $likesexposicao ;
@@ -369,7 +369,7 @@
 
 
                           <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
-                          <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
+                          <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
                         </div>
                       </div>
                     </div><!-- Blog Item Wrapper Ends-->
