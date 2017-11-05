@@ -345,18 +345,9 @@
 
 
                         <?php 
-                          // use DB;
                         if ($nrcoment->exposicao_id=$exposicao->id) {
 
                           $comentexposicao =count(DB::table('comtario_exposicaos')->where('exposicao_id', $exposicao->id)->get());
-
-
-                            // echo  $likesexposicao ;
-                            // {{--   @if($like->exposicao_id=$exposicao->id)
-
-                            //   <a href="#"><i class="icon-heart"></i> {!! !!} Likes</a>
-
-                            //   @endif --}}
 
                         }
 
