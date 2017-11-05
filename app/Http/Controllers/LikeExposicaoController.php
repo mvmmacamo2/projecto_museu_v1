@@ -17,23 +17,24 @@ class LikeExposicaoController extends Controller
 		$exposicao= Exposicao::all();
 		$likeexposicao= LikeExposicao::all();
 		
+		$salvar = LikeExposicao::create($request->all());
+		
+		// empty(auth()->user()->id){
 
-		empty(auth()->user()->id){
-
-		}else{
-			$user = auth()->user()->id;
-			foreach ($likeexposicao as $like) {
-				foreach ($exposicao as $ex) {
-					if (($user=$like->usuario_id) AND ($ex->id=$like->exposicao_id) ) {
-						return redirect('/');
-					}else{
-						$salvar = LikeExposicao::create($request->all());
-					}
-				}
-				
-			}
-			
-		}
+		// }else{
+		// 	$user = auth()->user()->id;
+		// 	foreach ($likeexposicao as $like) {
+		// 		foreach ($exposicao as $ex) {
+		// 			if (($user=$like->usuario_id) AND ($ex->id=$like->exposicao_id) ) {
+		// 				return redirect('/');
+		// 			}else{
+		// 				$salvar = LikeExposicao::create($request->all());
+		// 			}
+		// 		}
+		
+		// 	}
+		
+		// }
 
 		// foreach ($usuario as $u) {
 		// 	foreach ($exposicao as $ex) {
