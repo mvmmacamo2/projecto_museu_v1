@@ -13,6 +13,16 @@ class LikeExposicaoController extends Controller
 
 	public function salvar(Request $request)
 	{
+		$usuario =User::all();
+		$exposicao= Exposicao::all();
+		$likeexposicao= LikeExposicao::all();
+
+		foreach ($usuarioas as $u) {
+			foreach ($exposicao as $ex) {
+
+			}
+
+		}
 		if (condition) {
        	# code...
 		}
