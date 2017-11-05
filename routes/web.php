@@ -20,16 +20,49 @@ Route::get('/', function () {
 	// varialvel que determina se ha eventos ou não
 	$find = false;
 
+
+	$likesexposicao =DB::table('like_exposicaos')->get();
+	$comentexposicao =DB::table('comtario_exposicaos')->get();
+	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
+
+	
+
+
+
+
+		//dd($likesexposicao);
+
 	
 	// $email = DB::table('users')->where('name', 'John')->value('email')
 	// $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
-	$likesexposicao =count(DB::table('like_exposicaos')->get());
-
-	//return view('welcome', compact('eventos'));
-
+		//return view('welcome', compact('eventos'));
    // dd($likesexposicao);
+
+	//$likesexposicao =DB::table('like_exposicaos')->groupBy('exposicao_id')->get();
 	
+	
+<<<<<<< HEAD
 	return view('welcome', compact('eventos','find'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+=======
+	// foreach ($exposicoes as $e) {
+	// 	$id= $e->id;
+	// 	//$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
+	// 	//groupBy('user_id')->get()
+	// 	//$likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $id)->get());
+	// 	$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
+	// 	//dd($likesexposicao);
+	// 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+
+	// 	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	// }
+
+	//$likesexposicao =count(DB::table('like_exposicaos')->get());
+//	$likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
+
+
+
+	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+>>>>>>> 7b393bb8f0545e750c88ae4b2f5a77c1d1ac7e43
 
 });
 
@@ -83,3 +116,6 @@ Route::group(['middleware'=>'escola'], function (){
 });
 
 
+// rotas de save de likes
+
+Route::post('/', 'LikeExposicaoController@salvar');
