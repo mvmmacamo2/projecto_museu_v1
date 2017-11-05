@@ -353,7 +353,7 @@
                         @empty(auth()->user()->id)
                         <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                         <a href=""><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> 
-                        <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
+                        <a href=""><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
                         
                         @else
                         <form method="post" action="/" id="like_form">
