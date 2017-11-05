@@ -17,16 +17,19 @@ class LikeExposicaoController extends Controller
 		$exposicao= Exposicao::all();
 		$likeexposicao= LikeExposicao::all();
 
-		foreach ($usuarioas as $u) {
+		foreach ($usuario as $u) {
 			foreach ($exposicao as $ex) {
+				foreach ($likeexposicao as $like) {
+					if (condition) {
+						
+					}
 
+
+				}
 			}
 
 		}
-		if (condition) {
-       	# code...
-		}
-
+		
 		$salvar = LikeExposicao::create($request->all());
 	}
 
