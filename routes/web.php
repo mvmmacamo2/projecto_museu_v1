@@ -16,6 +16,9 @@ use App\Exposicao;
 Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
+	
+	// varialvel que determina se ha eventos ou não
+	$find = false;
 
 	$likesexposicao =DB::table('like_exposicaos')->get();
 	$comentexposicao =DB::table('comtario_exposicaos')->get();
@@ -37,6 +40,9 @@ Route::get('/', function () {
 	//$likesexposicao =DB::table('like_exposicaos')->groupBy('exposicao_id')->get();
 	
 	
+<<<<<<< HEAD
+	return view('welcome', compact('eventos','find'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+=======
 	// foreach ($exposicoes as $e) {
 	// 	$id= $e->id;
 	// 	//$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
@@ -55,6 +61,7 @@ Route::get('/', function () {
 
 
 	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+>>>>>>> 7b393bb8f0545e750c88ae4b2f5a77c1d1ac7e43
 
 });
 

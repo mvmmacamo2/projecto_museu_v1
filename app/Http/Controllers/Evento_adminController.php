@@ -18,6 +18,7 @@ class Evento_adminController extends Controller
     public function index()
     {
         $eventos = Evento::all();
+        
         return view('admins.eventos.index', compact('eventos'));
     }
 
@@ -28,7 +29,7 @@ class Evento_adminController extends Controller
      */
     public function create()
     {
-        return view('/admins.eventos.create');
+        return view('admins.eventos.create');
     }
 
     /**
@@ -70,7 +71,7 @@ class Evento_adminController extends Controller
         }
 
         
-        return redirect('/admins.eventos');
+        return redirect('admins/eventos/');
     }
 
     /**
