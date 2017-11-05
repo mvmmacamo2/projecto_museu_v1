@@ -18,9 +18,14 @@ Route::get('/', function () {
 	$exposicoes = Exposicao::all();
 
 
-	$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
+	$likesexposicao =DB::table('like_exposicaos')->get();
 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+
 	
+
+
+
+
 		//dd($likesexposicao);
 
 	
@@ -40,7 +45,7 @@ Route::get('/', function () {
 	// 	$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
 	// 	//dd($likesexposicao);
 	// 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
-	
+
 	// 	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 	// }
 
