@@ -17,20 +17,35 @@ Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
 
+
+	$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
+	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	
+		//dd($likesexposicao);
+
 	
 	// $email = DB::table('users')->where('name', 'John')->value('email')
 	// $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
 		//return view('welcome', compact('eventos'));
    // dd($likesexposicao);
 
+	//$likesexposicao =DB::table('like_exposicaos')->groupBy('exposicao_id')->get();
 	
 	
-	foreach ($exposicoes as $e) {
-		$id= $e->id;
-		echo $id;
-	}
+	// foreach ($exposicoes as $e) {
+	// 	$id= $e->id;
+	// 	//$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
+	// 	//groupBy('user_id')->get()
+	// 	//$likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $id)->get());
+	// 	$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
+	// 	//dd($likesexposicao);
+	// 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	
+	// 	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	// }
+
 	//$likesexposicao =count(DB::table('like_exposicaos')->get());
-	//$likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
+//	$likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
 
 
 
