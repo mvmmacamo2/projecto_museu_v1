@@ -20,8 +20,11 @@ class LikeExposicaoController extends Controller
 		foreach ($usuario as $u) {
 			foreach ($exposicao as $ex) {
 				foreach ($likeexposicao as $like) {
-					if (condition) {
-						
+					if (($u->id=$like->usuario_id) and ($ex->id=$like->exposicao_id)) {
+
+						return redirect('/');
+					}else{
+						$salvar = LikeExposicao::create($request->all());
 					}
 
 
@@ -30,7 +33,7 @@ class LikeExposicaoController extends Controller
 
 		}
 		
-		$salvar = LikeExposicao::create($request->all());
+		
 	}
 
 }
