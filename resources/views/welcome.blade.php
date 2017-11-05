@@ -273,6 +273,18 @@
             <!-- Header-wrap Section End -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- Blog Section -->
             <section id="blog" class="section">
               <!-- Container Starts -->
@@ -282,8 +294,9 @@
                 </h1>
                 <!-- Row Starts -->
                 <div class="row">
-                  @foreach($nrlike as $like)
-                  @forelse($exposicoes as $exposicao)
+
+                  {{-- @forelse($exposicoes as $exposicao) --}}
+                  @foreach($exposicoes as $exposicao)
 
                   
 
@@ -304,24 +317,45 @@
                         <div class="blog-one-footer">
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                           
+                          @foreach($nrlike as $like)
                           @if($like->exposicao_id=$exposicao->id)
                           <a href="#"><i class="icon-heart"></i> {!! $like->like!!} Likes</a>
 
                           @endif
+                          @endforelse
                           <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
                         </div>
                       </div>
                     </div><!-- Blog Item Wrapper Ends-->
                   </div>
-                  @empty
+                  {{-- @empty --}}
+                  
 
-
-                  @endforelse
+                  {{-- @endforelse --}}
+                  {{-- @endforeach --}}
                   @endforeach
+
                 </div><!-- Row Ends -->
               </div><!-- Container Ends -->
             </section>
             <!-- blog Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
