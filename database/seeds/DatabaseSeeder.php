@@ -12,27 +12,32 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        // DB::table('users')->insert([
-        //     '0' => [
-        //         'name' => 'Miguel Vasco Macamo',
-        //         'username' => 'mvmmacamo',
-        //         'email' => 'misaelvasco@gmail.com',
-        //         'password' => '123456',
-        //         'nivelacesso' => 'Administrador',
-        //     ],
+        DB::table('users')->insert([
+            '0' => [
+                'name' => 'Miguel Vasco Macamo',
+                'username' => 'mvmmacamo',
+                'email' => 'misaelvasco@gmail.com',
+                'password' => '123456',
+                'nivelacesso' => 'Administrador',
+            ],
+            '1' => [
+                'name' => 'Leonardo Huo',
+                'username' => 'leo',
+                'email' => 'leo@gmail.com',
+                'password' => '123456',
+                'nivelacesso' => 'Normal',
+            ],
+            '2' => [
+                'name' => 'Denilson Mavie',
+                'username' => 'denilson',
+                'email' => 'denilson@gmail.com',
+                'password' => '123456',
+                'nivelacesso' => 'Normal',
+            ]
+
+        ]);
 
 
-
-        
-                // '0' => [
-                //     'nome' => 'Escola Secundaria de Laulane',
-                //     'nivel' => 'Medio',
-                //     'endereco' => 'Mahotas Perto da 14 esquadra',
-                //     'nome_responsavel' => 'Ezilda',
-                //     'contacto' => '845030902',
-                //     'email' => 'laulane@gmail.com',
-                //     'senha' => '123456',
-                // ],
 
         DB::table('escolas')->insert([
             'nome' => 'Escola Secundaria de Laulane',

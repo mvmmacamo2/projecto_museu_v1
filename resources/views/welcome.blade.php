@@ -361,15 +361,11 @@
                           {!! csrf_field() !!}
 
                           <input type="hidden" name="like" value="1">
+                          <input type="hidden" name="exposicao_id"  value="{!! $exposicao->id !!}" >
+                          <input type="hidden" name="usuario_id"  value="{!! auth()->user()->id !!}">
 
-                          <input type="hidden" value="" name="usuario_id">
+                          {!! $exposicao->id !!}
 
-                          
-                          <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
-
-
-                          <input type="hidden" value="{{ $exposicao->id}}" name="exposicao_id">
-                          
 
 
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
