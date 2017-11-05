@@ -350,6 +350,7 @@
                         @endforeach
 
 
+
                         @empty(auth()->user()->id)
                         <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                         <a href="/"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> 
@@ -358,17 +359,14 @@
                         @else
 
                         <form method="post" action="/" id="like_form">
+                          
                           {!! csrf_field() !!}
 
                           <input type="hidden" name="like" value="1">
-                          {{-- <input type="hidden" name="exposicao_id"  value="{!! $exposicao->id !!}" > --}}
-                          @foreach($exposicoes as $e)
-                          <input type="hidden" name="exposicao_id" value="{!! $e->id !!}">
-                          @endforeach
+
+                          <input type="hidden" name="exposicao_id" value="{!! $exposicao->id !!}">
+
                           <input type="hidden" name="usuario_id"  value="{!! auth()->user()->id !!}">
-
-                          {!! $exposicao->id !!}
-
 
 
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
@@ -378,17 +376,16 @@
                         </form>
 
                         @endempty
+
                         {{-- <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> --}}
                         {{-- <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> --}}
+
                       </div>
                     </div>
                   </div><!-- Blog Item Wrapper Ends-->
                 </div>
-                {{-- @empty --}}
 
 
-                {{-- @endforelse --}}
-                {{-- @endforeach --}}
                 @endforeach
 
               </div><!-- Row Ends -->
