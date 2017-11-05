@@ -318,18 +318,32 @@
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                           
                           @foreach($nrlike as $like)
-                          @if($like->exposicao_id=$exposicao->id)
-                          <a href="#"><i class="icon-heart"></i> {!! $like->like!!} Likes</a>
 
-                          @endif
-                          @endforelse
+
+                          <?php 
+                          // use DB;
+                          if ($like->exposicao_id=$exposicao->id) {
+
+                            $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $exposicao->id)->get());
+                            // echo  $likesexposicao ;
+                          }
+
+                          ?>
+                        {{--   @if($like->exposicao_id=$exposicao->id)
+
+                          <a href="#"><i class="icon-heart"></i> {!! !!} Likes</a>
+
+                          @endif --}}
+
+                          @endforeach
+                          <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                           <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
                         </div>
                       </div>
                     </div><!-- Blog Item Wrapper Ends-->
                   </div>
                   {{-- @empty --}}
-                  
+
 
                   {{-- @endforelse --}}
                   {{-- @endforeach --}}
