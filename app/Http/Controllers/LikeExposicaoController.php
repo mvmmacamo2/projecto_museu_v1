@@ -19,38 +19,7 @@ class LikeExposicaoController extends Controller
 		
 		$salvar = LikeExposicao::create($request->all());
 		
-		// empty(auth()->user()->id){
-
-		// }else{
-		// 	$user = auth()->user()->id;
-		// 	foreach ($likeexposicao as $like) {
-		// 		foreach ($exposicao as $ex) {
-		// 			if (($user=$like->usuario_id) AND ($ex->id=$like->exposicao_id) ) {
-		// 				return redirect('/');
-		// 			}else{
-		// 				$salvar = LikeExposicao::create($request->all());
-		// 			}
-		// 		}
 		
-		// 	}
-		
-		// }
-
-		// foreach ($usuario as $u) {
-		// 	foreach ($exposicao as $ex) {
-		// 		foreach ($likeexposicao as $like) {
-		// 			if (($u->id=$like->usuario_id) and ($ex->id=$like->exposicao_id)) {
-
-		// 				return redirect('/');
-		// 			}else{
-		// 				$salvar = LikeExposicao::create($request->all());
-		// 			}
-
-
-		// 		}
-		// 	}
-
-		// }
 
 
 	}
