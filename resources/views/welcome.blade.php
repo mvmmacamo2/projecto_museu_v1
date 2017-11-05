@@ -361,7 +361,10 @@
                           {!! csrf_field() !!}
 
                           <input type="hidden" name="like" value="1">
-                          <input type="hidden" name="exposicao_id"  value="{!! $exposicao->id !!}" >
+                          {{-- <input type="hidden" name="exposicao_id"  value="{!! $exposicao->id !!}" > --}}
+                          @foreach($exposicoes as $e)
+                          <input type="hidden" name="exposicao_id" value="{!! $e->id !!}">
+                          @endforeach
                           <input type="hidden" name="usuario_id"  value="{!! auth()->user()->id !!}">
 
                           {!! $exposicao->id !!}

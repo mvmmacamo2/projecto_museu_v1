@@ -17,7 +17,6 @@ Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
 
-
 	$likesexposicao =DB::table('like_exposicaos')->get();
 	$comentexposicao =DB::table('comtario_exposicaos')->get();
 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
