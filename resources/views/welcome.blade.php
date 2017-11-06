@@ -412,7 +412,7 @@
               <!-- Row Starts -->
               <div class="row">
                 @foreach($eventos as $evento)
-                @if($evento->estado=='proccess')
+                @if($evento->estado=='active')
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                   <!-- Blog Item Starts -->
                   <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">

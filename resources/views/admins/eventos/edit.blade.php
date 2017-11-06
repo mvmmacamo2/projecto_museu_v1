@@ -12,107 +12,142 @@
     <div class="col-lg-10">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Novo Evento
+                Editar Evento
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <form class="form-horizontal" method="POST" action="/admins/eventos" enctype="multipart/form-data">  
-                    {{ csrf_field() }}
 
-                    <input type="hidden" name="estado" value="active">
+             <form>
 
+                {{-- PUBLICO ALVO --}}
 
-
-                    <div class="form-group{{ $errors->has('publico') ? ' has-error' : '' }}">
-                        <label for="publico" class="col-md-4 control-label">Público</label>
-
-                        <div class="col-md-6">
-                            <select id="publico" name="publico" class="form-control">
-                                <option value="Adultos">Adultos</option>
-                                <option value="Adolescentes">Adolescentes</option>
-                                <option value="Crianças">Crianças</option>
-                                <option value="Idosos">Idosos</option>
-                            </select>
-
-                            @if ($errors->has('publico'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('publico') }}</strong>
-                            </span>
-                            @endif
-                        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Público Alvo</label>
+                        {{-- <input type="email" class="form-control" id="inputEmail4" placeholder="Email"> --}}
+                        <select id="publico" name="publico" class="form-control" >
+                            <option value="Adultos">Adultos</option>
+                            <option value="Adolescentes">Adolescentes</option>
+                            <option value="Crianças">Crianças</option>
+                            <option value="Idosos">Idosos</option>
+                        </select>
                     </div>
 
-                    <div class="form-group{{ $errors->has('imagem') ? ' has-error' : '' }}">
-                        <label for="imagem" class="col-md-4 control-label">Imagem</label>
+                    <div class="form-group col-md-6">
+                        <label for="inputPublico">Público Alvo Actual</label>
+                        <input type="text" class="form-control" id="inputPublico" value="{!! $evento->publico !!}" readonly>
+                    </div>
+                </div>
 
-                        <div class="col-md-6">
-                            <input id="imagem" type="file" class="form-control" name="imagem" value="{{ old('imagem') }}" required>
 
-                            @if ($errors->has('imagem'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('imagem') }}</strong>
-                            </span>
-                            @endif
-                        </div>
+
+
+                {{-- DATA DO EVENTO --}}
+
+
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputdata">Hora do Evento</label>
+                        <input type="time" class="form-control" id="inputdata" value="{!! $evento->hora !!}" >
                     </div>
 
+                    <div class="form-group col-md-6">
+                        <label for="inputPublico">Hora do Evento Actual</label>
+                        <input type="text" class="form-control" id="inputPublico" value="{!! $evento->hora !!}" readonly>
+                    </div>
+                </div>
 
-                    <div class="form-group{{ $errors->has('data_inicio') ? ' has-error' : '' }}">
-                        <label for="data" class="col-md-4 control-label">Data</label>
 
-                        <div class="col-md-6">
-                            <input id="data" type="date" class="form-control" name="data" value="{{ old('data') }}" required autofocus>
+                {{-- HORA --}}
 
-                            @if ($errors->has('data'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('data') }}</strong>
-                            </span>
-                            @endif
-                        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputdata">Data do Evento</label>
+                        <input type="text" class="form-control" id="inputdata" value="{!! $evento->publico !!}" >
                     </div>
 
-                    <div class="form-group{{ $errors->has('horas') ? ' has-error' : '' }}">
-                        <label for="hora" class="col-md-4 control-label">Hora</label>
+                    <div class="form-group col-md-6">
+                        <label for="inputPublico">Data do Evento Actual</label>
+                        <input type="text" class="form-control" id="inputPublico" value="{!! $evento->publico !!}" readonly>
+                    </div>
+                </div>
 
-                        <div class="col-md-6">
-                            <input id="hora" type="time" class="form-control" name="hora" value="{{ old('hora') }}" required autofocus>
 
-                            @if ($errors->has('hora'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('hora') }}</strong>
-                            </span>
-                            @endif
-                        </div>
+
+                {{-- Descricao do Evento --}}
+
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputdescricao">Descricao do Evento</label>
+
+                        <textarea name="descricao" cols="10" rows="4" class="form-control" id="inputdescricao">{!! $evento->descricao !!}</textarea>
                     </div>
 
-                    <div class="form-group{{ $errors->has('descricao') ? ' has-error' : '' }}">
-                        <label for="descricao" class="col-md-4 control-label">Descrição</label>
+                    <div class="form-group col-md-6">
+                        <label for="inputdescricao">Descricao do Evento Actual</label>
 
-                        <div class="col-md-6">
-                            <textarea id="descricao" class="form-control" name="descricao" value="{{ old('descricao') }}" required autofocus cols="10" rows="6"></textarea>
+                        <textarea name="descricao" cols="10" rows="4" class="form-control" id="inputdescricao" readonly>{!! $evento->descricao !!}</textarea>
+                    </div>
+                </div>
 
-                            @if ($errors->has('descricao'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('descricao') }}</strong>
-                            </span>
-                            @endif
-                        </div>
+
+
+                {{-- PARTE DA IMAGEM --}}
+
+
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputdescricao">Escolher Imagem do Evento</label>
+
+                        <input type="file" name="imagem" class="form-control" value="{!! $evento->imagem !!}">
                     </div>
 
+                    <div class="form-group col-md-6">
 
-                    <div class="form-group">
-                        <div class="col-md-6 col-md-offset-4">
-                            <button type="submit" class="btn btn-primary">
-                                Adicionar
-                            </button>
-                        </div>
+                        <label for="inputdescricao">Estado do Evento</label>
+
+                        <select id="publico" name="estado" class="form-control" >
+                            <option value="active">On</option>
+                            <option value="off">Off</option>
+                        </select>
+
+
                     </div>
-                </form>
-            </div>
-            <!-- /.panel-body -->
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-6 col-md-offset-4">
+                        <button type="submit" class="btn btn-primary">
+                            Actualizar
+                        </button>
+                    </div>
+                </div>
+
+
+            </form>
+
+
+
+            
+
+
+
+
         </div>
-        <!-- /.panel -->
+        <!-- /.panel-body -->
+
     </div>
-    <!-- /.col-lg-12 -->
+    <!-- /.panel -->
+
+
+
+</div>
+<!-- /.col-lg-12 -->
 </div>
 @stop
