@@ -70,7 +70,7 @@ class Evento_adminController extends Controller
         }
 
         
-        return redirect('/admins.eventos');
+        return redirect('/admins/eventos');
     }
 
     /**
