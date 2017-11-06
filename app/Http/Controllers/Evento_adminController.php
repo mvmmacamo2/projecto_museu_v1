@@ -107,7 +107,9 @@ class Evento_adminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $evento=Evento::find($id);
+        $evento->update($request->all());
+        return redirect('/admins/eventos');
     }
 
     /**

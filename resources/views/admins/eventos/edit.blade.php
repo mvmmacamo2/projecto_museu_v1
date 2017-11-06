@@ -17,7 +17,10 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
 
-             <form>
+             <form method="post" action="/admins/eventos">
+
+                {!! csrf_field() !!}
+                <input type="hidden" name="_method" value="PUT">
 
                 {{-- PUBLICO ALVO --}}
 
@@ -50,7 +53,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputdata">Hora do Evento</label>
-                        <input type="time" class="form-control" id="inputdata" value="{!! $evento->hora !!}" >
+                        <input type="time" class="form-control" id="inputdata" value="{!! $evento->hora !!}" name="hora">
                     </div>
 
                     <div class="form-group col-md-6">
@@ -65,12 +68,12 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputdata">Data do Evento</label>
-                        <input type="text" class="form-control" id="inputdata" value="{!! $evento->publico !!}" >
+                        <input type="date" class="form-control" id="inputdata" value="{!! $evento->data !!}" name="data">
                     </div>
 
                     <div class="form-group col-md-6">
                         <label for="inputPublico">Data do Evento Actual</label>
-                        <input type="text" class="form-control" id="inputPublico" value="{!! $evento->publico !!}" readonly>
+                        <input type="text" class="form-control" id="inputPublico" value="{!! $evento->data !!}" readonly>
                     </div>
                 </div>
 
@@ -90,7 +93,7 @@
                     <div class="form-group col-md-6">
                         <label for="inputdescricao">Descricao do Evento Actual</label>
 
-                        <textarea name="descricao" cols="10" rows="4" class="form-control" id="inputdescricao" readonly>{!! $evento->descricao !!}</textarea>
+                        <textarea  cols="10" rows="4" class="form-control" id="inputdescricao" readonly>{!! $evento->descricao !!}</textarea>
                     </div>
                 </div>
 
@@ -105,7 +108,7 @@
                     <div class="form-group col-md-6">
                         <label for="inputdescricao">Escolher Imagem do Evento</label>
 
-                        <input type="file" name="imagem" class="form-control" value="{!! $evento->imagem !!}">
+                        <input type="file" name="imagem" class="form-control" value="{!! $evento->imagem !!}" name="imagem">
                     </div>
 
                     <div class="form-group col-md-6">
@@ -134,7 +137,7 @@
 
 
 
-            
+
 
 
 

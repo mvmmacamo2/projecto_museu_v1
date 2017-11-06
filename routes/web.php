@@ -88,6 +88,7 @@ Route::get('/historias/amarela', 'Historia_casa_amarelaController@index');
 
 Route::get('/exposicoes', 'ExposicaoController@index');
 Route::get('/eventos', 'EventoController@index');
+
 Route::resource('/usuario_galerias', 'Usuario_GaleriaController');
 
 
