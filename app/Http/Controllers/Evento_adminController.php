@@ -7,6 +7,7 @@ use App\Evento;
 use Auth;
 use App\user;
 use File;
+use App\Exposicao;
 
 class Evento_adminController extends Controller
 {
@@ -93,7 +94,8 @@ class Evento_adminController extends Controller
     public function edit($id)
     {
         $evento = Evento::find($id);
-        return view('admin.eventos.edit', compact('evento'));
+        $exposicao=Exposicao::all();
+        return view('admins.eventos.edit', compact('evento'), compact('exposicao'));
     }
 
     /**
