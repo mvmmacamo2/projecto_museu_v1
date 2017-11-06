@@ -92,7 +92,8 @@ class Evento_adminController extends Controller
      */
     public function edit($id)
     {
-        return view('/admin.eventos.edit');
+        $evento = Evento::find($id);
+        return view('admin.eventos.edit', compact('evento'));
     }
 
     /**

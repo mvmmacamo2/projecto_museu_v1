@@ -28,10 +28,10 @@
 
 						<div class="col-md-6">
 							<select id="publico" name="publico" class="form-control">
-								<option>Adultos</option>
-								<option>Adolescentes</option>
-								<option>Crianças</option>
-								<option>Idosos</option>
+								<option value="Adultos">Adultos</option>
+								<option value="Adolescentes">Adolescentes</option>
+								<option value="Crianças">Crianças</option>
+								<option value="Idosos">Idosos</option>
 							</select>
 
 							@if ($errors->has('publico'))
