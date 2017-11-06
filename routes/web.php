@@ -16,13 +16,15 @@ use App\Exposicao;
 Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
+
 	
 	// varialvel que determina se ha eventos ou não
-	$find = false;
+	// $find = false;
 
 	$likesexposicao =DB::table('like_exposicaos')->get();
 	$comentexposicao =DB::table('comtario_exposicaos')->get();
 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
+
 
 	
 
@@ -40,8 +42,15 @@ Route::get('/', function () {
 	//$likesexposicao =DB::table('like_exposicaos')->groupBy('exposicao_id')->get();
 	
 	
+<<<<<<< HEAD
 
 	return view('welcome', compact('eventos','find'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+=======
+	
+
+	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
 	// foreach ($exposicoes as $e) {
 	// 	$id= $e->id;
 	// 	//$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
@@ -60,6 +69,15 @@ Route::get('/', function () {
 
 
 	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+<<<<<<< HEAD
+=======
+
+
+	// return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	
+	// return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
 
 });
 

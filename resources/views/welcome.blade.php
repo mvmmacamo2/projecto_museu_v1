@@ -262,7 +262,11 @@
             <!-- Container Starts -->
             <div class="container">
               <h1 class="section-title wow fadeInUpQuick">
+<<<<<<< HEAD
                 Exposições Recentes
+=======
+                EXPOSIÇÕES RECENTES
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
               </h1>
               <!-- Row Starts -->
               <div class="row">
@@ -301,6 +305,7 @@
                         @empty(auth()->user()->id)
                         <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                         <a href="/"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> 
+<<<<<<< HEAD
                         <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
                         
                         @else
@@ -310,6 +315,34 @@
                           <input type="hidden" name="like" value="1">
                           <input type="hidden" name="exposicao_id" value="{!! $exposicao->id !!}">
                           <input type="hidden" name="usuario_id"  value="{!! auth()->user()->id !!}">
+=======
+                        <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
+                        
+                        @else
+                        <form method="post" action="/" id="like_form">
+                          {!! csrf_field() !!}
+                          <input type="hidden" name="like" value="1">
+                          @empty(auth()->user()->id)
+                          <input type="hidden" value="" name="usuario_id">
+                          @else 
+                          
+                          <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
+                          <input type="hidden" value="{{ $exposicao->id }}" name="exposicao_id">
+
+                          @endif
+
+                          @foreach($exposicoes as $e)
+
+                          {{-- <input type="hidden" value="{{ $e->id }}" name="exposicao_id"> --}}
+
+
+                          @endforeach
+
+
+
+                          {{-- <input type="hidden" value="{{ $exposicao->id }}" name="exposicao_id"> --}}
+
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                           <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                           <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
@@ -321,6 +354,12 @@
                     </div>
                   </div><!-- Blog Item Wrapper Ends-->
                 </div>
+<<<<<<< HEAD
+=======
+                {{-- @empty --}}
+                {{-- @endforelse --}}
+                {{-- @endforeach --}}
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
                 @endforeach
               </div><!-- Row Ends -->
             </div><!-- Container Ends -->
@@ -387,7 +426,11 @@
             <!-- Container Starts -->
             <div class="container">
               <h1 class="section-title wow fadeInUpQuick">
+<<<<<<< HEAD
                 Eventos Do Museu
+=======
+                EVENTOS DO MUSEU
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
               </h1>
               <!-- Row Starts -->
               <div class="row">
@@ -505,12 +548,16 @@
             <!-- Copyright  End-->
           </footer>
           <!-- Footer Section End-->
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
           <!-- Go To Top Link -->
           <a href="#" class="back-to-top">
             <i class="fa fa-angle-up">
             </i>
           </a>
+<<<<<<< HEAD
 
           <div class="bottom"> <a href="#" class="settings"></a> </div>
 
@@ -559,3 +606,56 @@
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         </body>
         </html>
+=======
+          <i class="fa fa-angle-up">
+          </i>
+        </a>
+        <i class="fa fa-angle-up">
+        </i>
+      </a>
+      <!-- JavaScript & jQuery Plugins -->
+      <script src="/engage/assets/js/jquery-min.js"></script>
+      <!-- Tether Js -->
+      <script src="/engage/assets/js/popper.min.js"></script>
+      <!-- Bootstrap JS -->
+      <!-- Bootstrap JS -->
+      <!-- Bootstrap JS -->
+      <script src="/engage/assets/js/bootstrap.min.js"></script>
+      <!-- Color Switcher Js -->
+      <!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
+      <!--Text Rotator-->
+      <script src="/engage/assets/js/jquery.mixitup.js"></script>
+      <!--WOW Scroll Spy-->
+      <script src="/engage/assets/js/wow.js"></script>
+      <!-- OWL Carousel -->
+      <script src="/engage/assets/js/owl.carousel.js"></script>
+      <script src="/engage/assets/js/owl.carousel.js"></script>
+      <script src="/engage/assets/js/owl.carousel.js"></script>
+      <!-- WayPoint -->
+      <script src="/engage/assets/js/waypoints.min.js"></script>
+      <!-- CounterUp -->
+      <script src="/engage/assets/js/jquery.counterup.min.js"></script>
+      <!-- Slicknav -->
+      <script src="/engage/assets/js/jquery.counterup.min.js"></script>
+      <!-- ScrollTop -->
+      <script src="/engage/assets/js/jquery.slicknav.js"></script>
+      <!-- Appear -->
+      <script src="/engage/assets/js/jquery.appear.js"></script>
+      <!-- Vide js -->
+      <script src="/engage/assets/js/jquery.vide.js"></script>
+      <!-- All JS plugin Triggers -->
+      <script src="/engage/assets/js/main.js"></script>
+      <script src="/engage/assets/js/main.js"></script>
+      <script src="/engage/assets/js/main.js"></script>
+      <!-- bootstrapcdn alfa -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <!-- bootstrapcdn beta -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </body>
+    </html>
+
+>>>>>>> 21f28990576821f05639cfa2541ffbbe8acb5b92
