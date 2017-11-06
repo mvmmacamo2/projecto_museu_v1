@@ -16,24 +16,12 @@
 			</div>
 			<!-- /.panel-heading -->
 			<div class="panel-body">
-				<form class="form-horizontal" method="POST" action="/eventos" enctype="multipart/form-data">  
+				<form class="form-horizontal" method="POST" action="/admins/eventos" enctype="multipart/form-data">  
 					{{ csrf_field() }}
 
 					<input type="hidden" name="estado" value="active">
 
-					<div class="form-group{{ $errors->has('descricao') ? ' has-error' : '' }}">
-						<label for="descricao" class="col-md-4 control-label">Descrição</label>
 
-						<div class="col-md-6">
-							<textarea id="descricao" class="form-control" name="descricao" value="{{ old('descricao') }}" required autofocus></textarea>
-
-							@if ($errors->has('descricao'))
-							<span class="help-block">
-								<strong>{{ $errors->first('descricao') }}</strong>
-							</span>
-							@endif
-						</div>
-					</div>
 
 					<div class="form-group{{ $errors->has('publico') ? ' has-error' : '' }}">
 						<label for="publico" class="col-md-4 control-label">Público</label>
@@ -92,6 +80,20 @@
 							@if ($errors->has('hora'))
 							<span class="help-block">
 								<strong>{{ $errors->first('hora') }}</strong>
+							</span>
+							@endif
+						</div>
+					</div>
+
+					<div class="form-group{{ $errors->has('descricao') ? ' has-error' : '' }}">
+						<label for="descricao" class="col-md-4 control-label">Descrição</label>
+
+						<div class="col-md-6">
+							<textarea id="descricao" class="form-control" name="descricao" value="{{ old('descricao') }}" required autofocus></textarea>
+
+							@if ($errors->has('descricao'))
+							<span class="help-block">
+								<strong>{{ $errors->first('descricao') }}</strong>
 							</span>
 							@endif
 						</div>
