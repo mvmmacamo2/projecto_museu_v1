@@ -312,10 +312,21 @@
                           @else 
                           
                           <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
+                          <input type="hidden" value="{{ $exposicao->id }}" name="exposicao_id">
+
                           @endif
-                          @foreach($exposicoes as $e)                        
-                          <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
+
+                          @foreach($exposicoes as $e)
+
+                          {{-- <input type="hidden" value="{{ $e->id }}" name="exposicao_id"> --}}
+
+
                           @endforeach
+
+
+
+                          {{-- <input type="hidden" value="{{ $exposicao->id }}" name="exposicao_id"> --}}
+
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                           <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                           <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
