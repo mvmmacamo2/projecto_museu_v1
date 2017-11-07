@@ -58,6 +58,7 @@
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
 
+
             <li class="nav-item active">
               <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
             </li>
@@ -86,6 +87,39 @@
                 <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
               </div>
             </li>
+
+
+
+
+            <li class="nav-item active">
+              <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/historias/museu">Museu</a>
+                <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/exposicoes">Exposição <span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
+                <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
+                <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
+              </div>
+            </li>
+
 
 
             @if (Route::has('login'))
@@ -126,7 +160,6 @@
             <input class=" mr-sm-2" type="text" placeholder="Search Here ...">
             <span class="top_search_icon"><i class="icon-magnifier"></i></span>
           </div>
-<<<<<<< HEAD
 
           <div class="col-sm-6 col-md-3">
             <!-- Service-Block-1 Item Starts -->
@@ -169,7 +202,7 @@
               <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                  As visitas e atividades são dinamizadas por educadores do Museu e adequam-se aos objetivos dos diferentes ciclos escolares; recorrem a estratégias pedagógicas diversificadas e são adaptadas à faixa etária, estilos de aprendizagem e competências dos participantes.
-=======
+
         </form>
       </div>
       <!-- Mobile Menu Start -->
@@ -296,7 +329,7 @@
                       </h3>
                     </div>
                   </div>
->>>>>>> 41da8ae9dddf3d8e08a47eaa8f6e9cd89c0d8970
+
                 </div>
               </div>
             </div>
@@ -478,11 +511,19 @@
                       </div>
                     </div>
                   </div><!-- Blog Item Wrapper Ends-->
+
                 </div>
                 @else
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                   Não há eventos agendados actualmente..!
                 </div>
+
+                </div>
+               
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  Não há eventos agendados actualmente..!
+                </div>
+
                 @endif
                 @endforeach
               </div><!-- Row Ends -->

@@ -27,16 +27,11 @@ class DatabaseSeeder extends Seeder
                 'password' => '123456',
                 'nivelacesso' => 'Normal',
             ],
-<<<<<<< HEAD
-            '2' => ['name' => 'Leonardo De Jesus Huo',
-                'username' => 'leonardo',
-                'email' => 'leonardo.huo@gmail.com',
-=======
+
             '2' => [
                 'name' => 'Denilson Mavie',
                 'username' => 'denilson',
                 'email' => 'denilson@gmail.com',
->>>>>>> 41da8ae9dddf3d8e08a47eaa8f6e9cd89c0d8970
                 'password' => '123456',
                 'nivelacesso' => 'Administrador',
             ]
