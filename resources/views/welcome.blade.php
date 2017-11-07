@@ -381,193 +381,200 @@
                     </div>
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
+                       O Pátio é uma area relacionada com o mundo lunático e que dá extremo valor à tradição. Ao solicitar um evento, você ira garantir que o seu evento se torne um momento único, inolvidavél e de grande qualidade.
+                       
+                       Este conjunto de profissionais, que se dedica à organização de eventos, põe ao vosso dispor uma série de eventos:
+                       Casamentos (conta com decoração personalizada),
+                       Gravações Televisivas,
+                       Publicidade,
+                       Recriações Históricas,
+                       Feiras Gastronômicas,
+                       Etc.
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <!-- Other Service Item Wrapper Ends -->
+         </section>
+         <!-- Other Services Section End -->
+         <!-- Blog Section -->
+         <section id="blog" class="section">
+          <!-- Container Starts -->
+          <div class="container">
+            <h1 class="section-title wow fadeInUpQuick">
+              EVENTOS DO MUSEU
+            </h1>
+            <!-- Row Starts -->
+            <div class="row">
+              @foreach($eventos as $evento)
+              @if($evento->estado=='active')
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <!-- Blog Item Starts -->
+                <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
+                  <div class="blog-item-img">
+                    <a href="#">
+                      <img src="/evento_upload/{{$evento->imagem}}" alt="">
+                    </a>
                   </div>
-                </div>
-              </div>
-            </div>
-            <!-- Other Service Item Wrapper Ends -->
-          </section>
-          <!-- Other Services Section End -->
-          <!-- Blog Section -->
-          <section id="blog" class="section">
-            <!-- Container Starts -->
-            <div class="container">
-              <h1 class="section-title wow fadeInUpQuick">
-                EVENTOS DO MUSEU
-              </h1>
-              <!-- Row Starts -->
-              <div class="row">
-                @foreach($eventos as $evento)
-                @if($evento->estado=='proccess')
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                  <!-- Blog Item Starts -->
-                  <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
-                    <div class="blog-item-img">
-                      <a href="#">
-                        <img src="/evento_upload/{{$evento->imagem}}" alt="">
-                      </a>
-                    </div>
-                    <div class="blog-item-text">
-                      <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
-                      <p>
-                        {{$evento->descricao}}
-                      </p>
-                      <div class="blog-one-footer">
-                        <a href="#">Read More</a>
-                        <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                        <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
-                      </div>
-                    </div>
-                  </div><!-- Blog Item Wrapper Ends-->
-                </div>
-                @else
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                  Não há eventos agendados actualmente..!
-                </div>
-                @endif
-                @endforeach
-              </div><!-- Row Ends -->
-            </div><!-- Container Ends -->
-          </section>
-          <!-- blog Section End -->
-          <!-- Footer Section -->
-          <footer>
-            <!-- Container Starts -->
-            <div class="container">
-              <!-- Row Starts -->
-              <div class="row section">
-                <!-- Footer Widget Starts -->
-                <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
-                  <h3 class="small-title">
-                    CONTACTO
-                  </h3>
-                  <p>
-                    Museu da Moeda Rua Consiglieri Pedroso Maputo
-                    Contacto 84 533 6565
-                    De 3ª a 6ª feiras: das 11:00h às 17:00h;
-                    Sábado: das 9:00h às 15:00h;
-                    Domingo e Feriados: das 14:00h às 17:00h;
-                    2ª feira: Encerrada.
-                  </p>
-                  <div class="social-footer">
-                    <a href="#"><i class="fa fa-facebook icon-round"></i></a>
-                    <a href="#"><i class="fa fa-twitter icon-round"></i></a>
-                    <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
-                    <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
-                  </div>
-                </div><!-- Footer Widget Ends -->
-                <!-- Footer Widget Starts -->
-                <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
-                  <h3 class="small-title">
-                    Localização
-                  </h3>
-                  <div class="plain-flicker-gallery">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
-                </div><!-- Footer Widget Ends -->
-                <!-- Footer Widget Starts -->
-                <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
-                  <h3 class="small-title">
-                    SOBRE
-                  </h3>
-                  <div class="horizontal-menu">
-                    <a href="/historias/museu" class="active">Museu da Moeda</a>
-                    <br><br>
-                    <a href="/historias/amarela">História da Casa Amarela</a>
-                    <br><br>
-                    <a href="#">Quem Somos</a>
-                  </div>
-                </div><!-- Footer Widget Ends -->
-              </div><!-- Row Ends -->
-            </div><!-- Container Ends -->
-            <!-- Copyright -->
-            <div id="copyright">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                    <p class="copyright-text">
-                      ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
+                  <div class="blog-item-text">
+                    <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
+                    <p>
+                      {{$evento->descricao}}
                     </p>
+                    <div class="blog-one-footer">
+                      <a href="#">Read More</a>
+                      <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                      <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
+                    </div>
                   </div>
-                  <div class="col-md-6  col-sm-6">
-                    <ul class="nav nav-inline  justify-content-end ">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="/">Início -</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"> Sitemap -</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"> Políticas De Privacidade -</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"> Termos de Serviço</a>
-                      </li>
-                    </ul>
-                  </div>
+                </div><!-- Blog Item Wrapper Ends-->
+              </div>
+              @else
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                Não há eventos agendados actualmente..!
+              </div>
+              @endif
+              @endforeach
+            </div><!-- Row Ends -->
+          </div><!-- Container Ends -->
+        </section>
+        <!-- blog Section End -->
+        <!-- Footer Section -->
+        <footer>
+          <!-- Container Starts -->
+          <div class="container">
+            <!-- Row Starts -->
+            <div class="row section">
+              <!-- Footer Widget Starts -->
+              <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
+                <h3 class="small-title">
+                  CONTACTO
+                </h3>
+                <p>
+                  Museu da Moeda Rua Consiglieri Pedroso Maputo
+                  Contacto 84 533 6565
+                  De 3ª a 6ª feiras: das 11:00h às 17:00h;
+                  Sábado: das 9:00h às 15:00h;
+                  Domingo e Feriados: das 14:00h às 17:00h;
+                  2ª feira: Encerrada.
+                </p>
+                <div class="social-footer">
+                  <a href="#"><i class="fa fa-facebook icon-round"></i></a>
+                  <a href="#"><i class="fa fa-twitter icon-round"></i></a>
+                  <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
+                  <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
+                </div>
+              </div><!-- Footer Widget Ends -->
+              <!-- Footer Widget Starts -->
+              <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+                <h3 class="small-title">
+                  Localização
+                </h3>
+                <div class="plain-flicker-gallery">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div><!-- Footer Widget Ends -->
+              <!-- Footer Widget Starts -->
+              <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+                <h3 class="small-title">
+                  SOBRE
+                </h3>
+                <div class="horizontal-menu">
+                  <a href="/historias/museu" class="active">Museu da Moeda</a>
+                  <br><br>
+                  <a href="/historias/amarela">História da Casa Amarela</a>
+                  <br><br>
+                  <a href="#">Quem Somos</a>
+                </div>
+              </div><!-- Footer Widget Ends -->
+            </div><!-- Row Ends -->
+          </div><!-- Container Ends -->
+          <!-- Copyright -->
+          <div id="copyright">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <p class="copyright-text">
+                    ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
+                  </p>
+                </div>
+                <div class="col-md-6  col-sm-6">
+                  <ul class="nav nav-inline  justify-content-end ">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="/">Início -</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Sitemap -</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Políticas De Privacidade -</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Termos de Serviço</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- Copyright  End-->
-          </footer>
-          <!-- Footer Section End-->
-          <!-- Go To Top Link -->
-          <a href="#" class="back-to-top">
-            <i class="fa fa-angle-up">
-            </i>
-          </a>
+          </div>
+          <!-- Copyright  End-->
+        </footer>
+        <!-- Footer Section End-->
+        <!-- Go To Top Link -->
+        <a href="#" class="back-to-top">
           <i class="fa fa-angle-up">
           </i>
         </a>
         <i class="fa fa-angle-up">
         </i>
       </a>
-      <!-- JavaScript & jQuery Plugins -->
-      <script src="/engage/assets/js/jquery-min.js"></script>
-      <!-- Tether Js -->
-      <script src="/engage/assets/js/popper.min.js"></script>
-      <!-- Bootstrap JS -->
-      <!-- Bootstrap JS -->
-      <!-- Bootstrap JS -->
-      <script src="/engage/assets/js/bootstrap.min.js"></script>
-      <!-- Color Switcher Js -->
-      <!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
-      <!--Text Rotator-->
-      <script src="/engage/assets/js/jquery.mixitup.js"></script>
-      <!--WOW Scroll Spy-->
-      <script src="/engage/assets/js/wow.js"></script>
-      <!-- OWL Carousel -->
-      <script src="/engage/assets/js/owl.carousel.js"></script>
-      <script src="/engage/assets/js/owl.carousel.js"></script>
-      <script src="/engage/assets/js/owl.carousel.js"></script>
-      <!-- WayPoint -->
-      <script src="/engage/assets/js/waypoints.min.js"></script>
-      <!-- CounterUp -->
-      <script src="/engage/assets/js/jquery.counterup.min.js"></script>
-      <!-- Slicknav -->
-      <script src="/engage/assets/js/jquery.counterup.min.js"></script>
-      <!-- ScrollTop -->
-      <script src="/engage/assets/js/jquery.slicknav.js"></script>
-      <!-- Appear -->
-      <script src="/engage/assets/js/jquery.appear.js"></script>
-      <!-- Vide js -->
-      <script src="/engage/assets/js/jquery.vide.js"></script>
-      <!-- All JS plugin Triggers -->
-      <script src="/engage/assets/js/main.js"></script>
-      <script src="/engage/assets/js/main.js"></script>
-      <script src="/engage/assets/js/main.js"></script>
-      <!-- bootstrapcdn alfa -->
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-      <!-- bootstrapcdn beta -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    </body>
-    </html>
+      <i class="fa fa-angle-up">
+      </i>
+    </a>
+    <!-- JavaScript & jQuery Plugins -->
+    <script src="/engage/assets/js/jquery-min.js"></script>
+    <!-- Tether Js -->
+    <script src="/engage/assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS -->
+    <script src="/engage/assets/js/bootstrap.min.js"></script>
+    <!-- Color Switcher Js -->
+    <!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
+    <!--Text Rotator-->
+    <script src="/engage/assets/js/jquery.mixitup.js"></script>
+    <!--WOW Scroll Spy-->
+    <script src="/engage/assets/js/wow.js"></script>
+    <!-- OWL Carousel -->
+    <script src="/engage/assets/js/owl.carousel.js"></script>
+    <script src="/engage/assets/js/owl.carousel.js"></script>
+    <script src="/engage/assets/js/owl.carousel.js"></script>
+    <!-- WayPoint -->
+    <script src="/engage/assets/js/waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="/engage/assets/js/jquery.counterup.min.js"></script>
+    <!-- Slicknav -->
+    <script src="/engage/assets/js/jquery.counterup.min.js"></script>
+    <!-- ScrollTop -->
+    <script src="/engage/assets/js/jquery.slicknav.js"></script>
+    <!-- Appear -->
+    <script src="/engage/assets/js/jquery.appear.js"></script>
+    <!-- Vide js -->
+    <script src="/engage/assets/js/jquery.vide.js"></script>
+    <!-- All JS plugin Triggers -->
+    <script src="/engage/assets/js/main.js"></script>
+    <script src="/engage/assets/js/main.js"></script>
+    <script src="/engage/assets/js/main.js"></script>
+    <!-- bootstrapcdn alfa -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- bootstrapcdn beta -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+  </html>
 
-    
