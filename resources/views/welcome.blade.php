@@ -58,7 +58,6 @@
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
 
-
             <li class="nav-item active">
               <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
             </li>
@@ -87,39 +86,6 @@
                 <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
               </div>
             </li>
-
-
-
-
-            <li class="nav-item active">
-              <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="/historias/museu">Museu</a>
-                <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/exposicoes">Exposição <span class="sr-only"></span></a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
-                <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
-                <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
-              </div>
-            </li>
-
 
 
             @if (Route::has('login'))
@@ -160,56 +126,6 @@
             <input class=" mr-sm-2" type="text" placeholder="Search Here ...">
             <span class="top_search_icon"><i class="icon-magnifier"></i></span>
           </div>
-
-          <div class="col-sm-6 col-md-3">
-            <!-- Service-Block-1 Item Starts -->
-            <div class="service-item  wow fadeInUpQuick animated" data-wow-delay="1.4s">
-              <div class="icon-wrapper">
-                <i class="icon-cup pulse-shrink">
-                </i>
-              </div>
-              <h2>
-                Visitas Privadas
-              </h2>
-              <!-- <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
-              </p> -->
-            </div>
-          </div><!-- Service-Block-1 Item Ends -->
-        </div>
-      </div><!-- Container Ends -->
-    </section><!-- Service Main Section Ends -->
-
-    <!-- Other Services Section -->
-    <section id="other-services" class="section">
-      <div class="container">
-        <h1 class="section-title wow fadeInUpQuick">
-          Os Serviços Do Museu
-        </h1>
-        <div class="row">
-          <div id="accordion" role="tablist">
-
-
-            <div class="card section-subcontent">
-              <div class="card-header" role="tab" id="headingOne">
-                <h5 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Actividade Com As Escolas
-                  </a>
-                </h5>
-              </div>
-
-              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                      Visita escolar ao Museu da Moeda – O Museu da Moeda oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
-                      Visita escolar ao Museu da Moeda – VISITAS REGULARES
-                      Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu da Moeda – VISITAS TEMÁTICAS
-                      Ensino secundário › Para jovens (> 14 anos) | Marcação prévia
-                      Visita escolar ao Museu da Moeda – VISITAS-OFICINA
-                      Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu da Moeda – MÚSICA | TEATRO | CINEMA
-                      Para escolas (crianças > 12 anos) | Marcação prévia
         </form>
       </div>
       <!-- Mobile Menu Start -->
@@ -336,7 +252,6 @@
                       </h3>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -385,7 +300,7 @@
                         @endforeach
                         @empty(auth()->user()->id)
                         <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
-                        <a href="/"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> 
+                        <a href=""><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> 
                         <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> 
                         
                         @else
@@ -397,21 +312,10 @@
                           @else 
                           
                           <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
-                          <input type="hidden" value="{{ $exposicao->id }}" name="exposicao_id">
-
                           @endif
-
-                          @foreach($exposicoes as $e)
-
-                          {{-- <input type="hidden" value="{{ $e->id }}" name="exposicao_id"> --}}
-
-
+                          @foreach($exposicoes as $e)                        
+                          <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
                           @endforeach
-
-
-
-                          {{-- <input type="hidden" value="{{ $exposicao->id }}" name="exposicao_id"> --}}
-
                           <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                           <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                           <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
@@ -449,15 +353,7 @@
                     </div>
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
-                      Visita escolar ao Museu da Moeda – Museu da Moeda oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
-                      Visita escolar ao Museu da Moeda – VISITAS REGULARES
-                      Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu da Moeda – VISITAS TEMÁTICAS
-                      Ensino secundário › Para jovens (> 14 anos) | Marcação prévia
-                      Visita escolar ao Museu da Moeda – VISITAS-OFICINA
-                      Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu da Moeda – MÚSICA | TEATRO | CINEMA
-                      Para escolas (crianças > 12 anos) | Marcação prévia
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                       </div>
                     </div>
                   </div>
@@ -471,8 +367,7 @@
                     </div>
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                       <div class="card-body">
-                        O programa "VISITE A CASA DA MOEDA" leva pessoas para realizar uma visita guiada pelo museu. O objetivo é possibilitar que você, nosso convidado especial, faça um passeio pelas instalações do museu conhecendo um pouco mais da nossa história e do funcionamento dos departamentos de cédulas, moedas e gráfica geral.
-                        As visitas e atividades são dinamizadas por educadores do Museu e adequam-se aos objetivos dos diferentes ciclos escolares, recorrem a estratégias pedagógicas diversificadas e são adaptadas à faixa etária, estilos de aprendizagem e competências dos participantes.
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                       </div>
                     </div>
                   </div>
@@ -486,15 +381,7 @@
                     </div>
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                       <div class="card-body">
-                        O Pátio é uma area relacionada com o mundo lunático e que dá extremo valor à tradição. Ao solicitar um evento, você ira garantir que o seu evento se torne um momento único, inolvidavél e de grande qualidade.
-                    
-                        Este conjunto de profissionais, que se dedica à organização de eventos, põe ao vosso dispor uma série de eventos:
-                        Casamentos (conta com decoração personalizada),
-                        Gravações Televisivas,
-                        Publicidade,
-                        Recriações Históricas,
-                        Feiras Gastronômicas,
-                        Etc.
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                       </div>
                     </div>
                   </div>
@@ -514,7 +401,7 @@
               <!-- Row Starts -->
               <div class="row">
                 @foreach($eventos as $evento)
-                @if($evento->estado=='active')
+                @if($evento->estado=='proccess')
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                   <!-- Blog Item Starts -->
                   <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
@@ -535,19 +422,11 @@
                       </div>
                     </div>
                   </div><!-- Blog Item Wrapper Ends-->
-
                 </div>
                 @else
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                   Não há eventos agendados actualmente..!
                 </div>
-
-                </div>
-               
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                  Não há eventos agendados actualmente..!
-                </div>
-
                 @endif
                 @endforeach
               </div><!-- Row Ends -->
@@ -691,3 +570,4 @@
     </body>
     </html>
 
+    
