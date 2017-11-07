@@ -201,14 +201,14 @@
 
               <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                      Visita escolar ao Museu do Dinheiro – O Museu do Dinheiro oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
-                      Visita escolar ao Museu do Dinheiro – VISITAS REGULARES
+                      Visita escolar ao Museu da Moeda – O Museu da Moeda oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
+                      Visita escolar ao Museu da Moeda – VISITAS REGULARES
                       Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu do Dinheiro – VISITAS TEMÁTICAS
+                      Visita escolar ao Museu da Moeda – VISITAS TEMÁTICAS
                       Ensino secundário › Para jovens (> 14 anos) | Marcação prévia
-                      Visita escolar ao Museu do Dinheiro – VISITAS-OFICINA
+                      Visita escolar ao Museu da Moeda – VISITAS-OFICINA
                       Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu do Dinheiro – MÚSICA | TEATRO | CINEMA
+                      Visita escolar ao Museu da Moeda – MÚSICA | TEATRO | CINEMA
                       Para escolas (crianças > 12 anos) | Marcação prévia
         </form>
       </div>
@@ -449,14 +449,14 @@
                     </div>
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
-                      Visita escolar ao Museu do Dinheiro – O Museu do Dinheiro oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
-                      Visita escolar ao Museu do Dinheiro – VISITAS REGULARES
+                      Visita escolar ao Museu da Moeda – Museu da Moeda oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
+                      Visita escolar ao Museu da Moeda – VISITAS REGULARES
                       Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu do Dinheiro – VISITAS TEMÁTICAS
+                      Visita escolar ao Museu da Moeda – VISITAS TEMÁTICAS
                       Ensino secundário › Para jovens (> 14 anos) | Marcação prévia
-                      Visita escolar ao Museu do Dinheiro – VISITAS-OFICINA
+                      Visita escolar ao Museu da Moeda – VISITAS-OFICINA
                       Ensino básico e secundário › Marcação prévia
-                      Visita escolar ao Museu do Dinheiro – MÚSICA | TEATRO | CINEMA
+                      Visita escolar ao Museu da Moeda – MÚSICA | TEATRO | CINEMA
                       Para escolas (crianças > 12 anos) | Marcação prévia
                       </div>
                     </div>
