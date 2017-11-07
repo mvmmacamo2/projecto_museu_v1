@@ -1,6 +1,7 @@
 <?php
 use App\Evento;
 use App\Exposicao;
+
 //use DB;
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,9 @@ Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
 
+
+	$likeevento = DB::table('likeeventos')->get();
+	$comentarioevento = DB::table('comtario_eventos')->get();
 	
 	// varialvel que determina se ha eventos ou não
 	// $find = false;
