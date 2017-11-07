@@ -201,8 +201,15 @@
 
               <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                 As visitas e atividades são dinamizadas por educadores do Museu e adequam-se aos objetivos dos diferentes ciclos escolares; recorrem a estratégias pedagógicas diversificadas e são adaptadas à faixa etária, estilos de aprendizagem e competências dos participantes.
-
+                      Visita escolar ao Museu do Dinheiro – O Museu do Dinheiro oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
+                      Visita escolar ao Museu do Dinheiro – VISITAS REGULARES
+                      Ensino básico e secundário › Marcação prévia
+                      Visita escolar ao Museu do Dinheiro – VISITAS TEMÁTICAS
+                      Ensino secundário › Para jovens (> 14 anos) | Marcação prévia
+                      Visita escolar ao Museu do Dinheiro – VISITAS-OFICINA
+                      Ensino básico e secundário › Marcação prévia
+                      Visita escolar ao Museu do Dinheiro – MÚSICA | TEATRO | CINEMA
+                      Para escolas (crianças > 12 anos) | Marcação prévia
         </form>
       </div>
       <!-- Mobile Menu Start -->
@@ -442,7 +449,15 @@
                     </div>
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      Visita escolar ao Museu do Dinheiro – O Museu do Dinheiro oferece uma experiência marcadamente interativa que recorre à tecnologia multimédia para mostrar o seu acervo, proporcionando visitas escolares dinâmicas e interessantes, em que os alunos aprendem pela descoberta e interação.
+                      Visita escolar ao Museu do Dinheiro – VISITAS REGULARES
+                      Ensino básico e secundário › Marcação prévia
+                      Visita escolar ao Museu do Dinheiro – VISITAS TEMÁTICAS
+                      Ensino secundário › Para jovens (> 14 anos) | Marcação prévia
+                      Visita escolar ao Museu do Dinheiro – VISITAS-OFICINA
+                      Ensino básico e secundário › Marcação prévia
+                      Visita escolar ao Museu do Dinheiro – MÚSICA | TEATRO | CINEMA
+                      Para escolas (crianças > 12 anos) | Marcação prévia
                       </div>
                     </div>
                   </div>
@@ -456,7 +471,8 @@
                     </div>
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        O programa "VISITE A CASA DA MOEDA" leva pessoas para realizar uma visita guiada pelo museu. O objetivo é possibilitar que você, nosso convidado especial, faça um passeio pelas instalações do museu conhecendo um pouco mais da nossa história e do funcionamento dos departamentos de cédulas, moedas e gráfica geral.
+                        As visitas e atividades são dinamizadas por educadores do Museu e adequam-se aos objetivos dos diferentes ciclos escolares, recorrem a estratégias pedagógicas diversificadas e são adaptadas à faixa etária, estilos de aprendizagem e competências dos participantes.
                       </div>
                     </div>
                   </div>
@@ -470,7 +486,15 @@
                     </div>
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                       <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        O Pátio é uma area relacionada com o mundo lunático e que dá extremo valor à tradição. Ao solicitar um evento, você ira garantir que o seu evento se torne um momento único, inolvidavél e de grande qualidade.
+                    
+                        Este conjunto de profissionais, que se dedica à organização de eventos, põe ao vosso dispor uma série de eventos:
+                        Casamentos (conta com decoração personalizada),
+                        Gravações Televisivas,
+                        Publicidade,
+                        Recriações Históricas,
+                        Feiras Gastronômicas,
+                        Etc.
                       </div>
                     </div>
                   </div>
