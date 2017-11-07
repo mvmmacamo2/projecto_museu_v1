@@ -382,7 +382,7 @@
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                       <div class="card-body">
                        O Pátio é uma area relacionada com o mundo lunático e que dá extremo valor à tradição. Ao solicitar um evento, você ira garantir que o seu evento se torne um momento único, inolvidavél e de grande qualidade.
-                       
+
                        Este conjunto de profissionais, que se dedica à organização de eventos, põe ao vosso dispor uma série de eventos:
                        Casamentos (conta com decoração personalizada),
                        Gravações Televisivas,
@@ -399,6 +399,23 @@
            <!-- Other Service Item Wrapper Ends -->
          </section>
          <!-- Other Services Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         {{-- EXPOSICOES --}}
          <!-- Blog Section -->
          <section id="blog" class="section">
           <!-- Container Starts -->
@@ -437,10 +454,39 @@
               </div>
               @endif
               @endforeach
+
             </div><!-- Row Ends -->
+
           </div><!-- Container Ends -->
+
         </section>
         <!-- blog Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Footer Section -->
         <footer>
           <!-- Container Starts -->
