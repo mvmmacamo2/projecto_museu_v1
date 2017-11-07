@@ -214,98 +214,91 @@
 
 
 <!-- Footer Section -->
-<footer>
-  <!-- Container Starts -->
-  <div class="container">
-    <!-- Row Starts -->
-    <div class="row section">
-      <!-- Footer Widget Starts -->
-      <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
-        <h3 class="small-title">
-          Sobre Nós
-        </h3>
-        <p>
-          Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac, rutrum sed risus,
-        </p>
-        <p>Aliquam magna nibh, mattis a urna nec. Semper venenatis magna.</p>
-        <div class="social-footer">
-          <a href="#"><i class="fa fa-facebook icon-round"></i></a>
-          <a href="#"><i class="fa fa-twitter icon-round"></i></a>
-          <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
-          <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
-        </div>
-      </div><!-- Footer Widget Ends -->
+ <footer>
+      <!-- Container Starts -->
+      <div class="container">
+        <!-- Row Starts -->
+        <div class="row section">
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
+            <h3 class="small-title">
+              CONTACTO
+            </h3>
+            <p>
+              Museu da Moeda Rua Consiglieri Pedroso Maputo
+              Contacto 84 533 6565
+              De 3ª a 6ª feiras: das 11:00h às 17:00h; 
+              Sábado: das 9:00h às 15:00h; 
+              Domingo e Feriados: das 14:00h às 17:00h; 
+              2ª feira: Encerrada.
+            </p> 
+            <div class="social-footer">
+              <a href="#"><i class="fa fa-facebook icon-round"></i></a>
+              <a href="#"><i class="fa fa-twitter icon-round"></i></a>
+              <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
+              <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
+            </div>           
+          </div><!-- Footer Widget Ends -->
+          
+          
 
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+            <h3 class="small-title">
+              Localização
+            </h3>
+            <div class="plain-flicker-gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div> 
+          </div><!-- Footer Widget Ends -->
 
-
-      <!-- Footer Widget Starts -->
-      <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
-        <h3 class="small-title">
-          Nossa Localização
-        </h3>
-        <div class="plain-flicker-gallery">
-          <!--   <a href="#" title="Pan Masala"><img src="/engage/assets/img/flicker/img1.jpg" alt=""></a>
-            <a href="#" title="Sports Template for Joomla"><img src="/engage/assets/img/flicker/img2.jpg" alt=""></a> -->
-          Mapa
-          <!-- <a href="" title="Apple Keyboard"><img src="/engage/assets/img/flicker/img3.jpg" alt=""></a>
-          <a href="" title="Hard Working"><img src="/engage/assets/img/flicker/img4.jpg" alt=""></a>
-          <a href="" title="Smile"><img src="/engage/assets/img/flicker/img5.jpg" alt=""></a>
-          <a href="" title="Puzzle"><img src="/engage/assets/img/flicker/img6.jpg" alt=""></a> -->
-        </div>
-      </div><!-- Footer Widget Ends -->
-
-      <!-- Footer Widget Starts -->
-      <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
-        <h3 class="small-title">
-          Mensagem
-        </h3>
-        <div class="contact-us">
-          <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+          <!-- Footer Widget Starts -->
+          <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+            <h3 class="small-title">
+             SOBRE
+            </h3>
+            <div class="horizontal-menu">
+              <a href="/historias/museu" class="active">Museu da Moeda</a> 
+               <br><br>
+              <a href="/historias/amarela">História da Casa Amarela</a>
+               <br><br>
+              <a href="#">Quem Somos</a>
             </div>
-            <div class="form-group">
-              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
+         </div><!-- Footer Widget Ends -->
+        </div><!-- Row Ends -->
+      </div><!-- Container Ends -->
+      
+      <!-- Copyright -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <p class="copyright-text">
+                ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
+              </p>
             </div>
-            <button type="submit" class="btn btn-common">Submit</button>
-          </form>
-        </div>
-      </div><!-- Footer Widget Ends -->
-    </div><!-- Row Ends -->
-  </div><!-- Container Ends -->
-
-  <!-- Copyright -->
-  <div id="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <p class="copyright-text">
-            ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
-          </p>
-        </div>
-        <div class="col-md-6  col-sm-6">
-          <ul class="nav nav-inline  justify-content-end ">
-            <li class="nav-item">
-              <a class="nav-link active" href="/">Início -</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Sitemap -</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Políticas De Privacidade -</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Termos de Serviço</a>
-            </li>
-          </ul>
+            <div class="col-md-6  col-sm-6">
+              <ul class="nav nav-inline  justify-content-end ">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">Início -</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Sitemap -</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Políticas De Privacidade -</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Termos de Serviço</a>
+                </li>
+              </ul>        
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Copyright  End-->
-
-</footer>
+      <!-- Copyright  End-->
+      
+    </footer>
 <!-- Footer Section End-->
 
 <!-- Go To Top Link -->

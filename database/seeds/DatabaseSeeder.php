@@ -21,41 +21,38 @@ class DatabaseSeeder extends Seeder
                 'nivelacesso' => 'Administrador',
             ],
             '1' => [
-                'name' => 'Denilson Nelio Mavie',
-                'username' => 'nelio',
-                'email' => 'denmelmavie@gmail.com',
-                'password' => '123456',
-                'nivelacesso' => 'Administrador',
-            ],
-            '2' => ['name' => 'Leonardo De Jesus Huo',
-                'username' => 'leonardo',
-                'email' => 'leonardohuo@gmail.com',
+                'name' => 'Leonardo Huo',
+                'username' => 'leo',
+                'email' => 'leo@gmail.com',
                 'password' => '123456',
                 'nivelacesso' => 'Normal',
+            ],
+<<<<<<< HEAD
+            '2' => ['name' => 'Leonardo De Jesus Huo',
+                'username' => 'leonardo',
+                'email' => 'leonardo.huo@gmail.com',
+=======
+            '2' => [
+                'name' => 'Denilson Mavie',
+                'username' => 'denilson',
+                'email' => 'denilson@gmail.com',
+>>>>>>> 41da8ae9dddf3d8e08a47eaa8f6e9cd89c0d8970
+                'password' => '123456',
+                'nivelacesso' => 'Administrador',
             ]
 
         ]);
 
 
+
         DB::table('escolas')->insert([
-            '0' => [
-                'nome' => 'Escola Secundaria de Laulane',
-                'nivel' => 'Medio',
-                'endereco' => 'Mahotas Perto da 14 esquadra',
-                'nome_responsavel' => 'Ezilda',
-                'contacto' => '845030902',
-                'email' => 'laulane@gmail.com',
-                'senha' => '123456',
-            ],
-            '0' => [
-                'nome' => 'Escola Secundaria de Malhazine',
-                'nivel' => 'Medio',
-                'endereco' => 'Mahotas Perto da 14 esquadra',
-                'nome_responsavel' => 'Orlando Matusse',
-                'contacto' => '845030902',
-                'email' => 'malhazine@gmail.com',
-                'senha' => '123456',
-            ],
+            'nome' => 'Escola Secundaria de Laulane',
+            'nivel' => 'Medio',
+            'endereco' => 'Mahotas Perto da 14 esquadra',
+            'nome_responsavel' => 'Ezilda',
+            'contacto' => '845030902',
+            'email' => 'laulane2@gmail.com',
+            'senha' => Hash::make('123456'),
 
         ]);
 

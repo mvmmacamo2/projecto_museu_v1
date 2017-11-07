@@ -7,6 +7,7 @@ use App\Evento;
 use Auth;
 use App\user;
 use File;
+use App\Exposicao;
 
 class Evento_adminController extends Controller
 {
@@ -70,7 +71,7 @@ class Evento_adminController extends Controller
         }
 
         
-        return redirect('/admins.eventos');
+        return redirect('/admins/eventos');
     }
 
     /**
@@ -92,7 +93,9 @@ class Evento_adminController extends Controller
      */
     public function edit($id)
     {
-        return view('/admin.eventos.edit');
+        $evento = Evento::find($id);
+        $exposicao=Exposicao::all();
+        return view('admins.eventos.edit', compact('evento'), compact('exposicao'));
     }
 
     /**
@@ -104,7 +107,9 @@ class Evento_adminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $evento=Evento::find($id);
+        $evento->update($request->all());
+        return redirect('/admins/eventos');
     }
 
     /**

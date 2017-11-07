@@ -41,6 +41,11 @@ return [
             'provider' => 'users',
         ],
 
+        'escola' => [
+            'driver' => 'session',
+            'provider' => 'escolas',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -74,6 +79,11 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+        'escola' => [
+            'driver' => 'eloquent',
+            'model' => App\Escola::class,
+        ],
     ],
 
     /*
