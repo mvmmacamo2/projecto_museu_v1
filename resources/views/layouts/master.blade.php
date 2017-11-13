@@ -30,6 +30,9 @@
   <link rel="stylesheet" type="text/css" href="/engage/assets/extras/normalize.css">
   <link rel="stylesheet" type="text/css" href="/engage/assets/extras/settings.css">
 
+  <!-- lightbox css -->
+  <link rel="stylesheet" type="text/css" href="/lightbox/dist/css/lightbox.css">
+
 
 
   <!-- Color CSS Styles  -->
@@ -39,87 +42,87 @@
 </head>
 <body style="background-color: #fcf9fc">
 
-<!-- Header area wrapper starts -->
-<header id="header-wrap">
-  <!-- Navbar Starts -->
-  <nav class="navbar navbar-expand-md">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">
-          <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="main-menu">
-        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+  <!-- Header area wrapper starts -->
+  <header id="header-wrap">
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
 
+            <li class="nav-item active">
+              <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/historias/museu">Museu</a>
+                <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
+              </div>
+            </li>
+<!-- 
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/exposicoes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposição</a>
+            </li> -->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
+                <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
+                <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
+              </div>
+            </li>
+
+
+            @if (Route::has('login'))
+            @auth
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+              <div class="dropdown-menu">
+                <a href="{{ route('home') }}">
+                  Home
+                </a>
+
+                <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                Logout
+              </a>
+
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+              </form>
+            </div>
+          </li>
+          @else
           <li class="nav-item active">
-            <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+            <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
+            <a class="nav-link dropdown-toggle" href="{{ route('register') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="/historias/museu">Museu</a>
-              <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
+              <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
+              <a class="dropdown-item" href="{{ route('register') }}">Organização</a>
             </div>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/exposicoes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposição</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
-              <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
-              <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
-            </div>
-          </li>
-
-
-          @if (Route::has('login'))
-                @auth
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
-                    <div class="dropdown-menu">
-                      <a href="{{ route('home') }}">
-                          Home
-                      </a>
-
-                      <a href="{{ route('logout') }}"
-                          onclick="event.preventDefault();
-                                   document.getElementById('logout-form').submit();">
-                          Logout
-                      </a>
-
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                          {{ csrf_field() }}
-                      </form>
-                    </div>
-                  </li>
-                  @else
-                    <li class="nav-item active">
-                      <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="{{ route('register') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
-                        <a class="dropdown-item" href="{{ route('register') }}">Organização</a>
-                      </div>
-                    </li>
-                @endauth
-              @endif
+          @endauth
+          @endif
         </ul>
 
         <form class="form-inline">
@@ -155,39 +158,39 @@
         </li>
 
         @if (Route::has('login'))
-          @auth
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
-              <div class="dropdown-menu">
-                <a href="{{ route('home') }}">
-                  Home
-                </a>
+        @auth
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+          <div class="dropdown-menu">
+            <a href="{{ route('home') }}">
+              Home
+            </a>
 
-                <a href="{{ route('logout') }}"
-                   onclick="event.preventDefault();
-                                   document.getElementById('logout-form').submit();">
-                  Logout
-                </a>
+            <a href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+            Logout
+          </a>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                  {{ csrf_field() }}
-                </form>
-              </div>
-            </li>
-            @else
-              <li class="nav-item active">
-                <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
-              </li>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+          </form>
+        </div>
+      </li>
+      @else
+      <li class="nav-item active">
+        <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
+      </li>
 
-              <li class="nav-item active">
-                <a class="dropdown-item" href="{{ route('register') }}"><b>Registar</b></a>
-              </li>
-              @endauth
-            @endif
-      </ul>
-      <!-- Mobile Menu End -->
-    </div>
-  </nav>
+      <li class="nav-item active">
+        <a class="dropdown-item" href="{{ route('register') }}"><b>Registar</b></a>
+      </li>
+      @endauth
+      @endif
+    </ul>
+    <!-- Mobile Menu End -->
+  </div>
+</nav>
 
 </header>
 <!-- Header-wrap Section End -->
@@ -214,6 +217,58 @@
 
 
 <!-- Footer Section -->
+<<<<<<< HEAD
+<footer>
+  <!-- Container Starts -->
+  <div class="container">
+    <!-- Row Starts -->
+    <div class="row section">
+      <!-- Footer Widget Starts -->
+      <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
+        <h3 class="small-title">
+          Sobre Nós
+        </h3>
+        <p>
+          Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac, rutrum sed risus,
+        </p>
+        <p>Aliquam magna nibh, mattis a urna nec. Semper venenatis magna.</p>
+        <div class="social-footer">
+          <a href="#"><i class="fa fa-facebook icon-round"></i></a>
+          <a href="#"><i class="fa fa-twitter icon-round"></i></a>
+          <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
+          <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
+        </div>
+      </div><!-- Footer Widget Ends -->
+
+
+
+      <!-- Footer Widget Starts -->
+      <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+        <h3 class="small-title">
+          Nossa Localização
+        </h3>
+        <div class="plain-flicker-gallery">
+          <!--   <a href="#" title="Pan Masala"><img src="/engage/assets/img/flicker/img1.jpg" alt=""></a>
+            <a href="#" title="Sports Template for Joomla"><img src="/engage/assets/img/flicker/img2.jpg" alt=""></a> -->
+            Mapa
+          <!-- <a href="" title="Apple Keyboard"><img src="/engage/assets/img/flicker/img3.jpg" alt=""></a>
+          <a href="" title="Hard Working"><img src="/engage/assets/img/flicker/img4.jpg" alt=""></a>
+          <a href="" title="Smile"><img src="/engage/assets/img/flicker/img5.jpg" alt=""></a>
+          <a href="" title="Puzzle"><img src="/engage/assets/img/flicker/img6.jpg" alt=""></a> -->
+        </div>
+      </div><!-- Footer Widget Ends -->
+
+      <!-- Footer Widget Starts -->
+      <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+        <h3 class="small-title">
+          Mensagem
+        </h3>
+        <div class="contact-us">
+          <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
+=======
  <footer>
       <!-- Container Starts -->
       <div class="container">
@@ -263,6 +318,7 @@
               <a href="/historias/amarela">História da Casa Amarela</a>
                <br><br>
               <a href="#">Quem Somos</a>
+>>>>>>> 927729217da3ee1a6f092ee24bfe3a565343eebb
             </div>
          </div><!-- Footer Widget Ends -->
         </div><!-- Row Ends -->
@@ -338,5 +394,8 @@
 
 
 <script src="bootstrap-4.0.0-beta/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="/lightbox/dist/js/lightbox.js"></script>
+<script src="/lightbox/dist/js/lightbox-plus-jquery.js" type="text/javascript"></script>
 </body>
 </html>
