@@ -29,7 +29,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach($eventos as $evento)
+                        @foreach($eventos as $evento)
                         <tr class="odd gradeX">
                             <td>{{$evento->descricao}}</td>
                             <td>{{$evento->publico}}</td>
@@ -40,13 +40,16 @@
                             <td>{{$evento->data}}</td>
                             <td>{{$evento->hora}}</td>
                             <td>
-                            	<a href="/admin/eventos/{{ $evento->id }}/edit">
+                            	<a href="/admins/eventos/{{ $evento->id }}/edit">
                             		<button class="btn btn-success">Editar</button>
-                            	</a>
-                            	<button class="btn btn-danger">Apagar</button>
+
+                                </a>
+                                {{-- <td> <button class="btn btn-danger">Apagar</button></td> --}}
+
                             </td>
+
                         </tr>
-                    @endforeach
+                        @endforeach
                     </tbody>
                 </table>
                 <!-- /.table-responsive -->

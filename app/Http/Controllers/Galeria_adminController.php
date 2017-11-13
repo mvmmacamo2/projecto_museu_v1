@@ -22,7 +22,6 @@ class Galeria_adminController extends Controller
     {
         $exposicao = Exposicao::all();
         $galeria =ExposicaoGaleria::all();
-
         $vgaleria = Vgaleria::all();
 
         $ga= DB::table('vgalerias')->get();
