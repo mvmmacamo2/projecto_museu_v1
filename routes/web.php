@@ -16,13 +16,15 @@ use App\Exposicao;
 Route::get('/', function () {
 	$eventos = Evento::all();
 	$exposicoes = Exposicao::all();
+
 	
 	// varialvel que determina se ha eventos ou não
-	$find = false;
+	// $find = false;
 
 	$likesexposicao =DB::table('like_exposicaos')->get();
 	$comentexposicao =DB::table('comtario_exposicaos')->get();
 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
+
 
 	
 
@@ -38,10 +40,12 @@ Route::get('/', function () {
    // dd($likesexposicao);
 
 	//$likesexposicao =DB::table('like_exposicaos')->groupBy('exposicao_id')->get();
-	
-	
 
 	return view('welcome', compact('eventos','find'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	
+
+	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+
 	// foreach ($exposicoes as $e) {
 	// 	$id= $e->id;
 	// 	//$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
@@ -60,6 +64,10 @@ Route::get('/', function () {
 
 
 	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+
+	// return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	
+	// return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 
 });
 
@@ -94,7 +102,6 @@ Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda')->middle
 Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middleware('autenticacao');
 
 
-//
 Route::resource('/admins/usuarios', 'UserController');
 Route::resource('/admins/usuario', 'PerfilController');
 
