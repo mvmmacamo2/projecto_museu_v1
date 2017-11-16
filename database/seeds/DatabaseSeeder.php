@@ -17,14 +17,14 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Miguel Vasco Macamo',
                 'username' => 'mvmmacamo',
                 'email' => 'misaelvasco@gmail.com',
-                'password' => '123456',
+                'password' => Hash::make('123456'),
                 'nivelacesso' => 'Administrador',
             ],
             '1' => [
                 'name' => 'Leonardo Huo',
                 'username' => 'leo',
                 'email' => 'leo@gmail.com',
-                'password' => '123456',
+                'password' => Hash::make('123456'),
                 'nivelacesso' => 'Normal',
             ],
 
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Denilson Mavie',
                 'username' => 'denilson',
                 'email' => 'denilson@gmail.com',
-                'password' => '123456',
+                'password' => Hash::make('123456'),
                 'nivelacesso' => 'Administrador',
             ]
 
