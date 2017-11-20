@@ -92,7 +92,7 @@
             @if (Route::has('login'))
             @auth
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+              <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
               <div class="dropdown-menu">
                 <a href="{{ route('home') }}">
                   Home
@@ -397,5 +397,8 @@
 
 <script type="text/javascript" src="/lightbox/dist/js/lightbox.js"></script>
 <script src="/lightbox/dist/js/lightbox-plus-jquery.js" type="text/javascript"></script>
+              <script type="text/javascript">
+                  yield('ajax')
+              </script>
 </body>
 </html>
