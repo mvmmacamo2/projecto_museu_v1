@@ -430,6 +430,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/admin/dist/js/sb-admin-2.js"></script>
+     <script>
+         yield('ajax')
+     </script>
 
 </body>
 
