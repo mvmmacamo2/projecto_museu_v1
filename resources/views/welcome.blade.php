@@ -298,6 +298,10 @@
                                     }
                                     ?>
                                 @endforeach
+
+
+
+
                                 @empty(auth()->user()->id)
                                     <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                                     <a href=""><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
