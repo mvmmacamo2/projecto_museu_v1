@@ -50,7 +50,7 @@
 
                                 <td>{{$p->data}}</td>
                                 <td>{{$p->hora}}</td>
-                                <td>{{$p->created_at}}</td>
+                                <td>{{$p->created_at->diffForHumans()}}</td>
                                 <td>
                                     <a href="#">
                                         <!-- Button trigger modal -->
