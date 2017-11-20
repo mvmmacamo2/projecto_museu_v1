@@ -34,7 +34,9 @@ class VisitaGSingularController extends Controller
     public function salvar(Request $request)
     {
        $v= VisitaGuser::create($request->all());
-       return redirect('servicos/individual');
+       $msg2='Pedido encaminhado com sucesso';
+
+       return redirect('servicos/individual' ,compact('msg2'));
 
     }
 }

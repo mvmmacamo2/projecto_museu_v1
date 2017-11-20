@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('title')
+
     Requisição De Visita Guiada Individual
+
 @stop
 
 @section('content')
