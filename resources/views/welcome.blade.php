@@ -322,12 +322,13 @@
                                 <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
                                 @endforeach
                                 <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
-                                <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart" ></i> {!! $likesexposicao !!} Likes</a>
-                                <button class="btn btn-primary like">like</button>
+                                <a href="/" onClick="document.getElementById('like_form').submit();" class="like"><i class="icon-heart" ></i> {!! $likesexposicao !!} Likes</a>
+                                <button class=" like btn btn-primary" >like</button>
+
                                 <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
                             </form>
 
-                            @endempty
+                            @endempty 
                             {{-- <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> --}}
                             {{-- <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> --}}
                         </div>
@@ -576,20 +577,43 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-    
-    $(document).on('click', '.btnexcluir2', function (event) {
-        event.preventDefault();
-        var id =$(this).attr('id');
-        var confirme =confirm("Deseja realmente Excluir?");
-        if (confirme==true){
-            $(visualiza());
-            $.post('deletarusu.php',{'id': id}, function (resultado) {
-                $(visualiza());
-            });
-            $(visualiza());
-        }else{
 
-        }
+    $(document).on('click', '.like', function (event) {
+        event.preventDefault();
+
+        var id= $(this).attr('id');
+       // alert('miguel'+id);
+
+       $.ajax({
+        url: "/",
+        method: "post",
+        data: $('form').serialize(),
+        dataType: "_token",
+
+      //   success: function (strMessage) {
+      //     $('#message').html(strMessage)
+      //     $(visualiza());
+      //     $(limpar());
+      // }
+
+      success: function () {
+       alert('deu certo');
+   }
+
+});
+       $(visualiza());
+        // var id =$(this).attr('id');
+        // var confirme =confirm("Deseja realmente Excluir?");
+        // if (confirme==true){
+        //     $(visualiza());
+        //     $.post('deletarusu.php',{'id': id}, function (resultado) {
+        //         $(visualiza());
+        //     });
+        //     $(visualiza());
+        // }else{
+
+        // }
+
 
 
     });
