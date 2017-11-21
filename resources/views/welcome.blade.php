@@ -36,90 +36,90 @@
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <style type="text/css">
-    .white{ color: #aef2bc; }
+.white{ color: #aef2bc; }
 </style>
 
 </head>
 <body style="background-color: #fcf9fc";>
-<!-- Header area wrapper starts -->
-<header id="header-wrap">
-    <!-- Navbar Starts -->
-    <nav class="navbar navbar-expand-md">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">
-                    <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="main-menu">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+    <!-- Header area wrapper starts -->
+    <header id="header-wrap">
+        <!-- Navbar Starts -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
 
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/historias/museu">Museu</a>
-                            <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
-                        </div>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/historias/museu">Museu</a>
+                                <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
+                            </div>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/exposicoes">Exposição <span class="sr-only"></span></a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/exposicoes">Exposição <span class="sr-only"></span></a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
-                            <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
-                            <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
-                        </div>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
+                                <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
+                                <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
+                            </div>
+                        </li>
 
 
-                    @if (Route::has('login'))
+                        @if (Route::has('login'))
                         @auth
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
-                                <div class="dropdown-menu">
-                                    <a href="{{ route('home') }}">
-                                        Home
-                                    </a>
-                                    <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </div>
-                            </li>
-                            @else
-                                <li class="nav-item active">
-                                    <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
-                                        <a class="dropdown-item" href="/register_org">Organização</a>
-                                    </div>
-                                </li>
-                                @endauth
-                            @endif
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+                            <div class="dropdown-menu">
+                                <a href="{{ route('home') }}">
+                                    Home
+                                </a>
+                                <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </div>
+                    </li>
+                    @else
+                    <li class="nav-item active">
+                        <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
+                            <a class="dropdown-item" href="/register_org">Organização</a>
+                        </div>
+                    </li>
+                    @endauth
+                    @endif
                 </ul>
                 <form class="form-inline">
                     <div class="top_search_con">
@@ -216,45 +216,45 @@
                           <i class="fa fa-download">
                           </i>
                           Purchase
-                        </a> -->
-                    </div>
+                      </a> -->
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/engage/assets/img/slider/bg-6.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2 class="white">
+                        Conhecendo A Nossa História
+                    </h2>
+                    <h3>
+                        Precisa
+                    </h3>
                 </div>
-                <div class="carousel-item">
-                    <img src="/engage/assets/img/slider/bg-6.jpg" alt="">
-                    <div class="carousel-caption">
-                        <h2 class="white">
-                            Conhecendo A Nossa História
-                        </h2>
-                        <h3>
-                            Precisa
-                        </h3>
-                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/engage/assets/img/slider/bg-5.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2 class="white">
+                        Participe de nossas Visitas Guiadas
+                    </h2>
+                    <h3>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    </h3>
                 </div>
-                <div class="carousel-item">
-                    <img src="/engage/assets/img/slider/bg-5.jpg" alt="">
-                    <div class="carousel-caption">
-                        <h2 class="white">
-                            Participe de nossas Visitas Guiadas
-                        </h2>
-                        <h3>
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                        </h3>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/engage/assets/img/slider/bg-7.jpg" alt="">
-                    <div class="carousel-caption">
-                        <h2 class="white">
-                            Conheça Nossos Serviços
-                        </h2>
-                        <h3>
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                        </h3>
-                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/engage/assets/img/slider/bg-7.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2 class="white">
+                        Conheça Nossos Serviços
+                    </h2>
+                    <h3>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    </h3>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </header>
 <!-- Header-wrap Section End -->
 <!-- Blog Section -->
@@ -268,68 +268,68 @@
         <div class="row">
             {{-- @forelse($exposicoes as $exposicao) --}}
             @foreach($exposicoes as $exposicao)
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <!-- Blog Item Wrapper Starts-->
-                    <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
-                        <div class="blog-item-img">
-                            <a href="/usuario_galerias/{{ $exposicao->id }}">
-                                <img src="/expo-upload/{{ $exposicao->imagem}}">
-                            </a>
-                        </div>
-                        <div class="blog-item-text">
-                            <h3 class="small-title"><a href="#">{{ $exposicao->nome}}</a></h3>
-                            <p>
-                                {{ $exposicao->descricao}}
-                            </p>
-                            <div class="blog-one-footer">
-                                {{-- <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a> --}}
-                                @foreach($nrlike as $like)
-                                    <?php
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <!-- Blog Item Wrapper Starts-->
+                <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
+                    <div class="blog-item-img">
+                        <a href="/usuario_galerias/{{ $exposicao->id }}">
+                            <img src="/expo-upload/{{ $exposicao->imagem}}">
+                        </a>
+                    </div>
+                    <div class="blog-item-text">
+                        <h3 class="small-title"><a href="#">{{ $exposicao->nome}}</a></h3>
+                        <p>
+                            {{ $exposicao->descricao}}
+                        </p>
+                        <div class="blog-one-footer">
+                            {{-- <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a> --}}
+                            @foreach($nrlike as $like)
+                            <?php
                                     // use DB;
-                                    if ($like->exposicao_id=$exposicao->id) {
-                                        $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $exposicao->id)->get());
-                                    }
-                                    ?>
-                                @endforeach
-                                @foreach($comentexp as $nrcoment)
-                                    <?php
-                                    if ($nrcoment->exposicao_id=$exposicao->id) {
-                                        $comentexposicao =count(DB::table('comtario_exposicaos')->where('exposicao_id', $exposicao->id)->get());
-                                    }
-                                    ?>
-                                @endforeach
+                            if ($like->exposicao_id=$exposicao->id) {
+                                $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $exposicao->id)->get());
+                            }
+                            ?>
+                            @endforeach
+                            @foreach($comentexp as $nrcoment)
+                            <?php
+                            if ($nrcoment->exposicao_id=$exposicao->id) {
+                                $comentexposicao =count(DB::table('comtario_exposicaos')->where('exposicao_id', $exposicao->id)->get());
+                            }
+                            ?>
+                            @endforeach
+                            @empty(auth()->user()->id)
+                            <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                            <a href=""><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
+                            <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
+
+                            @else
+                            <form method="post" action="/" id="like_form">
+                                {!! csrf_field() !!}
+                                <input type="hidden" name="like" value="1">
                                 @empty(auth()->user()->id)
-                                    <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
-                                    <a href=""><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
-                                    <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
+                                <input type="hidden" value="" name="usuario_id">
+                                @else
 
-                                    @else
-                                        <form method="post" action="/" id="like_form">
-                                            {!! csrf_field() !!}
-                                            <input type="hidden" name="like" value="1">
-                                            @empty(auth()->user()->id)
-                                                <input type="hidden" value="" name="usuario_id">
-                                                @else
-
-                                                    <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
-                                                @endif
-                                                @foreach($exposicoes as $e)
-                                                    <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
-                                                @endforeach
-                                                <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
-                                                <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
-                                                <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
-                                        </form>
-                                        @endempty
-                                        {{-- <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> --}}
-                                        {{-- <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> --}}
-                            </div>
+                                <input type="hidden" value="{!! auth()->user()->id !!}" name="usuario_id">
+                                @endif
+                                @foreach($exposicoes as $e)
+                                <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
+                                @endforeach
+                                <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                                <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
+                                <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
+                            </form>
+                            @endempty
+                            {{-- <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> --}}
+                            {{-- <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> --}}
                         </div>
-                    </div><!-- Blog Item Wrapper Ends-->
-                </div>
-                {{-- @empty --}}
-                {{-- @endforelse --}}
-                {{-- @endforeach --}}
+                    </div>
+                </div><!-- Blog Item Wrapper Ends-->
+            </div>
+            {{-- @empty --}}
+            {{-- @endforelse --}}
+            {{-- @endforeach --}}
             @endforeach
         </div><!-- Row Ends -->
     </div><!-- Container Ends -->
@@ -401,33 +401,33 @@
         <!-- Row Starts -->
         <div class="row">
             @foreach($eventos as $evento)
-                @if($evento->estado=='proccess')
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <!-- Blog Item Starts -->
-                        <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
-                            <div class="blog-item-img">
-                                <a href="#">
-                                    <img src="/evento_upload/{{$evento->imagem}}" alt="">
-                                </a>
-                            </div>
-                            <div class="blog-item-text">
-                                <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
-                                <p>
-                                    {{$evento->descricao}}
-                                </p>
-                                <div class="blog-one-footer">
-                                    <a href="#">Read More</a>
-                                    <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                                    <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
-                                </div>
-                            </div>
-                        </div><!-- Blog Item Wrapper Ends-->
+            @if($evento->estado=='proccess')
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <!-- Blog Item Starts -->
+                <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
+                    <div class="blog-item-img">
+                        <a href="#">
+                            <img src="/evento_upload/{{$evento->imagem}}" alt="">
+                        </a>
                     </div>
-                @else
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        Não há eventos agendados actualmente..!
+                    <div class="blog-item-text">
+                        <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
+                        <p>
+                            {{$evento->descricao}}
+                        </p>
+                        <div class="blog-one-footer">
+                            <a href="#">Read More</a>
+                            <a href="#"><i class="icon-heart"></i> 59 Likes</a>
+                            <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
+                        </div>
                     </div>
-                @endif
+                </div><!-- Blog Item Wrapper Ends-->
+            </div>
+            @else
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                Não há eventos agendados actualmente..!
+            </div>
+            @endif
             @endforeach
         </div><!-- Row Ends -->
     </div><!-- Container Ends -->
