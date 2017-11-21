@@ -298,17 +298,12 @@
                             }
                             ?>
                             @endforeach
-
-
-
-
                             @empty(auth()->user()->id)
                             <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
                             <a href=""><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                             <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
 
                             @else
-
                             <form method="post" action="/" id="like_form">
                                 {!! csrf_field() !!}
                                 <input type="hidden" name="like" value="1">
@@ -322,13 +317,10 @@
                                 <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
                                 @endforeach
                                 <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
-                                <a href="/" onClick="document.getElementById('like_form').submit();" class="like"><i class="icon-heart" ></i> {!! $likesexposicao !!} Likes</a>
-                                <button class=" like btn btn-primary" >like</button>
-
+                                <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
                                 <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
                             </form>
-
-                            @endempty 
+                            @endempty
                             {{-- <a href="#"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a> --}}
                             {{-- <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a> --}}
                         </div>
@@ -575,6 +567,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<<<<<<< HEAD
 
 <script type="text/javascript">
 
@@ -602,5 +595,7 @@
     });
 </script>
 
+=======
+>>>>>>> eb80e751fc9ba2770d9701174cd6fe07df371dd6
 </body>
 </html>

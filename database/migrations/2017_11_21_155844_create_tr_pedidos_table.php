@@ -18,12 +18,17 @@ class CreateTrPedidosTable extends Migration
         //     $table->timestamps();
         // });
 
+        // DB::unprepared('
+        //     CREATE PROCEDURE sp_Create_Default_Task_1(IN _kid_id INT)
+        //     BEGIN
+        //     INSERT INTO tasks (kid_id, name) VALUES (_kid_id, \'daily\');
+        //     END'
+        // );
+
         DB::unprepared('
-            CREATE PROCEDURE sp_Create_Default_Task_1(IN _kid_id INT)
-            BEGIN
-            INSERT INTO tasks (kid_id, name) VALUES (_kid_id, \'daily\');
-            END'
-        );
+            CREATE TRIGGER tr_relatorio_pedido AFTER INSERT ON `kids` FOR EACH ROW
+            INSERT INTO tasks (`kid_id`, `name`) VALUES (NEW.id, \'Default\');
+            ');
     }
 
     /**
@@ -33,6 +38,7 @@ class CreateTrPedidosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tr_pedidos');
-    }
+        // Schema::dropIfExists('tr_pedidos');
+       DB::unprepared('DROP TRIGGER `tr_User_Default_Member_Role`');
+   }
 }
