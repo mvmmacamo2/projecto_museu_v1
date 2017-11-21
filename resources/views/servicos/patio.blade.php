@@ -61,8 +61,24 @@ Requisição De Aluguer De Pátio
 <!-- blog Section End -->
 
 
+<h4>Pedidos Feitos</h4>
+<table class="table table-bordered table-stripped">
+  <caption>table title and/or explanatory text</caption>
+  <thead>
+    <tr>
+      <th>header</th>
+      <th>header</th>
+    </tr>
+  </thead>
 
-cvxbncx 
+  <tbody>
+    <tr>
+      <td>data</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 @endsection
 
