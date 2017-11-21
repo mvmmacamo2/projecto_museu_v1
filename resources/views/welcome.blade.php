@@ -581,27 +581,10 @@
     $(document).on('click', '.like', function (event) {
         event.preventDefault();
 
-        var id= $(this).attr('id');
-       // alert('miguel'+id);
+        alert('Miguel');
 
-       $.ajax({
-        url: "/",
-        method: "post",
-        data: $('form').serialize(),
-        dataType: "_token",
+    });
 
-      //   success: function (strMessage) {
-      //     $('#message').html(strMessage)
-      //     $(visualiza());
-      //     $(limpar());
-      // }
-
-      success: function () {
-       alert('deu certo');
-   }
-
-});
-       $(visualiza());
         // var id =$(this).attr('id');
         // var confirme =confirm("Deseja realmente Excluir?");
         // if (confirme==true){

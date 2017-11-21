@@ -17,7 +17,7 @@ class CreateRelatioPedidosTable extends Migration
             $table->increments('id');
             $table->string('nomeservico');
             $table->string('username');
-            $table->string('');
+            $table->string('descricao');
             $table->timestamps();
         });
     }

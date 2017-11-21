@@ -13,10 +13,17 @@ class CreateTrPedidosTable extends Migration
      */
     public function up()
     {
-        Schema::create('tr_pedidos', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        // Schema::create('tr_pedidos', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->timestamps();
+        // });
+
+        DB::unprepared('
+            CREATE PROCEDURE sp_Create_Default_Task_1(IN _kid_id INT)
+            BEGIN
+            INSERT INTO tasks (kid_id, name) VALUES (_kid_id, \'daily\');
+            END'
+        );
     }
 
     /**
