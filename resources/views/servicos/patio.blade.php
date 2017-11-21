@@ -2,6 +2,7 @@
 
 @section('title')
 Requisição De Aluguer De Pátio
+{!! $message !!}
 @stop
 
 @section('content')
@@ -33,6 +34,9 @@ Requisição De Aluguer De Pátio
               Introduza uma Hora Válida..!
             </div>
           </div>
+
+          <input type="hidden" value="{!! Auth()->user()->id !!}" name="usuario_id">
+          <input type="hidden" name="estado" value="Recebido"> 
 
           <div class="col-md-6 mb-3">
             <label for="descricao">Descrição do pedido de Renda do Pátio</label>
