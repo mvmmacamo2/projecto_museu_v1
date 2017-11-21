@@ -128,3 +128,9 @@ Route::group(['middleware'=>'escola'], function (){
 // rotas de save de likes
 
 Route::post('/', 'LikeExposicaoController@salvar');
+
+
+
+
+
+Route::post('/servicos/patio', 'ApatioController@create');
