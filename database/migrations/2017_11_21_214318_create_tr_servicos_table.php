@@ -20,7 +20,7 @@ class CreateTrServicosTable extends Migration
 
         DB::unprepared('
             CREATE TRIGGER tr_servicos AFTER INSERT ON `visita_gusers` FOR EACH ROW
-            INSERT INTO relatio_pedidos (`nomeservico`, `user_id`,`descricao`) VALUES (\'Visita Guiada Individual\',NEW.usuario_id, NEW.descricao);
+            INSERT INTO relatio_pedidos (`nomeservico`, `user_id`,`descricao`) VALUES (\'Aluguer Patio\',NEW.usuario_id, NEW.descricao);
             ');
     }
 
