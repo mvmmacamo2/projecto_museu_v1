@@ -7,8 +7,14 @@ use App\User;
 
 class Apatio extends Model
 {
-    public function pedidos()
-    {
-        return $this->hasMany(User::class);
-    }
+
+	protected $fillable =[
+
+		'descricao','data', 'hora','estado','usuario_id'
+	];
+
+	public function pedidos()
+	{
+		return $this->hasMany(User::class);
+	}
 }
