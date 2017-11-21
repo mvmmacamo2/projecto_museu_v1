@@ -39,18 +39,13 @@
                         <tbody>
 
                         @foreach($pedidos as $p)
-                            {{--{{ auth()->user() }}--}}
                             <tr class="odd gradeX">
                                 <td>{{$p->name}}</td>
                                 <td>{{$p->email}}</td>
 
-                                {{--<td>--}}
-                                {{--<img style="max-width: 40px;" src="/evento_upload/{{$evento->imagem}}">--}}
-                                {{--</td>--}}
-
                                 <td>{{$p->data}}</td>
                                 <td>{{$p->hora}}</td>
-                                <td>{{$p->created_at}}</td>
+                                <td>{{$p->created_at->diffForHumans()}}</td>
                                 <td>
                                     <a href="#">
                                         <!-- Button trigger modal -->

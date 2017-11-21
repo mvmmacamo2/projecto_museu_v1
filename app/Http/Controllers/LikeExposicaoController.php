@@ -11,6 +11,7 @@ class LikeExposicaoController extends Controller
 
 	public function salvar(Request $request)
 	{
+		//dd($request);
 		$salvar = LikeExposicao::create($request->all());
 	}
 
