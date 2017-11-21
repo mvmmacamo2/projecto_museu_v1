@@ -34,7 +34,7 @@ class CreateTrPedidosTable extends Migration
             CREATE TRIGGER tr_relatorio_pedido AFTER INSERT ON `visita_gusers` FOR EACH ROW
             INSERT INTO relatio_pedidos (`nomeservico`, `user_id`,`descricao`) VALUES (`Visita Guiada Individual`,NEW.usuario_id, NEW.descricao);
             ');
-    }+
+    }
 
     /**
      * Reverse the migrations.
