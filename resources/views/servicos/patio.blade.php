@@ -2,11 +2,16 @@
 
 @section('title')
 Requisição De Aluguer De Pátio
-{!! $message !!}
+
 @stop
 
 @section('content')
 
+@if(session()->has('message'))
+<div class="alert alert-success">
+  {{ session()->get('message') }}
+</div>
+@endif
 <!-- Blog Section -->
 <section id="blog" class="section">
   <!-- Container Starts -->
@@ -54,6 +59,10 @@ Requisição De Aluguer De Pátio
 </div><!-- Container Ends -->
 </section>
 <!-- blog Section End -->
+
+
+
+cvxbncx 
 
 @endsection
 
