@@ -16,7 +16,7 @@ class CreateRelatioPedidosTable extends Migration
         Schema::create('relatio_pedidos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nomeservico');
-            $table->string('username');
+            $table->string('user_id');
             $table->string('descricao');
             $table->timestamps();
         });

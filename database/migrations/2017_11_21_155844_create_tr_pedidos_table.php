@@ -25,11 +25,16 @@ class CreateTrPedidosTable extends Migration
         //     END'
         // );
 
+        // DB::unprepared('
+        // CREATE TRIGGER tr_Task_Default AFTER INSERT ON `kids` FOR EACH ROW
+        //     INSERT INTO tasks (`kid_id`, `name`) VALUES (NEW.id, \'Default\');
+        // ');
+
         DB::unprepared('
-            CREATE TRIGGER tr_relatorio_pedido AFTER INSERT ON `kids` FOR EACH ROW
-            INSERT INTO tasks (`kid_id`, `name`) VALUES (NEW.id, \'Default\');
+            CREATE TRIGGER tr_relatorio_pedido AFTER INSERT ON `visita_gusers` FOR EACH ROW
+            INSERT INTO relatio_pedidos (`nomeservico`, `user_id`,`descricao`) VALUES (`Visita Guiada Individual`,NEW.usuario_id, NEW.descricao);
             ');
-    }
+    }+
 
     /**
      * Reverse the migrations.
@@ -39,6 +44,6 @@ class CreateTrPedidosTable extends Migration
     public function down()
     {
         // Schema::dropIfExists('tr_pedidos');
-       DB::unprepared('DROP TRIGGER `tr_User_Default_Member_Role`');
-   }
+     DB::unprepared('DROP TRIGGER `tr_relatorio_pedido`');
+ }
 }
