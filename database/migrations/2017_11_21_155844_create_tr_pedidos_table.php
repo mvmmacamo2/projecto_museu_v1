@@ -44,6 +44,6 @@ class CreateTrPedidosTable extends Migration
     public function down()
     {
         // Schema::dropIfExists('tr_pedidos');
-     DB::unprepared('DROP TRIGGER `tr_relatorio_pedido`');
- }
+       DB::unprepared('DROP TRIGGER `tr_relatorio_pedido`');
+   }
 }
