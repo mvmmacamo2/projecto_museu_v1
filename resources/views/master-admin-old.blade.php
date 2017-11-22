@@ -259,180 +259,175 @@
                         <li class="divider"></li>
                         <li>
                         	
-                        		
+                          
 
-                        		<a href="{{ route('logout') }}" onclick="event.preventDefault();
-	                                document.getElementById('logout-form').submit();">
-	                          		<i class="fa fa-sign-out fa-fw"> Sair</i>
-                      			</a>
+                          <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+                          <i class="fa fa-sign-out fa-fw"> Sair</i>
+                      </a>
 
-		                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-		                          {{ csrf_field() }}
-		                        </form>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
                 </li>
-                <!-- /.dropdown -->
             </ul>
-            <!-- /.navbar-top-links -->
+            <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+    </ul>
+    <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Painel Admistrativo </a>
+                </li>
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
                         <li>
-                            <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Painel Admistrativo </a>
+                            <a style="color: #1c961f" href="/admins/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
                         </li>
                         <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/exposicoes"><i class="fa fa-eye"></i> Ver Exposições</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <!-- <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Galeria</a>
-                        </li> -->
-                        <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/galerias"><i class="fa fa-eye"></i> Ver Galeria</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-
-                        <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-
-
-                        {{--SECCAO DE PEDIDOS EM --}}
-                        <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/pedidos/visitaguiadaescolar"><i class="fa fa-eye"></i> Visitas Guiadas Escolares</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/pedidos/visitaguiadasingular"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/pedidos/prenda"><i class="fa fa-eye"></i> Renda do Pátio</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-
-
-
-
-
-
-
-                        <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                            	<li>
-                                    <a style="color: #1c961f" href="#"><i class="fa fa-plus"></i> Adicionar Usuário</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/usuarios"><i class="fa fa-eye"></i> Ver Lista</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="#">Permições</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/usuario"><i class="fa fa-eye"></i> Ver Perfil</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="{{ route('logout') }}" onclick="event.preventDefault();
-	                                document.getElementById('logout-form').submit();">
-	                          			<i class="fa fa-sign-out"> Sair</i>
-                      				</a>
-
-		                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-		                          {{ csrf_field() }}
-		                        </form>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a style="color: #1c961f" href="/admins/exposicoes"><i class="fa fa-eye"></i> Ver Exposições</a>
                         </li>
                     </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+                    <!-- /.nav-second-level -->
+                </li>
+                
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a style="color: #1c961f" href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a>
+                        </li>
+                        <li>
+                            <a style="color: #1c961f" href="/admins/galerias"><i class="fa fa-eye"></i> Ver Galeria</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
 
-        <!-- page-wrapper -->
-        <div id="page-wrapper">
-            
-        	@yield('content-admin')
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a style="color: #1c961f" href="/admins/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
+                        </li>
+                        <li>
+                            <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
 
-        </div>
-        <!-- /#page-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+                {{--SECCAO DE PEDIDOS EM --}}
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
 
-    <!-- jQuery -->
-    <script src="/admin/vendor/jquery/jquery.min.js"></script>
+                        <li>
+                            <a style="color: #1c961f" href="/admins/pedidos/visitaguiadaescolar"><i class="fa fa-eye"></i> Visitas Guiadas Escolares</a>
+                        </li>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+                        <li>
+                            <a style="color: #1c961f" href="/admins/pedidos/visitaguiadasingular"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
+                        </li>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="/admin/vendor/metisMenu/metisMenu.min.js"></script>
+                        <li>
+                            <a style="color: #1c961f" href="/admins/pedidos/prenda"><i class="fa fa-eye"></i> Renda do Pátio</a>
+                        </li>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="/admin/vendor/raphael/raphael.min.js"></script>
-    <script src="/admin/vendor/morrisjs/morris.min.js"></script>
-    <script src="/admin/data/morris-data.js"></script>
+                        <li>
+                            <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
+                        </li>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="/admin/dist/js/sb-admin-2.js"></script>
-     <script type="text/javascript">
-         yield('ajax')
-     </script>
+                        <li>
+                            <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+
+
+
+
+
+
+
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                     <li>
+                        <a style="color: #1c961f" href="#"><i class="fa fa-plus"></i> Adicionar Usuário</a>
+                    </li>
+                    <li>
+                        <a style="color: #1c961f" href="/admins/usuarios"><i class="fa fa-eye"></i> Ver Lista</a>
+                    </li>
+                    <li>
+                        <a style="color: #1c961f" href="#">Permições</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li>
+                <a style="color: #1c961f" href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a style="color: #1c961f" href="/admins/usuario"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    </li>
+                    <li>
+                        <a style="color: #1c961f" href="{{ route('logout') }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <i class="fa fa-sign-out"> Sair</i>
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+    </ul>
+</div>
+<!-- /.sidebar-collapse -->
+</div>
+<!-- /.navbar-static-side -->
+</nav>
+
+<!-- page-wrapper -->
+<div id="page-wrapper">
+    
+ @yield('content-admin')
+
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="/admin/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/admin/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="/admin/vendor/raphael/raphael.min.js"></script>
+<script src="/admin/vendor/morrisjs/morris.min.js"></script>
+<script src="/admin/data/morris-data.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/admin/dist/js/sb-admin-2.js"></script>
+<script type="text/javascript">
+ yield('ajax')
+</script>
 
 </body>
 

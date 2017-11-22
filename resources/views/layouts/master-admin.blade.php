@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Sistema de informação</title>
+	<title>Museu Da Moeda</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 	<!-- Bootstrap 3.3.7 -->
@@ -45,9 +45,9 @@
 			<!-- Logo -->
 			<a href="index2.html" class="logo">
 				<!-- mini logo for sidebar mini 50x50 pixels -->
-				<span class="logo-mini"><b>A</b>LT</span>
+				<span class="logo-mini"><b>M</b>N</span>
 				<!-- logo for regular state and mobile devices -->
-				<span class="logo-lg"><b>Micro-Finanças</b></span>
+				<span class="logo-lg"><b>Museu Nacional</b></span>
 			</a>
 			<!-- Header Navbar: style can be found in header.less -->
 			<nav class="navbar navbar-static-top">
@@ -116,40 +116,40 @@
 				<li class="header"><i class="fa fa-dashboard"></i> Menu</li>
 				<li class="active treeview">
 					<a href="#">
-						<i class="fa  fa-th-large"></i> <span>Empréstimo</span>
+						<i class="fa  fa-th-large"></i> <span>Exposição</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li class="active"><a href="/emprestimos/create"><i class="fa fa-plus"></i> Emprestar</a></li>
-						<li class="active"><a href="/emprestimos"><i class="fa fa-list"></i> Ver Emrestimos</a></li>
+						<li class="active"><a href="/emprestimos/create"><i class="fa fa-plus"></i> Criar Exposição</a></li>
+						<li class="active"><a href="/emprestimos"><i class="fa fa-list"></i> Ver Exposição</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
 					<a href="#">
 						<i class="fa  fa-users"></i>
-						<span>Usuário</span>
+						<span>Galeria</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="/usuarios/create"><i class="fa fa-plus"></i> Registar Usuário</a></li>
-						<li><a href="/usuarios"><i class="fa fa-list"></i> Ver usuários</a></li>
+						<li><a href="/usuarios/create"><i class="fa fa-plus"></i> Criar Galeria</a></li>
+						<li><a href="/usuarios"><i class="fa fa-list"></i> Ver Galeria</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
 					<a href="#">
 						<i class="fa  fa-users"></i>
-						<span>Clientes</span>
+						<span>Eventos</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="/clientes/create"><i class="fa fa-plus"></i> Registar Cliente</a></li>
-						<li><a href="/clientes"><i class="fa fa-list"></i> Ver Clientes</a></li>
+						<li><a href="/clientes/create"><i class="fa fa-plus"></i> Adicionar Eventos</a></li>
+						<li><a href="/clientes"><i class="fa fa-list"></i> Ver Eventos</a></li>
 					</ul>
 				</li>
 
