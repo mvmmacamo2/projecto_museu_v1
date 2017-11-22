@@ -592,8 +592,7 @@
 
 
 
-    });
-</script>
+    </script>
 
 </body>
 </html>

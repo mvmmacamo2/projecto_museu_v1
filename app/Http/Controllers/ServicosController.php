@@ -24,12 +24,18 @@ class ServicosController extends Controller
 
     public function individual()
     {
-        return view('servicos.individual');
-    }
+     $user_id= Auth()->user()->id;
+     $pedidos=DB::select("call pr_pedidos_visitas($user_id)");
 
-    public function save(Request $request)
-    {
-        $save = V_visitag_singular::create($request->all());
-        return redirect('servicos.individual');
-    }
+     $task = DB::table('visita_gusers')->where('usuario_id',$user_id)->get();
+     // $user = DB::table('users')->where('name', 'John')->first();
+    // return view('servicos.patio', compact('pedidos'));
+     return view('servicos.individual', compact('pedidos'), compact('task'));
+ }
+
+ public function save(Request $request)
+ {
+    $save = V_visitag_singular::create($request->all());
+    return redirect('servicos.individual');
+}
 }

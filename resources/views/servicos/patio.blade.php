@@ -11,6 +11,12 @@ Requisição De Aluguer De Pátio
 <div class="alert alert-success">
   {{ session()->get('message') }}
 </div>
+@else
+@if(session()->has('message'))
+<div class="alert alert-danger">
+  {{ session()->get('message') }}
+</div>
+@endif
 @endif
 <!-- Blog Section -->
 <section id="blog" class="section">

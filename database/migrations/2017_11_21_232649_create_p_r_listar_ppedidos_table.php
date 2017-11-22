@@ -38,6 +38,6 @@ class CreatePRListarPpedidosTable extends Migration
 public function down()
 {
         //Schema::dropIfExists('p_r_listar_ppedidos');
-    DB::unprepared('DROP  PROCEDURE `tr_servicos`');
+    DB::unprepared('DROP  PROCEDURE `pr_pedidos_patio`');
 }
 }
