@@ -1,4 +1,4 @@
-@extends('master-admin')
+@extends('layouts.master-admin')
 
 @section('content-admin')
 <div class="row">
@@ -17,7 +17,7 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
 
-             <form method="post" action="/admins/eventos">
+               <form method="post" action="/admins/eventos">
 
                 {!! csrf_field() !!}
                 <input type="hidden" name="_method" value="PUT">
