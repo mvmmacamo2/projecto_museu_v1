@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\V_visitag_singular;
+use DB;
 
 class ServicosController extends Controller
 {
@@ -14,7 +15,11 @@ class ServicosController extends Controller
 
     public function patio()
     {
-        return view('servicos.patio');
+        $user_id= Auth()->user()->id;
+        $pedidos=DB::select("call pr_pedidos_patio($user_id)");
+
+        return view('servicos.patio', compact('pedidos'));
+       // return view('servicos.patio');
     }
 
     public function individual()

@@ -63,31 +63,28 @@ Requisição De Aluguer De Pátio
 
 <h4>Pedidos Feitos</h4>
 <table class="table table-bordered table-stripped table-responsive">
- {{--  <caption>table title and/or explanatory text</caption> --}}
- 
- <thead>
-  <tr>
-    <th>Detalhes do Pedido</th>
-    <th>Data do Pedido</th>
-    <th>Hora do Pedido</th>
-    <th>Estado do Pedido</th>
-    <th>Feito </th>
-  </tr>
-</thead>
+  <caption>table title and/or explanatory text</caption>
+  <thead>
+    <tr>
+      <th>Detalhes do Pedido</th>
+      <th>Data do Pedido</th>
+      <th>Hora do Pedido</th>
+      <th>Estado do Pedido</th>
+      <th>Feito </th>
+    </tr>
+  </thead>
 
-<tbody>
-  @foreach($pedidos as $p)
-  <tr>
-    <td>{!! $p->descricao !!}</td>
-    <td>{!! $p->data !!}</td>
-    <td>{!! $p->hora !!}</td>
-    <td>{!! $p->estado !!}</td>
-    <td>{{$p->created_at}}</td>
+  <tbody>
+    @foreach($pedidos as $p)
+    <tr>
+      <td>{!! $p->descricao !!}</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+    </tr>
+    @endforeach
 
-  </tr>
-  @endforeach
-
-</tbody>
+  </tbody>
 </table>
 
 
