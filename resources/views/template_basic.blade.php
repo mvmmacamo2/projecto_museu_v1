@@ -67,11 +67,10 @@
         <div class="item active">
           <div class="contents text-center">
             <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Museu Nacional Da Moeda</h1>
-            <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
-              
+            <p style="font-size: 14pt;" class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">
+              Conhecendo a nossa história
             </p>
-            <a rel="nofollow" href="https://rebrand.ly/basic-purchase" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Get Full Version</a>
-            <a rel="nofollow" href="https://rebrand.ly/basic-purchase" class="btn btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Learn More</a>
+
             <div class="banner_bottom_btn wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
               <a href="#about" class="js-target-scroll"><i class="icon-mouse"></i></a>               
             </div>
@@ -88,195 +87,152 @@
 <section id="about" class="section">
   <div class="container">
     <div class="section-header">
-      <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Who We Are</h3>
-      <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">About Us</h2>
+      <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Museu Da Moeda</h3>
+      <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Sobre O Museu</h2>
     </div>
     <div class="row">
       <div class="col-md-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-        </div>
-      </div>
-      <div class="counters">
-        <div class="row"> 
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="wow fadeInUp" data-wow-delay=".2s">
-              <div class="facts-item">
-                <div class="fact-count">
-                  <h3><span class="counter">4452</span></h3>
-                  <h4>Project Done</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="wow fadeInUp" data-wow-delay=".4s">
-              <div class="facts-item">
-                <div class="fact-count">
-                  <h3><span class="counter">367</span></h3>
-                  <h4>Happy Clients</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="wow fadeInUp" data-wow-delay=".6s">
-              <div class="facts-item">
-                <div class="fact-count">
-                  <h3><span class="counter">965</span></h3>
-                  <h4>Working Hours</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="wow fadeInUp" data-wow-delay=".8s">
-              <div class="facts-item">
-                <div class="fact-count">
-                  <h3><span class="counter">280</span></h3>
-                  <h4>Followers</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p style="font-size: 14pt;">A inauguração do primeiro museu da moeda insere-se no âmbito da preservação e valorização do património histórico de Moçambique. A moeda é, com efeito, um testemunho histórico de extrema importância para a história de um povo.</p>
+        <a href="/historias/museu"><p>Ler mais</p></a>
       </div>
     </div>
-    <div class="/basic-free/img-about-out">
-      <img src="/basic-free/img/about-img.png" alt="">
-    </div>
-  </section>
-  <!-- About Section End -->
+    
 
-  <!-- Services Section Start -->
-  <section id="services" class="services section">
-    <div class="container">
-      <div class="section-header">
-        <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Let Us Help You</h3>
-        <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Our Services</h2>
+  </div>
+  <div class="/basic-free/img-about-out">
+    <img src="/basic-free/img/about-img.png" alt="">
+  </div>
+</section>
+<!-- About Section End -->
+
+<!-- Services Section Start -->
+<section id="services" class="services section">
+  <div class="container">
+    <div class="section-header">
+      <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Let Us Help You</h3>
+      <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Our Services</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="icon">
+            <i class="icon-settings"></i>
+          </div>
+          <h3><a href="#">Web Developer</a></h3>
+          <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="icon">
-              <i class="icon-settings"></i>
-            </div>
-            <h3><a href="#">Web Developer</a></h3>
-            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="450ms">
+          <div class="icon">
+            <i class="icon-graph"></i>
           </div>
+          <h3><a href="#">Graphic Design</a></h3>
+          <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="450ms">
-            <div class="icon">
-              <i class="icon-graph"></i>
-            </div>
-            <h3><a href="#">Graphic Design</a></h3>
-            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="550ms">
+          <div class="icon">
+            <i class="icon-camera"></i>
           </div>
+          <h3><a href="#">Photograph</a></h3>
+          <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="550ms">
-            <div class="icon">
-              <i class="icon-camera"></i>
-            </div>
-            <h3><a href="#">Photograph</a></h3>
-            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="650ms">
+          <div class="icon">
+            <i class="icon-screen-tablet"></i>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="service-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="650ms">
-            <div class="icon">
-              <i class="icon-screen-tablet"></i>
-            </div>
-            <h3><a href="#">App Development</a></h3>
-            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
-          </div>
+          <h3><a href="#">App Development</a></h3>
+          <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing</p>
         </div>
       </div>
     </div>
-  </section>
-  <!-- Services Section End -->
+  </div>
+</section>
+<!-- Services Section End -->
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
-    <!-- Container Starts -->
-    <div class="contents text-center">
-      <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Museu Nacional Da Moeda</h1>
-      <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">You are using Free/Lite version<br>Full version comes with all Sections and Features to Launch a Complete Website same as the Demo.<br> Including - Support, Documentation and Future Updates</p>
-      <a rel="nofollow" href="https://rebrand.ly/basic-purchase" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Get Full Version</a>
-    </div>
-  </section>
-  <!-- Portfolio Section Ends --> 
+<!-- Portfolio Section -->
+<section id="portfolio" class="section">
+  <!-- Container Starts -->
+  <div class="contents text-center">
+    <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Museu Nacional Da Moeda</h1>
+    <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">You are using Free/Lite version<br>Full version comes with all Sections and Features to Launch a Complete Website same as the Demo.<br> Including - Support, Documentation and Future Updates</p>
+    <a rel="nofollow" href="https://rebrand.ly/basic-purchase" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Get Full Version</a>
+  </div>
+</section>
+<!-- Portfolio Section Ends --> 
 
-  <!-- Why Section Start -->
-  <div id="why" class="why">
-    <div class="container">        
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="section-header">
-            <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Who We Are</h3>
-            <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Why choose Us</h2>
+<!-- Why Section Start -->
+<div id="why" class="why">
+  <div class="container">        
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="section-header">
+          <h3 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Who We Are</h3>
+          <h2 class="section-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">Why choose Us</h2>
+        </div>
+        <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="icon">
+            <i class="icon-fire"></i>
           </div>
-          <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="icon">
-              <i class="icon-fire"></i>
-            </div>
-            <div class="why-content">
-              <h3>Do Believe in Quality</h3>
-              <p>Our key to success is the excellent quality of work That we hold across all our projects.</p>
-            </div>
-          </div>
-          <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <div class="icon">
-              <i class="icon-energy"></i>
-            </div>
-            <div class="why-content">
-              <h3>Simple and fast</h3>
-              <p>Our key to success is the excellent quality of work That we hold across all our projects.</p>
-            </div>
-          </div>
-          <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <div class="icon">
-              <i class="icon-heart"></i>
-            </div>
-            <div class="why-content">
-              <h3>Intuitive and convenience</h3>
-              <p>Our key to success is the excellent quality of work That we hold across all our projects.</p>
-            </div>
+          <div class="why-content">
+            <h3>Do Believe in Quality</h3>
+            <p>Our key to success is the excellent quality of work That we hold across all our projects.</p>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div id="testimonial" class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="touch-slider" class="owl-carousel owl-theme">
-              <div class="item active text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>                  
-                <div class="client-info">
-                 <h2 class="client-name">Jhon Nash</h2>
-                 <h4 class="client-details">Founder & CEO, JN Inc.</h4>
-               </div>                
-               <img class="img-member" src="/basic-free/img/testimonial/img1.png" alt=""> 
-             </div>
-             <div class="item text-center">      
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>            
+        <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <div class="icon">
+            <i class="icon-energy"></i>
+          </div>
+          <div class="why-content">
+            <h3>Simple and fast</h3>
+            <p>Our key to success is the excellent quality of work That we hold across all our projects.</p>
+          </div>
+        </div>
+        <div class="why-item wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
+          <div class="icon">
+            <i class="icon-heart"></i>
+          </div>
+          <div class="why-content">
+            <h3>Intuitive and convenience</h3>
+            <p>Our key to success is the excellent quality of work That we hold across all our projects.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div id="testimonial" class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="touch-slider" class="owl-carousel owl-theme">
+            <div class="item active text-center">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>                  
               <div class="client-info">
                <h2 class="client-name">Jhon Nash</h2>
                <h4 class="client-details">Founder & CEO, JN Inc.</h4>
              </div>                
-             <img class="img-member" src="/basic-free/img/testimonial/img2.png" alt=""> 
+             <img class="img-member" src="/basic-free/img/testimonial/img1.png" alt=""> 
            </div>
-           <div class="item text-center"> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>                
+           <div class="item text-center">      
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>            
             <div class="client-info">
              <h2 class="client-name">Jhon Nash</h2>
              <h4 class="client-details">Founder & CEO, JN Inc.</h4>
            </div>                
-           <img class="img-member" src="/basic-free/img/testimonial/img3.png" alt=""> 
+           <img class="img-member" src="/basic-free/img/testimonial/img2.png" alt=""> 
          </div>
+         <div class="item text-center"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conseq uatuis aute irure dolor.</p>                
+          <div class="client-info">
+           <h2 class="client-name">Jhon Nash</h2>
+           <h4 class="client-details">Founder & CEO, JN Inc.</h4>
+         </div>                
+         <img class="img-member" src="/basic-free/img/testimonial/img3.png" alt=""> 
        </div>
      </div>
    </div>
  </div>
+</div>
 </div>
 </div>
 <!-- Why Section End -->

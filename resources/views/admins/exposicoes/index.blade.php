@@ -1,13 +1,7 @@
-@extends('master-admin')
+@extends('layouts.master-admin')
 
-@section('content-admin')
-<div class="row">
-	<div class="col-lg-10">
-		<h1 class="page-header">Exposições</h1>
-	</div>
-	<!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
+@section('content')
+
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-default">
@@ -32,29 +26,29 @@
 							<td>{{$exposicao->nome}}</td>
 							<td>{{$exposicao->descricao}}</td>
 							<td>
-							  	<img style="max-width: 40px;" src="/expo-upload/{{$exposicao->imagem}}">
-						  </td>
-						  <td>{{$exposicao->estado}}</td>
-						  <td>
-							  	<a href="/admins/exposicoes/{{ $exposicao->id }}/edit">
-								<button class="btn btn-success">Editar</button>
-							</a>
-							<a href="">
-								<button class="btn btn-danger">Apagar</button>
-							</a>s
-							
-						</td>
-					</tr>
-					@endforeach
-				</tbody>
-			</table>
-			<!-- /.table-responsive -->
+								<img style="max-width: 40px;" src="/expo-upload/{{$exposicao->imagem}}">
+							</td>
+							<td>{{$exposicao->estado}}</td>
+							<td>
+								<a href="/admins/exposicoes/{{ $exposicao->id }}/edit">
+									<button class="btn btn-success">Editar</button>
+								</a>
+								<a href="">
+									<button class="btn btn-danger">Apagar</button>
+								</a>
 
+							</td>
+						</tr>
+						@endforeach
+					</tbody>
+				</table>
+				<!-- /.table-responsive -->
+
+			</div>
+			<!-- /.panel-body -->
 		</div>
-		<!-- /.panel-body -->
+		<!-- /.panel -->
 	</div>
-	<!-- /.panel -->
-</div>
-<!-- /.col-lg-12 -->
+	<!-- /.col-lg-12 -->
 </div>
 @stop

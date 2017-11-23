@@ -257,6 +257,7 @@
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Configurações</a>
                         </li>
+<<<<<<< HEAD:resources/views/master-admin.blade.php
                         <!DOCTYPE html>
                         <html lang="en">
 
@@ -537,18 +538,60 @@
       <!-- /.navbar-top-links -->
 
       <div class="navbar-default sidebar" role="navigation">
+=======
+                        <li class="divider"></li>
+                        <li>
+                        	
+                          
+
+                          <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();">
+                          <i class="fa fa-sign-out fa-fw"> Sair</i>
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                </li>
+            </ul>
+            <!-- /.dropdown-user -->
+        </li>
+        <!-- /.dropdown -->
+    </ul>
+    <!-- /.navbar-top-links -->
+
+    <div class="navbar-default sidebar" role="navigation">
+>>>>>>> 783e76aae609dcfc2f83631857f215b2a6e655d4:resources/views/master-admin-old.blade.php
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
                 <li>
                     <a href="/home"><i class="fa fa-dashboard fa-fw"></i> Painel Admistrativo </a>
                 </li>
                 <li>
+<<<<<<< HEAD:resources/views/master-admin.blade.php
                     <a style="color: #1c961f" href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a style="color: #1c961f" href="/admins/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
+=======
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Exposições<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
                             <a style="color: #1c961f" href="/admins/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a>
                         </li>
                         <li>
+                            <a style="color: #1c961f" href="/admins/exposicoes"><i class="fa fa-eye"></i> Ver Exposições</a>
+>>>>>>> 783e76aae609dcfc2f83631857f215b2a6e655d4:resources/views/master-admin-old.blade.php
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+                
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+<<<<<<< HEAD:resources/views/master-admin.blade.php
                             <a style="color: #1c961f" href="/admins/exposicoes"><i class="fa fa-eye"></i> Ver Exposições</a>
                         </li>
                     </ul>
@@ -560,70 +603,58 @@
                         <!-- <li>
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Galeria</a>
                         </li> -->
+=======
+                            <a style="color: #1c961f" href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a>
+                        </li>
+>>>>>>> 783e76aae609dcfc2f83631857f215b2a6e655d4:resources/views/master-admin-old.blade.php
                         <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Galerias<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/galerias"><i class="fa fa-eye"></i> Ver Galeria</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a style="color: #1c961f" href="/admins/galerias"><i class="fa fa-eye"></i> Ver Galeria</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a style="color: #1c961f" href="/admins/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
+                        </li>
+<<<<<<< HEAD:resources/views/master-admin.blade.php
+
+
+
+
+
+=======
+>>>>>>> 783e76aae609dcfc2f83631857f215b2a6e655d4:resources/views/master-admin-old.blade.php
+                        <li>
+                            <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+
+
+                {{--SECCAO DE PEDIDOS EM --}}
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+
+                        <li>
+                            <a style="color: #1c961f" href="/admins/pedidos/visitaguiadaescolar"><i class="fa fa-eye"></i> Visitas Guiadas Escolares</a>
                         </li>
 
                         <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Eventos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos/create"><i class="fa fa-plus"></i> Criar Evento</a>
-                                </li>
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Ver Eventos</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a style="color: #1c961f" href="/admins/pedidos/visitaguiadasingular"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
                         </li>
 
-
-
-
-
                         <li>
-                            <a style="color: #1c961f" href="#"><i class="fa fa-picture-o fa-fw"></i> Pedidos<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/pedidos/visitaguiadaescolar"><i class="fa fa-eye"></i> Visitas Guiadas Escolares</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/pedidos/visitaguiadasingular"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/pedidos/prenda"><i class="fa fa-eye"></i> Renda do Pátio</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
-                                </li>
-
-                                <li>
-                                    <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a style="color: #1c961f" href="/admins/pedidos/prenda"><i class="fa fa-eye"></i> Renda do Pátio</a>
                         </li>
 
-
-
-
-
-
-
                         <li>
+<<<<<<< HEAD:resources/views/master-admin.blade.php
                             <a style="color: #1c961f" href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -637,8 +668,13 @@
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
+=======
+                            <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Novos Pedidos</a>
+>>>>>>> 783e76aae609dcfc2f83631857f215b2a6e655d4:resources/views/master-admin-old.blade.php
                         </li>
+
                         <li>
+<<<<<<< HEAD:resources/views/master-admin.blade.php
                             <a style="color: #1c961f" href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -668,6 +704,65 @@
   <div id="page-wrapper">
 
     @yield('content-admin')
+=======
+                            <a style="color: #1c961f" href="/admins/eventos"><i class="fa fa-eye"></i> Pedidos Respondidos</a>
+                        </li>
+                    </ul>
+                    <!-- /.nav-second-level -->
+                </li>
+
+
+
+
+
+
+
+                <li>
+                    <a style="color: #1c961f" href="#"><i class="fa fa-users fa-fw"></i> Usuários Do Sistema<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                     <li>
+                        <a style="color: #1c961f" href="#"><i class="fa fa-plus"></i> Adicionar Usuário</a>
+                    </li>
+                    <li>
+                        <a style="color: #1c961f" href="/admins/usuarios"><i class="fa fa-eye"></i> Ver Lista</a>
+                    </li>
+                    <li>
+                        <a style="color: #1c961f" href="#">Permições</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li>
+                <a style="color: #1c961f" href="#"><i class="fa fa-user fa-fw"></i> Meu Perfil<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a style="color: #1c961f" href="/admins/usuario"><i class="fa fa-eye"></i> Ver Perfil</a>
+                    </li>
+                    <li>
+                        <a style="color: #1c961f" href="{{ route('logout') }}" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <i class="fa fa-sign-out"> Sair</i>
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+    </ul>
+</div>
+<!-- /.sidebar-collapse -->
+</div>
+<!-- /.navbar-static-side -->
+</nav>
+
+<!-- page-wrapper -->
+<div id="page-wrapper">
+    
+ @yield('content-admin')
+>>>>>>> 783e76aae609dcfc2f83631857f215b2a6e655d4:resources/views/master-admin-old.blade.php
 
 </div>
 <!-- /#page-wrapper -->
@@ -692,7 +787,11 @@
 <!-- Custom Theme JavaScript -->
 <script src="/admin/dist/js/sb-admin-2.js"></script>
 <script type="text/javascript">
+<<<<<<< HEAD:resources/views/master-admin.blade.php
     
+=======
+ yield('ajax')
+>>>>>>> 783e76aae609dcfc2f83631857f215b2a6e655d4:resources/views/master-admin-old.blade.php
 </script>
 
 </body>
