@@ -116,7 +116,7 @@
 				<li class="header"><i class="fa fa-dashboard"></i> Menu</li>
 				<li class="treeview">
 					<a href="#">
-						<i class="fa  fa-th-large"></i> <span>Exposição</span>
+						<i class="fa fa-picture-o fa-fw"></i> <span>Exposição</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
 						</span>
@@ -128,7 +128,7 @@
 				</li>
 				<li class="treeview">
 					<a href="#">
-						<i class="fa  fa-users"></i>
+						<i class="fa fa-picture-o fa-fw"></i>
 						<span>Galeria</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
@@ -142,7 +142,7 @@
 
 				<li class="treeview">
 					<a href="#">
-						<i class="fa  fa-users"></i>
+						<i class="fa fa-calendar-o"></i>
 						<span>Eventos</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
@@ -156,19 +156,30 @@
 
 				<li class="treeview">
 					<a href="#">
-						<i class="fa  fa-users"></i>
+						<i class="fa fa-paper-plane-o "></i>
 						<span>Pedidos</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="/clientes/create"><i class="fa fa-plus"></i> Adicionar Eventos</a></li>
+						<li><a href="/clientes/create"><i class="fa fa-eye"></i> Novos Pedidos</a></li>
+						<li><a href="/clientes/create"><i class="fa fa-eye"></i> Pedidos Respondidos</a></li>
+					</ul>
+				</li>
+
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-eye"></i>
+						<span>Serviços</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
 						<li><a href="/admins/pedidos/visitaguiadaescolar"><i class="fa fa-list"></i> Visitas Guiadas Escolares</a></li>
 						<li><a href="/admins/pedidos/visitaguiadasingular"><i class="fa fa-list"></i> Visitas Guiadas Singulares</a></li>
 						<li><a href="/admins/pedidos/prenda"><i class="fa fa-list"></i> Renda do Pátio</a></li>
-						<li><a href="/admins/eventos"><i class="fa fa-list"></i> Novos Pedidos</a></li>
-						<li><a href="/clientes"><i class="fa fa-list"></i> Ver Eventos</a></li>
 					</ul>
 				</li>
 
