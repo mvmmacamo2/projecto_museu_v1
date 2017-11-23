@@ -123,7 +123,7 @@ class Exposicao_adminController extends Controller
           'descricao' => 'required',
           'imagem' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
           'estado' => 'required'
-        ]);
+      ]);
         $exposicao->nome = $request->get('nome');
         $exposicao->descricao = $request->get('descricao');
         $exposicao->estado = $request->get('estado');
@@ -138,7 +138,10 @@ class Exposicao_adminController extends Controller
         
         $exposicao->save();
 
-        return redirect('admins.exposicoes.index')->with('success','Exposicao has been updated');
+        $exposicaos = Exposicao::all();
+
+        return view('admins.exposicoes.index', compact('exposicaos'))->with('success','Exposicao has been updated');
+        // return view('admins.exposicoes.index',
     }
 
     /**

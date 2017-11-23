@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="row">
-    <div class="col-lg-10">
+    <div class="col-lg-12">
         <h1 class="page-header">Actualizar Informacoes do User</h1>
     </div>
 
@@ -20,7 +20,9 @@
 
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <form>
+                <form method="POST" action="/admins/usuarios/{{$usuario->id}}">
+                    {{ method_field('PATCH') }}
+                    {{ csrf_field() }}
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="nome">Nome</label>

@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class ExposicaoController extends Controller
 {
-    public function index()
-    {
-        $exposicoes = Exposicao::all();
-        return view('exposicoes.index', compact('exposicoes'));
-    }
+	public function index()
+	{
+		$exposicoes = Exposicao::all();
+		return view('exposicoes.index', compact('exposicoes'));
+	}
 }

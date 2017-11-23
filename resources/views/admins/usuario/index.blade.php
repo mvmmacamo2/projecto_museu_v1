@@ -3,19 +3,10 @@
 @section('content')
 
 <div class="row">
-    <div class="col-lg-10">
-        <h1 class="page-header">Visita Guiada Escolar</h1>
-    </div>
-
-</div>
-
-<!-- /.row -->
-
-<div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Lista de Eventos
+                Lista de Usuários
             </div>
 
             <!-- /.panel-heading -->
@@ -45,53 +36,47 @@
                         <td>{{$user->nivelacesso}}</td>
                         <td>
                             <a href="#">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModalLong">
-                                Ver Descrição <i class="fa fa-eye"></i>
-                            </button>
+                                
+                                <a href="/admins/usuarios/{{ $user->id }}/edit">
+                                    <button class="btn btn-success">Editar</button>
+                                </a>
+                                {{--<button class="btn btn-danger">Apagar</button>--}}
 
 
-                            <a href="/admins/usuarios/{{ $user->id }}/edit">
-                                <button class="btn btn-success">Editar</button>
-                            </a>
-                            {{--<button class="btn btn-danger">Apagar</button>--}}
-
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">Descrição Do
-                                        Pedido</h5>
-                                        <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Descrição Do
+                                            Pedido</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        {{$user->foto}}..
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">Close
                                     </button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                 </div>
-                                <div class="modal-body">
-                                    {{$user->foto}}..
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                    data-dismiss="modal">Close
-                                </button>
-                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </td>
+                </a>
+            </td>
 
 
 
-    </tr>
-    @endforeach
+        </tr>
+        @endforeach
 
-</tbody>
+    </tbody>
 
 </table>
 <!-- /.table-responsive -->

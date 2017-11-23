@@ -1,22 +1,16 @@
 @extends('layouts.master-admin')
 
-@section('content-admin')
+@section('content')
+
 <div class="row">
-    <div class="col-lg-10">
-        <h1 class="page-header">Editar Exposições</h1>
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-<!-- /.row -->
-<div class="row">
-    <div class="col-lg-10">
+    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Nome Da Exposição: {{ $exposicao->nome }}
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <form class="form-horizontal" method="POST" action="/exposicoes/{{$exposicao->id}}" enctype="multipart/form-data">  
+                <form class="form-horizontal" method="POST" action="/admins/exposicoes/{{$exposicao->id}}" enctype="multipart/form-data">  
                     {{ method_field('PATCH') }}
                     {{ csrf_field() }}
 

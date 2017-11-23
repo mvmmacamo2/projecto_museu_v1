@@ -182,6 +182,21 @@
 						<li><a href="/admins/pedidos/prenda"><i class="fa fa-list"></i> Renda do Pátio</a></li>
 					</ul>
 				</li>
+				<br>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-users"></i>
+						<span>Usuários</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="/admins/usuarios/create"><i class="fa fa-plus"></i> Adicionar Usuários</a></li>
+						<li><a href="/admins/usuarios/"><i class="fa fa-list"></i> Ver Lista</a></li>
+						{{-- <li><a href="/admins/usuarios"><i class="fa fa-list"></i> Permissão</a></li> --}}
+					</ul>
+				</li>
 
 			</ul>
 		</section>

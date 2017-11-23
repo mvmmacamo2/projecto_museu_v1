@@ -3,15 +3,6 @@
 @section('content')
 
 <div class="row">
-  <div class="col-lg-10">
-    <h1 class="page-header">Visita Guiada Singular</h1>
-  </div>
-
-</div>
-
-<!-- /.row -->
-
-<div class="row">
   <div class="col-lg-12">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -64,7 +55,7 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        {{$p->descricao}}.. 
+                        {{$p->descricao}}
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
