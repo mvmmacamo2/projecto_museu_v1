@@ -1,15 +1,9 @@
 @extends('layouts.master-admin')
 
 @section('content')
-<div class="row">
-    <div class="col-lg-12">
-        <h3 class="page-header">Adicionar Eventos</h3>
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
 <!-- /.row -->
 <div class="row">
-    <div class="col-lg-10">
+    <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
                 Editar Evento
@@ -17,7 +11,7 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
 
-             <form method="post" action="/admins/eventos">
+               <form method="post" action="/admins/eventos">
 
                 {!! csrf_field() !!}
                 <input type="hidden" name="_method" value="PUT">
@@ -123,24 +117,13 @@
 
                     </div>
                 </div>
-
                 <div class="form-group">
-                    <div class="col-md-6 col-md-offset-4">
-                        <button type="submit" class="btn btn-primary">
-                            Actualizar
-                        </button>
-                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Actualizar
+                    </button>
                 </div>
-
-
+                
             </form>
-
-
-
-
-
-
-
 
         </div>
         <!-- /.panel-body -->
