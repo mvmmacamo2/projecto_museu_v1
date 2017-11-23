@@ -114,7 +114,7 @@ class Exposicao_adminController extends Controller
             }
         }
 
-        $exposicao = new Exposicao;
+        // $exposicao = new Exposicao;
 
         $exposicao = Exposicao::find($id);
 
