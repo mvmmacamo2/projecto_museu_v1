@@ -1,6 +1,6 @@
 @extends('layouts.master-admin')
 
-@section('content-admin')
+@section('content')
 <div class="row">
     <div class="col-lg-12">
         <h3 class="page-header">Adicionar Eventos</h3>
@@ -17,7 +17,7 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
 
-               <form method="post" action="/admins/eventos">
+             <form method="post" action="/admins/eventos">
 
                 {!! csrf_field() !!}
                 <input type="hidden" name="_method" value="PUT">

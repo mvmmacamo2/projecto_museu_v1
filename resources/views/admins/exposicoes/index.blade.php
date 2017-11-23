@@ -1,6 +1,6 @@
 @extends('layouts.master-admin')
 
-@section('content-admin')
+@section('content')
 <div class="row">
 	<div class="col-lg-10">
 		<h1 class="page-header">Exposições</h1>
@@ -42,7 +42,7 @@
 								<a href="">
 									<button class="btn btn-danger">Apagar</button>
 								</a>s
-								
+
 							</td>
 						</tr>
 						@endforeach

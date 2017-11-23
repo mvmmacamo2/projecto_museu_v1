@@ -1,6 +1,6 @@
 @extends('layouts.master-admin')
 
-@section('content-admin')
+@section('content')
 <div class="row">
 	<div class="col-lg-12">
 		<h3 class="page-header">Adicionar Eventos</h3>

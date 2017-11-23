@@ -122,8 +122,8 @@
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li class="active"><a href="/emprestimos/create"><i class="fa fa-plus"></i> Criar Exposição</a></li>
-						<li class="active"><a href="/emprestimos"><i class="fa fa-list"></i> Ver Exposição</a></li>
+						<li class="active"><a href="/admins/exposicoes/create"><i class="fa fa-plus"></i> Criar Exposição</a></li>
+						<li class="active"><a href="/admins/exposicoes"><i class="fa fa-list"></i> Ver Exposição</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
@@ -135,8 +135,8 @@
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="/usuarios/create"><i class="fa fa-plus"></i> Criar Galeria</a></li>
-						<li><a href="/usuarios"><i class="fa fa-list"></i> Ver Galeria</a></li>
+						<li><a href="/admins/galerias/create"><i class="fa fa-plus"></i> Criar Galeria</a></li>
+						<li><a href="/admins/galerias/"><i class="fa fa-list"></i> Ver Galeria</a></li>
 					</ul>
 				</li>
 
@@ -149,8 +149,8 @@
 						</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="/clientes/create"><i class="fa fa-plus"></i> Adicionar Eventos</a></li>
-						<li><a href="/clientes"><i class="fa fa-list"></i> Ver Eventos</a></li>
+						<li><a href="/admins/eventos/create"><i class="fa fa-plus"></i> Adicionar Eventos</a></li>
+						<li><a href="/admins/eventos/"><i class="fa fa-list"></i> Ver Eventos</a></li>
 					</ul>
 				</li>
 

@@ -109,14 +109,14 @@ Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda')->middle
 Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middleware('autenticacao');
 
 
-Route::resource('/admins/usuarios', 'UserController');
-Route::resource('/admins/usuario', 'PerfilController');
+Route::resource('/admins/usuarios', 'UserController')->middleware('autenticacao');
+Route::resource('/admins/usuario', 'PerfilController')->middleware('autenticacao');
 
 
 
-Route::resource('/admins/galerias', 'GaleriaController');
+Route::resource('/admins/galerias', 'GaleriaController')->middleware('autenticacao');
 
-Route::resource('/admins/galerias', 'Galeria_adminController');
+Route::resource('/admins/galerias', 'Galeria_adminController')->middleware('autenticacao');
 
 // Rotas De escolas
 Route::group(['middleware'=>'escola'], function (){
