@@ -114,7 +114,7 @@
 			<!-- sidebar menu: : style can be found in sidebar.less -->
 			<ul class="sidebar-menu" data-widget="tree">
 				<li class="header"><i class="fa fa-dashboard"></i> Menu</li>
-				<li class="active treeview">
+				<li class="treeview">
 					<a href="#">
 						<i class="fa  fa-th-large"></i> <span>Exposição</span>
 						<span class="pull-right-container">
@@ -139,6 +139,7 @@
 						<li><a href="/usuarios"><i class="fa fa-list"></i> Ver Galeria</a></li>
 					</ul>
 				</li>
+
 				<li class="treeview">
 					<a href="#">
 						<i class="fa  fa-users"></i>
@@ -149,6 +150,24 @@
 					</a>
 					<ul class="treeview-menu">
 						<li><a href="/clientes/create"><i class="fa fa-plus"></i> Adicionar Eventos</a></li>
+						<li><a href="/clientes"><i class="fa fa-list"></i> Ver Eventos</a></li>
+					</ul>
+				</li>
+
+				<li class="treeview">
+					<a href="#">
+						<i class="fa  fa-users"></i>
+						<span>Pedidos</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="/clientes/create"><i class="fa fa-plus"></i> Adicionar Eventos</a></li>
+						<li><a href="/admins/pedidos/visitaguiadaescolar"><i class="fa fa-list"></i> Visitas Guiadas Escolares</a></li>
+						<li><a href="/admins/pedidos/visitaguiadasingular"><i class="fa fa-list"></i> Visitas Guiadas Singulares</a></li>
+						<li><a href="/admins/pedidos/prenda"><i class="fa fa-list"></i> Renda do Pátio</a></li>
+						<li><a href="/admins/eventos"><i class="fa fa-list"></i> Novos Pedidos</a></li>
 						<li><a href="/clientes"><i class="fa fa-list"></i> Ver Eventos</a></li>
 					</ul>
 				</li>
