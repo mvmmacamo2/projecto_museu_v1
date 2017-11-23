@@ -215,9 +215,7 @@
 
 @yield('content')
 
-
 <!-- Footer Section -->
-<<<<<<< HEAD
 <footer>
   <!-- Container Starts -->
   <div class="container">
@@ -226,12 +224,16 @@
       <!-- Footer Widget Starts -->
       <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
         <h3 class="small-title">
-          Sobre Nós
+          CONTACTO
         </h3>
         <p>
-          Etiam ornare condimentum massa et scelerisque. Mauris nibh ipsum, laoreet at venenatis ac, rutrum sed risus,
+          Museu da Moeda Rua Consiglieri Pedroso Maputo
+          Contacto 84 533 6565
+          De 3ª a 6ª feiras: das 11:00h às 17:00h;
+          Sábado: das 9:00h às 15:00h;
+          Domingo e Feriados: das 14:00h às 17:00h;
+          2ª feira: Encerrada.
         </p>
-        <p>Aliquam magna nibh, mattis a urna nec. Semper venenatis magna.</p>
         <div class="social-footer">
           <a href="#"><i class="fa fa-facebook icon-round"></i></a>
           <a href="#"><i class="fa fa-twitter icon-round"></i></a>
@@ -239,166 +241,103 @@
           <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
         </div>
       </div><!-- Footer Widget Ends -->
-
-
-
       <!-- Footer Widget Starts -->
       <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
         <h3 class="small-title">
-          Nossa Localização
+          Localização
         </h3>
         <div class="plain-flicker-gallery">
-          <!--   <a href="#" title="Pan Masala"><img src="/engage/assets/img/flicker/img1.jpg" alt=""></a>
-            <a href="#" title="Sports Template for Joomla"><img src="/engage/assets/img/flicker/img2.jpg" alt=""></a> -->
-            Mapa
-          <!-- <a href="" title="Apple Keyboard"><img src="/engage/assets/img/flicker/img3.jpg" alt=""></a>
-          <a href="" title="Hard Working"><img src="/engage/assets/img/flicker/img4.jpg" alt=""></a>
-          <a href="" title="Smile"><img src="/engage/assets/img/flicker/img5.jpg" alt=""></a>
-          <a href="" title="Puzzle"><img src="/engage/assets/img/flicker/img6.jpg" alt=""></a> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div><!-- Footer Widget Ends -->
-
       <!-- Footer Widget Starts -->
       <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
         <h3 class="small-title">
-          Mensagem
+          SOBRE
         </h3>
-        <div class="contact-us">
-          <p>Tellus aliquam at. Pellentesque gravida vel eros et pretium</p>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your name">
-              =======
-              <footer>
-                <!-- Container Starts -->
-                <div class="container">
-                  <!-- Row Starts -->
-                  <div class="row section">
-                    <!-- Footer Widget Starts -->
-                    <div class="footer-widget col-md-4 col-xs-12 wow fadeIn">
-                      <h3 class="small-title">
-                        CONTACTO
-                      </h3>
-                      <p>
-                        Museu da Moeda Rua Consiglieri Pedroso Maputo
-                        Contacto 84 533 6565
-                        De 3ª a 6ª feiras: das 11:00h às 17:00h; 
-                        Sábado: das 9:00h às 15:00h; 
-                        Domingo e Feriados: das 14:00h às 17:00h; 
-                        2ª feira: Encerrada.
-                      </p> 
-                      <div class="social-footer">
-                        <a href="#"><i class="fa fa-facebook icon-round"></i></a>
-                        <a href="#"><i class="fa fa-twitter icon-round"></i></a>
-                        <a href="#"><i class="fa fa-linkedin icon-round"></i></a>
-                        <a href="#"><i class="fa fa-google-plus icon-round"></i></a>
-                      </div>           
-                    </div><!-- Footer Widget Ends -->
-                    
-                    
+        <div class="horizontal-menu">
+          <a href="/historias/museu" class="active">Museu da Moeda</a>
+          <br><br>
+          <a href="/historias/amarela">História da Casa Amarela</a>
+          <br><br>
+          <a href="#">Quem Somos</a>
+        </div>
+      </div><!-- Footer Widget Ends -->
+    </div><!-- Row Ends -->
+  </div><!-- Container Ends -->
+  <!-- Copyright -->
+  <div id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <p class="copyright-text">
+            ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
+          </p>
+        </div>
+        <div class="col-md-6  col-sm-6">
+          <ul class="nav nav-inline  justify-content-end ">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Início -</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Sitemap -</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Políticas De Privacidade -</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Termos de Serviço</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright  End-->
+</footer>
 
-                    <!-- Footer Widget Starts -->
-                    <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".5s">
-                      <h3 class="small-title">
-                        Localização
-                      </h3>
-                      <div class="plain-flicker-gallery">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14348.154694117433!2d32.56303131580354!3d-25.966771980171107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3433553a713d269!2sMuseu+da+Moeda!5e0!3m2!1spt-PT!2smz!4v1508504507925" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                      </div> 
-                    </div><!-- Footer Widget Ends -->
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top">
+  <i class="fa fa-angle-up">
+  </i>
+</a>
 
-                    <!-- Footer Widget Starts -->
-                    <div class="footer-widget col-md-4 col-xs-12 wow fadeIn" data-wow-delay=".8s">
-                      <h3 class="small-title">
-                       SOBRE
-                     </h3>
-                     <div class="horizontal-menu">
-                      <a href="/historias/museu" class="active">Museu da Moeda</a> 
-                      <br><br>
-                      <a href="/historias/amarela">História da Casa Amarela</a>
-                      <br><br>
-                      <a href="#">Quem Somos</a>
-                      >>>>>>> 927729217da3ee1a6f092ee24bfe3a565343eebb
-                    </div>
-                  </div><!-- Footer Widget Ends -->
-                </div><!-- Row Ends -->
-              </div><!-- Container Ends -->
-              
-              <!-- Copyright -->
-              <div id="copyright">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                      <p class="copyright-text">
-                        ©  2017. Todos Direitos Reservados. Developers <a href="#">MacHuMac</a>
-                      </p>
-                    </div>
-                    <div class="col-md-6  col-sm-6">
-                      <ul class="nav nav-inline  justify-content-end ">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="/">Início -</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"> Sitemap -</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"> Políticas De Privacidade -</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"> Termos de Serviço</a>
-                        </li>
-                      </ul>        
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Copyright  End-->
-              
-            </footer>
-            <!-- Footer Section End-->
-
-            <!-- Go To Top Link -->
-            <a href="#" class="back-to-top">
-              <i class="fa fa-angle-up">
-              </i>
-            </a>
-
-            <!-- JavaScript & jQuery Plugins -->
-            <script src="/engage/assets/js/jquery-min.js"></script>
-            <!-- Tether Js -->
-            <script src="/engage/assets/js/popper.min.js"></script>
-            <!-- Bootstrap JS -->
-            <script src="/engage/assets/js/bootstrap.min.js"></script>
-            <!-- Color Switcher Js -->
-            <!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
-            <!--Text Rotator-->
-            <script src="/engage/assets/js/jquery.mixitup.js"></script>
-            <!--WOW Scroll Spy-->
-            <script src="/engage/assets/js/wow.js"></script>
-            <!-- OWL Carousel -->
-            <script src="/engage/assets/js/owl.carousel.js"></script>
-            <!-- WayPoint -->
-            <script src="/engage/assets/js/waypoints.min.js"></script>
-            <!-- CounterUp -->
-            <script src="/engage/assets/js/jquery.counterup.min.js"></script>
-            <!-- Slicknav -->
-            <script src="/engage/assets/js/jquery.counterup.min.js"></script>
-            <!-- ScrollTop -->
-            <script src="/engage/assets/js/jquery.slicknav.js"></script>
-            <!-- Appear -->
-            <script src="/engage/assets/js/jquery.appear.js"></script>
-            <!-- Vide js -->
-            <script src="/engage/assets/js/jquery.vide.js"></script>
-            <!-- All JS plugin Triggers -->
-            <script src="/engage/assets/js/main.js"></script>
+<!-- JavaScript & jQuery Plugins -->
+<script src="/engage/assets/js/jquery-min.js"></script>
+<!-- Tether Js -->
+<script src="/engage/assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="/engage/assets/js/bootstrap.min.js"></script>
+<!-- Color Switcher Js -->
+<!-- <script src="/engage/assets/js/color-switcher.js"></script> -->
+<!--Text Rotator-->
+<script src="/engage/assets/js/jquery.mixitup.js"></script>
+<!--WOW Scroll Spy-->
+<script src="/engage/assets/js/wow.js"></script>
+<!-- OWL Carousel -->
+<script src="/engage/assets/js/owl.carousel.js"></script>
+<!-- WayPoint -->
+<script src="/engage/assets/js/waypoints.min.js"></script>
+<!-- CounterUp -->
+<script src="/engage/assets/js/jquery.counterup.min.js"></script>
+<!-- Slicknav -->
+<script src="/engage/assets/js/jquery.counterup.min.js"></script>
+<!-- ScrollTop -->
+<script src="/engage/assets/js/jquery.slicknav.js"></script>
+<!-- Appear -->
+<script src="/engage/assets/js/jquery.appear.js"></script>
+<!-- Vide js -->
+<script src="/engage/assets/js/jquery.vide.js"></script>
+<!-- All JS plugin Triggers -->
+<script src="/engage/assets/js/main.js"></script>
 
 
-            <script src="bootstrap-4.0.0-beta/js/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-beta/js/jquery.min.js"></script>
 
-            <script type="text/javascript" src="/lightbox/dist/js/lightbox.js"></script>
-            <script src="/lightbox/dist/js/lightbox-plus-jquery.js" type="text/javascript"></script>
-            <script type="text/javascript">
-              yield('ajax')
-            </script>
-          </body>
-          </html>
+<script type="text/javascript" src="/lightbox/dist/js/lightbox.js"></script>
+<script src="/lightbox/dist/js/lightbox-plus-jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+  yield('ajax')
+</script>
+</body>
+</html>

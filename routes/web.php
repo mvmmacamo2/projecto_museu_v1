@@ -29,7 +29,7 @@ Route::get('/', function () {
 	$comentexposicao =DB::table('comtario_exposicaos')->get();
 	// return view('template_basic', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
 
-	return view('template_basic', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
+	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
 
 
 	
@@ -42,7 +42,7 @@ Route::get('/', function () {
 	
 	// $email = DB::table('users')->where('name', 'John')->value('email')
 	// $likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', '1')->get());
-		//return view('template_basic', compact('eventos'));
+		//return view('welcome', compact('eventos'));
    // dd($likesexposicao);
 
 	//$likesexposicao =DB::table('like_exposicaos')->groupBy('exposicao_id')->get();
@@ -59,9 +59,9 @@ Route::get('/', function () {
 	// 	//$likesexposicao =count(DB::table('like_exposicaos')->where('exposicao_id', $id)->get());
 	// 	$likesexposicao =DB::table('like_exposicaos')->where('exposicao_id', $id)->get();
 	// 	//dd($likesexposicao);
-	// 	return view('template_basic', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	// 	return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 
-	// 	//return view('template_basic', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	// 	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 	// }
 
 	//$likesexposicao =count(DB::table('like_exposicaos')->get());
@@ -69,11 +69,11 @@ Route::get('/', function () {
 
 
 
-	//return view('template_basic', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	//return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 
-	// return view('template_basic', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	// return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 	
-	// return view('template_basic', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
+	// return view('welcome', compact('eventos'), compact('exposicoes'))->with('nrlike',$likesexposicao);
 
 });
 

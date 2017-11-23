@@ -32,11 +32,11 @@ class HomeController extends Controller
         $nivel = $u->nivelacesso;
 
         if ($nivel == 'Administrador') {
-            return view('home-admin', compact('exposicoes', 'eventos','usuarios'));
+            return view('layouts.master-admin', compact('exposicoes', 'eventos','usuarios'));
         }elseif ($nivel=='Normal') {
-         return view('welcome', compact('exposicoes', 'eventos','usuarios'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
-         ; 
-     }else{
+           return view('welcome', compact('exposicoes', 'eventos','usuarios'))->with('nrlike',$likesexposicao)->with('comentexp', $comentexposicao);
+           ; 
+       }else{
         return view('welcome', compact('exposicoes', 'eventos','usuarios'));
 
     }
