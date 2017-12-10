@@ -271,6 +271,7 @@
         <div class="row">
             {{-- @forelse($exposicoes as $exposicao) --}}
             @foreach($exposicoes as $exposicao)
+            @if($exposicao->estado=='proccess')
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <!-- Blog Item Wrapper Starts-->
                 <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
@@ -333,6 +334,7 @@
             {{-- @empty --}}
             {{-- @endforelse --}}
             {{-- @endforeach --}}
+            @endif
             @endforeach
         </div><!-- Row Ends -->
     </div><!-- Container Ends -->
@@ -425,10 +427,6 @@
                         </div>
                     </div>
                 </div><!-- Blog Item Wrapper Ends-->
-            </div>
-            @else
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                Não há eventos agendados actualmente..!
             </div>
             @endif
             @endforeach

@@ -181,4 +181,8 @@
             </div>
             <!-- /.panel-footer -->
         </div>
+<<<<<<< HEAD
         @stop --}}
+=======
+        @stop
+>>>>>>> bdb621166c69eaa42e2c684c453909ffdf3848b2
