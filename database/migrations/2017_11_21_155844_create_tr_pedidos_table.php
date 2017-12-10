@@ -32,7 +32,7 @@ class CreateTrPedidosTable extends Migration
 
         DB::unprepared('
             CREATE TRIGGER tr_relatorio_pedido AFTER INSERT ON `visita_gusers` FOR EACH ROW
-            INSERT INTO relatio_pedidos (`nomeservico`, `user_id`,`descricao`) VALUES (\'Visita Guiada Individual\',NEW.usuario_id, NEW.descricao, NOW(),NOW());
+            INSERT INTO relatio_pedidos (`nomeservico`, `user_id`,`descricao`,`created_at`,`updated_at`) VALUES (\'Visita Guiada Individual\',NEW.usuario_id, NEW.descricao, NOW(),NOW());
             ');
     }
 
@@ -44,6 +44,6 @@ class CreateTrPedidosTable extends Migration
     public function down()
     {
         // Schema::dropIfExists('tr_pedidos');
-       DB::unprepared('DROP TRIGGER `tr_relatorio_pedido`');
-   }
+     DB::unprepared('DROP TRIGGER `tr_relatorio_pedido`');
+ }
 }

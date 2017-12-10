@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class relatio_pedido extends Model
 {
 	protected $fillable= [
-		'nomeservico','user_id','descricao','creared_at', 'updated_at'
+		'nomeservico','user_id','descricao','created_at', 'updated_at'
 
 	];
 }

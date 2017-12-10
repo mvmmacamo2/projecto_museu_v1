@@ -42,177 +42,179 @@
 
 </head>
 <body style="background-color: #fcf9fc";>
-    <!-- Header area wrapper starts -->
-    <header id="header-wrap">
-        <!-- Navbar Starts -->
-        <nav class="navbar navbar-expand-md">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">
-                        <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="main-menu">
-                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
-
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/historias/museu">Museu</a>
-                                <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/exposicoes">Exposição <span class="sr-only"></span></a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
-                                <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
-                                <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
-                            </div>
-                        </li>
-
-
-                        @if (Route::has('login'))
-                        @auth
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
-                            <div class="dropdown-menu">
-                                <a href="{{ route('home') }}">
-                                    Home
-                                </a>
-                                <a href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                                Logout
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
-                        </div>
-                    </li>
-                    @else
-                    <li class="nav-item active">
-                        <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
-                            <a class="dropdown-item" href="/register_org">Organização</a>
-                        </div>
-                    </li>
-                    @endauth
-                    @endif
-                </ul>
-                <form class="form-inline">
-                    <div class="top_search_con">
-                        <input class=" mr-sm-2" type="text" placeholder="Search Here ...">
-                        <span class="top_search_icon"><i class="icon-magnifier"></i></span>
-                    </div>
-                </form>
+  
+   
+   <!-- Header area wrapper starts -->
+   <header id="header-wrap">
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img src="/engage/assets/img/uem-logo-40x40.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <!-- Mobile Menu Start -->
-            <ul class="wpb-mobile-menu">
-                <li>
-                    <a class="active" href="index.html">Home</a>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">História</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/historias/museu">Museu</a>
+                            <a class="dropdown-item" href="/historias/amarela">Casa Amarela</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/exposicoes">Exposição <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/eventos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/servicos/escola">Actividades Com Escolas</a>
+                            <a class="dropdown-item" href="/servicos/individual">Visitas Guiadas Individual</a>
+                            <a class="dropdown-item" href="/servicos/patio">Patio para Eventos</a>
+                        </div>
+                    </li>
+
+
+                    @if (Route::has('login'))
+                    @auth
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+                        <div class="dropdown-menu">
+                            <a href="{{ route('home') }}">
+                                Home
+                            </a>
+                            <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">Pages</a>
-                    <ul>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="about-us2.html">About Us 2</a></li>
-                        <li><a href="team-page.html">Team Members</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="service2.html">Services 2</a></li>
-                        <li><a href="contact1.html">Contact Us</a></li>
-                        <li><a href="contact1.html">Contact Us 2</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="404.html">404</a></li>
-                    </ul>
+                @else
+                <li class="nav-item active">
+                    <a class="dropdown-item active" href="{{ route('login') }}"><b>Login</b></a>
                 </li>
-                <li>
-                    <a href="#">Shortcodes</a>
-                    <ul>
-                        <li><a href="accordions.html">Accordions</a></li>
-                        <li><a href="tabs.html">Tabs</a></li>
-                        <li><a href="buttons.html">Buttons</a></li>
-                        <li><a href="skills.html">Progress Bars</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="clients.html">Clients</a></li>
-                        <li><a href="icon.html">Icon Boxes</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="carousel.html">Carousel</a></li>
-                        <li><a href="maps.html">Google Maps</a></li>
-                        <li><a href="pricing.html">Pricing tables</a></li>
-                        <li><a href="notification.html">Notification</a></li>
-                    </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registar</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ route('register') }}">Singular</a>
+                        <a class="dropdown-item" href="/register_org">Organização</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                    <ul>
-                        <li><a href="portfolio-col-2.html">Portfolio 2 Columns</a></li>
-                        <li><a href="portfolio-col-3.html">Portfolio 3 Columns</a></li>
-                        <li><a href="portfolio-col-4.html">Portfolio 4 Columns</a></li>
-                        <li><a href="portfolio-item.html">Portfolio Single</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                    <ul>
-                        <li><a href="sidebar-right.html">Sidebar Right</a></li>
-                        <li><a href="sidebar-left.html">Sidebar Left</a></li>
-                        <li><a href="sidebar-full.html">Full Width</a></li>
-                        <li><a href="blog-single.html">Single Post</a></li>
-                        <li><a href="blog-grids.html">Blog Grids</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Contact Us</a>
-                    <ul>
-                        <li><a href="contact1.html">Contact us 1</a></li>
-                        <li><a href="contact2.html">Contact us 2</a></li>
-                    </ul>
-                </li>
+                @endauth
+                @endif
             </ul>
-            <!-- Mobile Menu End -->
+            <form class="form-inline">
+                <div class="top_search_con">
+                    <input class=" mr-sm-2" type="text" placeholder="Search Here ...">
+                    <span class="top_search_icon"><i class="icon-magnifier"></i></span>
+                </div>
+            </form>
         </div>
-    </nav>
-    <!-- Main Carousel Section -->
-    <div id="carousel-area">
-        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-slider" data-slide-to="1"></li>
-                <li data-target="#carousel-slider" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="/engage/assets/img/slider/bg-4.jpg" alt="">
-                    <div class="carousel-caption">
-                        <h2 class="white">
-                            Museu Nacional Da Moeda
-                        </h2>
-                        <h3>
-                            ...
-                        </h3>
+        <!-- Mobile Menu Start -->
+        <ul class="wpb-mobile-menu">
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Pages</a>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us2.html">About Us 2</a></li>
+                    <li><a href="team-page.html">Team Members</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="service2.html">Services 2</a></li>
+                    <li><a href="contact1.html">Contact Us</a></li>
+                    <li><a href="contact1.html">Contact Us 2</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="404.html">404</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Shortcodes</a>
+                <ul>
+                    <li><a href="accordions.html">Accordions</a></li>
+                    <li><a href="tabs.html">Tabs</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                    <li><a href="skills.html">Progress Bars</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="icon.html">Icon Boxes</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="carousel.html">Carousel</a></li>
+                    <li><a href="maps.html">Google Maps</a></li>
+                    <li><a href="pricing.html">Pricing tables</a></li>
+                    <li><a href="notification.html">Notification</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="portfolio-col-2.html">Portfolio 2 Columns</a></li>
+                    <li><a href="portfolio-col-3.html">Portfolio 3 Columns</a></li>
+                    <li><a href="portfolio-col-4.html">Portfolio 4 Columns</a></li>
+                    <li><a href="portfolio-item.html">Portfolio Single</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+                <ul>
+                    <li><a href="sidebar-right.html">Sidebar Right</a></li>
+                    <li><a href="sidebar-left.html">Sidebar Left</a></li>
+                    <li><a href="sidebar-full.html">Full Width</a></li>
+                    <li><a href="blog-single.html">Single Post</a></li>
+                    <li><a href="blog-grids.html">Blog Grids</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+                <ul>
+                    <li><a href="contact1.html">Contact us 1</a></li>
+                    <li><a href="contact2.html">Contact us 2</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+    </div>
+</nav>
+<!-- Main Carousel Section -->
+<div id="carousel-area">
+    <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="/engage/assets/img/slider/bg-4.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2 class="white">
+                        Museu Nacional Da Moeda
+                    </h2>
+                    <h3>
+                        ...
+                    </h3>
                         <!-- <a class="btn btn-lg btn-common" href="#">
                           <i class="fa fa-download">
                           </i>
@@ -570,7 +572,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
-<script type="text/javascript">
+<script src="{{ asset('js/app.js') }}"></script>
+
+{{-- <script type="text/javascript">
 
     $(document).on('click', '.like', function (event) {
         event.preventDefault();
@@ -594,6 +598,6 @@
 
 
     </script>
-
+    --}}
 </body>
 </html>
