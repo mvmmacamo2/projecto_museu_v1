@@ -44426,11 +44426,64 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-	mounted: function mounted() {
-		console.log('Component mounted.');
-	}
+	data: function data() {
+		return {};
+	},
+	created: function created() {},
+
+
+	methods: {}
 });
 
 /***/ }),
@@ -44441,9 +44494,113 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [_vm._v("\n\tsdbdncbns\n")])
+  return _vm._m(0, false, false)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-fluid" }, [
+      _c("div", { staticClass: "box box-info" }, [
+        _c("div", { staticClass: "box-header with-border" }, [
+          _c("h3", { staticClass: "box-title" }, [
+            _vm._v(" Lista de Utilizadores")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "box-tools pull-right" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-box-tool",
+                attrs: { type: "button", "data-widget": "collapse" }
+              },
+              [_c("i", { staticClass: "fa fa-minus" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-box-tool",
+                attrs: { type: "button", "data-widget": "remove" }
+              },
+              [_c("i", { staticClass: "fa fa-times" })]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "box-body" }, [
+          _c("div", { staticClass: "table-responsive" }, [
+            _c("table", { staticClass: "table no-margin" }, [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", [_vm._v("Order ID")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Item")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Status")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Popularity")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [
+                    _c(
+                      "a",
+                      { attrs: { href: "pages/examples/invoice.html" } },
+                      [_vm._v("OR9842")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Call of Duty IV")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("span", { staticClass: "label label-success" }, [
+                      _vm._v("Shipped")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "sparkbar",
+                        attrs: { "data-color": "#00a65a", "data-height": "20" }
+                      },
+                      [_vm._v("90,80,90,-70,61,-83,63")]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "box-footer clearfix" }, [
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-sm btn-info btn-flat pull-left",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [_vm._v("Place New Order")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-sm btn-default btn-flat pull-right",
+              attrs: { href: "javascript:void(0)" }
+            },
+            [_vm._v("View All Orders")]
+          )
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

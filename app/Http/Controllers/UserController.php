@@ -15,7 +15,9 @@ class UserController extends Controller
     public function index()
     {
         $usuarios = User::all();
-        return view('admins.usuario.index', compact('usuarios'));
+        // return view('admins.usuario.index', compact('usuarios'));
+
+        return response()->json(['users'=>$usuarios]);
     }
 
 // function temporaria

@@ -12,8 +12,8 @@
 
             <div id="app">
 
-               <div class="panel-heading">
-                Lista de Usuários
+             <div class="panel-heading">
+                 {{--  Lista de Usuários --}}
             </div>
 
             <!-- /.panel-heading -->

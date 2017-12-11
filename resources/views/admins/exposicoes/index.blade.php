@@ -28,7 +28,7 @@
 							<td>
 								<img style="max-width: 40px;" src="/expo-upload/{{$exposicao->imagem}}">
 							</td>
-							<td>{{$exposicao->estado}}</td>
+							<td class="label label-success label-sm">{{$exposicao->estado}}</td>
 							<td>
 								<a href="/admins/exposicoes/{{ $exposicao->id }}/edit">
 									<button class="btn btn-success">Editar</button>
