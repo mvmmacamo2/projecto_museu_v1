@@ -1,13 +1,13 @@
 <template>
-    <div class="container" id="app">
-
-    </div>
+	<div class="container">
+		sdbdncbns
+	</div>
 </template>
 
 <script>
 export default {
-    mounted() {
-        console.log('Component mounted.')
-    }
+	mounted() {
+		console.log('Component mounted.')
+	}
 }
 </script>
