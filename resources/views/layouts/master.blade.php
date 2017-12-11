@@ -336,6 +336,7 @@
 
 <script type="text/javascript" src="/lightbox/dist/js/lightbox.js"></script>
 <script src="/lightbox/dist/js/lightbox-plus-jquery.js" type="text/javascript"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript">
   yield('ajax')
 </script>
