@@ -1,81 +1,3 @@
-{{-- @extends('layouts.master-admin')
-
-@section('content')
-
-<div class="row">
-    <div class="col-lg-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                Nome Da Exposição: {{ $exposicao->nome }}
-            </div>
-            <!-- /.panel-heading -->
-            <div class="panel-body">
-                <form class="form-horizontal" method="POST" action="/admins/exposicoes/{{$exposicao->id}}" enctype="multipart/form-data">  
-                    {{ method_field('PATCH') }}
-                    {{ csrf_field() }}
-
-                    <input type="hidden" name="estado" value="{{ $exposicao->estado }}">
-
-                    <div class="form-group{{ $errors->has('nome') ? ' has-error' : '' }}">
-                        <label for="nome" class="col-md-4 control-label">Nome</label>
-
-                        <div class="col-md-6">
-                            <input id="nome" type="text" class="form-control" name="nome" value="{{ $exposicao->nome }}" required autofocus>
-
-                            @if ($errors->has('nome'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('nome') }}</strong>
-                            </span>
-                            @endif
-                        </div>
-                    </div>
-
-                    <div class="form-group{{ $errors->has('descricao') ? ' has-error' : '' }}">
-                        <label for="descricao" class="col-md-4 control-label">Descrição</label>
-
-                        <div class="col-md-6">
-                            <input id="descricao" type="text" class="form-control" name="descricao" value="{{ $exposicao->descricao }}" required autofocus>
-
-                            @if ($errors->has('descricao'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('descricao') }}</strong>
-                            </span>
-                            @endif
-                        </div>
-                    </div>
-
-                    <div class="form-group{{ $errors->has('imagem') ? ' has-error' : '' }}">
-                        <label for="imagem" class="col-md-4 control-label">Imagem</label>
-
-                        <div class="col-md-6">
-                            <input id="imagem" type="file" class="form-control" name="imagem" value="{{ $exposicao->imagem }}" required>
-
-                            @if ($errors->has('imagem'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('imagem') }}</strong>
-                            </span>
-                            @endif
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-6 col-md-offset-4">
-                            <button type="submit" class="btn btn-primary">
-                                Gravar Alteração
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!-- /.panel-body -->
-        </div>
-        <!-- /.panel -->
-    </div>
-    <!-- /.col-lg-12 -->
-</div>
-@stop --}}
-
-
 
 @extends('layouts.master-admin')
 
@@ -84,18 +6,22 @@
     <div class="row">
         <div class="col-md-11">
             <div class="panel panel-default">
-                <div class="panel-heading">Criar Exposição</div>
+
+                <div class="panel-heading">Editar Exposição</div>
 
                 <div class="panel-body">
 
-
-                    <form action="/admins/exposicoes/{{$exposicao->id}}" method="POST" enctype="multipart/form-data">
+                    {{--/admins/exposicoes/{{$exposicao->id}}--}}
+                    {{--action=""--}}
+                    {{--{{ method_field('PATCH') }}--}}
+                    <form method="POST" action="/admins/exposicoes/{{$exposicao->id}}" enctype="multipart/form-data" id="form_edit">
+                        Estado de Esposicao: <strong class="card-primary">{{$exposicao->estado}}</strong>
                         {{ method_field('PATCH') }}
                         {{ csrf_field() }}
 
-                        <input name="estado" type="hidden" value="desactivado" class="form-control pull-right" id="estado">
+                        {{--<input name="estado" type="hidden" value="" class="form-control pull-right" id="estado">--}}
 
-                        {{-- <input name="id_usuario" type="hidden" value="{{Auth::user()->id}}" class="form-control pull-right" id="id_usuario"> --}}
+                         <input name="id_usuario" type="hidden" value="{{Auth::user()->id}}" class="form-control pull-right" id="id_usuario">
 
                         <div class="row">
                             <div class="col-lg-6">
@@ -141,8 +67,8 @@
                                             <i class="fa fa-user"></i>
                                         </div>
                                         <select id="estado" name="estado" class="form-control">
-                                            <option>proccess</option>
-                                            <option>delete</option>
+                                            <option>on</option>
+                                            <option>off</option>
                                         </select>
                                     </div>
                                     <!-- /.input group -->
@@ -157,7 +83,7 @@
                                         <div class="input-group-addon">
                                             <i class="fa  fa-ellipsis-h"></i>
                                         </div>
-                                        <input class="form-control" type="file" name="imagem" id="imagem">
+                                        <input class="form-control" type="file" name="imagem" id="imagem" value="{{$exposicao->imagem}}">
                                     </div>
                                     <!-- /.input group -->
                                 </div>
@@ -166,9 +92,8 @@
                         </div>
                         <!-- /.row -->
 
+                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Gravar </button>
 
-                        <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Gravar
-                        </button>
                     </form>
 
 
@@ -176,5 +101,62 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-solid">
+                <div class="box-header with-border">
+                    <i class="fa fa-text-width"></i>
+
+                    <h3 class="box-title">Detalhes</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <dl>
+                        <dt>Nome da Exposicao</dt>
+                        <dd>{{$exposicao->nome}}</dd>
+                        <dt>Descricao</dt>
+                        <dd>{{$exposicao->descricao}}</dd>
+                        <dt>Estado</dt>
+                        <dd>{{ $exposicao->estado }}</dd>
+                    </dl>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
 </div>
+
+
+@endsection
+
+@section('js')
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $(document).on('click', '#form_edit', function (event) {
+            event.preventDefault();
+
+            alert('eh melhor Editar')
+            var data = $(this).serialize()
+            console.log('data', data)
+            // var url = $(this).attr('action')
+            // var post = $(this).attr('method')
+            // $.ajax({
+            //     type: post,
+            //     url: url,
+            //     data: data,
+            //     dataType: 'json',
+            //     success: function (data) {
+            //         console.log('data-save', data)
+            //     }
+            // });
+        })
+
+    </script>
 @endsection

@@ -19,6 +19,8 @@ Route::get('/', function () {
 	$exposicoes = Exposicao::all();
 
 
+
+
 	$likeevento = DB::table('likeeventos')->get();
 	$comentarioevento = DB::table('comtario_eventos')->get();
 	
@@ -79,9 +81,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::post('like_evento', 'LikeExposicaoController@storelikeevento');
+Route::get('nr_evento', 'LikeExposicaoController@likeEventosNumber');
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/register_org', 'UserController@reg');
+
+//Route::post('/admins/exposicoes2', 'Exposicao_adminController')->middleware('autenticacao');
 
 Route::resource('/admins/exposicoes', 'Exposicao_adminController')->middleware('autenticacao');
 Route::resource('/admins/eventos', 'Evento_adminController')->middleware('autenticacao');
@@ -94,6 +102,9 @@ Route::get('/exposicoes', 'ExposicaoController@index');
 Route::get('/eventos', 'EventoController@index');
 
 Route::resource('/usuario_galerias', 'Usuario_GaleriaController');
+
+Route::post('escola-save', 'ServicosController@SavePadidoEscola');
+Route::resource('admins/escolas', 'EscolaAdminController');
 
 
 // rotas Relacionadas a  serviços

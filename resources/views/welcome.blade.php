@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <!-- Viewport Meta Tag -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <title>
     Museu Da Moeda
 </title>
@@ -95,7 +96,7 @@
                     @auth
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+                        <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
                         <div class="dropdown-menu">
                             <a href="{{ route('home') }}">
                                 Home
@@ -271,7 +272,7 @@
         <div class="row">
             {{-- @forelse($exposicoes as $exposicao) --}}
             @foreach($exposicoes as $exposicao)
-            @if($exposicao->estado=='proccess')
+            @if($exposicao->estado=='on')
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <!-- Blog Item Wrapper Starts-->
                 <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.9s">
@@ -405,8 +406,9 @@
         </h1>
         <!-- Row Starts -->
         <div class="row">
+
             @foreach($eventos as $evento)
-            @if($evento->estado=='proccess')
+            @if($evento->estado=='on')
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <!-- Blog Item Starts -->
                 <div class="blog-item-wrapper wow fadeIn" data-wow-delay="0.3s">
@@ -416,14 +418,26 @@
                         </a>
                     </div>
                     <div class="blog-item-text">
-                        <h3 class="small-title"><a href="#">{{ $evento->nome}}</a></h3>
+                        {{--<h3 class="small-title"><a href="#">1 likes</a></h3>--}}
                         <p>
                             {{$evento->descricao}}
                         </p>
                         <div class="blog-one-footer">
-                            <a href="#">Read More</a>
-                            <a href="#"><i class="icon-heart"></i> 59 Likes</a>
-                            <a href="#"><i class="icon-bubbles"></i> 120 Comments</a>
+
+                            <form id="form_evento" method="POST" action="{{URL::to('like_evento') }}">
+                                <input type="hidden" name="like" value="1">
+                                @if(Auth()->user() != null)
+                                <input type="hidden" name="usuario_id" value="{{ Auth()->user()->id }}">
+                                @endif
+                                <input type="hidden" name="evento_id" value="{{ $evento->id }}">
+                                <input type="hidden" name="evento_id" id="id_evento" value="{{$evento->id}}" }>
+                                {{--<a href="#">Read More</a>--}}
+                                <a href="#" id="id_like_exposicao"><i class="icon-heart"></i> 2 Likes</a>
+                                {{--<a href="#"><i class="icon-bubbles"></i> 120 Comments</a>--}}
+                            </form>
+                            {{--onClick="document.getElementById('like_form').submit();"--}}
+                            {{--<a href="#" id="id_like_exposicao" onClick=""><i class="icon-heart"></i> 59 Likes</a>---}}
+                            {{--<a href="#"><i class="icon-bubbles"></i> 120 Comments</a>--}}
                         </div>
                     </div>
                 </div><!-- Blog Item Wrapper Ends-->
@@ -433,6 +447,7 @@
         </div><!-- Row Ends -->
     </div><!-- Container Ends -->
 </section>
+   <button id="btnlike" class="btn btn-success">Like</button>
 <!-- blog Section End -->
 <!-- Footer Section -->
 <footer>
@@ -551,7 +566,8 @@
 <!-- Slicknav -->
 <script src="/engage/assets/js/jquery.counterup.min.js"></script>
 <!-- ScrollTop -->
-<script src="/engage/assets/js/jquery.slicknav.js"></script>
+{{--<script src="/engage/assets/js/jquery.slicknav.js"></script>--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js"></script>
 <!-- Appear -->
 <script src="/engage/assets/js/jquery.appear.js"></script>
 <!-- Vide js -->
@@ -571,31 +587,108 @@
 
 
 <script src="{{ asset('js/app.js') }}"></script>
-
-{{-- <script type="text/javascript">
-
-    $(document).on('click', '.like', function (event) {
-        event.preventDefault();
-
-        alert('Miguel');
-
+   {{--<script src="SlickNav/dist/jquery.slicknav.min.js"></script>--}}
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
     });
 
-        // var id =$(this).attr('id');
-        // var confirme =confirm("Deseja realmente Excluir?");
-        // if (confirme==true){
-        //     $(visualiza());
-        //     $.post('deletarusu.php',{'id': id}, function (resultado) {
-        //         $(visualiza());
-        //     });
-        //     $(visualiza());
-        // }else{
-
-        // }
+    $(document).on('click', '#btnlike', function (event) {
+        event.preventDefault();
+        alert('Miguel')
+        var logDiv = $("#id_like_exposicao");
+        $.get("{{URL::to('nr_evento')}}", function (data) {
+            console.log('evento', data)
 
 
+            logDiv.append(data.data)
+        })
+    })
 
-    </script>
-    --}}
+
+    $(document).on('click', '#form_evento', function (event) {
+     event.preventDefault();
+     var data = $(this).serialize()
+     var url = $(this).attr('action')
+     var post = $(this).attr('method')
+        $.ajax({
+            type: post,
+            url: url,
+            data: data,
+            dataType: 'json',
+            success: function (data) {
+                console.log('data-save', data)
+            }
+        });
+    })
+
+
+    // $(document).on('click', '#id_like_exposicao', function (event) {
+    //  event.preventDefault();
+    //  alert('Miguel')
+    //  })
+    //  $(document).on('click', '#form_evento', function (event) {
+    //      event.preventDefault();
+    //      alert('Miguel')
+    //  })
+
+    // $(document).on('click', '#id_like_exposicao', function (event) {
+    //     event.preventDefault();
+    //     alert('Miguel')
+    // })
+
+    // var id =$(this).attr('id');
+    // var confirme =confirm("Deseja realmente Excluir?");
+    // if (confirme==true){
+    //     $(visualiza());
+    //     $.post('deletarusu.php',{'id': id}, function (resultado) {
+    //         $(visualiza());
+    //     });
+    //     $(visualiza());
+    // }else{
+    //
+    // }
+
+</script>
+
 </body>
 </html>
+{{-- <script type="text/javascript">--}}
+
+{{--$(document).on('click', '.like', function (event) {--}}
+{{--event.preventDefault();--}}
+
+{{--alert('Miguel');--}}
+
+{{--});--}}
+
+{{--// var id =$(this).attr('id');--}}
+{{--// var confirme =confirm("Deseja realmente Excluir?");--}}
+{{--// if (confirme==true){--}}
+{{--//     $(visualiza());--}}
+{{--//     $.post('deletarusu.php',{'id': id}, function (resultado) {--}}
+{{--//         $(visualiza());--}}
+{{--//     });--}}
+{{--//     $(visualiza());--}}
+{{--// }else{--}}
+
+{{--// }--}}
+
+
+
+{{--</script>--}}
+{{----}}
+
+{{--<script type="text/javascript">--}}
+{{--$.ajaxSetup({--}}
+{{--headers: {--}}
+{{--'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')--}}
+{{--}--}}
+{{--});--}}
+{{--</script>--}}
+
+
+

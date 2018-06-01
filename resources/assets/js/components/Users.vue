@@ -19,9 +19,9 @@
 					<table class="table no-margin">
 						<thead>
 							<tr>
-								<th>Order ID</th>
-								<th>Item</th>
-								<th>Status</th>
+								<th>Nome</th>
+								<th>Endereco</th>
+								<th>Nivel Acesso</th>
 								<th>Popularity</th>
 							</tr>
 						</thead>
@@ -50,7 +50,6 @@
 		</div>
 		<!-- /.box -->
 	</div>
-</div>
 </template>
 
 <script>
@@ -60,7 +59,7 @@ export default {
 
 		}
 	},
-	created(){
+	created() {
 		
 	},
 

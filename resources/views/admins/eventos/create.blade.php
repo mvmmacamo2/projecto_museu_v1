@@ -13,7 +13,7 @@
 				<form class="form-horizontal" method="POST" action="/admins/eventos" enctype="multipart/form-data">  
 					{{ csrf_field() }}
 
-					<input type="hidden" name="estado" value="active">
+					<input type="hidden" name="estado" value="on">
 
 
 

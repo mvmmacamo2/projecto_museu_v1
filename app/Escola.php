@@ -10,7 +10,7 @@ class Escola extends Authenticatable
 
 	protected $fillable=[
 
-		'nome', 'nivel', 'endereco','nome_responsavel','contacto', 'email', 'senha'
+		'nome', 'nivel', 'endereco','nome_responsavel','contacto', 'email'
 	];	
 
 

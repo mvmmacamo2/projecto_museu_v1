@@ -14,7 +14,7 @@
 						{{ csrf_field() }}
 
 
-						<input name="estado" type="hidden" value="desactivado" class="form-control pull-right" id="estado">
+						<input name="estado" type="hidden" value="off" class="form-control pull-right" id="estado">
 
 						{{-- <input name="id_usuario" type="hidden" value="{{Auth::user()->id}}" class="form-control pull-right" id="id_usuario"> --}}
 

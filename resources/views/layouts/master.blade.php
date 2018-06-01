@@ -38,7 +38,7 @@
   <!-- Color CSS Styles  -->
   <link rel="stylesheet" type="text/css" href="/engage/assets/css/colors/green.css" media="screen" />
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body style="background-color: #fcf9fc">
 
@@ -160,7 +160,7 @@
         @if (Route::has('login'))
         @auth
         <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}"" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
+          <a class="nav-link active dropdown-toggle" href="{{ route('logout') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">olá {{ Auth::user()->name }}</a>
           <div class="dropdown-menu">
             <a href="{{ route('home') }}">
               Home
@@ -338,7 +338,8 @@
 <script src="/lightbox/dist/js/lightbox-plus-jquery.js" type="text/javascript"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript">
-  yield('ajax')
+  @yield('ajax')
 </script>
+  @yield('script')
 </body>
 </html>

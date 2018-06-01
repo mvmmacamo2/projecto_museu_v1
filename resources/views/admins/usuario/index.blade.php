@@ -19,7 +19,6 @@
             <!-- /.panel-heading -->
             <div class="panel-body">
 
-                {{-- <example></example> --}}
                 <users></users>
             </div>
             <!-- /.panel-body -->

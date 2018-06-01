@@ -24,6 +24,10 @@ class HomeController extends Controller
     {
         $exposicoes = Exposicao::all();
         $eventos = Evento::all();
+        $eventos = DB::table('likeeventos')
+            ->join('eventos', 'likeeventos.evento_id', '=', 'eventos.id')
+            ->select('eventos.*', 'likeeventos.*')
+            ->get();
         $usuarios = User::all();
         $u = Auth()->user();
         $likesexposicao =DB::table('like_exposicaos')->get();

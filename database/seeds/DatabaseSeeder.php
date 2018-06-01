@@ -46,8 +46,7 @@ class DatabaseSeeder extends Seeder
             'endereco' => 'Mahotas Perto da 14 esquadra',
             'nome_responsavel' => 'Ezilda',
             'contacto' => '845030902',
-            'email' => 'laulane2@gmail.com',
-            'senha' => Hash::make('123456'),
+            'email' => 'laulane@gmail.com',
 
         ]);
 

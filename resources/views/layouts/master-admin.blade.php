@@ -34,7 +34,7 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- Google Font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -182,6 +182,20 @@
 						<li><a href="/admins/pedidos/prenda"><i class="fa fa-list"></i> Renda do Pátio</a></li>
 					</ul>
 				</li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-eye"></i>
+                        <span>Escola</span>
+                        <span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admins/escolas"><i class="fa fa-list"></i> Todas as Escolas</a></li>
+                        <li><a href="/admins/escolas/create"><i class="fa fa-plus"></i> Adicionar Escola</a></li>
+                    </ul>
+                </li>
+
 				<br>
 				<li class="treeview">
 					<a href="#">
@@ -284,5 +298,10 @@
 <!-- AdminLTE for demo purposes -->
 <script src="/admin/dist/js/demo.js"></script>
 <script src="{{ asset('js/app.js') }}"></script>
+<script type="text/javascript">
+
+@yield('js')
+
+</script>
 </body>
 </html>

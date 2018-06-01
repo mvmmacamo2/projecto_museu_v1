@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Escola;
+use App\User;
 use Illuminate\Http\Request;
 use App\V_visitag_singular;
 use DB;
@@ -10,7 +12,14 @@ class ServicosController extends Controller
 {
     public function escola()
     {
-        return view('servicos.escola');
+        $escola = Escola::all();
+        $users = User::all();
+        $escolas = array();
+        foreach ($escola as $e){
+            $escolas[] =  $e;
+        }
+
+        return view('servicos.escola', compact('escolas'));
     }
 
     public function patio()
@@ -37,5 +46,10 @@ class ServicosController extends Controller
  {
     $save = V_visitag_singular::create($request->all());
     return redirect('servicos.individual');
+}
+
+public function SavePadidoEscola(Request $request)
+{
+    return response()->json($request->all());
 }
 }

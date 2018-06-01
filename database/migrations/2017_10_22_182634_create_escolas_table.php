@@ -21,7 +21,6 @@ class CreateEscolasTable extends Migration
             $table->string('nome_responsavel');
             $table->string('contacto');
             $table->string('email')->unique();
-            $table->string('senha');
             $table->rememberToken();
             $table->timestamps();
         });

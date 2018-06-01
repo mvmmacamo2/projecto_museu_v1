@@ -560,7 +560,9 @@
         {{ csrf_field() }}
     </form>
 </li>
+
 </ul>
+
 <!-- /.dropdown-user -->
 </li>
 <!-- /.dropdown -->
@@ -653,6 +655,9 @@
                     <li>
                         <a style="color: #1c961f" href="/admins/pedidos/visitaguiadasingular"><i class="fa fa-eye"></i> Visitas Guiadas Singulares</a>
                     </li>
+                    <li>
+                        <a style="color: #1c961f" href="/admins/escolas"><i class="fa fa-eye"></i>Adicionar Escolas</a>
+                    </li>
 
                     <li>
                         <a style="color: #1c961f" href="/admins/pedidos/prenda"><i class="fa fa-eye"></i> Renda do Pátio</a>
@@ -697,8 +702,10 @@
                   </ul>
                   <!-- /.nav-second-level -->
               </li>
+
           </ul>
-      </div>
+
+</div>
       <!-- /.sidebar-collapse -->
   </div>
   <!-- /.navbar-static-side -->
@@ -793,9 +800,10 @@
 <script src="/admin/dist/js/sb-admin-2.js"></script>
 <script type="text/javascript">
 
-    yield('ajax')
+    @yield('ajax')
     
 </script>
+@yield('script')
 
 </body>
 
