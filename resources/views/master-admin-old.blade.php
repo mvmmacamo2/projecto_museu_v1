@@ -545,7 +545,7 @@
       <!-- /.navbar-top-links -->
 
       <div class="navbar-default sidebar" role="navigation">
-        =======
+
         <li class="divider"></li>
         <li>
 

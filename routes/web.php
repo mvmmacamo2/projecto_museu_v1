@@ -2,17 +2,13 @@
 use App\Evento;
 use App\Exposicao;
 
-//use DB;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
+
+Route::get('api-like-evento', 'GeneralController@LikesEventos');
+Route::get('api-users', 'GeneralController@getUsers');
+
+
+
 
 Route::get('/', function () {
 	$eventos = Evento::all();
@@ -115,6 +111,7 @@ Route::get('/servicos/individual', 'ServicosController@individual')->middleware(
 // Rotas Admins
 Route::get('/admins/pedidos/visitaguiadaescolar', 'VisitaGEscolasController@visitaguiadaescolar')->middleware('autenticacao');;
 Route::get('/admins/pedidos/visitaguiadasingular', 'VisitaGSingularController@visitaguiadasingular')->middleware('autenticacao');;
+Route::post('/admins/pedidos/responder', 'VisitaGSingularController@SaveResposta')->middleware('autenticacao');;
 Route::get('/admins/pedidos/prenda', 'VisitaGSingularController@prenda')->middleware('autenticacao');
 
 Route::post('/servicos/individual', 'VisitaGSingularController@salvar')->middleware('autenticacao');
@@ -141,8 +138,6 @@ Route::group(['middleware'=>'escola'], function (){
 // rotas de save de likes
 
 Route::post('/', 'LikeExposicaoController@salvar');
-
-
 
 
 

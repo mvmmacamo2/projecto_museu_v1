@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\RespostaVisitaUser;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Http\Request;
 use App\V_visitag_singular;
@@ -16,6 +17,7 @@ class VisitaGSingularController extends Controller
         //$pedidos=DB::table('v_visitag_singulars')->get();
 
         $pedidos = V_visitag_singular::all();
+
 
         return view('admins.pedidos.visitasgsingulares', compact('pedidos'));
 
@@ -49,5 +51,12 @@ class VisitaGSingularController extends Controller
 
    // return redirect('servicos/individual' ,compact('msg2'));
 
+}
+
+public function SaveResposta(Request $request)
+{
+   $pedido = RespostaVisitaUser::create($request->all());
+   return response()->json(['message' => 'Resposta Submetida', $pedido], 200);
+  // return redirect('admins.pedidos.patio');
 }
 }

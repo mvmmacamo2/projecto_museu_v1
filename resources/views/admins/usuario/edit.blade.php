@@ -20,10 +20,15 @@
 
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <form method="POST" action="/admins/usuarios/{{$usuario->id}}">
-                    {{ method_field('PATCH') }}
+                {{--action="/admins/usuarios/{{$usuario->id}}"--}}
+                {{--action="/admins/usuarios/{{$usuario->id}}"--}}
+                <form method="POST"  action="{{url('admins/usuarios', $usuario->id)}}">
+                    {{--{{ method_field('PATCH') }}--}}
+                    {{--{!! $usuario->id !!}--}}
+
                     {{ csrf_field() }}
                     <div class="form-row">
+                        <input type="hidden" name="_method" value="PUT">
                         <div class="form-group col-md-6">
                             <label for="nome">Nome</label>
                             <input type="text" class="form-control" id="nome" placeholder=""
@@ -36,17 +41,16 @@
 
                         </div>
 
-
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="nome">Nivel Acesso</label>
                                 <input type="text" class="form-control" id="nome" placeholder=""
-                                value="{{$usuario->nivelacesso}}" readonly name="nivel">
+                                value="{{$usuario->nivelacesso}}" readonly name="nivelacesso">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">Estado</label>
-                                <input type="text" class="form-control" id="username" placeholder="Password"
-                                name="username" value="{{$usuario->estado}}" readonly>
+                                <input type="text" class="form-control" id="username" placeholder=""
+                                name="estado" value="{{$usuario->estado}}" readonly>
 
                             </div>
 

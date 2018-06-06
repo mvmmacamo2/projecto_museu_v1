@@ -14,7 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $usuarios = User::all();
+        $usuarios = User::orderBy('id', 'desc')->get();
          return view('admins.usuario.index', compact('usuarios'));
 
         //return response()->json(['users'=>$usuarios]);
@@ -77,9 +77,14 @@ class UserController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        return $request->id;
+
+        $usuario = User::find($request->id);
+
+        $usuario->update($request->all());
+        return redirect('admins.usuarios');
     }
 
     /**

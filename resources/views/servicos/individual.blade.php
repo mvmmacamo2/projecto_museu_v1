@@ -102,7 +102,41 @@ Requisição De Visita Guiada Individual
 </tbody>
 
 </table>
+<div>
 
+</div>
+<br>
+<table class="table table-bordered table-stripped table-responsive">
+ <h4>Resposta Dos pedidos</h4>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Detalhes do Pedido</th>
+        <th>Responsavel</th>
+        <th>Data</th>
+        <th>Estado</th>
+        <th>Motivo</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    @foreach($respostas as $p)
+
+        <tr>
+            <td>{!! $p->id_r !!}</td>
+            <td>{!! $p->descricao !!}</td>
+            <td>{!! $p->name !!}</td>
+            <td>{!! $p->created_at !!}</td>
+            <td>{!! $p->estado !!}</td>
+            <td>{{$p->messagem}}</td>
+
+        </tr>
+
+    @endforeach
+
+    </tbody>
+
+</table>
 
 
 @endsection

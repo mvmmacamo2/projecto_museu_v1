@@ -305,7 +305,9 @@
                             @endforeach
                             @empty(auth()->user()->id)
                             <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                            @if($likesexposicao != null)
                             <a href=""><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
+                            @endif
                             <a href="/"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
 
                             @else
@@ -322,7 +324,9 @@
                                 <input type="hidden" value="{{ $e->id }}" name="exposicao_id">
                                 @endforeach
                                 <a href="/usuario_galerias/{{ $exposicao->id }}"><i class="fa fa-eye"></i>Ver Exposição</a>
+                                @if($likesexposicao != null)
                                 <a href="/" onClick="document.getElementById('like_form').submit();"><i class="icon-heart"></i> {!! $likesexposicao !!} Likes</a>
+                                @endif
                                 <a href="#"><i class="icon-bubbles"></i> {!! $comentexposicao !!} Comments</a>
                             </form>
                             @endempty
@@ -359,7 +363,8 @@
                     </div>
                     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                           O Museu tem Trabalhado com as escolas, pois essas actividades sao muito importantes, para que os alunos entendam questoes
+                            relacionadas as moedas nacionais, bem como internacionais
                         </div>
                     </div>
                 </div>
@@ -373,7 +378,8 @@
                     </div>
                     <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          Uma vez que o Museu tem recebido visitas de todas as classes tem proporcionado seccao de visitas guiadas onde pode se maracar previamente, podendo o pedido,
+                            ser aceite bem como nao.
                         </div>
                     </div>
                 </div>
@@ -381,13 +387,14 @@
                     <div class="card-header" role="tab" id="headingThree">
                         <h5 class="mb-0">
                             <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Pátio Para Eventos
+                            Patio para Eventos
                             </a>
                         </h5>
                     </div>
                     <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Pátio Para Eventos, o museu tem disponibilizado o seu espaco para efeitos de eventos e com isso tem ganho um algum valor monetario para auxiliar algumas actividades
+                            que decorrem no  Museu, tal com panfletos que o mesmo usa para propagar os seus eventos
                         </div>
                     </div>
                 </div>
@@ -419,9 +426,12 @@
                     </div>
                     <div class="blog-item-text">
                         {{--<h3 class="small-title"><a href="#">1 likes</a></h3>--}}
-                        <p>
-                            {{$evento->descricao}}
-                        </p>
+                        <p> {{$evento->data}} </p>
+                        <p> {{$evento->hora}} </p>
+                        <p> {{$evento->publico}} </p>
+                        <p> {{$evento->descricao}} </p>
+
+
                         <div class="blog-one-footer">
 
                             <form id="form_evento" method="POST" action="{{URL::to('like_evento') }}">

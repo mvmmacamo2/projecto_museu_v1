@@ -17,8 +17,8 @@ class CreateVVisitagSingularsTable extends Migration
         DB::statement("
       CREATE VIEW v_visitag_singulars AS
       (
-      SELECT  u.name, u.email , v.data ,v.hora, v.descricao, v.created_at FROM visita_gusers v, users u WHERE u.id=v.usuario_id
-      )
+      SELECT  u.name, u.email , v.id, v.data ,v.hora, v.descricao, v.created_at FROM visita_gusers v, users u WHERE u.id=v.usuario_id
+      orderby('id', 'desc'))
     ");
 //        Schema::create('v_visitag_singulars', function (Blueprint $table) {
 //            $table->increments('id');

@@ -72,7 +72,6 @@
 								<!--  -->
 								<li class="user-header">
 
-
 									@guest
 
 									@else
@@ -214,13 +213,18 @@
 
 
 				<li class="treeview">
-					<a href="/admins/estatistica">
+					<a href="#">
 						<i class="fa fa-users"></i>
 						<span>Estatisticas</span>
 						<span class="pull-right-container">
 							<i class="fa fa-angle-left pull-right"></i>
 						</span>
 					</a>
+					<ul class="treeview-menu">
+						<li><a href="/admins/estatistica"><i class="fa fa-plus"></i> Gerais</a></li>
+						<li><a href="/admins/usuarios/"><i class="fa fa-list"></i> Ver Lista</a></li>
+						{{-- <li><a href="/admins/usuarios"><i class="fa fa-list"></i> Permissão</a></li> --}}
+					</ul>
 					
 				</li>
 
@@ -253,8 +257,8 @@
 </div>
 <!-- /.content-wrapper -->
 <footer class="main-footer">
-	<strong>Copyright &copy; 2014-2016 <a href="/home">Mavi</a>.</strong> All rights
-	reserved.
+	<strong>Painel Admin <a href="/home">Museu Nacional da Moeda</a>.</strong>
+
 </footer>
 <div class="control-sidebar-bg"></div>
 </div>
@@ -303,5 +307,6 @@
 @yield('js')
 
 </script>
+	@yield('js-script')
 </body>
 </html>
