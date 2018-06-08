@@ -19,6 +19,7 @@ class VisitaGSingularController extends Controller
         $pedidos = V_visitag_singular::all();
 
 
+       // return $pedidos;
         return view('admins.pedidos.visitasgsingulares', compact('pedidos'));
 
     }

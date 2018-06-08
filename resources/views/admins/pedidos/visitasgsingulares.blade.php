@@ -21,6 +21,7 @@
         <thead>
 
           <tr>
+            <th>ID</th>
             <th>Nome utilizador</th>
             <th>Email</th>
             <th>Data</th>
@@ -36,39 +37,41 @@
 
           @foreach($pedidos as $p)
           <tr class="odd gradeX">
+            <td>{{$p->id}}</td>
             <td>{{$p->name}}</td>
             <td>{{$p->email}}</td>
 
             <td>{{$p->data}}</td>
             <td>{{$p->hora}}</td>
             <td>{{$p->created_at->diffForHumans()}}</td>
+            <td>{{$p->descricao}}</td>
             <td>
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Descrição Do Pedido</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                {{$p->descricao}}
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
               <a href="#">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                   Ver <i class="fa fa-eye"></i>
                 </button>
-
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Descrição Do Pedido</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        {{$p->descricao}}
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
               </a>
             </td>
 
@@ -88,6 +91,7 @@
                         <form  method="POST" action="{{URL::to('admins/pedidos/responder') }}" id="formulario">
                           {!! csrf_field() !!}
                             <input type="hidden" name="pedido_id" value="{{ $p->id }}">
+                            {{ $p->id }}
                           <div class="form-group">
                             <label for="recipient-name" class="col-form-label">E-mail:</label>
                             <input type="enabled" class="form-control" id="recipient-name" value="{{ $p->email }}" name="to">

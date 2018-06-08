@@ -230,7 +230,7 @@
                         Conhecendo A Nossa História
                     </h2>
                     <h3>
-                        Precisa
+                        Precisa Conhecer a sua Historia
                     </h3>
                 </div>
             </div>
@@ -241,7 +241,7 @@
                         Participe de nossas Visitas Guiadas
                     </h2>
                     <h3>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        Requisite uma visita
                     </h3>
                 </div>
             </div>

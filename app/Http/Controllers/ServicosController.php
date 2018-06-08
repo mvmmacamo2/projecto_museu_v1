@@ -49,7 +49,9 @@ class ServicosController extends Controller
      $task = DB::table('visita_gusers')->where('usuario_id',$user_id)->get();
      // $user = DB::table('users')->where('name', 'John')->first();
     // return view('servicos.patio', compact('pedidos'));
-     $respostas  = RespostaVisitaUser::orderBy('id', 'desc')->get();
+     $respostas  = RespostaVisitaUser::orderBy('id', 'desc')
+         ->where('to', Auth()->user()->email)
+         ->get();
      return view('servicos.individual', compact('pedidos'), compact('task'))->with('respostas', $p);
  }
 
